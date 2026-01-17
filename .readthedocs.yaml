@@ -1,0 +1,24 @@
+version: 2
+
+build:
+  os: ubuntu-lts-latest
+  tools:
+    python: "3.12"
+  apt_packages:
+    - graphviz
+  jobs:
+    post_create_environment:
+      - cp -a locales build123d/docs
+
+submodules:
+  include:
+    - build123d
+  recursive: true
+
+sphinx:
+  configuration: build123d/docs/conf.py
+  fail_on_warning: false
+
+python:
+  install:
+    - requirements: requirements.txt

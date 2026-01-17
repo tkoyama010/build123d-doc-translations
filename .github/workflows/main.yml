@@ -40,6 +40,7 @@ jobs:
         run: |
           (cd build123d; git fetch origin; git checkout dev; git reset --hard origin/dev; git branch -a)
           pip3 install -U pip setuptools
+          pip3 install -e ./build123d[docs]
           pip3 install -r ./requirements.txt
           curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
           mv tx /usr/local/bin/tx
@@ -50,7 +51,7 @@ jobs:
           SPHINXINTL_TRANSIFEX_PROJECT_NAME: build123d-doc
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
         run: |
-          sh ./locale/update.sh
+          sh ./locales/update.sh
       - name: git_config
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"

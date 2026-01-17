@@ -1,0 +1,861 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/introductory_examples.rst:3
+msgid "Introductory Examples"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:5
+msgid ""
+"The examples on this page can help you learn how to build objects with "
+"build123d, and are intended as a general overview of build123d."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:7
+msgid ""
+"They are organized from simple to complex, so working through them in order "
+"is the best way to absorb them."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:11
+msgid ""
+"Some important lines are omitted below to save space, so you will most "
+"likely need to add 1 & 2 to the provided code below for them to work:"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:13
+msgid "``from build123d import *``"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:14
+msgid "If you are using build123d *builder mode* or *algebra mode*,"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:16
+msgid ""
+"in *ocp_vscode* simply use e.g. ``show(ex15)`` to the end of your design to "
+"view parts, sketches and curves. ``show_all()`` can be used to automatically"
+" show all objects with their variable names as labels."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:17
+msgid ""
+"in *CQ-editor* add e.g. ``show_object(ex15.part)``, "
+"``show_object(ex15.sketch)`` or ``show_object(ex15.line)`` to the end of "
+"your design to view parts, sketches or lines."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:19
+msgid ""
+"If you want to save your resulting object as an STL from *builder mode*, you"
+" can use e.g. ``export_stl(ex15.part, \"file.stl\")``."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:20
+msgid ""
+"If you want to save your resulting object as an STL from *algebra mode*, you"
+" can use e.g. ``export_stl(ex15, \"file.stl\")``"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:21
+msgid ""
+"build123d also supports exporting to multiple other file formats including "
+"STEP, see here for further information: `Import/Export Formats "
+"<https://build123d.readthedocs.io/en/latest/import_export.html>`_"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:24
+msgid "List of Examples"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:29
+msgid "1. Simple Rectangular Plate"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:31
+msgid ""
+"Just about the simplest possible example, a rectangular "
+":class:`~objects_part.Box`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:36
+#: ../../build123d/docs/introductory_examples.rst:61
+#: ../../build123d/docs/introductory_examples.rst:94
+#: ../../build123d/docs/introductory_examples.rst:128
+#: ../../build123d/docs/introductory_examples.rst:163
+#: ../../build123d/docs/introductory_examples.rst:196
+#: ../../build123d/docs/introductory_examples.rst:227
+#: ../../build123d/docs/introductory_examples.rst:261
+#: ../../build123d/docs/introductory_examples.rst:289
+#: ../../build123d/docs/introductory_examples.rst:317
+#: ../../build123d/docs/introductory_examples.rst:350
+#: ../../build123d/docs/introductory_examples.rst:398
+#: ../../build123d/docs/introductory_examples.rst:423
+#: ../../build123d/docs/introductory_examples.rst:462
+#: ../../build123d/docs/introductory_examples.rst:499
+#: ../../build123d/docs/introductory_examples.rst:526
+#: ../../build123d/docs/introductory_examples.rst:552
+#: ../../build123d/docs/introductory_examples.rst:578
+#: ../../build123d/docs/introductory_examples.rst:610
+#: ../../build123d/docs/introductory_examples.rst:644
+#: ../../build123d/docs/introductory_examples.rst:670
+#: ../../build123d/docs/introductory_examples.rst:696
+#: ../../build123d/docs/introductory_examples.rst:734
+#: ../../build123d/docs/introductory_examples.rst:762
+#: ../../build123d/docs/introductory_examples.rst:785
+#: ../../build123d/docs/introductory_examples.rst:822
+#: ../../build123d/docs/introductory_examples.rst:848
+#: ../../build123d/docs/introductory_examples.rst:871
+#: ../../build123d/docs/introductory_examples.rst:905
+#: ../../build123d/docs/introductory_examples.rst:932
+#: ../../build123d/docs/introductory_examples.rst:959
+#: ../../build123d/docs/introductory_examples.rst:986
+#: ../../build123d/docs/introductory_examples.rst:1016
+#: ../../build123d/docs/introductory_examples.rst:1043
+#: ../../build123d/docs/introductory_examples.rst:1076
+#: ../../build123d/docs/introductory_examples.rst:1111
+msgid "**Builder mode**"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:43
+#: ../../build123d/docs/introductory_examples.rst:72
+#: ../../build123d/docs/introductory_examples.rst:105
+#: ../../build123d/docs/introductory_examples.rst:139
+#: ../../build123d/docs/introductory_examples.rst:173
+#: ../../build123d/docs/introductory_examples.rst:205
+#: ../../build123d/docs/introductory_examples.rst:237
+#: ../../build123d/docs/introductory_examples.rst:268
+#: ../../build123d/docs/introductory_examples.rst:296
+#: ../../build123d/docs/introductory_examples.rst:328
+#: ../../build123d/docs/introductory_examples.rst:366
+#: ../../build123d/docs/introductory_examples.rst:405
+#: ../../build123d/docs/introductory_examples.rst:432
+#: ../../build123d/docs/introductory_examples.rst:473
+#: ../../build123d/docs/introductory_examples.rst:506
+#: ../../build123d/docs/introductory_examples.rst:533
+#: ../../build123d/docs/introductory_examples.rst:559
+#: ../../build123d/docs/introductory_examples.rst:587
+#: ../../build123d/docs/introductory_examples.rst:621
+#: ../../build123d/docs/introductory_examples.rst:651
+#: ../../build123d/docs/introductory_examples.rst:677
+#: ../../build123d/docs/introductory_examples.rst:705
+#: ../../build123d/docs/introductory_examples.rst:741
+#: ../../build123d/docs/introductory_examples.rst:769
+#: ../../build123d/docs/introductory_examples.rst:794
+#: ../../build123d/docs/introductory_examples.rst:829
+#: ../../build123d/docs/introductory_examples.rst:855
+#: ../../build123d/docs/introductory_examples.rst:881
+#: ../../build123d/docs/introductory_examples.rst:912
+#: ../../build123d/docs/introductory_examples.rst:939
+#: ../../build123d/docs/introductory_examples.rst:966
+#: ../../build123d/docs/introductory_examples.rst:996
+#: ../../build123d/docs/introductory_examples.rst:1025
+#: ../../build123d/docs/introductory_examples.rst:1056
+#: ../../build123d/docs/introductory_examples.rst:1087
+#: ../../build123d/docs/introductory_examples.rst:1118
+msgid "**Algebra mode**"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:54
+msgid "2. Plate with Hole"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:56
+msgid "A rectangular box, but with a hole added."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:63
+msgid ""
+"In this case we are using :class:`~build_enums.Mode` ``.SUBTRACT`` to cut "
+"the :class:`~objects_part.Cylinder` from the :class:`~objects_part.Box`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:74
+msgid ""
+"In this case we are using the subtract operator ``-`` to cut the "
+":class:`~objects_part.Cylinder` from the :class:`~objects_part.Box`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:87
+msgid "3. An extruded prismatic solid"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:89
+msgid "Build a prismatic solid using extrusion."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:96
+msgid ""
+"This time we can first create a 2D :class:`~build_sketch.BuildSketch` adding"
+" a :class:`~objects_sketch.Circle` and a subtracted "
+":class:`~objects_sketch.Rectangle` and then use "
+":class:`~build_part.BuildPart`'s :meth:`~operations_part.extrude` feature."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:107
+msgid ""
+"This time we can first create a 2D :class:`~objects_sketch.Circle` with a "
+"subtracted :class:`~objects_sketch.Rectangle`` and then use the "
+":meth:`~operations_part.extrude` operation for parts."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:119
+msgid "4. Building Profiles using lines and arcs"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:121
+msgid ""
+"Sometimes you need to build complex profiles using lines and arcs. This "
+"example builds a prismatic solid from 2D operations. It is not necessary to "
+"create variables for the line segments, but it will be useful in a later "
+"example."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:130
+msgid ""
+":class:`~build_sketch.BuildSketch` operates on closed Faces, and the "
+"operation :meth:`~operations_sketch.make_face` is used to convert the "
+"pending line segments from :class:`~build_line.BuildLine` into a closed "
+"Face."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:141
+msgid ""
+"We start with an empty :class:`~topology.Curve` and add lines to it (note "
+"that ``Curve() + [line1, line2, line3]`` is much more efficient than ``line1"
+" + line2 + line3``, see :ref:`algebra_performance`). The operation "
+":meth:`~operations_sketch.make_face` is used to convert the line segments "
+"into a Face."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:152
+msgid ""
+"Note that to build a closed face it requires line segments that form a "
+"closed shape."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:157
+msgid "5. Moving the current working point"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:165
+msgid ""
+"Using :class:`~build_common.Locations` we can place one (or multiple) "
+"objects at one (or multiple) places."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:175
+msgid ""
+"Using the pattern ``Pos(x, y, z=0) * obj`` (with :class:`geometry.Pos`) we "
+"can move an object to the provided position. Using ``Rot(x_angle, y_angle, "
+"z_angle) * obj`` (with :class:`geometry.Rot`)  would rotate the object."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:188
+msgid "6. Using Point Lists"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:190
+msgid ""
+"Sometimes you need to create a number of features at various "
+":class:`~build_common.Locations`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:198
+msgid "You can use a list of points to construct multiple objects at once."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:207
+msgid ""
+"You can use loops to iterate over these Locations or list comprehensions as "
+"in the example."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:210
+msgid ""
+"The algebra operations are vectorized, which means ``obj - [obj1, obj2, "
+"obj3]`` is short for ``obj - obj1 - obj2 - ob3`` (and more efficient, see "
+":ref:`algebra_performance`)."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:222
+msgid "7. Polygons"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:229
+msgid ""
+"You can create :class:`~objects_sketch.RegularPolygon` for each stack point "
+"if you would like."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:239
+msgid ""
+"You can apply locations to :class:`~objects_sketch.RegularPolygon` instances"
+" for each location  via loops or list comprehensions."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:251
+msgid "8. Polylines"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:253
+msgid ""
+":class:`~objects_curve.Polyline` allows creating a shape from a large number"
+" of chained points connected by lines. This example uses a polyline to "
+"create one half of an i-beam shape, which is "
+":meth:`~operations_generic.mirror` ed to create the final profile."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:279
+msgid "9. Selectors, Fillets, and Chamfers"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:281
+msgid ""
+"This example introduces multiple useful and important concepts. Firstly "
+":meth:`~operations_generic.chamfer` and :meth:`~operations_generic.fillet` "
+"can be used to \"bevel\" and \"round\" edges respectively. Secondly, these "
+"two methods require an edge or a list of edges to operate on. To select all "
+"edges, you could simply pass in ``ex9.edges()``."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:303
+msgid ""
+"Note that :meth:`~topology.ShapeList.group_by` ``(Axis.Z)`` returns a list "
+"of lists of edges that is grouped by their z-position. In this case we want "
+"to use the ``[-1]`` group which, by convention, will be the highest "
+"z-dimension group."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:311
+msgid "10. Select Last and Hole"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:319
+msgid ""
+"Using :class:`~build_enums.Select` ``.LAST`` you can select the most "
+"recently modified edges. It is used to perform a "
+":meth:`~operations_generic.fillet` in this example. This example also makes "
+"use of :class:`~objects_part.Hole` which automatically cuts through the "
+"entire part."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:330
+msgid ""
+"Using the pattern ``snapshot = obj.edges()`` before and ``last_edges = "
+"obj.edges() - snapshot`` after an operation allows to select the most "
+"recently modified edges (same for ``faces``, ``vertices``, ...). It is used "
+"to perform a :meth:`~operations_generic.fillet` in this example. This "
+"example also makes use of :class:`~objects_part.Hole`. Different to the "
+"*context mode*, you have to add the ``depth`` of the whole."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:344
+msgid "11. Use a face as a plane for BuildSketch and introduce GridLocations"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:352
+msgid ""
+":class:`~build_sketch.BuildSketch` accepts a Plane or a Face, so in this "
+"case we locate the Sketch on the top of the part. Note that the face used as"
+" input to BuildSketch needs to be Planar or unpredictable behavior can "
+"result. Additionally :class:`~build_common.GridLocations` can be used to "
+"create a grid of points that are simultaneously used to place 4 pentagons."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:358
+msgid ""
+"Lastly, :meth:`~operations_part.extrude` can be used with a negative amount "
+"and ``Mode.SUBTRACT`` to cut these from the parent."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:368
+msgid ""
+"The pattern ``plane * obj`` can be used to locate an object on a plane. "
+"Furthermore, the pattern ``plane * location * obj`` first places the object "
+"on a plane and then moves it relative to plane according to ``location``."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:372
+msgid ""
+":class:`~build_common.GridLocations` creates a grid of points that can be "
+"used in loops or list comprehensions as described earlier."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:375
+msgid ""
+"Lastly, :meth:`~operations_part.extrude` can be used with a negative amount "
+"and cut (``-``) from the parent."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:383
+msgid ""
+"Note that the direction implied by positive or negative inputs to amount is "
+"relative to the normal direction of the face or plane. As a result of this, "
+"unexpected behavior can occur if the extrude direction and mode/operation "
+"(ADD / ``+`` or SUBTRACT / ``-``) are not correctly set."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:390
+msgid "12. Defining an Edge with a Spline"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:392
+msgid ""
+"This example defines a side using a spline curve through a collection of "
+"points. Useful when you have an edge that needs a complex profile."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:416
+msgid "13. CounterBoreHoles, CounterSinkHoles, and PolarLocations"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:418
+msgid ""
+"Counter-sink and counter-bore holes are useful for creating recessed areas "
+"for fasteners."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:425
+msgid ""
+"We use a face to establish a location for :class:`~build_common.Locations`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:434
+msgid ""
+"We use a face to establish a plane that is used later in the code for "
+"locating objects onto this plane."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:442
+msgid ""
+":class:`~build_common.PolarLocations` creates a list of points that are "
+"radially distributed."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:447
+msgid "14.  Position on a line with '\\@', '\\%' and introduce Sweep"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:449
+msgid ""
+"build123d includes a feature for finding the position along a line segment. "
+"This is normalized between 0 and 1 and can be accessed using the "
+":meth:`~topology.Mixin1D.position_at` (`@`) operator. Similarly the "
+":meth:`~topology.Mixin1D.tangent_at` (`%`) operator returns the line "
+"direction at a given point."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:453
+msgid ""
+"These two features are very powerful for chaining line segments together "
+"without having to repeat dimensions again and again, which is error prone, "
+"time consuming, and more difficult to maintain. The pending faces must lie "
+"on the path, please see example 37 for a way to make this placement easier."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:464
+msgid ""
+"The :meth:`~operations_generic.sweep` method takes any pending faces and "
+"sweeps them through the provided path (in this case the path is taken from "
+"the pending edges from ``ex14_ln``). :meth:`~operations_part.revolve` "
+"requires a single connected wire."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:475
+msgid ""
+"The :meth:`~operations_generic.sweep` method takes any faces and sweeps them"
+" through the provided path (in this case the path is taken from "
+"``ex14_ln``)."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:483
+msgid ""
+"It is also possible to use tuple or :class:`~geometry.Vector` addition (and "
+"other vector math operations) as seen in the ``l3`` variable."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:489
+msgid "15. Mirroring Symmetric Geometry"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:491
+msgid ""
+"Here mirror is used on the BuildLine to create a symmetric shape with fewer "
+"line segment commands. Additionally the '@' operator is used to simplify the"
+" line segment commands."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:494
+msgid ""
+"``(l4 @ 1).Y`` is used to extract the y-component of the ``l4 @ 1`` vector."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:508
+msgid "Combine lines via the pattern ``Curve() + [l1, l2, l3, l4, l5]``"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:518
+msgid "16. Mirroring 3D Objects"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:520
+msgid ""
+"Mirror can also be used with BuildPart (and BuildSketch) to mirror 3D "
+"objects. The ``Plane.offset()`` method shifts the plane in the normal "
+"direction (positive or negative)."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:544
+msgid "17. Mirroring From Faces"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:546
+msgid ""
+"Here we select the farthest face in the Y-direction and turn it into a "
+":class:`~geometry.Plane` using the ``Plane()`` class."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:570
+msgid "18. Creating Workplanes on Faces"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:572
+msgid ""
+"Here we start with an earlier example, select the top face, draw a rectangle"
+" and then use Extrude with a negative distance."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:580
+msgid "We then use ``Mode.SUBTRACT`` to cut it out from the main body."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:589
+msgid "We then use ``-=`` to cut it out from the main body."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:600
+msgid "19. Locating a workplane on a vertex"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:602
+msgid ""
+"Here a face is selected and two different strategies are used to select "
+"vertices. Firstly ``vtx`` uses :meth:`~topology.ShapeList.group_by` and "
+"``Axis.X`` to select a particular vertex. The second strategy uses a custom "
+"defined Axis ``vtx2Axis`` that is pointing roughly in the direction of a "
+"vertex to select, and then :meth:`~topology.ShapeList.sort_by` this custom "
+"Axis."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:612
+msgid ""
+"Then the X and Y positions of these vertices are selected and passed to "
+":class:`~build_common.Locations` as center points for two circles that cut "
+"through the main part. Note that if you passed the variable ``vtx`` directly"
+" to :class:`~build_common.Locations` then the part would be offset from the "
+"workplane by the vertex z-position."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:623
+msgid ""
+"Then the X and Y positions of these vertices are selected and used to move "
+"two circles that cut through the main part. Note that if you passed the "
+"variable ``vtx`` directly to :class:`~geometry.Pos` then the part would be "
+"offset from the workplane by the vertex z-position."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:636
+msgid "20. Offset Sketch Workplane"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:638
+msgid ""
+"The ``plane`` variable is set to be coincident with the farthest face in the"
+" negative x-direction. The resulting Plane is offset from the original "
+"position."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:662
+msgid "21. Create a Workplanes in the center of another shape"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:664
+msgid ""
+"One cylinder is created, and then the origin and z_dir of that part are used"
+" to create a new Plane for positioning another cylinder perpendicular and "
+"halfway along the first."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:688
+msgid "22. Rotated Workplanes"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:690
+msgid ""
+"It is also possible to create a rotated workplane, building upon some of the"
+" concepts in an earlier example."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:698
+msgid ""
+"Use the :meth:`~geometry.Plane.rotated` method to rotate the workplane."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:707
+msgid "Use the operator ``*`` to relocate the plane (post-multiplication!)."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:714
+msgid ""
+":class:`~build_common.GridLocations` places 4 Circles on 4 points on this "
+"rotated workplane, and then the Circles are extruded in the \"both\" "
+"(positive and negative) normal direction."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:721
+msgid "23. Revolve"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:723
+msgid ""
+"Here we build a sketch with a :class:`~objects_curve.Polyline`, "
+":class:`~objects_curve.Line`, and a :class:`~objects_sketch.Circle`. It is "
+"absolutely critical that the sketch is only on one side of the axis of "
+"rotation before Revolve is called. To that end, ``split`` is used with "
+"``Plane.ZY`` to keep only one side of the Sketch."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:729
+msgid ""
+"It is highly recommended to view your sketch before you attempt to call "
+"revolve."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:752
+msgid "24. Loft"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:754
+msgid ""
+"Loft is a very powerful tool that can be used to join dissimilar shapes. In "
+"this case we make a conical-like shape from a circle and a rectangle that is"
+" offset vertically. In this case :meth:`~operations_part.loft` automatically"
+" takes the pending faces that were added by the two BuildSketches. Loft can "
+"behave unexpectedly when the input faces are not parallel to each other."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:780
+msgid "25. Offset Sketch"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:787
+msgid ""
+"BuildSketch faces can be transformed with a 2D "
+":meth:`~operations_generic.offset`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:796
+msgid ""
+"Sketch faces can be transformed with a 2D "
+":meth:`~operations_generic.offset`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:803
+msgid ""
+"They can be offset inwards or outwards, and with different techniques for "
+"extending the corners (see :class:`~build_enums.Kind` in the Offset docs)."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:810
+msgid "26. Offset Part To Create Thin features"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:812
+msgid ""
+"Parts can also be transformed using an offset, but in this case with a 3D "
+":meth:`~operations_generic.offset`. Also commonly known as a shell, this "
+"allows creating thin walls using very few operations. This can also be "
+"offset inwards or outwards. Faces can be selected to be \"deleted\" using "
+"the ``openings`` parameter of :meth:`~operations_generic.offset`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:817
+msgid ""
+"Note that self intersecting edges and/or faces can break both 2D and 3D "
+"offsets."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:840
+msgid "27. Splitting an Object"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:842
+msgid ""
+"You can split an object using a plane, and retain either or both halves. In "
+"this case we select a face and offset half the width of the box."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:866
+msgid "28. Locating features based on Faces"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:873
+msgid ""
+"We create a triangular prism with :class:`~build_enums.Mode` ``.PRIVATE`` "
+"and then later use the faces of this object to cut holes in a sphere."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:883
+msgid ""
+"We create a triangular prism and then later  use the faces of this object to"
+" cut holes in a sphere."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:890
+msgid ""
+"We are able to create multiple workplanes by looping over the list of faces."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:896
+msgid "29. The Classic OCC Bottle"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:898
+msgid ""
+"build123d is based on the OpenCascade.org (OCC) modeling Kernel. Those who "
+"are familiar with OCC know about the famous ‘bottle’ example. We use a 3D "
+"Offset and the openings parameter to create the bottle opening."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:923
+msgid "30. Bezier Curve"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:925
+msgid ""
+"Here ``pts`` is used as an input to both :class:`~objects_curve.Polyline` "
+"and :class:`~objects_curve.Bezier` and ``wts`` to Bezier alone. These two "
+"together create a closed line that is made into a face and extruded."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:950
+msgid "31. Nesting Locations"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:952
+msgid ""
+"Locations contexts can be nested to create groups of shapes. Here 24 "
+"triangles, 6 squares, and 1 hexagon are created and then extruded. Notably "
+":class:`~build_common.PolarLocations` rotates any \"children\" groups by "
+"default."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:977
+msgid "32. Python For-Loop"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:979
+msgid ""
+"In this example, a standard python for-loop is used along with a list of "
+"faces extracted from a sketch to progressively modify the extrusion amount. "
+"There are 7 faces in the sketch, so this results in 7 separate calls to "
+":meth:`~operations_part.extrude`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:988
+msgid ""
+":class:`~build_enums.Mode` ``.PRIVATE`` is used in "
+":class:`~build_sketch.BuildSketch` to avoid adding these faces until the "
+"for-loop."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1007
+msgid "33. Python Function and For-Loop"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1009
+msgid ""
+"Building on the previous example, a standard python function is used to "
+"return a sketch as a function of several inputs to progressively modify the "
+"size of each square."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1018
+msgid "The function returns a :class:`~build_sketch.BuildSketch`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1027
+msgid "The function returns a ``Sketch`` object."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1038
+msgid "34. Embossed and Debossed Text"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1045
+msgid ""
+"The text \"Hello\" is placed on top of a rectangle and embossed (raised) by "
+"placing a BuildSketch on the top face (``topf``). Note that "
+":class:`~build_enums.Align` is used to control the text placement. We re-use"
+" the ``topf`` variable to select the same face and deboss (indented) the "
+"text \"World\". Note that if we simply ran "
+"``BuildSketch(ex34.faces().sort_by(Axis.Z)[-1])`` for both ``ex34_sk1 & 2`` "
+"it would incorrectly locate the 2nd \"World\" text on the top of the "
+"\"Hello\" text."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1058
+msgid ""
+"The text \"Hello\" is placed on top of a rectangle and embossed (raised) by "
+"placing a sketch on the top face (``topf``). Note that "
+":class:`~build_enums.Align` is used to control the text placement. We re-use"
+" the ``topf`` variable to select the same face and deboss (indented) the "
+"text \"World\"."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1071
+msgid "35. Slots"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1078
+msgid ""
+"Here we create a :class:`~objects_sketch.SlotCenterToCenter` and then use a "
+":class:`~build_line.BuildLine` and :class:`~objects_curve.RadiusArc` to "
+"create an arc for two instances of :class:`~objects_sketch.SlotArc`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1089
+msgid ""
+"Here we create a :class:`~objects_sketch.SlotCenterToCenter` and then use a "
+":class:`~objects_curve.RadiusArc` to create an arc for two instances of "
+":class:`~operations_sketch.SlotArc`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1101
+msgid "36. Extrude Until"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1103
+msgid ""
+"Sometimes you will want to extrude until a given face that could be non "
+"planar or where you might not know easily the distance you have to extrude "
+"to. In such cases you can use :meth:`~operations_part.extrude` "
+":class:`~build_enums.Until` with ``Until.NEXT`` or ``Until.LAST``."
+msgstr ""

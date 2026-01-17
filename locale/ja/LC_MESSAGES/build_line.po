@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/build_line.rst:3
+msgid "BuildLine"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:5
+msgid ""
+"BuildLine is a python context manager that is used to create one dimensional"
+" objects - objects with the property of length but not area - that are "
+"typically used as part of a BuildSketch sketch or a BuildPart path."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:9
+msgid "The complete API for BuildLine is located at the end of this section."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:13
+msgid "Basic Functionality"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:15
+msgid "The following is a simple BuildLine example:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:22
+msgid ""
+"The ``with`` statement creates the ``BuildLine`` context manager with the "
+"identifier ``example_1``. The objects and operations that are within the "
+"scope (i.e. indented) of this context will contribute towards the object "
+"being created by the context manager.  For ``BuildLine``, this object is "
+"``line`` and it's referenced as ``example_1.line``."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:28
+msgid ""
+"The first object in this example is a ``Line`` object which is used to "
+"create a straight line from coordinates (0,0) to (2,0) on the default XY "
+"plane. The second object is a ``ThreePointArc`` that starts and ends at the "
+"two ends of the line."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:38
+msgid "Constraints"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:40
+msgid ""
+"Building with constraints enables the designer to capture design intent and "
+"add a high degree of robustness to their designs.  The following sections "
+"describe creating positional and tangential constraints as well as using "
+"object attributes to enable this type of design."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:46
+msgid "@ ``position_at`` Operator"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:48
+msgid ""
+"In the previous example, the ``ThreePointArc`` started and ended at the two "
+"ends of the ``Line`` but this was done by referring to the same point "
+"``(0,0)`` and ``(2,0)``.  This can be improved upon by specifying "
+"constraints that lock the arc to those two end points, as follows:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:58
+msgid ""
+"Here instance variables ``l1`` and ``l2`` are assigned to the two BuildLine "
+"objects and the ``ThreePointArc`` references the beginning of the straight "
+"line with ``l1 @ 0`` and the end with ``l1 @ 1``.  The ``@`` operator takes "
+"a float (or integer) parameter between 0 and 1 and determines a position at "
+"this fractional position along the line's length."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:64
+msgid ""
+"This example can be improved on further by calculating the mid-point of the "
+"arc as follows:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:72
+msgid ""
+"Here ``l1 @ 0.5`` finds the center of ``l1`` while ``l1 @ 0.5 + (0, 1)`` "
+"does a vector addition to generate the point ``(1,1)``."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:75
+msgid ""
+"To make the design even more parametric, the height of the arc can be "
+"calculated from ``l1`` as follows:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:83
+msgid ""
+"The arc height is now calculated as ``(0, l1.length / 2)`` by using the "
+"``length`` property of ``Edge`` and ``Wire`` shapes.  At this point the "
+"``ThreePointArc`` is fully parametric and able to generate the same shape "
+"for any horizontal line."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:88
+msgid "% ``tangent_at`` Operator"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:90
+msgid ""
+"The other operator that is commonly used within BuildLine is ``%`` the "
+"tangent at operator. Here is another example:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:98
+msgid "which generates (note that the circles show line junctions):"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:103
+msgid "The ``JernArc`` has the following parameters:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:105
+msgid "``start=l2 @ 1`` - start the arc at the end of line ``l2``,"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:106
+msgid ""
+"``tangent=l2 % 1`` - the tangent of the arc at the start point is equal to "
+"the ``l2``\\'s, tangent at its end (shown as a dashed line)"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:108
+msgid "``radius=0.5`` - the radius of the arc, and"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:109
+msgid "``arc_size=90`` the angular size of the arc."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:111
+msgid ""
+"The final line starts at the end of ``l3`` and ends at a point calculated "
+"from the length of ``l2`` and the radius of arc ``l3``."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:114
+msgid ""
+"Building with constraints as shown here will ensure that your designs both "
+"fully represent design intent and are robust to design changes."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:119
+msgid "BuildLine to BuildSketch"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:121
+msgid ""
+"As mentioned previously, one of the two primary reasons to create BuildLine "
+"objects is to use them in BuildSketch.  When a BuildLine context manager "
+"exits and is within the scope of a BuildSketch context manager it will "
+"transfer the generated line to BuildSketch. The BuildSketch "
+":meth:`~operations_sketch.make_face` or :meth:`~operations_sketch.make_hull`"
+"  operations are then used to transform the line (specifically a list of "
+"Edges) into a Face - the native BuildSketch objects."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:128
+msgid ""
+"Here is an example of using BuildLine to create an object that otherwise "
+"might be difficult to create:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:136
+#: ../../build123d/docs/build_line.rst:168
+#: ../../build123d/docs/build_line.rst:198
+msgid "which generates:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:141
+msgid "SVG import to BuildLine"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:143
+msgid ""
+"The BuildLine code used in this example was generated by translating a SVG "
+"file into BuildLine source code with the "
+":func:`~importers.import_svg_as_buildline_code` function. For example:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:151
+msgid ""
+"would translate the \"club.svg\" image file's paths into BuildLine code much"
+" like that shown above. From there it's easy for a user to add constraints "
+"or otherwise enhance the original image and use it in their design."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:157
+msgid "BuildLine to BuildPart"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:159
+msgid ""
+"The other primary reasons to use BuildLine is to create paths for BuildPart "
+":meth:`~operations_generic.sweep` operations. Here some curved and straight "
+"segments define a path:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:173
+msgid "There are few things to note from this example:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:175
+msgid ""
+"The @ and % operators are used to create a plane normal to the beginning of "
+"the path with which to create the circular section used by the sweep "
+"operation (this plane is not one of the ordinal planes)."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:178
+msgid ""
+"Both the path generated by BuildLine and the section generated by "
+"BuildSketch have been transferred to BuildPart when each of them exit."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:180
+msgid ""
+"The BuildPart ``Sweep`` operation is using the path and section previously "
+"transferred to it (as \"pending\" objects) as parameters of the sweep. The "
+"``Sweep`` operation \"consumes\" these pending objects as to not interfere "
+"with subsequence operations."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:187
+msgid "Working on other Planes"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:189
+msgid ""
+"So far all of the examples were created on ``Plane.XY`` - the default plane "
+"- which is equivalent to global coordinates. Sometimes it's convenient to "
+"work on another plane, especially when creating paths for BuildPart "
+"``Sweep`` operations."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:203
+msgid ""
+"Here the BuildLine object is created on ``Plane.YZ`` just by specifying the "
+"working plane during BuildLine initialization."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:206
+msgid ""
+"There are three rules to keep in mind when working with alternate planes in "
+"BuildLine:"
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:208
+msgid ""
+"``BuildLine`` accepts a single ``Plane`` to work with as opposed to other "
+"Builders that accept more than one workplane."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:210
+msgid ""
+"Values entered as tuples such as ``(1, 2)`` or ``(1, 2, 3)`` will be "
+"localized to the current workplane.  This rule applies to points and to the "
+"use of tuples to modify locations calculated with the ``@`` and ``%`` "
+"operators such as ``l1 @ 1 + (1, 1)``. For example, if the workplane is "
+"``Plane.YZ`` the local value of ``(1, 2)`` would be converted to ``(0, 1, "
+"2)`` in global coordinates.  Three tuples are converted as well - ``(1, 2, "
+"3)`` on ``Plane.YZ`` would be ``(3, 1, 2)`` in global coordinates. Providing"
+" values in local coordinates allows the designer to automate such "
+"conversions."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:218
+msgid ""
+"Values entered using the ``Vector`` class or those generated by the ``@`` "
+"operator are considered global values and are not localized.  For example: "
+"``Line(Vector(1, 2, 3), Vector(4, 5, 6))`` will generate the same line "
+"independent of the current workplane. It's unlikely that users will need to "
+"use ``Vector`` values but the option is there."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:224
+msgid ""
+"Finally, BuildLine's workplane need not be one of the predefined ordinal "
+"planes, it could be one created from a surface of a BuildPart part that is "
+"currently under construction."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:230
+msgid "Reference"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_line.pydocstring of
+#: build_line.BuildLine:1
+msgid ""
+"The BuildLine class is a subclass of Builder for building lines (objects "
+"with length but not area or volume). It has an _obj property that returns "
+"the current line being built. The class overrides the faces and solids "
+"methods of Builder since they don't apply to lines."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_line.pydocstring of
+#: build_line.BuildLine:6
+msgid ""
+"BuildLine only works with a single workplane which is used to convert tuples"
+" as inputs to global coordinates. For example:"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_line.pydocstring of
+#: build_line.BuildLine:14
+msgid ""
+"creates an arc from global points (0, 1, 2) to (0, 2, 1). Note that points "
+"entered as Vector(x, y, z) are considered global and are not localized."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_line.pydocstring of
+#: build_line.BuildLine:17
+msgid ""
+"The workplane is also used to define planes parallel to the workplane that "
+"arcs are created on."
+msgstr ""
+
+#: ../../build123d/docs/build_line.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_line.pydocstring of
+#: build_line.BuildLine:20
+msgid ""
+"plane used when local coordinates are used and when creating arcs. Defaults "
+"to Plane.XY."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_line.pydocstring of
+#: build_line.BuildLine:23
+msgid "combination mode. Defaults to Mode.ADD."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_line.pydocstring of
+#: build_line.BuildLine.face:1
+msgid "face() not implemented"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_line.pydocstring of
+#: build_line.BuildLine.faces:1
+msgid "faces() not implemented"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_line.pydocstring of
+#: build_line.BuildLine.line:1
+msgid "Get the current line"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_line.pydocstring of
+#: build_line.BuildLine.solid:1
+msgid "solid() not implemented"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_line.pydocstring of
+#: build_line.BuildLine.solids:1
+msgid "solids() not implemented"
+msgstr ""

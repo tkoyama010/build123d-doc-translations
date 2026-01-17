@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:5
+msgid "Technical Drawing Tutorial"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:7
+msgid ""
+"This example demonstrates how to generate a standard technical drawing of a "
+"3D part using `build123d`. It creates orthographic and isometric views of a "
+"Nema 23 stepper motor and exports the result as an SVG file suitable for "
+"printing or inspection."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:12
+msgid "Overview"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:14
+msgid ""
+"A technical drawing represents a 3D object in 2D using a series of "
+"standardized views. These include:"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:17
+msgid "**Plan (Top View)** – as seen from directly above (Z-axis down)"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:18
+msgid "**Front Elevation** – looking at the object head-on (Y-axis forward)"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:19
+msgid "**Side Elevation (Right Side)** – viewed from the right (X-axis)"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:20
+msgid ""
+"**Isometric Projection** – a 3D perspective view to help visualize depth"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:22
+msgid ""
+"Each view is aligned to a position on the page and optionally scaled or "
+"annotated."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:25
+msgid "How It Works"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:27
+msgid ""
+"The script uses the `project_to_viewport` method to project the 3D part "
+"geometry into 2D. A helper function, `project_to_2d`, sets up the viewport "
+"(camera origin and up direction) and places the result onto a virtual "
+"drawing sheet."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:31
+msgid "The steps involved are:"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:33
+msgid "Load or construct a 3D part (in this case, a stepper motor)."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:34
+msgid "Define a `TechnicalDrawing` border and title block using A4 page size."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:35
+msgid ""
+"Generate each of the standard views and apply transformations to place them."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:36
+msgid "Add dimensions using `ExtensionLine` and labels using `Text`."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:37
+msgid ""
+"Export the drawing using `ExportSVG`, separating visible and hidden edges by"
+" layer and style."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:41
+msgid "Result"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:43
+msgid "Stepper motor technical drawing"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:49
+msgid "Try It Yourself"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:51
+msgid "You can modify the script to:"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:53
+msgid "Replace the part with your own `Part` model"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:54
+msgid "Adjust camera angles and scale"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:55
+msgid "Add other views (bottom, rear)"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:56
+msgid "Enhance with more labels and dimensions"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:59
+msgid "Code"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:67
+msgid "Dependencies"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:69
+msgid "This example depends on the following packages:"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:71
+msgid "`build123d`"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:72
+msgid "`bd_warehouse` (for the `StepperMotor` part)"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:73
+msgid "`ocp_vscode` (for local preview)"
+msgstr ""

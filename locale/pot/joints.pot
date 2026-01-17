@@ -1,0 +1,516 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../build123d/docs/joints.rst:5
+msgid "Joints"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:7
+msgid ":class:`~topology.Joint`'s enable Solid and Compound objects to be arranged relative to each other in an intuitive manner - with the same degree of motion that is found with the equivalent physical joints.  :class:`~topology.Joint`'s always work in pairs - a :class:`~topology.Joint` can only be connected to another :class:`~topology.Joint` as follows:"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:13
+msgid ":class:`~topology.Joint`"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:13
+msgid "connect_to"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:13
+msgid "Example"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:15
+msgid ":class:`~joints.BallJoint`"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:15
+#: ../../build123d/docs/joints.rst:17
+#: ../../build123d/docs/joints.rst:21
+#: ../../build123d/docs/joints.rst:23
+msgid ":class:`~joints.RigidJoint`"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:15
+msgid "Gimbal"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:17
+msgid ":class:`~joints.CylindricalJoint`"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:17
+msgid "Screw"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:19
+msgid ":class:`~joints.LinearJoint`"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:19
+msgid ":class:`~joints.RigidJoint`, :class:`~joints.RevoluteJoint`"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:19
+msgid "Slider or Pin Slot"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:21
+msgid ":class:`~joints.RevoluteJoint`"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:21
+msgid "Hinge"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:23
+msgid "Fixed"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:26
+msgid "Objects may have many joints bound to them each with an identifying label. All :class:`~topology.Joint` objects have a ``symbol`` property that can be displayed to help visualize their position and orientation (the `ocp-vscode <https://github.com/bernhard-42/vscode-ocp-cad-viewer>`_ viewer has built-in support for displaying joints)."
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:32
+msgid "If joints are created within the scope of a :class:`~build_part.BuildPart` builder, the ``to_part`` parameter need not be specified as the builder will, on exit, automatically transfer the joints created in its scope to the part created."
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:36
+msgid "The following sections provide more detail on the available joints and describes how they are used."
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:42
+msgid "Rigid Joint"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:44
+msgid "A rigid joint positions two components relative to each another with no freedom of movement. When a :class:`~joints.RigidJoint` is instantiated it's assigned a ``label``, a part to bind to (``to_part``), and a ``joint_location`` which defines both the position and orientation of the joint (see :class:`~geometry.Location`) - as follows:"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:53
+msgid "Once a joint is bound to a part this way, the :meth:`~topology.Joint.connect_to` method can be used to repositioning another part relative to ``self`` which stay fixed - as follows:"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:61
+msgid "Within a part all of the joint labels must be unique."
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:63
+msgid "The :meth:`~topology.Joint.connect_to` method only does a one time re-position of a part and does not bind them in any way; however, putting them into an :ref:`assembly` will maintain there relative locations as will combining parts with boolean operations or within a :class:`~build_part.BuildPart` context."
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:67
+msgid "As a example of creating parts with joints and connecting them together, consider the following code where flanges are attached to the ends of a curved pipe:"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:76
+msgid "Note how the locations of the joints are determined by the :meth:`~topology.Mixin1D.location_at` method and how the ``-`` negate operator is used to reverse the direction of the location without changing its position.  Also note that the ``WeldNeckFlange`` class predefines two joints, one at the pipe end and one at the face end - both of which are shown in the above image (generated by ocp-vscode with the ``render_joints=True`` flag set in the ``show`` function)."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint:1
+msgid "A rigid joint fixes two components to one another."
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint:3
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:3
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint:3
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint:3
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint:3
+msgid "joint label"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint:5
+msgid "object to attach joint to"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint:7
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint:7
+msgid "global location of joint"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:0
+msgid "Variables"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint:10
+msgid "joint location relative to bound object"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.connect_to:1
+msgid "Connect the RigidJoint to another Joint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.connect_to:3
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.relative_to:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.connect_to:3
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.relative_to:3
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.connect_to:3
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.relative_to:3
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.connect_to:3
+msgid "joint to connect to"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.connect_to:7
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.relative_to:7
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.connect_to:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.relative_to:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint.connect_to:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint.relative_to:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.connect_to:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.relative_to:5
+msgid "angle in degrees. Defaults to range min."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.connect_to:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.relative_to:7
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.connect_to:7
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.relative_to:7
+msgid "angles about axes in degrees. Defaults to range minimums."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.connect_to:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.relative_to:5
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.connect_to:7
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.relative_to:7
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.connect_to:10
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.relative_to:10
+msgid "linear position. Defaults to linear range min."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.location:1
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.location:1
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.location:1
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint.location:1
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.location:1
+msgid "Location of joint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.relative_to:1
+msgid "Relative location of RigidJoint to another Joint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint.connect_to:3
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint.relative_to:3
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.relative_to:3
+msgid "relative to joint"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.relative_to:13
+msgid "other must be of a type in: BallJoint, CylindricalJoint,     LinearJoint, RevoluteJoint, RigidJoint."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RigidJoint.symbol:1
+msgid "A CAD symbol (XYZ indicator) as bound to part"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:105
+msgid "Revolute Joint"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:107
+msgid "Component rotates around axis like a hinge. The :ref:`joint_tutorial` covers Revolute Joints in detail."
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:109
+msgid "During instantiation of a :class:`~joints.RevoluteJoint` there are three parameters not present with Rigid Joints: ``axis``, ``angle_reference``, and ``range`` that allow the circular motion to be fully defined."
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:113
+msgid "When :meth:`~topology.Joint.connect_to` with a Revolute Joint, an extra ``angle`` parameter is present which allows one to change the relative position of joined parts by changing a single value."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint:1
+msgid "Component rotates around axis like a hinge."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint:7
+msgid "axis of rotation"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:9
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint:9
+msgid "direction normal to axis defining where angles will be measured from. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:15
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint:12
+msgid "(min,max) angle of joint. Defaults to (0, 360)."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:35
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint:15
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint:15
+msgid "angle of joint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:25
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint:17
+msgid "reference for angular positions"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:27
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint:19
+msgid "min and max angular position of joint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:31
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint:21
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint:21
+msgid "joint axis relative to bound part"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:39
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint:25
+msgid "angle_reference must be normal to axis"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint.connect_to:1
+msgid "Connect RevoluteJoint and RigidJoint"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint.connect_to:8
+msgid "other must of type RigidJoint ValueError: angle out of range"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint.relative_to:1
+msgid "Relative location of RevoluteJoint to RigidJoint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint.relative_to:8
+msgid "other must of type RigidJoint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.connect_to:12
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.relative_to:12
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.connect_to:12
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.relative_to:12
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint.relative_to:9
+msgid "angle out of range"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.RevoluteJoint.symbol:1
+msgid "A CAD symbol representing the axis of rotation as bound to part"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:127
+msgid "Linear Joint"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:129
+msgid "Component moves along a single axis as with a sliding latch shown here:"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:133
+msgid "The code to generate these components follows:"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:144
+msgid "Note how the slide is constructed in a different orientation than the direction of motion. The three highlighted lines of code show how the joints are created and connected together:"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:147
+msgid "The :class:`~joints.LinearJoint` has an axis and limits of movement"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:148
+msgid "The :class:`~joints.RigidJoint` has a single location, orientated such that the knob will ultimately be \"up\""
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:149
+msgid "The ``connect_to`` specifies a position that must be within the predefined limits."
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:151
+msgid "The slider can be moved back and forth by just changing the ``position`` value.  Values outside of the limits will raise an exception."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint:1
+msgid "Component moves along a single axis."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint:7
+msgid "axis of linear motion"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:12
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint:9
+msgid "(min,max) position of joint. Defaults to (0, inf)."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:19
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint:13
+msgid "joint axis"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:29
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint:17
+msgid "min and max positional values"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:33
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint:19
+msgid "joint position"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.connect_to:1
+msgid "Connect LinearJoint to another Joint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.connect_to:10
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.relative_to:10
+msgid "other must be of type RevoluteJoint or RigidJoint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.connect_to:11
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.relative_to:11
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.connect_to:11
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.relative_to:11
+msgid "position out of range"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.relative_to:1
+msgid "Relative location of LinearJoint to RevoluteJoint or RigidJoint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.LinearJoint.symbol:1
+msgid "A CAD symbol of the linear axis positioned relative to_part"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:167
+msgid "Cylindrical Joint"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:169
+msgid "A :class:`~joints.CylindricalJoint` allows a component to rotate around and moves along a single axis like a screw combining the functionality of a :class:`~joints.LinearJoint` and a :class:`~joints.RevoluteJoint` joint.  The ``connect_to`` for these joints have both ``position`` and ``angle`` parameters as shown below extracted from the joint tutorial."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:1
+msgid "Component rotates around and moves along a single axis like a screw."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:7
+msgid "axis of rotation and linear motion"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:21
+msgid "linear joint position"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint:23
+msgid "revolute joint angle in degrees"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.connect_to:1
+msgid "Connect CylindricalJoint and RigidJoint\""
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.connect_to:10
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.relative_to:10
+msgid "other must be of type RigidJoint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.relative_to:1
+msgid "Relative location of CylindricalJoint to RigidJoint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.CylindricalJoint.symbol:1
+msgid "A CAD symbol representing the cylindrical axis as bound to part"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:190
+msgid "Ball Joint"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:192
+msgid "A component rotates around all 3 axes using a gimbal system (3 nested rotations). A :class:`~joints.BallJoint` is found within a rod end as shown here:"
+msgstr ""
+
+#: ../../build123d/docs/joints.rst:201
+msgid "Note how limits are defined during the instantiation of the ball joint when ensures that the pin or bolt within the rod end does not interfere with the rod end itself. The ``connect_to`` sets the three angles (only two are significant in this example)."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint:1
+msgid "A component rotates around all 3 axes using a gimbal system (3 nested rotations)."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint:9
+msgid "(tuple[ tuple[float, float], tuple[float, float], tuple[float, float] ], optional): X, Y, Z angle (min, max) pairs. Defaults to ((0, 360), (0, 360), (0, 360))."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint:11
+msgid "plane relative to part defining zero degrees of rotation. Defaults to Plane.XY."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint:15
+msgid "joint location relative to bound part"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint:17
+msgid "(tuple[ tuple[float, float], tuple[float, float], tuple[float, float] ]): X, Y, Z angle (min, max) pairs."
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint:20
+msgid "plane relative to part defining zero degrees of"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.connect_to:1
+msgid "Connect BallJoint and RigidJoint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.connect_to:9
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.relative_to:11
+msgid "invalid other joint type"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.connect_to:10
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.relative_to:12
+msgid "angles out of range"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.relative_to:1
+msgid "relative_to - BallJoint"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.relative_to:3
+msgid "Return the relative location from this joint to the RigidJoint of another object"
+msgstr ""
+
+#: ../../build123d/src/build123d/joints.py:docstring of joints.BallJoint.symbol:1
+msgid "A CAD symbol representing joint as bound to part"
+msgstr ""

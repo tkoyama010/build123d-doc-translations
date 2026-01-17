@@ -1,0 +1,423 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/builder_api_reference.rst:5
+msgid "Builder Common API Reference"
+msgstr ""
+
+#: ../../build123d/docs/builder_api_reference.rst:7
+msgid "The following are common to all the builders."
+msgstr ""
+
+#: ../../build123d/docs/builder_api_reference.rst:11
+msgid "Selector Methods"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.vertices:1
+msgid "Return Vertices"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.vertices:3
+msgid "Return either all or the vertices created during the last operation."
+msgstr ""
+
+#: ../../build123d/docs/builder_api_reference.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.vertices:5
+msgid "Vertex selector. Defaults to Select.ALL."
+msgstr ""
+
+#: ../../build123d/docs/builder_api_reference.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.vertices:8
+msgid "Vertices extracted"
+msgstr ""
+
+#: ../../build123d/docs/builder_api_reference.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.faces:1
+msgid "Return Faces"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.faces:3
+msgid "Return either all or the faces created during the last operation."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.faces:5
+msgid "Face selector. Defaults to Select.ALL."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.faces:8
+msgid "Faces extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.edges:1
+msgid "Return Edges"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.edges:3
+msgid "Return either all or the edges created during the last operation."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.edges:5
+msgid "Edge selector. Defaults to Select.ALL."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.edges:8
+msgid "Edges extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.wires:1
+msgid "Return Wires"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.wires:3
+msgid "Return either all or the wires created during the last operation."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.wires:5
+msgid "Wire selector. Defaults to Select.ALL."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.wires:8
+msgid "Wires extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.solids:1
+msgid "Return Solids"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.solids:3
+msgid "Return either all or the solids created during the last operation."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.solids:5
+msgid "Solid selector. Defaults to Select.ALL."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Builder.solids:8
+msgid "Solids extracted"
+msgstr ""
+
+#: ../../build123d/docs/builder_api_reference.rst:21
+msgid "Enums"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.Align:1
+msgid "Align object about Axis"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.CenterOf:1
+msgid "Center Options"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.FontStyle:1
+msgid "Text Font Styles"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.GeomType:1
+msgid "CAD geometry object type"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of build_enums.Keep:1
+msgid "Split options"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of build_enums.Kind:1
+msgid "Offset corner transition"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of build_enums.Mode:1
+msgid "Combination Mode"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.Select:1
+msgid "Selector scope - all, last operation or new objects"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.SortBy:1
+msgid "Sorting criteria"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.Transition:1
+msgid "Sweep discontinuity handling option"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.Until:1
+msgid "Extrude limit"
+msgstr ""
+
+#: ../../build123d/docs/builder_api_reference.rst:39
+msgid "Locations"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Locations:1
+msgid "Location Context: Push Points"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Locations:3
+msgid "Creates a context of locations for Part or Sketch"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Locations:5
+msgid "sequence of points to push"
+msgstr ""
+
+#: ../../build123d/docs/builder_api_reference.rst:0
+msgid "Variables"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:27
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:40
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.Locations:8
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.PolarLocations:19
+msgid "locations relative to workplane"
+msgstr ""
+
+#: ../docstring of build_common.GridLocations.local_locations:1 ../docstring
+#: of build_common.HexLocations.local_locations:1 ../docstring of
+#: build_common.Locations.local_locations:1 ../docstring of
+#: build_common.PolarLocations.local_locations:1
+msgid "values independent of workplanes"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:1
+msgid "Location Context: Rectangular Array"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:3
+msgid "Creates a context of rectangular array of locations for Part or Sketch"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:5
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:17
+msgid "horizontal spacing"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:7
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:19
+msgid "vertical spacing"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:9
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:21
+msgid "number of horizontal points"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:11
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:23
+msgid "number of vertical points"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:13
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:19
+msgid ""
+"align min, center, or max of object. Defaults to (Align.CENTER, "
+"Align.CENTER)."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:25
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:36
+msgid "align min, center, or max of object."
+msgstr ""
+
+#: ../../build123d/docs/builder_api_reference.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.GridLocations:31
+msgid "Either x or y count must be greater than or equal to one."
+msgstr ""
+
+#: ../docstring of build_common.GridLocations.max:1
+msgid "top right corner"
+msgstr ""
+
+#: ../docstring of build_common.GridLocations.min:1
+msgid "bottom left corner"
+msgstr ""
+
+#: ../docstring of build_common.GridLocations.size:1
+msgid "size of the grid"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:1
+msgid "Location Context: Hex Array"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:3
+msgid ""
+"Creates a context of hexagon array of locations for Part or Sketch. When "
+"creating hex locations for an array of circles, set `radius` to the radius "
+"of the circle plus one half the spacing between the circles."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:7
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:23
+msgid ""
+"distance from origin to vertices (major), or optionally from the origin to "
+"side (minor or apothem) with major_radius = False"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:11
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:13
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:29
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:31
+msgid "number of points ( > 0 )"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:15
+msgid ""
+"If True the radius is the major radius, else the radius is the minor radius "
+"(also known as inscribed radius). Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:27
+msgid "radius of the inscribed circle, also known as minor radius"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:33
+msgid ""
+"If True the radius is the major radius, else the radius is the minor radius "
+"(also known as inscribed radius)."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:38
+msgid "major radius"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.HexLocations:44
+msgid "Spacing and count must be > 0"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.PolarLocations:1
+msgid "Location Context: Polar Array"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.PolarLocations:3
+msgid "Creates a context of polar array of locations for Part or Sketch"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.PolarLocations:5
+msgid "array radius"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.PolarLocations:7
+msgid "Number of points to push"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.PolarLocations:9
+msgid "angle to first point from +ve X axis. Defaults to 0.0."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.PolarLocations:11
+msgid "magnitude of array from start angle. Defaults to 360.0."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.PolarLocations:13
+msgid "Align locations with arc tangents. Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.PolarLocations:15
+msgid ""
+"If True, `start_angle` + `angular_range` is the last sample. Otherwise, it "
+"is not included. Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.pydocstring of
+#: build_common.PolarLocations:23
+msgid "Count must be greater than or equal to 1"
+msgstr ""

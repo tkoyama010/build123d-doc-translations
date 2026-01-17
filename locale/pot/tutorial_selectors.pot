@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../build123d/docs/tutorial_selectors.rst:3
+msgid "Selector Tutorial"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:5
+msgid "This tutorial provides a step by step guide in using selectors as we create this part:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:12
+msgid "One can see any object in the following tutorial by using the ``ocp_vscode`` (or any other supported viewer) by using the ``show(object_to_be_viewed)`` command. Alternatively, the ``show_all()`` command will display all objects that have been assigned an identifier."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:19
+msgid "Step 1: Setup"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:21
+msgid "Before getting to the CAD operations, this selector script needs to import the build123d environment."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:32
+msgid "Step 2: Create Base with BuildPart"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:34
+msgid "To start off, the part will be based on a cylinder so we'll use the :class:`~objects_part.Cylinder` object of :class:`~build_part.BuildPart`:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:47
+msgid "Step 3: Place Sketch on top of base"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:49
+msgid "The next set of features in this design will be created on the top of the cylinder and be described by a planar sketch (:class:`~build_sketch.BuildSketch` is the tool for drawing on planar surfaces) , so we'll create a sketch centered on the top of the cylinder.  To locate this sketch we'll use the cylinder's top Face as shown here:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:61
+msgid "Here we're using selectors to find that top Face - let's break down ``example.faces().sort_by(Axis.Z)[-1]``:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:65
+msgid "Step 3a: Extract Faces from a part"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:67
+msgid "The first sub-step is the extraction of all of the Faces from the part that we're building. The :class:`~build_part.BuildPart` instance was assigned the identifier ``example`` so ``example.faces()`` will extract all of the Faces from that part into a custom python ``list`` - a :class:`~topology.ShapeList`."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:73
+msgid "Step 3b: Get top Face"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:75
+msgid "The next sub-step is to sort the ShapeList of Faces by their position with respect to the Z Axis. The ``sort_by`` method will sort the list by relative position of the object's center to the ``Axis.Z`` and ``[-1]`` selects the last item on that list - or return the top Face of the ``example`` part."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:82
+msgid "Step 4: Create hole shape"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:84
+msgid "The object has a hexagonal hole in the top with a central cylinder which we'll describe in the sketch."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:95
+msgid "Step 4a: Draw a hexagon"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:97
+msgid "We'll create a hexagon with the use of :class:`~objects_sketch.RegularPolygon` object with six sides."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:100
+msgid "Step 4b: Create a hole in the hexagon"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:102
+msgid "To create the hole we'll subtract a :class:`~objects_sketch.Circle` from the sketch by using ``mode=Mode.SUBTRACT``. The sketch now described the hexagonal hole that we want to make in the :class:`~objects_part.Cylinder`."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:108
+msgid "Step 5: Create the hole"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:110
+msgid "To create the hole we'll :func:`~operations_part.extrude` the sketch we just created into the :class:`~objects_part.Cylinder` and subtract it."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:120
+msgid "Note that ``amount=-2`` indicates extruding into the part and - just like with the sketch - ``mode=Mode.SUBTRACT`` instructs the builder to subtract this hexagonal shape from the part under construction."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:124
+msgid "At this point the part looks like:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:131
+msgid "Step 6: Fillet the top perimeter Edge"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:133
+msgid "The final step is to apply a fillet to the top perimeter."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:142
+msgid "Here we're using the :func:`~operations_generic.fillet` operation which needs two things: the edge(s) to fillet and the radius of the fillet. To provide the edge, we'll use more selectors as described in the following sub-steps."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:148
+msgid "Step 6a: Extract all the Edges"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:150
+msgid "Much like selecting Faces in Step 3a, we'll select all of the ``example`` part's edges with ``example.edges()``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:154
+msgid "Step 6b: Filter the Edges for circles"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:156
+msgid "Since we know that the edge we're looking for is a circle, we can filter the edges selected in Step 6a for just those that are of geometric type ``CIRCLE`` with ``example.edges().filter_by(GeomType.CIRCLE)``. This step removes all of the Edges of the hexagon hole."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:162
+msgid "Step 6c: Sort the circles by radius"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:164
+msgid "The perimeter are the largest circles - the central cylinder must be excluded - so we'll sort all of the circles by their radius with: ``example.edges().filter_by(GeomType.CIRCLE).sort_by(SortBy.RADIUS)``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:169
+msgid "Step 6d: Slice the list to get the two largest"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:171
+msgid "We know that the ``example`` part has two perimeter circles so we'll select just the top two edges from the sorted circle list with: ``example.edges().filter_by(GeomType.CIRCLE).sort_by(SortBy.RADIUS)[-2:]``.  The syntax of this slicing operation is standard python list slicing."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:177
+msgid "Step 6e: Select the top Edge"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:179
+msgid "The last sub-step is to select the top perimeter edge, the one with the greatest Z value which we'll do with the ``sort_by(Axis.Z)[-1]`` method just like Step 3b - note that these methods work on all Shape objects (Edges, Wires, Faces, Solids, and Compounds) - with: ``example.edges().filter_by(GeomType.CIRCLE).sort_by(SortBy.RADIUS)[-2:].sort_by(Axis.Z)[-1]``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:187
+msgid "Conclusion"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:189
+msgid "By using selectors as we have in this example we've used methods of identifying features that are robust to features changing within the part. We've also avoided the classic CAD \"Topological naming problem\" by never referring to features with names or tags that could become obsolete as the part changes."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_selectors.rst:195
+msgid "When possible, avoid using static list indices to refer to features extracted from methods like ``edges()`` as the order within the list is not guaranteed to remain the same."
+msgstr ""

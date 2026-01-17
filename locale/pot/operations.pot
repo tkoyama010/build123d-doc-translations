@@ -1,0 +1,1258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../build123d/docs/operations.rst:3
+msgid "Operations"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:5
+msgid "Operations are functions that take objects as inputs and transform them into new objects. For example, a 2D Sketch can be extruded to create a 3D Part. All operations are Python functions which can be applied using both the Algebra and Builder APIs. It's important to note that objects created by operations are not affected by ``Locations``, meaning their position is determined solely by the input objects used in the operation."
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:7
+msgid "Here are a couple ways to use :func:`~operations_part.extrude`, in Builder and Algebra mode:"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:20
+msgid "The following table summarizes all of the available operations. Operations marked as 1D are applicable to BuildLine and Algebra Curve, 2D to BuildSketch and Algebra Sketch, 3D to BuildPart and Algebra Part."
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:25
+msgid "Operation"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:25
+#: ../../build123d/docs/operations.rst:79
+msgid "Description"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:25
+msgid "0D"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:25
+msgid "1D"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:25
+msgid "2D"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:25
+msgid "3D"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:25
+msgid "Example"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:27
+msgid ":func:`~operations_generic.add`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:27
+msgid "Add object to builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:27
+#: ../../build123d/docs/operations.rst:29
+#: ../../build123d/docs/operations.rst:31
+#: ../../build123d/docs/operations.rst:33
+#: ../../build123d/docs/operations.rst:35
+#: ../../build123d/docs/operations.rst:37
+#: ../../build123d/docs/operations.rst:39
+#: ../../build123d/docs/operations.rst:41
+#: ../../build123d/docs/operations.rst:43
+#: ../../build123d/docs/operations.rst:45
+#: ../../build123d/docs/operations.rst:47
+#: ../../build123d/docs/operations.rst:49
+#: ../../build123d/docs/operations.rst:51
+#: ../../build123d/docs/operations.rst:53
+#: ../../build123d/docs/operations.rst:57
+#: ../../build123d/docs/operations.rst:59
+#: ../../build123d/docs/operations.rst:61
+#: ../../build123d/docs/operations.rst:63
+#: ../../build123d/docs/operations.rst:65
+#: ../../build123d/docs/operations.rst:67
+#: ../../build123d/docs/operations.rst:69
+#: ../../build123d/docs/operations.rst:81
+#: ../../build123d/docs/operations.rst:83
+#: ../../build123d/docs/operations.rst:85
+#: ../../build123d/docs/operations.rst:87
+#: ../../build123d/docs/operations.rst:89
+#: ../../build123d/docs/operations.rst:91
+#: ../../build123d/docs/operations.rst:93
+#: ../../build123d/docs/operations.rst:95
+#: ../../build123d/docs/operations.rst:97
+#: ../../build123d/docs/operations.rst:99
+msgid "✓"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:27
+msgid ":ref:`16 <ex 16>`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:29
+msgid ":func:`~operations_generic.bounding_box`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:29
+msgid "Add bounding box as Shape"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:31
+msgid ":func:`~operations_generic.chamfer`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:31
+msgid "Bevel Vertex or Edge"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:31
+#: ../../build123d/docs/operations.rst:37
+msgid ":ref:`9 <ex 9>`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:33
+msgid ":func:`~operations_part.draft`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:33
+msgid "Add a draft taper to a part"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:33
+msgid ":ref:`examples-cast_bearing_unit`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:35
+msgid ":func:`~operations_part.extrude`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:35
+msgid "Draw 2D Shape into 3D"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:35
+msgid ":ref:`3 <ex 3>`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:37
+msgid ":func:`~operations_generic.fillet`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:37
+msgid "Radius Vertex or Edge"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:39
+msgid ":func:`~operations_sketch.full_round`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:39
+msgid "Round-off Face along given Edge"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:39
+msgid ":ref:`ttt-24-spo-06`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:41
+msgid ":func:`~operations_part.loft`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:41
+msgid "Create 3D Shape from sections"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:41
+msgid ":ref:`24 <ex 24>`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:43
+msgid ":func:`~operations_part.make_brake_formed`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:43
+msgid "Create sheet metal parts"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:45
+msgid ":func:`~operations_sketch.make_face`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:45
+msgid "Create a Face from Edges"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:45
+msgid ":ref:`4 <ex 4>`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:47
+msgid ":func:`~operations_sketch.make_hull`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:47
+msgid "Create Convex Hull from Edges"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:49
+msgid ":func:`~operations_generic.mirror`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:49
+msgid "Mirror about Plane"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:49
+msgid ":ref:`15 <ex 15>`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:51
+msgid ":func:`~operations_generic.offset`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:51
+msgid "Inset or outset Shape"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:51
+msgid ":ref:`25 <ex 25>`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:53
+msgid ":func:`~operations_generic.project`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:53
+msgid "Project points, lines or Faces"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:55
+msgid ":func:`~operations_part.project_workplane`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:55
+msgid "Create workplane for projection"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:57
+msgid ":func:`~operations_part.revolve`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:57
+msgid "Swing 2D Shape about Axis"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:57
+msgid ":ref:`23 <ex 23>`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:59
+msgid ":func:`~operations_generic.scale`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:59
+msgid "Change size of Shape"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:61
+msgid ":func:`~operations_part.section`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:61
+msgid "Generate 2D slices from 3D Shape"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:63
+msgid ":func:`~operations_generic.split`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:63
+msgid "Divide object by Plane"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:63
+msgid ":ref:`27 <ex 27>`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:65
+msgid ":func:`~operations_generic.sweep`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:65
+msgid "Extrude 1/2D section(s) along path"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:65
+msgid ":ref:`14 <ex 14>`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:67
+msgid ":func:`~operations_part.thicken`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:67
+msgid "Expand 2D section(s)"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:69
+msgid ":func:`~operations_sketch.trace`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:69
+msgid "Convert lines to faces"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:72
+msgid "The following table summarizes all of the selectors that can be used within the scope of a Builder. Note that they will extract objects from the builder that is currently within scope without it being explicitly referenced."
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:77
+msgid "Builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:79
+msgid "Selector"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:79
+msgid "Line"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:79
+msgid "Sketch"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:79
+msgid "Part"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:81
+msgid ":func:`~build_common.edge`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:81
+msgid "Select edge from current builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:83
+msgid ":func:`~build_common.edges`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:83
+msgid "Select edges from current builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:85
+msgid ":func:`~build_common.face`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:85
+msgid "Select face from current builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:87
+msgid ":func:`~build_common.faces`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:87
+msgid "Select faces from current builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:89
+msgid ":func:`~build_common.solid`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:89
+msgid "Select solid from current builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:91
+msgid ":func:`~build_common.solids`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:91
+msgid "Select solids from current builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:93
+msgid ":func:`~build_common.vertex`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:93
+msgid "Select vertex from current builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:95
+msgid ":func:`~build_common.vertices`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:95
+msgid "Select vertices from current builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:97
+msgid ":func:`~build_common.wire`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:97
+msgid "Select wire from current builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:99
+msgid ":func:`~build_common.wires`"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:99
+msgid "Select wires from current builder"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:105
+msgid "Reference"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:1
+msgid "Generic Object: Add Object to Part or Sketch"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:3
+msgid "Add an object to a builder."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:5
+msgid "BuildPart:"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:6
+msgid "Edges and Wires are added to pending_edges. Compounds of Face are added to pending_faces. Solids or Compounds of Solid are combined into the part."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:8
+msgid "BuildSketch:"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:9
+msgid "Edges and Wires are added to pending_edges. Compounds of Face are added to sketch."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:10
+msgid "BuildLine:"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:11
+msgid "Edges and Wires are added to line."
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:13
+msgid "objects to add"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:15
+msgid "rotation angle for sketch, rotation about each axis for part. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:18
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:21
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:19
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:11
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.revolve:13
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.section:12
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:16
+msgid "Remove extraneous internal structure. Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.bounding_box:1
+msgid "Generic Operation: Add Bounding Box"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.bounding_box:3
+msgid "Applies to: BuildSketch and BuildPart"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.bounding_box:5
+msgid "Add the 2D or 3D bounding boxes of the object sequence"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.bounding_box:7
+msgid "objects to create bbox for"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.bounding_box:9
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.mirror:11
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:19
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:21
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:13
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:22
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.revolve:15
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:18
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.make_face:8
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.make_hull:8
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.trace:10
+msgid "combination mode. Defaults to Mode.ADD."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:1
+msgid "Generic Operation: chamfer"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:3
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.fillet:3
+msgid "Applies to 2 and 3 dimensional objects."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:5
+msgid "Chamfer the given sequence of edges or vertices."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:7
+msgid "edges or vertices to chamfer"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:9
+msgid "chamfer size"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:11
+msgid "asymmetric chamfer size. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:13
+msgid "chamfer angle in degrees. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:15
+msgid "identifies the side where length is measured. Edge(s) must be part of the face. Vertex/Vertices must be part of edge"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:19
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.fillet:13
+msgid "no objects provided"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:20
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.fillet:14
+msgid "objects must be Edges"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:21
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.fillet:15
+msgid "objects must be Vertices"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:22
+msgid "Only one of length2 or angle should be provided"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.chamfer:23
+msgid "reference can only be used in conjunction with length2 or angle"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.draft:1
+msgid "Part Operation: draft"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.draft:3
+msgid "Apply a draft angle to the given faces of the part"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.draft:5
+msgid "Faces to which the draft should be applied."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.draft:6
+msgid "Plane defining the neutral direction and position."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.draft:7
+msgid "Draft angle in degrees."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:1
+msgid "Part Operation: extrude"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:3
+msgid "Extrude a sketch or face by an amount or until another object."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:5
+msgid "object to extrude. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:7
+msgid "distance to extrude, sign controls direction. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:9
+msgid "direction. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:11
+msgid "extrude limit. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:13
+msgid "extrude until target. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:15
+msgid "extrude in both directions. Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:17
+msgid "taper angle. Defaults to 0.0."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:24
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:21
+msgid "No object to extrude"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:25
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:22
+msgid "No target object"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:27
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:24
+msgid "extruded object"
+msgstr ""
+
+#: ../../build123d/docs/operations.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.fillet:1
+msgid "Generic Operation: fillet"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.fillet:5
+msgid "Fillet the given sequence of edges or vertices. Note that vertices on either end of an open line will be automatically skipped."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.fillet:8
+msgid "edges or vertices to fillet"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.fillet:10
+msgid "fillet size - must be less than 1/2 local width"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.fillet:16
+msgid "nothing to fillet"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.full_round:1
+msgid "Sketch Operation: full_round"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.full_round:3
+msgid "Given an edge from a Face/Sketch, modify the face by replacing the given edge with the arc of the Voronoi largest empty circle that will fit within the Face.  This \"rounds off\" the end of the object."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.full_round:7
+msgid "target Edge to remove"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.full_round:9
+msgid "make the arc concave instead of convex. Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.full_round:11
+msgid "number of points along each edge used to create the voronoi vertices as potential locations for the center of the largest empty circle. Defaults to 100."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:26
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.scale:13
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.split:14
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.full_round:15
+msgid "combination mode. Defaults to Mode.REPLACE."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.full_round:18
+msgid "Invalid geometry"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.full_round:20
+msgid "the modified shape"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:1
+msgid "Part Operation: loft"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:3
+msgid "Loft the pending sketches/faces, across all workplanes, into a solid."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:5
+msgid "slices to loft into object. If not provided, pending_faces will be used. If vertices are to be used, a vertex can be the first, last, or first and last elements."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:9
+msgid "discontiguous layer tangents. Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:1
+msgid "Create a part typically formed with a sheet metal brake from a single outline. The line parameter describes how the material is to be bent. Either a single width value or a width value at each vertex or station is provided to control the width of the end part.  Note that if multiple values are provided there must be one for each vertex and that the resulting part is composed of linear segments."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:8
+msgid "sheet metal thickness"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:10
+msgid "width of part at each vertex or a single value. Note that this width is perpendicular to the provided line/plane."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:14
+msgid "outline of part. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:16
+msgid "offset direction. Defaults to Side.LEFT."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:18
+msgid "offset intersection type. Defaults to Kind.ARC."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:20
+msgid "clean the resulting solid. Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:25
+msgid "invalid line type"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:26
+msgid "not line provided"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:27
+msgid "line not suitable"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:28
+msgid "incorrect # of width values"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:30
+msgid "sheet metal part"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.make_face:1
+msgid "Sketch Operation: make_face"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.make_face:3
+msgid "Create a face from the given perimeter edges."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.make_face:5
+msgid "sequence of perimeter edges. Defaults to all sketch pending edges."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.make_hull:1
+msgid "Sketch Operation: make_hull"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.make_hull:3
+msgid "Create a face from the convex hull of the given edges"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.make_hull:5
+msgid "sequence of edges to hull. Defaults to all sketch pending edges."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.mirror:1
+msgid "Generic Operation: mirror"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.mirror:3
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:3
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.scale:3
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.split:3
+msgid "Applies to 1, 2, and 3 dimensional objects."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.mirror:5
+msgid "Mirror a sequence of objects over the given plane."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.mirror:7
+msgid "objects to mirror"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.mirror:9
+msgid "reference plane. Defaults to \"XZ\"."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.mirror:14
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:29
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.scale:16
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.split:17
+msgid "missing objects"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:1
+msgid "Generic Operation: offset"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:5
+msgid "Offset the given sequence of Edges, Faces, Compound of Faces, or Solids. The kind parameter controls the shape of the transitions. For Solid objects, the openings parameter allows selected faces to be open, like a hollow box with no lid."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:10
+msgid "objects to offset"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:12
+msgid "positive values external, negative internal"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:14
+msgid "Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:16
+msgid "transition shape. Defaults to Kind.ARC."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:18
+msgid "side to place offset. Defaults to Side.BOTH."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:20
+msgid "if Side!=BOTH, close the LEFT or RIGHT offset. Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:23
+msgid "repair degenerate edges generated by offset by eliminating edges of minimum length in offset wire. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.offset:30
+msgid "Invalid object type"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:1
+msgid "Generic Operation: project"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:3
+msgid "Applies to 0, 1, and 2 dimensional objects."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:5
+msgid "Project the given objects or points onto a BuildLine or BuildSketch workplane in the direction of the normal of that workplane. When projecting onto a sketch a Face(s) are generated while Edges are generated for BuildLine. Will only use the first if BuildSketch has multiple active workplanes. In algebra mode a workplane must be provided and the output is either a Face, Curve, Sketch, Compound, or ShapeList[Vector]."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:12
+msgid "Note that only if mode is not Mode.PRIVATE only Faces can be projected into BuildSketch and Edge/Wires into BuildLine."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:15
+msgid "objects or points to project"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:17
+msgid "screen workplane"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:22
+msgid "project doesn't accept group_by"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:23
+msgid "Either a workplane must be provided or a builder must be active"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:24
+msgid "Points and faces can only be projected in PRIVATE mode"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:25
+msgid "Edges, wires and points can only be projected in PRIVATE mode"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:26
+msgid "BuildPart doesn't have a project operation"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.project_workplane:1
+msgid "Part Operation: project_workplane"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.project_workplane:3
+msgid "Return a plane to be used as a BuildSketch or BuildLine workplane with a known origin and x direction. The plane's origin will be the projection of the provided origin (in 3D space). The plane's x direction will be the projection of the provided x_dir (in 3D space)."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.project_workplane:8
+msgid "origin in 3D space"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.project_workplane:10
+msgid "x direction in 3D space"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.project_workplane:12
+msgid "projection direction"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.project_workplane:14
+msgid "distance from origin to workplane"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.project_workplane:17
+msgid "Not suitable for BuildLine or BuildSketch"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.project_workplane:18
+msgid "x_dir perpendicular to projection_dir"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.project_workplane:20
+msgid "workplane aligned for projection"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.revolve:1
+msgid "Part Operation: Revolve"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.revolve:3
+msgid "Revolve the profile or pending sketches/face about the given axis. Note that the most common use case is when the axis is in the same plane as the face to be revolved but this isn't required."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.revolve:7
+msgid "2D profile(s) to revolve."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.revolve:9
+msgid "axis of rotation. Defaults to Axis.Z."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.revolve:11
+msgid "angular size of revolution. Defaults to 360.0."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.revolve:18
+msgid "Invalid axis of revolution"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.scale:1
+msgid "Generic Operation: scale"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.scale:5
+msgid "Scale a sequence of objects. Note that when scaling non-uniformly across the three axes, the type of the underlying object may change to bspline from line, circle, etc."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.scale:9
+msgid "objects to scale"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.scale:11
+msgid "scale factor"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.section:1
+msgid "Part Operation: section"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.section:3
+msgid "Slices current part at the given height by section_by or current workplane(s)."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.section:5
+msgid "object to section. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.section:7
+msgid "plane(s) to section object. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.section:10
+msgid "workplane offset. Defaults to 0.0."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.section:14
+msgid "combination mode. Defaults to Mode.INTERSECT."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.split:1
+msgid "Generic Operation: split"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.split:5
+msgid "Bisect object with plane and keep either top, bottom or both."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.split:9
+msgid "plane to segment part. Defaults to Plane.XZ."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.split:12
+msgid "selector for which segment to keep. Defaults to Keep.TOP."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:1
+msgid "Generic Operation: sweep"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:3
+msgid "Sweep pending 1D or 2D objects along path."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:5
+msgid "cross sections to sweep into object"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:7
+msgid "path to follow. Defaults to context pending_edges."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:10
+msgid "sweep multiple on path. Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:12
+msgid "use frenet algorithm. Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:14
+msgid "discontinuity handling option. Defaults to Transition.TRANSFORMED."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:17
+msgid "fixed normal. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:19
+msgid "guide rotation along path. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:23
+msgid "combination. Defaults to Mode.ADD."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:1
+msgid "Part Operation: thicken"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:3
+msgid "Create a solid(s) from a potentially non planar face(s) by thickening along the normals."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:5
+msgid "object to thicken. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:7
+msgid "distance to extrude, sign controls direction."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:9
+msgid "The normal_override vector can be used to indicate which way is 'up', potentially flipping the face normal direction such that many faces with different normals all go in the same direction (direction need only be +/- 90 degrees from the face normal). Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:14
+msgid "thicken in both directions. Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.trace:1
+msgid "Sketch Operation: trace"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.trace:3
+msgid "Convert edges, wires or pending edges into faces by sweeping a perpendicular line along them."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.trace:5
+msgid "lines to trace. Defaults to sketch pending edges."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.trace:8
+msgid "Defaults to 1."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.trace:13
+msgid "No objects to trace"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.trace:15
+msgid "Traced lines"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.edge:1
+msgid "Return Edge"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.edge:3
+msgid "Return an edge."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.edge:5
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.edges:5
+msgid "Edge selector. Defaults to Select.ALL."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.edge:8
+msgid "Edge extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.edges:1
+msgid "Return Edges"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.edges:3
+msgid "Return either all or the edges created during the last operation."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.edges:8
+msgid "Edges extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.face:1
+msgid "Return Face"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.face:3
+msgid "Return a face."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.face:5
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.faces:5
+msgid "Face selector. Defaults to Select.ALL."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.face:8
+msgid "Face extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.faces:1
+msgid "Return Faces"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.faces:3
+msgid "Return either all or the faces created during the last operation."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.faces:8
+msgid "Faces extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.solid:1
+msgid "Return Solid"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.solid:3
+msgid "Return a solid."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.solid:5
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.solids:5
+msgid "Solid selector. Defaults to Select.ALL."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.solid:8
+msgid "Solid extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.solids:1
+msgid "Return Solids"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.solids:3
+msgid "Return either all or the solids created during the last operation."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.solids:8
+msgid "Solids extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.vertex:1
+msgid "Return Vertex"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.vertex:3
+msgid "Return a vertex."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.vertex:5
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.vertices:5
+msgid "Vertex selector. Defaults to Select.ALL."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.vertex:8
+msgid "Vertex extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.vertices:1
+msgid "Return Vertices"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.vertices:3
+msgid "Return either all or the vertices created during the last operation."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.vertices:8
+msgid "Vertices extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.wire:1
+msgid "Return Wire"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.wire:3
+msgid "Return a wire."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.wire:5
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.wires:5
+msgid "Wire selector. Defaults to Select.ALL."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.wire:8
+msgid "Wire extracted"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.wires:1
+msgid "Return Wires"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.wires:3
+msgid "Return either all or the wires created during the last operation."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_common.py:docstring of build_common.Builder.wires:8
+msgid "Wires extracted"
+msgstr ""

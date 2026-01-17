@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/build_part.rst:3
+msgid "BuildPart"
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:5
+msgid ""
+"BuildPart is a python context manager that is used to create three "
+"dimensional objects - objects with the property of volume - that are "
+"typically finished parts."
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:9
+msgid "The complete API for BuildPart is located at the end of this section."
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:13
+msgid "Basic Functionality"
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:15
+msgid "The following is a simple BuildPart example:"
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:22
+msgid ""
+"The ``with`` statement creates the ``BuildPart`` context manager with the "
+"identifier ``ex2`` (this code is the second of the introductory examples). "
+"The objects and operations that are within the scope (i.e. indented) of this"
+" context will contribute towards the object being created by the context "
+"manager.  For ``BuildPart``, this object is ``part`` and it's referenced as "
+"``ex2.part``."
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:29
+msgid ""
+"The first object in this example is a ``Box`` object which is used to create"
+" a polyhedron with rectangular faces centered on the default ``Plane.XY``. "
+"The second object is a ``Cylinder`` that is subtracted from the box as "
+"directed by the ``mode=Mode.SUBTRACT`` parameter thus creating a hole."
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:39
+msgid "Implicit Parameters"
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:41
+msgid ""
+"The BuildPart context keeps track of pending objects such that they can be "
+"used implicitly - there are a couple things to consider when deciding how to"
+" proceed:"
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:44
+msgid ""
+"For sketches, the planes that they were constructed on is maintained in "
+"internal data structures such that operations like "
+":func:`~operations_part.extrude` will have a good reference for the extrude "
+"direction.  One can pass a Face to extrude but it will then be forced to use"
+" the normal direction at the center of the Face as the extrude direction "
+"which unfortunately can be reversed in some circumstances."
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:49
+msgid ""
+"Implicit parameters save some typing but hide some functionality - users "
+"have to decide what works best for them."
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:52
+msgid ""
+"This tea cup example uses implicit parameters - note the "
+":func:`~operations_generic.sweep` operation on the last line:"
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:61
+msgid ""
+":func:`~operations_generic.sweep` requires a 2D cross section - "
+"``handle_cross_section`` - and a path - ``handle_path`` - which are both "
+"passed implicitly."
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:69
+msgid "Units"
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:71
+msgid ""
+"Parts created with build123d have no inherent units associated with them. "
+"However, when exporting parts to external formats like ``STL`` or ``STEP`` "
+"the units are assumed to be millimeters (mm).  To be more explicit with "
+"units one can use the technique shown in the above tea cup example where "
+"linear dimensions are followed by ``* MM`` which multiplies the dimension by"
+" the ``MM`` scaling factor - in this case ``1``."
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:77
+msgid "The following dimensional constants are pre-defined:"
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:88
+msgid ""
+"Some export formats like DXF have the ability to explicitly set the units "
+"used."
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:92
+msgid "Reference"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_part.pydocstring of
+#: build_part.BuildPart:1
+msgid ""
+"The BuildPart class is another subclass of Builder for building parts "
+"(objects with the property of volume) from sketches or 3D objects. It has an"
+" _obj property that returns the current part being built, and several "
+"pending lists for storing faces, edges, and planes that will be integrated "
+"into the final part later. The class overrides the _add_to_pending method of"
+" Builder."
+msgstr ""
+
+#: ../../build123d/docs/build_part.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_part.pydocstring of
+#: build_part.BuildPart:8
+msgid "initial plane to work on. Defaults to Plane.XY."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_part.pydocstring of
+#: build_part.BuildPart:10
+msgid "combination mode. Defaults to Mode.ADD."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_part.pydocstring of
+#: build_part.BuildPart.location:1
+msgid "Builder's location"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_part.pydocstring of
+#: build_part.BuildPart.part:1
+msgid "Get the current part"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_part.pydocstring of
+#: build_part.BuildPart.pending_edges_as_wire:1
+msgid "Return a wire representation of the pending edges"
+msgstr ""

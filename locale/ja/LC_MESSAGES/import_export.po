@@ -1,0 +1,1063 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/import_export.rst:3
+msgid "Import/Export"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:5
+msgid ""
+"Methods and functions specific to exporting and importing build123d objects "
+"are defined below."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:7
+#: ../../build123d/docs/import_export.rst:223
+#: ../../build123d/docs/import_export.rst:277
+msgid "For example:"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:16
+msgid "File Formats"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:19
+msgid "3MF"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:21
+msgid ""
+"The 3MF (3D Manufacturing Format) file format is a versatile and modern "
+"standard for representing 3D models used in additive manufacturing, 3D "
+"printing, and other applications. Developed by the 3MF Consortium, it aims "
+"to overcome the limitations of traditional 3D file formats by providing a "
+"more efficient and feature-rich solution. The 3MF format supports various "
+"advanced features like color information, texture mapping, multi-material "
+"definitions, and precise geometry representation, enabling seamless "
+"communication between design software, 3D printers, and other manufacturing "
+"devices. Its open and extensible nature makes it an ideal choice for "
+"exchanging complex 3D data in a compact and interoperable manner."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:32
+msgid "BREP"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:34
+msgid ""
+"The BREP (Boundary Representation) file format is a widely used data format "
+"in computer-aided design (CAD) and computer-aided engineering (CAE) "
+"applications. BREP represents 3D geometry using topological entities like "
+"vertices, edges, and faces, along with their connectivity information. It "
+"provides a precise and comprehensive representation of complex 3D models, "
+"making it suitable for advanced modeling and analysis tasks. BREP files are "
+"widely supported by various CAD software, enabling seamless data exchange "
+"between different systems. Its ability to represent both geometric shapes "
+"and their topological relationships makes it a fundamental format for "
+"storing and sharing detailed 3D models."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:45
+msgid "DXF"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:47
+msgid ""
+"The DXF (Drawing Exchange Format) file format is a widely used standard for "
+"representing 2D and 3D drawings, primarily used in computer-aided design "
+"(CAD) applications. Developed by Autodesk, DXF files store graphical and "
+"geometric data, such as lines, arcs, circles, and text, as well as "
+"information about layers, colors, and line weights. Due to its popularity, "
+"DXF files can be easily exchanged and shared between different CAD software."
+" The format's simplicity and human-readable structure make it a versatile "
+"choice for sharing designs, drawings, and models across various CAD "
+"platforms, facilitating seamless collaboration in engineering and "
+"architectural projects."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:58
+msgid "glTF"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:60
+msgid ""
+"The glTF (GL Transmission Format) is a royalty-free specification for the "
+"efficient transmission and loading of 3D models and scenes by applications. "
+"Developed by the Khronos Group, glTF is designed as a compact, interoperable"
+" format that enables the quick display of assets across various platforms "
+"and devices. glTF supports a rich feature set, including detailed meshes, "
+"materials, textures, skeletal animations, and more, facilitating complex 3D "
+"visualizations. It streamlines the process of sharing and deploying 3D "
+"content in web applications, game engines, and other visualization tools, "
+"making it the \"JPEG of 3D.\" glTF's versatility and efficiency have led to "
+"its widespread adoption in the 3D content industry."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:71
+msgid "STL"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:73
+msgid ""
+"The STL (STereoLithography) file format is a widely used file format in 3D "
+"printing and computer-aided design (CAD) applications. It represents 3D "
+"geometry using triangular facets to approximate the surface of a 3D model. "
+"STL files are widely supported and can store both the geometry and color "
+"information of the model. They are used for rapid prototyping and 3D "
+"printing, as they provide a simple and efficient way to represent complex 3D"
+" objects. The format's popularity stems from its ease of use, platform "
+"independence, and ability to accurately describe the surface of intricate 3D"
+" models with a minimal file size."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:83
+msgid "STEP"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:85
+msgid ""
+"The STEP (Standard for the Exchange of Product model data) file format is a "
+"widely used standard for representing 3D product and manufacturing data in "
+"computer-aided design (CAD) and computer-aided engineering (CAE) "
+"applications. It is an ISO standard (ISO 10303) and supports the "
+"representation of complex 3D geometry, product structure, and metadata. STEP"
+" files store information in a neutral and standardized format, making them "
+"highly interoperable across different CAD/CAM software systems. They enable "
+"seamless data exchange between various engineering disciplines, facilitating"
+" collaboration and data integration throughout the entire product "
+"development and manufacturing process."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:96
+msgid "SVG"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:98
+msgid ""
+"The SVG (Scalable Vector Graphics) file format is an XML-based standard used"
+" for describing 2D vector graphics. It is widely supported and can be "
+"displayed in modern web browsers, making it suitable for web-based graphics "
+"and interactive applications. SVG files define shapes, paths, text, and "
+"images using mathematical equations, allowing for smooth scalability without"
+" loss of quality. The format is ideal for logos, icons, illustrations, and "
+"other graphics that require resolution independence. SVG files are also "
+"easily editable in text editors or vector graphic software, making them a "
+"popular choice for designers and developers seeking flexible and versatile "
+"graphic representation."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:110
+msgid "2D Exporters"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:112
+msgid ""
+"Exports to DXF (Drawing Exchange Format) and SVG (Scalable Vector Graphics) "
+"are provided by the 2D Exporters: ExportDXF and ExportSVG classes."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:115
+msgid ""
+"DXF is a widely used file format for exchanging CAD (Computer-Aided Design) "
+"data between different software applications. SVG is a widely used vector "
+"graphics format that is supported by web browsers and various graphic "
+"editors."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:119
+msgid ""
+"The core concept to these classes is the creation of a DXF/SVG document with"
+" specific properties followed by the addition of layers and shapes to the "
+"documents. Once all of the layers and shapes have been added, the document "
+"can be written to a file."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:125
+msgid "3D to 2D Projection"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:127
+msgid "There are a couple ways to generate a 2D drawing of a 3D part:"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:129
+msgid ""
+"Generate a section: The  :func:`~operations_part.section` operation can be "
+"used to create a 2D cross section of a 3D part at a given plane."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:131
+msgid ""
+"Generate a projection: The :meth:`~topology.Shape.project_to_viewport` "
+"method can be used to create a 2D projection of a 3D scene. Similar to a "
+"camera, the ``viewport_origin`` defines the location of camera, the "
+"``viewport_up`` defines the orientation of the camera, and the ``look_at`` "
+"parameter defined where the camera is pointed.  By default, ``viewport_up`` "
+"is the positive z axis and ``look_up`` is the center of the shape.  The "
+"return value is a tuple of lists of edges, the first the visible edges and "
+"the second the hidden edges."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:139
+msgid ""
+"Each of these Edges and Faces can be assigned different line color/types and"
+" fill colors as described below (as ``project_to_viewport`` only generates "
+"Edges, fill doesn't apply). The shapes generated from the above steps are to"
+" be added as shapes in one of the exporters described below and written as "
+"either a DXF or SVG file as shown in this example:"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:158
+msgid "LineType"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:160
+msgid ""
+"ANSI (American National Standards Institute) and ISO (International "
+"Organization for Standardization) standards both define line types in "
+"drawings used in DXF and SVG exported drawings:"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:164
+msgid "ANSI Standards:"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:165
+msgid ""
+"ANSI/ASME Y14.2 - \"Line Conventions and Lettering\" is the standard that "
+"defines line types, line weights, and line usage in engineering drawings in "
+"the United States."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:168
+msgid "ISO Standards:"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:169
+msgid ""
+"ISO 128 - \"Technical drawings -- General principles of presentation\" is "
+"the ISO standard that covers the general principles of technical drawing "
+"presentation, including line types and line conventions."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:172
+msgid ""
+"ISO 13567 - \"Technical product documentation (TPD) -- Organization and "
+"naming of layers for CAD\" provides guidelines for the organization and "
+"naming of layers in Computer-Aided Design (CAD) systems, which may include "
+"line type information."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:176
+msgid ""
+"These standards help ensure consistency and clarity in technical drawings, "
+"making it easier for engineers, designers, and manufacturers to communicate "
+"and interpret the information presented in the drawings."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:180
+msgid ""
+"The line types used by the 2D Exporters are defined by the "
+":class:`~exporters.LineType` Enum and are shown in the following diagram:"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:188
+msgid "ExportDXF"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF:1
+msgid ""
+"The ExportDXF class provides functionality for exporting 2D shapes to DXF "
+"(Drawing Exchange Format) format. DXF is a widely used file format for "
+"exchanging CAD (Computer-Aided Design) data between different software "
+"applications."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF:7
+msgid "The DXF version to use for the output file. Defaults to ezdxf.DXF2013."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF:10
+msgid ""
+"The unit used for the exported DXF. It should be one of the Unit enums: "
+"Unit.MC, Unit.MM, Unit.CM, Unit.M, Unit.IN, or Unit.FT. Defaults to Unit.MM."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF:14
+msgid ""
+"The default color index for shapes. It can be specified as a ColorIndex enum"
+" or None.. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF:17
+msgid ""
+"The default line weight (stroke width) for shapes, in millimeters. . "
+"Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF:20
+msgid ""
+"e default line type for shapes. It should be a LineType enum or None.. "
+"Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF:25 ../../build123d/src/build123d/exporters.pydocstring
+#: of exporters.ExportSVG:43
+msgid "Example"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF:33
+msgid "unit not supported"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.add_layer:1
+msgid "Adds a new layer to the DXF export with the given properties."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.add_layer:3
+msgid "The name of the layer definition. Must be unique among all layers."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.add_layer:5
+msgid ""
+"The color index for shapes on this layer. It can be specified as a "
+"ColorIndex enum or None. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.add_layer:8
+msgid ""
+"The line weight (stroke width) for shapes on this layer, in millimeters. "
+"Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.add_layer:11
+msgid ""
+"The line type for shapes on this layer. It should be a LineType enum or "
+"None. Defaults to None."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.add_layer:15
+msgid "DXF document with additional layer"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.add_shape:1
+msgid "Adds a shape to the specified layer."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.add_shape:3
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_shape:3
+msgid ""
+"The shape or collection of shapes to be added. It can be a single Shape "
+"object or an iterable of Shape objects."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.add_shape:6
+msgid ""
+"The name of the layer where the shape will be added. If not specified, the "
+"default layer will be used. Defaults to \"\"."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.add_shape:10
+msgid "Document with additional shape"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.write:1
+msgid "Writes the DXF data to the specified file name."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportDXF.write:3
+msgid "The file name (including path) where the DXF data will be written."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:194
+msgid "ExportSVG"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:1
+msgid "SVG file export functionality."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:3
+msgid ""
+"The ExportSVG class provides functionality for exporting 2D shapes to SVG "
+"(Scalable Vector Graphics) format. SVG is a widely used vector graphics "
+"format that is supported by web browsers and various graphic editors."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:7
+msgid ""
+"The unit used for the exported SVG. It should be one of the Unit enums: "
+"Unit.MM, Unit.CM, or Unit.IN. Defaults to Unit.MM."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:11
+msgid "The scaling factor applied to the exported SVG. Defaults to 1."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:14
+msgid "The margin added around the exported shapes. Defaults to 0."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:17
+msgid ""
+"A boolean indicating whether the SVG view box should fit the strokes of the "
+"shapes. Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:20
+msgid ""
+"The number of decimal places used for rounding coordinates in the SVG. "
+"Defaults to 6."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:23
+msgid ""
+"The default fill color for shapes. It can be specified as a ColorIndex, an "
+"RGB tuple, or None. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:27
+msgid ""
+"The default line color for shapes. It can be specified as a ColorIndex or an"
+" RGB tuple, or None. Defaults to Export2D.DEFAULT_COLOR_INDEX."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:31
+msgid ""
+"The default line weight (stroke width) for shapes, in millimeters. Defaults "
+"to Export2D.DEFAULT_LINE_WEIGHT."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:34
+msgid ""
+"The default line type for shapes. It should be a LineType enum. Defaults to "
+"Export2D.DEFAULT_LINE_TYPE."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:37
+msgid ""
+"The width of rendered dots in a Can be either a DotLength enum or a float "
+"value in tenths of an inch. Defaults to DotLength.INKSCAPE_COMPAT."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG:51
+msgid "Invalid unit."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_layer:1
+msgid "Adds a new layer to the SVG export with the given properties."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_layer:3
+msgid "The name of the layer. Must be unique among all layers."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_layer:5
+msgid ""
+"The fill color for shapes on this layer. It can be specified as a "
+"ColorIndex, an RGB tuple, a Color, or None.  Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_layer:9
+msgid ""
+"The line color for shapes on this layer. It can be specified as a ColorIndex"
+" or an RGB tuple, a Color, or None.  Defaults to "
+"Export2D.DEFAULT_COLOR_INDEX."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_layer:13
+msgid ""
+"The line weight (stroke width) for shapes on this layer, in millimeters. "
+"Defaults to Export2D.DEFAULT_LINE_WEIGHT."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_layer:16
+msgid ""
+"The line type for shapes on this layer. It should be a LineType enum. "
+"Defaults to Export2D.DEFAULT_LINE_TYPE."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_layer:20
+msgid "Duplicate layer name"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_layer:21
+msgid "Unknown linetype"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_layer:23
+msgid "Drawing with an additional layer"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_shape:1
+msgid "Adds a shape or a collection of shapes to the specified layer."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_shape:6
+msgid "The name of the layer where the shape(s) will be added. Defaults to \"\"."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_shape:9
+msgid ""
+"A boolean indicating whether the wires of the shape(s) should be in reversed"
+" direction. Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.add_shape:13
+msgid "Undefined layer"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.write:1
+msgid "Writes the SVG data to the specified file path."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.pydocstring of
+#: exporters.ExportSVG.write:3
+msgid "The file path where the SVG data will be written."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:200
+msgid "3D Exporters"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_brep:1
+msgid "Export this shape to a BREP file"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_brep:3
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_gltf:7
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_step:5
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_stl:5
+msgid "object or assembly"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_brep:5
+msgid "Union[PathLike, str, bytes, BytesIO]: brep file path or memory buffer"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_brep:7
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_gltf:28
+msgid "write status"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_gltf:1
+msgid ""
+"The glTF (GL Transmission Format) specification primarily focuses on the "
+"efficient transmission and loading of 3D models as a compact, binary format "
+"that is directly renderable by graphics APIs like WebGL, OpenGL, and Vulkan."
+" It's designed to store detailed 3D model data, including meshes (vertices, "
+"normals, textures, etc.), animations, materials, and scene hierarchy, among "
+"other aspects."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_gltf:9
+msgid "glTF file path"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_gltf:11
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_step:9
+msgid "shape units. Defaults to Unit.MM."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_gltf:13
+msgid "output format. Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_gltf:15
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_stl:9
+msgid ""
+"A linear deflection setting which limits the distance between a curve and "
+"its tessellation. Setting this value too low will result in large meshes "
+"that can consume computing resources. Setting the value too high can result "
+"in meshes with a level of detail that is too low. The default is a good "
+"starting point for a range of cases. Defaults to 1e-3."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_gltf:22
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_stl:15
+msgid ""
+"Angular deflection setting which limits the angle between subsequent "
+"segments in a polyline. Defaults to 0.1."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_gltf:26
+msgid "Failed to write glTF file"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_step:1
+msgid ""
+"Export a build123d Shape or assembly with color and label attributes. Note "
+"that if the color of a node in an assembly isn't set, it will be assigned "
+"the color of its nearest ancestor."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_step:7
+msgid "step file path"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_step:11
+msgid "write parametric curves to the STEP file. Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_step:14
+msgid "geometric data precision. Defaults to PrecisionMode.AVERAGE."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_step:18
+msgid "Unknown Compound type"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_step:20
+msgid "success"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_stl:1
+msgid "Export STL"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_stl:3
+msgid "Exports a shape to a specified STL file."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_stl:7
+msgid "The path and file name to write the STL output to."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_stl:18
+msgid ""
+"Export the file as ASCII (True) or binary (False) STL format. Defaults to "
+"False (binary)."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_stl:22
+msgid "Success"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:217
+msgid "3D Mesh Export"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:219
+msgid ""
+"Both 3MF and STL export (and import) are provided with the "
+":class:`~mesher.Mesher` class. As mentioned above, the 3MF format it "
+"provides is feature-rich and therefore has a slightly more complex API than "
+"the simple Shape exporters."
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher:1
+msgid ""
+"Tool for exporting and importing meshed objects stored in 3MF or STL files."
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher:3
+msgid "model units. Defaults to Unit.MM."
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_code_to_metadata:1
+msgid ""
+"Add the code calling this method to the 3MF metadata with the custom name "
+"space `build123d`, name equal to the base file name and the type as `python`"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_meta_data:1
+msgid "Add meta data to the models"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_meta_data:3
+msgid "categorizer of different metadata entries"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_meta_data:5
+msgid "metadata label"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_meta_data:7
+msgid "metadata content"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_meta_data:9
+msgid "metadata type"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_meta_data:11
+msgid "metadata must not be removed if unused"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_shape:1
+msgid "Add a shape to the 3MF/STL file."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_brep:8 ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_shape:3
+msgid "build123d object"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_shape:5
+msgid "mesh control for edges. Defaults to 0.001."
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_shape:7
+msgid "mesh control for non-planar surfaces. Defaults to 0.1."
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_shape:10
+msgid "3D printing use of mesh. Defaults to MeshType.MODEL."
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_shape:12
+msgid "part #. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_shape:14
+msgid "value from uuid package. Defaults to None."
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_shape:17
+msgid "3mf mesh is invalid"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_shape:18
+msgid "Degenerate shape skipped"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.add_shape:19
+msgid "3mf mesh is not manifold"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.get_mesh_properties:1
+msgid "Retrieve the properties from all the meshes"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.get_meta_data:1
+msgid "Retrieve all of the metadata"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.get_meta_data_by_key:1
+msgid ""
+"Retrieve the metadata value and type for the provided name space and name"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.library_version:1
+msgid "3MF Consortium Lib#MF version"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.mesh_count:1
+msgid "Number of meshes in the model"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.model_unit:1
+msgid "Unit used in the model"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher.read:1
+#: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher.read:2
+#: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher.read:3
+#: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher.write:1
+#: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher.write:2
+#: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher.write:3
+msgid "file path"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher.read:5
+#: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher.write:5
+msgid "Unknown file format - must be 3mf or stl"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher.read:7
+msgid "build123d shapes extracted from mesh file"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.triangle_counts:1
+msgid "Number of triangles in each of the model's meshes"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.vertex_counts:1
+msgid "Number of vertices in each of the models's meshes"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:255
+msgid ""
+"If you need to align multiple components for 3D printing, you can use the  "
+":ref:`pack() <pack>` function to arrange the objects side by side and align "
+"them on the same plane. This ensures that your components are well-organized"
+" and ready for the printing process."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:259
+msgid "2D Importers"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg:1
+msgid "svg file"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg:3
+msgid "flip objects to compensate for svg orientation. Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg:5
+msgid ""
+"alignment of the SVG's viewbox, if None, the viewbox's origin will be at "
+"`(0,0,0)`. Defaults to Align.MIN."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg:8
+msgid "Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg:10
+msgid ""
+"XML attribute to use for imported shapes' `label` property. Defaults to "
+"\"id\". Use `inkscape:label` to read labels set from Inkscape's \"Layers and"
+" Objects\" panel."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg:15
+msgid "unexpected shape type"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg:17
+msgid "objects contained in svg"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg_as_buildline_code:1
+msgid "translate_to_buildline_code"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg_as_buildline_code:3
+msgid ""
+"Translate the contents of the given svg file into executable "
+"build123d/BuildLine code."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg_as_buildline_code:5
+msgid "svg file name"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg_as_buildline_code:8
+msgid "code, builder instance name"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:266
+msgid "3D Importers"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_brep:1
+msgid "Import shape from a BREP file"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_brep:3
+msgid "brep file"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_brep:6
+msgid "file not found"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_step:1
+msgid "Extract shapes from a STEP file and return them as a Compound object."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_step:3
+msgid "file path of STEP file to import"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_step:6
+msgid "can't open file"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_step:8
+msgid "contents of STEP file"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_stl:1
+msgid ""
+"Extract shape from an STL file and return it as a Face reference object."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_stl:3
+msgid ""
+"Note that importing with this method and creating a reference is very fast "
+"while creating an editable model (with Mesher) may take minutes depending on"
+" the size of the STL file."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_stl:7
+msgid "file path of STL file to import"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_stl:10
+msgid "Could not import file"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_stl:12
+msgid "STL model"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:273
+msgid "3D Mesh Import"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:275
+msgid ""
+"Both 3MF and STL import (and export) are provided with the "
+":class:`~mesher.Mesher` class."
+msgstr ""

@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:3
+msgid "Tutorial: Heart Token (Basics)"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:5
+msgid "This hands‑on tutorial introduces the fundamentals of surface modeling by building a heart‑shaped token from a small set of non‑planar faces. We’ll create non‑planar surfaces, mirror them, add side faces, and assemble a closed shell into a solid."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:10
+msgid "As described in the `topology_` section, a BREP model consists of vertices, edges, faces, and other elements that define the boundary of an object. When creating objects with non-planar faces, it is often more convenient to explicitly create the boundary faces of the object. To illustrate this process, we will create the following game token:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:20
+msgid "Useful :class:`~topology.Face` creation methods include :meth:`~topology.Face.make_surface`, :meth:`~topology.Face.make_bezier_surface`, and :meth:`~topology.Face.make_surface_from_array_of_points`. See the :doc:`tutorial_surface_modeling` overview for the full list."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:25
+msgid "In this case, we'll use the ``make_surface`` method, providing it with the edges that define the perimeter of the surface and a central point on that surface."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:28
+msgid "To create the perimeter, we'll define the perimeter edges. Since the heart is symmetric, we'll only create half of its surface here:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:36
+msgid "Note that ``l4`` is not in the same plane as the other lines; it defines the center line of the heart and archs up off ``Plane.XY``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:39
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:57
+msgid "token perimeter"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:43
+msgid "In preparation for creating the surface, we'll define a point on the surface:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:50
+msgid "We will then use this point to create a non-planar ``Face``:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:61
+msgid "Note that the surface was raised up by 0.5 using an Algebra expression with Pos. Also, note that the ``-`` in front of ``Face`` simply flips the face normal so that the colored side is up, which isn't necessary but helps with viewing."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:65
+msgid "Now that one half of the top of the heart has been created, the remainder of the top and bottom can be created by mirroring:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:73
+msgid "The sides of the heart are going to be created by extruding the outside of the perimeter as follows:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:81
+msgid "token sides"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:85
+msgid "With the top, bottom, and sides, the complete boundary of the object is defined. We can now put them together, first into a :class:`~topology.Shell` and then into a :class:`~topology.Solid`:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:94
+msgid "token heart solid"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:99
+msgid "When creating a Solid from a Shell, the Shell must be \"water-tight,\" meaning it should have no holes. For objects with complex Edges, it's best practice to reuse Edges in adjoining Faces whenever possible to avoid slight mismatches that can create openings."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:104
+msgid "Finally, we'll create the frame around the heart as a simple extrusion of a planar shape defined by the perimeter of the heart and merge all of the components together:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:112
+msgid "Note that an additional planar line is used to close ``l1`` and ``l3`` so a ``Face`` can be created. The :func:`~operations_generic.offset` function defines the outside of the frame as a constant distance from the heart itself."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:117
+msgid "Summary"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:119
+msgid "In this tutorial, we've explored surface modeling techniques to create a non-planar heart-shaped object using build123d. By utilizing methods from the :class:`~topology.Face` class, such as :meth:`~topology.Face.make_surface`, we constructed the perimeter and central point of the surface. We then assembled the complete boundary of the object by creating the top, bottom, and sides, and combined them into a :class:`~topology.Shell` and eventually a :class:`~topology.Solid`. Finally, we added a frame around the heart using the :func:`~operations_generic.offset` function to maintain a constant distance from the heart."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:129
+msgid "Next steps"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_surface_heart_token.rst:131
+msgid "Continue to :doc:`tutorial_spitfire_wing_gordon` for an advanced example using :meth:`~topology.Face.make_gordon_surface` to create a Supermarine Spitfire wing."
+msgstr ""

@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/algebra_performance.rst:4
+msgid "Performance considerations in algebra mode"
+msgstr ""
+
+#: ../../build123d/docs/algebra_performance.rst:6
+msgid ""
+"Creating lots of Shapes in a loop means for every step ``fuse`` and "
+"``clean`` will be called. In an example like the below, both functions get "
+"slower and slower the more objects are already fused. Overall it takes on an"
+" M1 Mac 4.76 sec."
+msgstr ""
+
+#: ../../build123d/docs/algebra_performance.rst:22
+msgid ""
+"One way to avoid it is to use lazy evaluation for the algebra operations. "
+"Just collect all objects and then call ``fuse`` (``+``) once with all "
+"objects and ``clean`` once. Overall it takes 0.19 sec."
+msgstr ""
+
+#: ../../build123d/docs/algebra_performance.rst:36
+msgid ""
+"Another way to leverage the vectorized algebra operations is to add a list "
+"comprehension of objects to an empty ``Part``, ``Sketch`` or ``Curve``:"
+msgstr ""
+
+#: ../../build123d/docs/algebra_performance.rst:46
+msgid "This again ensures one single ``fuse`` and ``clean`` call."
+msgstr ""

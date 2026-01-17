@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../build123d/docs/tttt.rst:3
+msgid "Too Tall Toby (TTT) Tutorials"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:8
+msgid "To enhance users' proficiency with Build123D, this section offers a series of challenges. In these challenges, users are presented with a CAD drawing and tasked with designing the part. Their goal is to match the part's mass to a specified target."
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:12
+msgid "These drawings were skillfully crafted and generously provided to Build123D by Too Tall Toby, a renowned figure in the realm of 3D CAD. Too Tall Toby is the host of the World Championship of 3D CAD Speedmodeling. For additional 3D CAD challenges and content, be sure to visit `Toby's youtube channel <https://www.Youtube.com/TooTallToby>`_."
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:17
+msgid "Feel free to click on the parts below to embark on these engaging challenges."
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:21
+#: ../../build123d/docs/tttt.rst:90
+msgid "Party Pack 01-01 Bearing Bracket"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:26
+#: ../../build123d/docs/tttt.rst:107
+msgid "Party Pack 01-02 Post Cap"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:31
+#: ../../build123d/docs/tttt.rst:123
+msgid "Party Pack 01-03 C Clamp Base"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:36
+#: ../../build123d/docs/tttt.rst:139
+msgid "Party Pack 01-04 Angle Bracket"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:41
+#: ../../build123d/docs/tttt.rst:155
+msgid "Party Pack 01-05 Paste Sleeve"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:46
+#: ../../build123d/docs/tttt.rst:171
+msgid "Party Pack 01-06 Bearing Jig"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:51
+#: ../../build123d/docs/tttt.rst:187
+msgid "Party Pack 01-07 Flanged Hub"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:56
+#: ../../build123d/docs/tttt.rst:203
+msgid "Party Pack 01-08 Tie Plate"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:61
+#: ../../build123d/docs/tttt.rst:219
+msgid "Party Pack 01-09 Corner Tie"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:66
+#: ../../build123d/docs/tttt.rst:235
+msgid "Party Pack 01-10 Light Cap"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:71
+#: ../../build123d/docs/tttt.rst:251
+msgid "23-02-02 SM Hanger"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:76
+#: ../../build123d/docs/tttt.rst:267
+msgid "23-T-24 Curved Support"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:81
+#: ../../build123d/docs/tttt.rst:284
+msgid "24-SPO-06 Buffer Stand"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:0
+msgid "Object Mass"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:96
+msgid "797.15 g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:0
+msgid "Reference Implementation"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:113
+msgid "43.09 g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:129
+msgid "96.13 g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:145
+msgid "310.00 g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:161
+msgid "57.08 g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:177
+msgid "328.02 g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:193
+msgid "372.99 g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:209
+msgid "3387.06 g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:225
+msgid "307.23 g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:241
+msgid "211.30 g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:257
+msgid "1028g +/- 10g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:274
+msgid "1294 g"
+msgstr ""
+
+#: ../../build123d/docs/tttt.rst:291
+msgid "3.92 lbs"
+msgstr ""

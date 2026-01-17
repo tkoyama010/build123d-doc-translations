@@ -1,0 +1,319 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/tutorial_lego.rst:3
+msgid "Lego Tutorial"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:5
+msgid ""
+"This tutorial provides a step by step guide to creating a script to build a "
+"parametric Lego block as shown here:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:13
+msgid "Step 1: Setup"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:15
+msgid ""
+"Before getting to the CAD operations, this Lego script needs to import the "
+"build123d environment. There are over 100 python classes in build123d so "
+"we'll just import them all with a ``from build123d import *`` but "
+":ref:`there are other options <are_glob_imports_bad_practice>` that we won't"
+" explore here."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:20
+msgid ""
+"The dimensions of the Lego block follow. A key parameter is ``pip_count``, "
+"the length of the Lego blocks in pips. This parameter must be at least 2."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:29
+msgid "Step 2: Part Builder"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:31
+msgid ""
+"The Lego block will be created by the ``BuildPart`` builder as it's a "
+"discrete three dimensional part; therefore, we'll instantiate a "
+"``BuildPart`` with the name ``lego``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:40
+msgid "Step 3: Sketch Builder"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:42
+msgid ""
+"Lego blocks have quite a bit of internal structure. To create this structure"
+" we'll draw a two dimensional sketch that will later be extruded into a "
+"three dimensional object.  As this sketch will be part of the lego part, "
+"we'll create a sketch builder in the context of the part builder as follows:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:53
+msgid ""
+"Note that builder instance names are optional - we'll use ``plan`` to "
+"reference the sketch. Also note that all sketch objects are filled or 2D "
+"faces not just perimeter lines."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:58
+msgid "Step 4: Perimeter Rectangle"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:60
+msgid ""
+"The first object in the sketch is going to be a rectangle with the "
+"dimensions of the outside of the Lego block. The following step is going to "
+"refer to this rectangle, so it will be assigned the identifier "
+"``perimeter``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:69
+msgid ""
+"Once the ``Rectangle`` object is created the sketch appears as follows:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:76
+msgid "Step 5: Offset to Create Walls"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:78
+msgid ""
+"To create the walls of the block the rectangle that we've created needs to "
+"be hollowed out. This will be done with the ``Offset`` operation which is "
+"going to create a new object from ``perimeter``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:87
+msgid ""
+"The first parameter to ``Offset`` is the reference object. The ``amount`` is"
+" a negative value to indicate that the offset should be internal. The "
+"``kind`` parameter controls the shape of the corners - ``Kind.INTERSECTION``"
+" will create square corners. Finally, the ``mode`` parameter controls how "
+"this object will be placed in the sketch - in this case subtracted from the "
+"existing sketch. The result is shown here:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:97
+msgid "Now the sketch consists of a hollow rectangle."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:101
+msgid "Step 6: Create Internal Grid"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:103
+msgid ""
+"The interior of the Lego block has small ridges on all four internal walls. "
+"These ridges will be created as a grid of thin rectangles so the positions "
+"of the centers of these rectangles need to be defined. A pair of "
+"``GridLocations`` location contexts will define these positions, one for the"
+" horizontal bars and one for the vertical bars. As the ``Rectangle`` objects"
+" are in the scope of a location context (``GridLocations`` in this case) "
+"that defined multiple points, multiple rectangles are created."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:116
+msgid ""
+"Here we can see that the first ``GridLocations`` creates two positions which"
+" causes two horizontal rectangles to be created.  The second "
+"``GridLocations`` works in the same way but creates ``pip_count`` positions "
+"and therefore ``pip_count`` rectangles. Note that keyword parameter are "
+"optional in this case."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:121
+msgid "The result looks like this:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:128
+msgid "Step 7: Create Ridges"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:130
+msgid ""
+"To convert the internal grid to ridges, the center needs to be removed. This"
+" will be done with another ``Rectangle``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:138
+msgid ""
+"The ``Rectangle`` is subtracted from the sketch to leave the ridges as "
+"follows:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:146
+msgid "Step 8: Hollow Circles"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:148
+msgid ""
+"Lego blocks use a set of internal hollow cylinders that the pips push "
+"against to hold two blocks together. These will be created with ``Circle``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:156
+msgid ""
+"Here another ``GridLocations`` is used to position the centers of the "
+"circles.  Note that since both ``Circle`` objects are in the scope of the "
+"location context, both Circles will be positioned at these locations."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:160
+msgid ""
+"Once the Circles are added, the sketch is complete and looks as follows:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:167
+msgid "Step 9: Extruding Sketch into Walls"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:169
+msgid ""
+"Now that the sketch is complete it needs to be extruded into the three "
+"dimensional wall object."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:177
+msgid ""
+"Note how the ``Extrude`` operation is no longer in the ``BuildSketch`` scope"
+" and has returned back into the ``BuildPart`` scope. This causes "
+"``BuildSketch`` to exit and transfer the sketch that we've created to "
+"``BuildPart`` for further processing by ``Extrude``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:181
+msgid "The result is:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:189
+msgid "Step 10: Adding a Top"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:191
+msgid ""
+"Now that the walls are complete, the top of the block needs to be added. "
+"Although this could be done with another sketch, we'll add a box to the top "
+"of the walls."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:199
+msgid ""
+"To position the top, we'll describe the top center of the lego walls with a "
+"``Locations`` context. To determine the height we'll extract that from the "
+"``lego.part`` by using the ``vertices()`` method which returns a list of the"
+" positions of all of the vertices of the Lego block so far. Since we're "
+"interested in the top, we'll sort by the vertical (Z) axis and take the top "
+"of the list ``sort_by(Axis.Z)[-1]``. Finally, the ``Z`` property of this "
+"vertex will return just the height of the top. Note that the ``X`` and ``Y``"
+" values are not used from the selected vertex as there are no vertices in "
+"the center of the block."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:208
+msgid ""
+"Within the scope of this ``Locations`` context, a ``Box`` is created, "
+"centered at the intersection of the x and y axis but not in the z thus "
+"aligning with the top of the walls."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:211
+msgid "The base is closed now as shown here:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:218
+msgid "Step 11: Adding Pips"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:220
+msgid ""
+"The final step is to add the pips to the top of the Lego block. To do this "
+"we'll create a new workplane on top of the block where we can position the "
+"pips."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:228
+msgid ""
+"In this case, the workplane is created from the top Face of the Lego block "
+"by using the ``faces`` method and then sorted vertically and taking the top "
+"one ``sort_by(Axis.Z)[-1]``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:231
+msgid ""
+"On the new workplane, a grid of locations is created and a number of "
+"``Cylinder``'s are positioned at each location."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:237
+msgid ""
+"This completes the Lego block. To access the finished product, refer to the "
+"builder's internal object as shown here:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:241
+msgid "Builder"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:241
+msgid "Object"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:243
+msgid "BuildLine"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:243
+msgid "line"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:245
+msgid "BuildSketch"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:245
+msgid "sketch"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:247
+msgid "BuildPart"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:247
+msgid "part"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:250
+msgid ""
+"so in this case the Lego block is ``lego.part``. To display the part use "
+"``show_object(lego.part)`` or ``show(lego.part)`` depending on the viewer. "
+"The part could also be exported to a STL or STEP file by referencing "
+"``lego.part``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_lego.rst:255
+msgid ""
+"Viewers that don't directly support build123d my require a raw OpenCascade "
+"object. In this case, append ``.wrapped`` to the object (e.g.) "
+"``show_object(lego.part.wrapped)``."
+msgstr ""

@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/installation.rst:3
+msgid "Installation"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:5
+msgid "The recommended method for most users to install **build123d** is:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:13
+msgid ""
+"The `ocp-vscode <https://github.com/bernhard-42/vscode-ocp-cad-viewer>`_ "
+"viewer has the ability to install **build123d**."
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:17
+msgid "Install build123d from GitHub:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:19
+msgid ""
+"To get the latest non-released version of **build123d** one can install from"
+" GitHub using one of the following two commands:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:21
+msgid "In Linux/MacOS, use the following command:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:27
+msgid "In Windows, use the following command:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:33
+msgid ""
+"If you receive errors about conflicting dependencies, you can retry the "
+"installation after having upgraded pip to the latest version with the "
+"following command:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:40
+msgid ""
+"If you use `poetry <https://python-poetry.org/>`_ to install build123d, you "
+"can simply use:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:46
+msgid ""
+"However, if you want the latest commit from GitHub you might need to specify"
+" the branch that is used for git-based installs; until quite recently, "
+"poetry used to checkout the `master` branch when none was specified, and "
+"this fails on build123d that uses a `dev` branch."
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:50
+msgid ""
+"Pip does not suffer from this issue because it correctly fetches the "
+"repository default branch."
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:52
+msgid ""
+"If you are a poetry user, you can work around this issue by installing "
+"build123d in the following way:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:59
+msgid ""
+"Please note that always suffixing the URL with ``@dev`` is safe and will "
+"work with both older and recent versions of poetry."
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:63
+msgid "Development install of build123d:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:64
+msgid ""
+"**Warning**: it is highly recommended to upgrade pip to the latest version "
+"before installing build123d, especially in development mode. This can be "
+"done with the following command:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:71
+msgid ""
+"Once pip is up-to-date, you can install build123d `in development mode "
+"<https://setuptools.pypa.io/en/latest/userguide/development_mode.html>`_ "
+"with the following commands:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:81
+msgid ""
+"Please substitute ``python3`` with ``python`` in the lines above if you are "
+"using Windows."
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:83
+msgid ""
+"If you're working directly with the OpenCascade ``OCP`` layer you will "
+"likely want to install the OCP stubs as follows:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:91
+msgid "Test your build123d installation:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:92
+msgid "If all has gone well, you can open a command line/prompt, and type:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:100
+msgid "Which should return something similar to:"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:114
+msgid "Adding a nicer GUI"
+msgstr ""
+
+#: ../../build123d/docs/installation.rst:116
+msgid ""
+"If you prefer to have a GUI available, your best option is to choose one "
+"from here: :ref:`external`"
+msgstr ""

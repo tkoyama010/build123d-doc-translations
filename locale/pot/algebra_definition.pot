@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../build123d/docs/algebra_definition.rst:4
+msgid "Algebraic definition"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:7
+msgid "Objects and arithmetic"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:9
+#: ../../build123d/docs/algebra_definition.rst:67
+msgid "**Set definitions:**"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:11
+msgid ":math:`C^3` is the set of all ``Part`` objects ``p`` with ``p._dim = 3``"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:13
+msgid ":math:`C^2` is the set of all ``Sketch`` objects ``s`` with ``s._dim = 2``"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:15
+msgid ":math:`C^1` is the set of all ``Curve`` objects ``c`` with ``c._dim = 1``"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:17
+msgid "**Neutral elements:**"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:19
+msgid ":math:`c^3_0` is the empty ``Part`` object ``p0 = Part()`` with ``p0._dim = 3`` and ``p0.wrapped = None``"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:21
+msgid ":math:`c^2_0` is the empty ``Sketch`` object ``s0 = Sketch()`` with ``s0._dim = 2`` and ``s0.wrapped = None``"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:23
+msgid ":math:`c^1_0` is the empty ``Curve`` object ``c0 = Curve()`` with ``c0._dim = 1`` and ``c0.wrapped = None``"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:26
+msgid "**Sets of predefined basic shapes:**"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:28
+msgid ":math:`B^3 := \\lbrace` ``Part``, ``Box``, ``Cylinder``, ``Cone``, ``Sphere``, ``Torus``, ``Wedge``, ``Hole``, ``CounterBoreHole``, ``CounterSinkHole`` :math:`\\rbrace`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:30
+msgid ":math:`B^2 := \\lbrace` ``Sketch``, ``Rectangle``, ``Circle``, ``Ellipse``, ``Rectangle``, ``Polygon``, ``RegularPolygon``, ``Text``, ``Trapezoid``, ``SlotArc``, ``SlotCenterPoint``, ``SlotCenterToCenter``, ``SlotOverall`` :math:`\\rbrace`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:32
+msgid ":math:`B^1 := \\lbrace` ``Curve``, ``Bezier``, ``FilletPolyline``, ``PolarLine``, ``Polyline``, ``Spline``, ``Helix``, ``CenterArc``, ``EllipticalCenterArc``, ``ParabolicCenterArc``, ``HyperbolicCenterArc``, ``RadiusArc``, ``SagittaArc``, ``TangentArc``, ``ThreePointArc``, ``JernArc`` :math:`\\rbrace`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:34
+msgid "with :math:`B^3 \\subset C^3, B^2 \\subset C^2` and :math:`B^1 \\subset C^1`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:37
+#: ../../build123d/docs/algebra_definition.rst:79
+msgid "**Operations:**"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:39
+msgid ":math:`+: C^n \\times C^n \\rightarrow C^n` with :math:`(a,b) \\mapsto a + b`,  :math:`\\;` for :math:`n=1,2,3`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:41
+msgid ":math:`\\; a + b :=` ``a.fuse(b)`` for each operation"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:43
+msgid ":math:`-: C^n \\rightarrow C^n` with :math:`a \\mapsto -a`,  :math:`\\;` for :math:`n=1,2,3`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:45
+msgid ":math:`\\; b + (-a) :=` ``b.cut(a)`` for each operation (implicit definition)"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:48
+msgid ":math:`\\&: C^n \\times C^n \\rightarrow C^n` with :math:`(a,b) \\mapsto a \\; \\& \\; b`,  :math:`\\;` for :math:`n=2,3`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:50
+msgid ":math:`\\; a \\; \\& \\; b :=` ``a.intersect(b)`` for each operation"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:52
+msgid ":math:`\\&` is not defined for :math:`n=1` in build123d"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:53
+msgid "The following relationship holds: :math:`a \\; \\& \\; b = (a + b) + -(a + (-b)) + -(b + (-a))`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:56
+msgid "**Abelian groups**"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:58
+msgid ":math:`( C^n, \\; c^n_0, \\; +, \\; -)` :math:`\\;`  are abelian groups for :math:`n=1,2,3`."
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:60
+msgid "The implementation ``a - b = a.cut(b)`` needs to be read as :math:`a + (-b)` since the group does not have a binary ``-`` operation. As such, :math:`a - (b - c) = a + -(b + -c)) \\ne a - b + c`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:61
+msgid "This definition also includes that neither ``-`` nor ``&`` are commutative."
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:65
+msgid "Locations, planes and location arithmetic"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:69
+msgid ":math:`L  := \\lbrace` ``Location((x, y, z), (a, b, c))`` :math:`: x,y,z \\in R \\land a,b,c \\in R \\rbrace\\;`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:71
+msgid "with :math:`a,b,c` being angles in degrees."
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:73
+msgid ":math:`P  := \\lbrace` ``Plane(o, x, z)`` :math:`: o,x,z ∈ R^3 \\land \\|x\\| = \\|z\\| = 1\\rbrace`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:75
+msgid "with ``o`` being the origin and ``x``, ``z`` the x- and z-direction of the plane."
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:77
+msgid "Neutral element: :math:`\\; l_0 \\in L`: ``Location()``"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:81
+msgid ":math:`*: L \\times L \\rightarrow L` with :math:`(l_1,l_2) \\mapsto l_1 * l_2`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:83
+msgid ":math:`\\; l_1 * l_2 :=`  ``l1 * l2`` (multiply two locations)"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:85
+msgid ":math:`*: P \\times L \\rightarrow P` with :math:`(p,l) \\mapsto p * l`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:87
+msgid ":math:`\\; p * l :=` ``Plane(p.location * l)`` (move plane :math:`p \\in P` to location :math:`l \\in L`)"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:89
+msgid "Inverse element: :math:`\\; l^{-1} \\in L`: ``l.inverse()``"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:92
+msgid "**Placing objects onto planes**"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:94
+msgid ":math:`*: P \\times C^n  \\rightarrow C^n \\;`  with :math:`(p,c) \\mapsto p * c`,  :math:`\\;` for :math:`n=1,2,3`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:96
+msgid "Locate an object :math:`c \\in C^n` onto plane :math:`p \\in P`, i.e. ``c.moved(p.location)``"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:98
+msgid "**Placing objects at locations**"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:100
+msgid ":math:`*: L \\times C^n  \\rightarrow C^n \\;`  with :math:`(l,c) \\mapsto l * c`,  :math:`\\;` for :math:`n=1,2,3`"
+msgstr ""
+
+#: ../../build123d/docs/algebra_definition.rst:102
+msgid "Locate an object :math:`c \\in C^n` at location :math:`l \\in L`, i.e. ``c.moved(l)``"
+msgstr ""

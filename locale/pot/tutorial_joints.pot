@@ -1,0 +1,253 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../build123d/docs/tutorial_joints.rst:5
+msgid "Joint Tutorial"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:7
+msgid "This tutorial provides a step by step guide in using :class:`~topology.Joint`'s as we create a box with a hinged lid to illustrate the use of three different :class:`~topology.Joint` types."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:16
+msgid "Step 1: Setup"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:18
+msgid "Before getting to the CAD operations, this selector script needs to import the build123d environment."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:28
+msgid "Step 2: Create Hinge"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:30
+msgid "This example uses a common Butt Hinge to connect the lid to the box base so a ``Hinge`` class is used to create that can create either of the two hinge leaves. As the focus of this tutorial is the joints and not the CAD operations to create objects, this code is not described in detail."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:40
+msgid "Once the two leaves have been created they will look as follows:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:47
+msgid "Note that the XYZ indicators and a circle around the hinge pin indicate joints that are discussed below."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:52
+msgid "Step 3: Add Joints to the Hinge Leaf"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:54
+msgid "The hinge includes five joints:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:56
+msgid "A :class:`~topology.RigidJoint` to attach the leaf"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:57
+msgid "A :class:`~topology.RigidJoint` or :class:`~topology.RevoluteJoint` as the hinge Axis"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:58
+msgid "Three :class:`~topology.CylindricalJoint`'s for the countersunk screws"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:61
+msgid "Step 3a: Leaf Joint"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:63
+msgid "The first joint to add is a :class:`~topology.RigidJoint` that is used to fix the hinge leaf to the box or lid."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:71
+msgid "Each joint has a label which identifies it - here the string \"leaf\" is used, the ``to_part`` binds the joint to ``leaf_builder.part`` (i.e. the part being built), and ``joint_location`` is specified as middle of the leaf along the edge of the pin. Note that :class:`~geometry.Location` objects describe both a position and orientation which is why there are two tuples (the orientation listed is rotate about the X axis 90 degrees)."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:78
+msgid "Step 3b: Hinge Joint"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:80
+msgid "The second joint to add is either a :class:`~topology.RigidJoint` (on the inner leaf) or a :class:`~topology.RevoluteJoint` (on the outer leaf) that describes the hinge axis."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:89
+msgid "The inner leaf just pivots around the outer leaf and therefore the simple :class:`~topology.RigidJoint` is used to define the Location of this pivot.  The outer leaf contains the more complex :class:`~topology.RevoluteJoint` which defines an axis of rotation and angular limits to that rotation (90 and 270 in this example as the two leaves will interfere with each other outside of this range). Note that the maximum angle must be greater than the minimum angle and therefore may be greater than 360°. Other types of joints have linear ranges as well as angular ranges."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:97
+msgid "Step 3c: Fastener Joints"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:99
+msgid "The third set of joints to add are :class:`~topology.CylindricalJoint`'s that describe how the countersunk screws used to attach the leaves move."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:107
+msgid "Much like the :class:`~topology.RevoluteJoint`, a :class:`~topology.CylindricalJoint` has an Axis of motion but this type of joint allows both movement around and along this axis - exactly as a screw would move. Here is the Axis is setup such that a position of 0 aligns with the screw being fully set in the hole and positive numbers indicate the distance the head of the screw is above the leaf surface. One could have reversed the direction of the Axis such that negative position values would correspond to a screw now fully in the hole - whatever makes sense to the situation. The angular range of this joint is set to (0°, 360°) as there is no limit to the angular rotation of the screw (one could choose to model thread pitch and calculate position from angle or vice-versa)."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:118
+msgid "Step 3d: Call Super"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:120
+msgid "To finish off, the base class for the Hinge class is initialized:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:128
+msgid "Step 3e: Instantiate Hinge Leaves"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:130
+msgid "Now that the Hinge class is complete it can be used to instantiate the two hinge leaves required to attach the box and lid together."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:140
+msgid "Step 4: Create the Box"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:142
+msgid "The box is created with :class:`~build_part.BuildPart` as a simple object - as shown below - let's focus on the joint used to attach the outer hinge leaf."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:154
+msgid "Since the hinge will be fixed to the box another :class:`~topology.RigidJoint` is used mark where the hinge will go. Note that the orientation of this :class:`~topology.Joint` will control how the hinge leaf is attached and is independent of the orientation of the hinge as it was constructed."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:159
+msgid "Step 4a: Relocate Box"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:161
+msgid "Note that the position and orientation of the box's joints are given as a global :class:`~geometry.Location` when created but will be translated to a relative :class:`~geometry.Location` internally to allow the :class:`~topology.Joint` to \"move\" with the parent object. This allows users the freedom to relocate objects without having to recreate or modify :class:`~topology.Joint`'s. Here is the box is moved upwards to show this property."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:174
+msgid "Step 5: Create the Lid"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:176
+msgid "Much like the box, the lid is created in a :class:`~build_part.BuildPart` context and is assigned a :class:`~topology.RigidJoint`."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:187
+msgid "Again, the original orientation of the lid and hinge inner leaf are not important, when the joints are connected together the parts will move into the correct position."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:193
+msgid "Step 6: Import a Screw and bind a Joint to it"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:195
+msgid ":class:`~topology.Joint`'s can be bound to simple objects the a :class:`~topology.Compound` imported - in this case a screw."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:198
+msgid "screw STEP model: :download:`M6-1x12-countersunk-screw.step <M6-1x12-countersunk-screw.step>`"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:208
+msgid "Here a simple :class:`~topology.RigidJoint` is bound to the top of the screw head such that it can be connected to the hinge's :class:`~topology.CylindricalJoint`."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:213
+msgid "Step 7: Connect the Joints together"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:215
+msgid "This last step is the most interesting. Now that all of the joints have been defined and bound to their parent objects, they can be connected together."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:219
+msgid "Step 7a: Hinge to Box"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:221
+msgid "To start, the outer hinge leaf will be connected to the box, as follows:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:228
+msgid "Here the ``hinge_attachment`` joint of the ``box`` is connected to the ``leaf`` joint of ``hinge_outer``. Note that the hinge leaf is the object to move.  Once this line is executed, we get the following:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:236
+msgid "Step 7b: Hinge to Hinge"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:238
+msgid "Next, the hinge inner leaf is connected to the hinge outer leaf which is attached to the box."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:246
+msgid "As ``hinge_outer.joints[\"hinge_axis\"]`` is a :class:`~topology.RevoluteJoint` there is an ``angle`` parameter that can be set (angles default to the minimum range value) - here to 120°. This is what that looks like:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:254
+msgid "Step 7c: Lid to Hinge"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:256
+msgid "Now the ``lid`` is connected to the ``hinge_inner``:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:263
+msgid "which results in:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:268
+msgid "Note how the lid is now in an open position.  To close the lid just change the above ``angle`` parameter from 120° to 90°."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:272
+msgid "Step 7d: Screw to Hinge"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:274
+msgid "The last step in this example is to place a screw in one of the hinges:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:281
+msgid "As the position is a positive number the screw is still proud of the hinge face as shown here:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:287
+msgid "Try changing these position and angle values to \"tighten\" the screw."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:292
+msgid "Conclusion"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:294
+msgid "Use a :class:`~topology.Joint` to locate two objects relative to each other with some degree of motion. Keep in mind that when using the ``connect_to`` method, ``self`` is always fixed and ``other`` will move to the appropriate :class:`~geometry.Location`."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:300
+msgid "The joint symbols can be displayed as follows (your viewer may use ``show`` instead of ``show_object``):"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:307
+msgid "or"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_joints.rst:313
+msgid "or, with the ocp_vscode viewer"
+msgstr ""

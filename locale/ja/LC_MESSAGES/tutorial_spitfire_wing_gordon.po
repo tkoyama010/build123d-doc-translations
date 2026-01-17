@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:3
+msgid "Tutorial: Spitfire Wing with Gordon Surface"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:5
+msgid ""
+"In this advanced tutorial we construct a Supermarine Spitfire wing as a "
+":meth:`~topology.Face.make_gordon_surface`—a powerful technique for "
+"surfacing from intersecting *profiles* and *guides*. A Gordon surface blends"
+" a grid of curves into a smooth, coherent surface as long as the profiles "
+"and guides intersect consistently."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:12
+msgid ""
+"Gordon surfaces work best when *each profile intersects each guide exactly "
+"once*, producing a well‑formed curve network."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:16
+msgid "Overview"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:18
+msgid "We will:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:20
+msgid ""
+"Define overall wing dimensions and elliptic leading/trailing edge guide "
+"curves"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:21
+msgid ""
+"Sample the guides to size the root and tip airfoils (different NACA "
+"profiles)"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:22
+msgid ""
+"Build the Gordon surface from the airfoil *profiles* and wing‑edge *guides*"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:23
+msgid ""
+"Close the root with a planar face and build the final "
+":class:`~topology.Solid`"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:31
+msgid "Step 1 — Dimensions and guide curves"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:33
+msgid ""
+"We model a single wing (half‑span), with an elliptic leading and trailing "
+"edge. These two edges act as the *guides* for the Gordon surface."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:43
+msgid "Step 2 — Root and tip airfoil sizing"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:45
+msgid ""
+"We intersect the guides with planes normal to the span to size the airfoil "
+"sections. The resulting chord lengths define uniform scales for each airfoil"
+" curve."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:54
+msgid "Step 3 — Build airfoil profiles (root and tip)"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:56
+msgid ""
+"We place two different NACA airfoils on :data:`Plane.YZ`—with the airfoil "
+"origins shifted so the leading edge fraction is aligned—then scale to the "
+"chord lengths from Step 2."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:67
+msgid "Step 4 — Gordon surface construction"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:69
+msgid ""
+"A Gordon surface needs *profiles* and *guides*. Here the airfoil edges are "
+"the profiles; the elliptic edges are the guides. We also add the wing tip "
+"section so the profile grid closes at the tip."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:78
+msgid "Elliptic leading/trailing guides"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:84
+msgid "Step 5 — Cap the root and create the solid"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:86
+msgid ""
+"We extract the closed root edge loop, make a planar cap, and form a solid "
+"shell."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:93
+msgid "Final wing solid"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:98
+msgid "Tips for robust Gordon surfaces"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:100
+msgid "Ensure each profile intersects each guide once and only once"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:101
+msgid ""
+"Keep the curve network coherent (no duplicated or missing intersections)"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:102
+msgid ""
+"When possible, reuse the same :class:`~topology.Edge` objects across "
+"adjacent faces"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:105
+msgid "Complete listing"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_spitfire_wing_gordon.rst:107
+msgid "For convenience, here is the full script in one block:"
+msgstr ""

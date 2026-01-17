@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../build123d/docs/external.rst:5
+msgid "External Tools and Libraries"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:7
+msgid "The following sections describe tools and libraries external to build123d that extend its functionality."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:12
+msgid "Editors & Viewers"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:15
+msgid "ocp-vscode"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:17
+msgid "A viewer for OCP based Code-CAD (CadQuery, build123d) integrated into VS Code."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:20
+msgid "See: `ocp-vscode <https://github.com/bernhard-42/vscode-ocp-cad-viewer>`_ (formerly known as cq_vscode)"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:23
+msgid "Watch Jern create three build123d designs in realtime with Visual Studio Code and the ocp-vscode viewer extension in a timed event from the TooTallToby 2024 Spring Open Tournament: `build123d entry video <https://www.youtube.com/watch?v=UhUmMInlJic>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:28
+msgid "cq-editor fork"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:30
+msgid "GUI editor based on PyQT. This fork has changes from jdegenstein to allow easier use with build123d."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:32
+msgid "See: `jdegenstein's fork of cq-editor <https://github.com/jdegenstein/jmwright-CQ-Editor>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:35
+msgid "Yet Another CAD Viewer"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:37
+msgid "A web-based CAD viewer for OCP models (CadQuery/build123d) that runs in any modern browser and supports static site deployment. Features include interactive inspection of faces, edges, and vertices, measurement tools, per-model clipping planes, transparency control, and hot reloading via ``yacv-server``. It also has a build123d playground for editing and sharing models directly in the browser (`demo <https://yeicor-3d.github.io/yet-another-cad-viewer/#pg_code_url=https://raw.githubusercontent.com/gumyr/build123d/refs/heads/dev/examples/toy_truck.py>`_)."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:43
+msgid "See: `Yet Another CAD Viewer <https://github.com/yeicor-3d/yet-another-cad-viewer>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:46
+msgid "PartCAD VS Code extension"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:48
+msgid "A wrapper around ``ocp-vscode`` (see above) which requires build123d scripts to be packaged using ``PartCAD`` (see below). While it requires the overhead of maintaining the package, it provides some convenience features (such as UI controls to export models) as well as functional features (such as UI controls to pass parameters into build123d scripts and AI-based generative design tools)."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:54
+msgid "It's also the most convenient tool to create new packages and parts. More PDM and PLM features are expected to arrive soon."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:58
+msgid "Part Libraries"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:61
+msgid "bd_warehouse"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:63
+msgid "On-demand generation of parametric parts that seamlessly integrate into build123d projects."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:66
+msgid "Parts available include:"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:68
+msgid "fastener - Nuts, Screws, Washers and custom holes"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:69
+msgid "flange - Standardized parametric flanges"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:70
+msgid "pipe - Standardized parametric pipes"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:71
+msgid "thread - Parametric helical threads (Iso, Acme, Plastic, etc.)"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:73
+msgid "See: `bd_warehouse <https://bd-warehouse.readthedocs.io/en/latest/index.html>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:76
+msgid "bd_beams_and_bars"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:78
+msgid "2D sections and 3D beams generation (UPN, IPN, UPE, flat bars, ...)"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:80
+msgid "See: `bd_beams_and_bars <https://bd-beams-and-bars.3d.experimentslabs.com/>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:83
+msgid "Superellipses & Superellipsoids"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:85
+msgid "Superellipses are a more sophisticated alternative to rounded rectangles, with smoothly changing curvature. They are flexible shapes that can be adjusted by changing the \"exponent\" to get a result that varies between rectangular and elliptical, or from square, through squircle, to circle, and beyond..."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:91
+msgid "Superellipses can be found:"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:93
+msgid "in typefaces such as Melior, Eurostyle, and Computer Modern"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:94
+msgid "as the shape of airliner windows, tables, plates"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:95
+msgid "clipping the outline of iOS app icons"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:97
+msgid "They were named and popularized in the 1950s-1960s by the Danish mathematician and poet Piet Hein, who used them in the winning design for the Sergels Torg roundabout in Stockholm."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:101
+msgid "See: `Superellipses & Superellipsoids <https://github.com/fanf2/kbd/blob/model-b/keybird42/superellipse.py>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:104
+msgid "Public PartCAD repository"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:106
+msgid "See `partcad.org <https://partcad.org/repository>`_ for all the models packaged and published using ``PartCAD`` (see below). This repository contains individual parts, as well as large assemblies created using those parts. See `the OpenVMP robot <https://partcad.org/repository/package/robotics/multimodal/openvmp/robots/don1>`_ as an example of an assembly"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:113
+msgid "gggears generator"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:114
+msgid "A gear generation framework that allows easy creation of a wide range of gears and drives."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:116
+msgid "See `gggears <https://github.com/GarryBGoode/gggears>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:119
+msgid "bd_vslot"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:121
+msgid "A library of V-Slot linear rail components, including V-Slot rails."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:123
+msgid "See: `bd_vslot <https://bd-vslot.readthedocs.io>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:127
+msgid "Tools"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:130
+msgid "blendquery"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:132
+msgid "CadQuery and build123d integration for Blender."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:134
+msgid "See: `blendquery <https://github.com/uki-dev/blendquery>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:137
+msgid "nething"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:139
+msgid "3D generative AI for CAD modeling. Now everyone is an engineer. Make your ideas real."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:141
+msgid "See: `nething <https://nething.xyz/>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:143
+msgid "Listen to the following podcast which discusses **nething** in detail: `The Next Byte Podcast <https://pod.link/wevolver/episode/74b11c1ff2bfc977adc96e5c7b4cd162>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:147
+msgid "ocp-freecad-cam"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:149
+msgid "CAM for CadQuery and Build123d by leveraging FreeCAD library. Visualizes in CQ-Editor and ocp-cad-viewer. Spiritual successor of `cq-cam <https://github.com/voneiden/cq-cam>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:152
+msgid "See: `ocp-freecad-cam <https://github.com/voneiden/ocp-freecad-cam>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:155
+msgid "PartCAD"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:157
+msgid "A package manager for CAD models. Build123d is the most supported Code-CAD framework, but CadQuery and OpenSCAD are also supported. It can be used by build123d designs `to import parts <https://partcad.readthedocs.io/en/latest/use_cases.html#python-build123d>`_ from PartCAD repositories, and to `publish build123d designs <https://partcad.readthedocs.io/en/latest/use_cases.html#publish-packages>`_ to be consumed by others."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:165
+msgid "dl4to4ocp"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:167
+msgid "Library that helps perform `topology optimization <https://en.wikipedia.org/wiki/Topology_optimization>`_ on your `OCP <https://github.com/CadQuery/OCP>`_-based CAD models (`CadQuery <https://github.com/CadQuery/cadquery>`_/`Build123d <https://github.com/gumyr/build123d>`_/...) using the `dl4to <https://github.com/dl4to/dl4to>`_ library."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:172
+msgid "See: `dl4to4ocp <https://github.com/yeicor-3d/dl4to4ocp/>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:175
+msgid "OCP.wasm"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:177
+msgid "This project ports the low-level dependencies required for build123d to run in a browser. For a fully featured frontend, check out ``Yet Another CAD Viewer`` (see above)."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:180
+msgid "See: `OCP.wasm <https://github.com/yeicor/OCP.wasm>`_"
+msgstr ""

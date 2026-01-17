@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/key_concepts_algebra.rst:3
+msgid "Key Concepts (algebra mode)"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:5
+msgid ""
+"Build123d's algebra mode works on objects of the classes ``Shape``, "
+"``Part``, ``Sketch`` and ``Curve`` and is based on two concepts:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:7
+msgid "**Object arithmetic**"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:8
+msgid "**Placement arithmetic**"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:11
+msgid "Object arithmetic"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:13
+msgid "Creating a box and a cylinder centered at ``(0, 0, 0)``"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:20
+msgid "Fusing a box and a cylinder"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:26
+msgid "Cutting a cylinder from a box"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:32
+msgid "Intersecting a box and a cylinder"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:38
+msgid "**Notes:**"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:40
+msgid ""
+"`b`, `c` and `r` are instances of class ``Compound`` and can be viewed with "
+"every viewer that can show ``build123d.Compound`` objects."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:41
+msgid ""
+"A discussion around performance can be found in :ref:`algebra_performance`."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:42
+msgid ""
+"A mathematically formal definition of the algebra can be found in "
+":ref:`algebra_definition`."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:46
+msgid "Placement arithmetic"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:48
+msgid ""
+"A ``Part``, ``Sketch`` or ``Curve`` does not have any location or rotation "
+"parameter. The rationale is that an object defines its topology (shape, "
+"sizes and its center), but does not know where in space it will be located. "
+"Instead, it will be relocated with the ``*`` operator onto a plane and to "
+"location relative to the plane (similar ``moved``)."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:53
+msgid "The generic forms of object placement are:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:55
+msgid "Placement on ``plane`` or at ``location`` relative to XY plane:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:62
+msgid ""
+"2. Placement on the ``plane`` and then moved relative to the ``plane`` by "
+"``location`` (the location is relative to the local coordinate system of the"
+" plane)."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:70
+msgid "Details can be found in :ref:`location_arithmetics`."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:72
+msgid "Examples:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:74
+msgid ""
+"Box on the ``XY`` plane, centered at `(0, 0, 0)` (both forms are "
+"equivalent):"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:82
+msgid ""
+"Note: On the ``XY`` plane no placement is needed (mathematically ``Plane.XY "
+"*`` will not change the location of an object)."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:85
+msgid ""
+"Box on the ``XY`` plane centered at `(0, 1, 0)` (all three are equivalent):"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:95
+msgid "Note: Again, ``Plane.XY`` can be omitted."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:97
+msgid "Box on plane ``Plane.XZ``:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:103
+msgid ""
+"Box on plane ``Plane.XZ`` with a location ``(X=1, Y=2, Z=3)`` relative to "
+"the ``XZ`` plane, i.e., using the x-, y- and z-axis of the ``XZ`` plane:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:110
+msgid ""
+"Box on plane ``Plane.XZ`` moved to ``(X=1, Y=2, Z=3)`` relative to this "
+"plane and rotated there by the angles `(X=0, Y=100, Z=45)` around "
+"``Plane.XZ`` axes:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:119
+msgid "Note: ``Pos * Rot`` is the same as using ``Location`` directly"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:121
+msgid ""
+"Box on plane ``Plane.XZ`` rotated on this plane by the angles ``(X=0, Y=100,"
+" Z=45)`` (using the x-, y- and z-axis of the ``XZ`` plane) and then moved to"
+" ``(X=1, Y=2, Z=3)`` relative to the ``XZ`` plane:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:130
+msgid "Combing both concepts"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:132
+msgid "**Object arithmetic** and **Placement at locations** can be combined:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:138
+msgid ""
+"**Note:** In Python ``*`` binds stronger then ``+``, ``-``, ``&``, hence "
+"brackets are not needed."
+msgstr ""

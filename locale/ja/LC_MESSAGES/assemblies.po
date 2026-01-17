@@ -1,0 +1,326 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 04:21+0000\n"
+"PO-Revision-Date: 2026-01-17 04:21+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/assemblies.rst:5
+msgid "Assemblies"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:7
+msgid ""
+"Most CAD designs consist of more than one part which are naturally arranged "
+"in some type of assembly. Once parts have been assembled in a "
+":class:`~topology.Compound` object they can be treated as a unit - i.e. "
+":meth:`~topology.Shape.moved` or exported."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:11
+msgid ""
+"To create an assembly in build123d, one needs to create a tree of parts by "
+"simply assigning either a :class:`~topology.Compound` object's ``parent`` or"
+" ``children`` attributes. To illustrate the process, we'll extend the "
+":ref:`Joint Tutorial <joint_tutorial>`."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:18
+msgid "Assigning Labels"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:20
+msgid ""
+"In order keep track of objects one can assign a ``label`` to all "
+":class:`~topology.Shape` objects. Here we'll assign labels to all of the "
+"components that will be part of the box assembly:"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:29
+msgid ""
+"The labels are just strings with no further limitations (they don't have to "
+"be unique within the assembly)."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:34
+msgid "Create the Assembly Compound"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:36
+msgid ""
+"Creation of the assembly is done by simply creating a "
+":class:`~topology.Compound` object and assigning appropriate ``parent`` and "
+"``children`` attributes as shown here:"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:44
+msgid ""
+"To display the topology of an assembly :class:`~topology.Compound`, the "
+":meth:`~topology.Shape.show_topology` method can be used as follows:"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:52
+msgid "which results in:"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:62
+msgid ""
+"To add to an assembly :class:`~topology.Compound` one can change either "
+"``children`` or ``parent`` attributes."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:69
+msgid "and now the screw is part of the assembly."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:84
+msgid "Shallow vs. Deep Copies of Shapes"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:86
+msgid ""
+"Build123d supports the standard python ``copy`` module which provides two "
+"different types of copy operations ``copy.copy()`` and ``copy.deepcopy()``."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:89
+msgid ""
+"Build123d's implementation of ``deepcopy()`` for the "
+":class:`~topology.Shape` class (e.g. ``Solid``, ``Face``, etc.) does just "
+"that, creates a complete copy of the original  all the way down to the CAD "
+"object. ``deepcopy`` is therefore suited to the case where the copy will be "
+"subsequently modified to become its own unique item."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:94
+msgid ""
+"However, when building an assembly a common use case is to include many "
+"instances of an object, each one identical but in a different location. This"
+" is where ``copy.copy()`` is very useful as it copies all of the "
+":class:`~topology.Shape` except for the actual CAD object which instead is a"
+" reference to the original (OpenCascade refers this as a ``TShape``). As "
+"it's a reference any changes to the original will be seen in all of the "
+"shallow copies."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:100
+msgid "Consider this example where 100 screws are added to an assembly:"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:114
+msgid ""
+"which takes about 5 seconds to run (on an older computer) and produces a "
+"file of size 51938 KB. However, if a shallow copy is used instead:"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:126
+msgid ""
+"this takes about ¼ second and produces a file of size 550 KB - just over 1% "
+"of the size of the ``deepcopy()`` version and only 12% larger than the "
+"screw's step file."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:130
+msgid ""
+"Using ``copy.copy()`` to create references to the original CAD object for "
+"assemblies can substantially reduce the time and resources used to create "
+"and store that assembly."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:136
+msgid "Shapes are Anytree Nodes"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:138
+msgid ""
+"The build123d assembly constructs are built using the python `anytree "
+"<https://anytree.readthedocs.io/en/latest/>`_ package by making the "
+"build123d :class:`~topology.Shape` class a sub-class of anytree's "
+"``NodeMixin`` class. Doing so adds the following attributes to "
+":class:`~topology.Shape`:"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:143
+msgid ""
+"``parent`` - Parent Node. On set, the node is detached from any previous "
+"parent node and attached to the new node."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:144
+msgid "``children`` - Tuple of all child nodes."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:145
+msgid "``path`` - Path of this ``Node``."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:146
+msgid "``iter_path_reverse`` - Iterate up the tree from the current node."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:147
+msgid "``ancestors`` - All parent nodes and their parent nodes."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:148
+msgid "``descendants`` - All child nodes and all their child nodes."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:149
+msgid "``root`` - Tree Root Node."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:150
+msgid "``siblings`` - Tuple of nodes with the same parent."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:151
+msgid "``leaves`` - Tuple of all leaf nodes."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:152
+msgid "``is_leaf`` - ``Node`` has no children (External Node)."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:153
+msgid "``is_root`` - ``Node`` is tree root."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:154
+msgid "``height`` - Number of edges on the longest path to a leaf ``Node``."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:155
+msgid "``depth`` - Number of edges to the root ``Node``."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:159
+msgid "Changing the ``children`` attribute"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:161
+msgid ""
+"Any iterator can be assigned to the ``children`` attribute but subsequently "
+"the children are stored as immutable ``tuple`` objects.  To add a child to "
+"an existing :class:`~topology.Compound` object, the ``children`` attribute "
+"will have to be reassigned."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:169
+msgid "Iterating Over Compounds"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:171
+msgid ""
+"As Compounds are containers for shapes, build123d can iterate over these as "
+"required. Complex nested assemblies (compounds within compounds) do not need"
+" to be looped over with recursive functions. In the example below, the "
+"variable total_volume holds the sum of all the volumes in each solid in an "
+"assembly. Compare this to assembly3_volume which only results in the volume "
+"of the top level part."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:191
+msgid "pack"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:193
+msgid ""
+"The  :meth:`pack.pack` function arranges objects in a compact, non-"
+"overlapping layout within a square(ish) 2D area. It is designed to minimize "
+"the space between objects while ensuring that no two objects overlap."
+msgstr ""
+
+#: ../../build123d/src/build123d/pack.pydocstring of pack.pack:1
+msgid "Pack objects in a squarish area in Plane.XY."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../build123d/src/build123d/pack.pydocstring of pack.pack:3
+msgid "objects to arrange"
+msgstr ""
+
+#: ../../build123d/src/build123d/pack.pydocstring of pack.pack:5
+msgid "space between objects"
+msgstr ""
+
+#: ../../build123d/src/build123d/pack.pydocstring of pack.pack:7
+msgid "align shape bottoms to Plane.XY. Defaults to False."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../build123d/src/build123d/pack.pydocstring of pack.pack:10
+msgid "rearranged objects"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:203
+msgid "Detailed Description"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:205
+msgid ""
+"The ``pack`` function uses a bin-packing algorithm to efficiently place "
+"objects within a 2D plane, ensuring that there is no overlap and that the "
+"space between objects is minimized. This is particularly useful in scenarios"
+" where spatial efficiency is crucial, such as layout design and object "
+"arrangement in constrained spaces."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:207
+msgid ""
+"The function begins by calculating the bounding boxes for each object, "
+"including the specified padding. It then uses a helper function ``_pack2d`` "
+"to determine the optimal positions for each object within the 2D plane. The "
+"positions are then translated back to the original objects, ensuring that "
+"they are arranged without overlapping."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:210
+msgid "Usage Note"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:212
+msgid ""
+"The ``align_z`` parameter is especially useful when creating print-plates "
+"for 3D printing. By aligning the bottoms of the shapes to the same XY plane,"
+" you ensure that the objects are perfectly positioned for slicing software, "
+"which will no longer need to perform this alignment for you. This can "
+"streamline the process and improve the accuracy of the print setup."
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:215
+msgid "Example Usage"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:266
+msgid "Tip"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:268
+msgid ""
+"If you place the arranged objects into a ``Compound``, you can easily "
+"determine their bounding box and check whether the objects fit on your print"
+" bed."
+msgstr ""

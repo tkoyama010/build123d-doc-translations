@@ -8,7 +8,7 @@ For example::
 This conf.py does:
 
 - Specify `locale_dirs`.
-- Overrides source directory as 'build123d/docs`.
+- Overrides source directory as `build123d/docs`.
 
 """
 import os

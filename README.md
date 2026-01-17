@@ -1,11 +1,5 @@
 # build123d official documentation translations
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 [![build123d](https://img.shields.io/badge/%F0%9F%94%A7-build123d-white)](https://build123d.readthedocs.io)
 ![All Contributors](https://img.shields.io/github/all-contributors/tkoyama010/build123d-doc-translations?color=ee8449)
 

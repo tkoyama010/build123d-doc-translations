@@ -17,4 +17,8 @@ sphinx:
 
 python:
   install:
+    - method: pip
+      path: ./build123d
+      extra_requirements:
+        - docs
     - requirements: requirements.txt

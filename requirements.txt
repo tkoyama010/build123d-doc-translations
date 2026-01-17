@@ -1,2 +1,1 @@
-build123d[docs] @ git+https://github.com/gumyr/build123d.git@dev
 sphinx-intl[transifex]==2.2.0

@@ -7,7 +7,7 @@
 the Read The Docs platform, in multiple languages.
 
 > [!NOTE]
-> The current procedure is bit tricky because Read The Docs
+> The current procedure is a bit tricky because Read The Docs
 > doesn't have a way to specify options for `sphinx-build` command.
 > We use the `post_create_environment` job to copy the `locales` directory
 > to `build123d/docs` and Sphinx will automatically find the translations.

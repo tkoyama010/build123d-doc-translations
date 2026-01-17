@@ -1,1 +1,4 @@
 locales/pot/.doctrees/
+locales/pot/**/*.pickle
+locales/pot/_sphinx_design_static/
+locales/pot/_static/

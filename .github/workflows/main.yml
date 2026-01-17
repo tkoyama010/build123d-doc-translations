@@ -1,0 +1,69 @@
+name: build123d-auto-update
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+permissions:
+  pull-requests: write
+  issues: write
+  repository-projects: write
+jobs:
+  script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Get Job URL
+        uses: Tiryoh/gha-jobid-action@v1
+        id: jobs
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          job_name: script
+      - name: checkout with submodule
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          token: ${{ secrets.PERSONAL_ACCESSTOKEN }}
+      - name: Setup SSH
+        uses: MrSquaare/ssh-setup-action@v3
+        with:
+          host: github.com
+          private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: install
+        run: |
+          (cd build123d; git fetch origin; git checkout dev; git reset --hard origin/dev; git branch -a)
+          pip3 install -U pip setuptools
+          pip3 install -r ./requirements.txt
+          curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
+          mv tx /usr/local/bin/tx
+      - name: update
+        env:
+          SPHINXINTL_TRANSIFEX_ORGANIZATION_NAME: tkoyama010
+          SPHINXINTL_TRANSIFEX_USERNAME: api
+          SPHINXINTL_TRANSIFEX_PROJECT_NAME: build123d-doc
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+        run: |
+          sh ./locale/update.sh
+      - name: git_config
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions Bot"
+      - name: commit
+        if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'main')
+        env:
+          JOB_ID: ${{ steps.jobs.outputs.job_id }}
+          HTML_URL: ${{ steps.jobs.outputs.html_url }}
+        run: |
+          git add .
+          git commit --allow-empty -m "[ci skip] $JOB_ID
+          $HTML_URL"
+          git remote -v
+          git remote add github git@github.com:$GITHUB_REPOSITORY.git
+          git push github main

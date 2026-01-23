@@ -48,11 +48,11 @@ msgstr ""
 
 #: ../../build123d/docs/index.rst:45
 msgid "Minimal or no internal state depending on mode"
-msgstr ""
+msgstr "モードに応じて、内部状態は最小限に抑えられているか、もしくは全く保持されません"
 
 #: ../../build123d/docs/index.rst:46
 msgid "Explicit 1D, 2D, and 3D geometry classes with well-defined operations"
-msgstr ""
+msgstr "明確なオペレーションを備えた、1D/2D/3Dの明示的なジオメトリクラス群"
 
 #: ../../build123d/docs/index.rst:47
 msgid ""

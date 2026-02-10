@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-02-10 00:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -710,11 +710,19 @@ msgstr ""
 msgid "file path of STL file to import"
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_stl:10
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_stl:9
+msgid "the default unit used when creating the model. For example, Blender defaults to Unit.M. Defaults to Unit.MM."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_stl:13
 msgid "Could not import file"
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_stl:12
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_stl:14
+msgid "Invalid model_unit"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_stl:16
 msgid "STL model"
 msgstr ""
 

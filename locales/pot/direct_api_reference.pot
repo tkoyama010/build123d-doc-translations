@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-10 00:29+0000\n"
+"POT-Creation-Date: 2026-02-11 00:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,7 +150,6 @@ msgid "axis to compare to"
 msgstr ""
 
 #: ../../build123d/docs/direct_api_reference.rst:0
-#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:0
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.curvature_comb:0
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.normal:0
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.principal_properties:0
@@ -1416,54 +1415,54 @@ msgid "faces, and/or solids."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:1
-msgid "2D Text that optionally follows a path."
+msgid "Text that optionally follows a path."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:3
-msgid "The text that is created can be combined as with other sketch features by specifying a mode or rotated by the given angle.  In addition, edges have been previously created with arc or segment, the text will follow the path defined by these edges. The start parameter can be used to shift the text along the path to achieve precise positioning."
+msgid "The text that is created can be combined as with other sketch features by specifying a mode or rotated by the given angle. In addition, edges have been previously created with arc or segment, the text will follow the path defined by these edges. The start parameter can be used to shift the text along the path to achieve precise positioning."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:8
-msgid "text to be rendered"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:9
-msgid "size of the font in model units"
+msgid "text to render"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:10
-msgid "font name"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:11
-msgid "path to font file"
+msgid "size of the font in model units"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:12
-msgid "text style. Defaults to FontStyle.REGULAR"
+msgid "font name. Defaults to \"Arial\""
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:13
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:14
+msgid "system path to font file. Defaults to None"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:16
+msgid "font style, REGULAR, BOLD, BOLDITALIC, or ITALIC. Defaults to Font_Style.REGULAR"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:19
 msgid "horizontal text align LEFT, CENTER, or RIGHT. Vertical text align BOTTOM, CENTER, TOP, or TOPFIRSTLINE. Defaults to (TextAlign.CENTER, TextAlign.CENTER)"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:17
-msgid "align min, center, or max of object. Defaults to None"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:20
-msgid "the relative location on path to position the text, between 0.0 and 1.0. Defaults to 0.0"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:22
-msgid "a path for the text to follows. Defaults to None (linear text)"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:24
-msgid "a Compound object containing multiple Faces representing the text"
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:23
+msgid "align MIN, CENTER, or MAX of object. Defaults to None"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:26
+msgid "the relative location on path to position the text, values must be between 0.0 and 1.0. Defaults to 0.0"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:29
+msgid "(Edge | Wire, optional): path for text to follow. Defaults to None Compound object containing multiple Shapes representing the text"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:31
+msgid "width of outlined single line font. Defaults to 0.0"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:35
 msgid "Examples::"
 msgstr ""
 

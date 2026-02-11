@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 00:22+0000\n"
+"POT-Creation-Date: 2026-02-11 00:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -339,7 +339,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.SlotCenterPoint:14
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.SlotCenterToCenter:11
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.SlotOverall:14
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:47
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:50
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Trapezoid:19
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Triangle:25
 msgid "combination mode. Defaults to Mode.ADD"
@@ -1105,6 +1105,7 @@ msgid "A technical drawing with descriptions"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:393
+#: ../../build123d/docs/objects.rst:533
 msgid "Text"
 msgstr ""
 
@@ -1146,7 +1147,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.SlotCenterPoint:12
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.SlotCenterToCenter:9
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.SlotOverall:9
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:45
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:48
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Trapezoid:14
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Triangle:20
 msgid "angle to rotate object. Defaults to 0"
@@ -1561,6 +1562,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:42
 msgid "the relative location on path to position the text, values must be between 0.0 and 1.0. Defaults to 0.0"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:45
+msgid "width of outlined single line font. Defaults to 4% of font_size"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Trapezoid:1
@@ -2023,30 +2028,135 @@ msgstr ""
 msgid "maximum position far face along z-axis"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:532
+#: ../../build123d/docs/objects/text.rst:2
+#: ../../build123d/docs/objects/text.rst:2
+msgid "Create Text Object"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:4
+#: ../../build123d/docs/objects/text.rst:4
+msgid "Create text object or add to ``BuildSketch`` using :class:`~objects_sketch.Text`:"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:18
+#: ../../build123d/docs/objects/text.rst:18
+msgid "Specify font and style. Fonts have up to 4 font styles: ``REGULAR``, ``BOLD``, ``ITALIC``, ``BOLDITALIC``. All fonts can use ``ITALIC`` even if only ``REGULAR`` is defined."
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:27
+#: ../../build123d/docs/objects/text.rst:27
+msgid "Find available fonts on system and available styles:"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:46
+#: ../../build123d/docs/objects/text.rst:46
+msgid "Font faces like ``\"Arial Black\"`` or ``\"Arial Narrow\"`` must be specified by name rather than ``FontStyle``:"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:54
+#: ../../build123d/docs/objects/text.rst:54
+msgid "Specify a font file directly by filename:"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:61
+#: ../../build123d/docs/objects/text.rst:61
+msgid "Fonts added via ``font_path`` persist in the font list:"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:78
+#: ../../build123d/docs/objects/text.rst:78
+msgid "Add a font file to ``FontManager`` if a font is reused in the script or contains multiple font faces:"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:98
+#: ../../build123d/docs/objects/text.rst:98
+msgid "Placement"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:100
+#: ../../build123d/docs/objects/text.rst:100
+msgid "Multiline text has two methods of alignment. ``text_align`` aligns the text relative to its ``Location``:"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:114
+#: ../../build123d/docs/objects/text.rst:114
+msgid "``align`` aligns the object bounding box relative to its ``Location`` *after* text alignment:"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:129
+#: ../../build123d/docs/objects/text.rst:129
+msgid "Place text along an ``Edge`` or ``Wire`` with ``path`` and ``position_on_path``:"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:151
+#: ../../build123d/docs/objects/text.rst:151
+msgid "Single Line Fonts"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:153
+#: ../../build123d/docs/objects/text.rst:153
+msgid "``\"singleline\"`` is a special font referencing ``Relief SingleLine CAD``. Glyphs are represented as single lines rather than filled faces."
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:156
+#: ../../build123d/docs/objects/text.rst:156
+msgid "``Text`` creates an outlined face by default. The outline width is controlled by ``single_line_width``. This operation is slow with many glyphs."
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:171
+#: ../../build123d/docs/objects/text.rst:171
+msgid "Use ``Compound.make_text()`` to create *unoutlined* single-line text. Useful for routing, engraving, or drawing label paths."
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:186
+#: ../../build123d/docs/objects/text.rst:186
+msgid "Common Issues"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:189
+#: ../../build123d/docs/objects/text.rst:189
+msgid "Missing Glyphs or Invalid Geometry"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:191
+#: ../../build123d/docs/objects/text.rst:191
+msgid "Modern variable-width fonts often contain glyphs with overlapping stroke outlines, which produce invalid geometry. ``ocp_vscode`` ignores invalid faces."
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:206
+#: ../../build123d/docs/objects/text.rst:206
+msgid "FileNotFoundError"
+msgstr ""
+
+#: ../../build123d/docs/objects/text.rst:208
+#: ../../build123d/docs/objects/text.rst:208
+msgid "Ensure relative ``font_path`` specifications are relative to the *current working directory*."
+msgstr ""
+
+#: ../../build123d/docs/objects.rst:539
 msgid "Custom Objects"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:534
+#: ../../build123d/docs/objects.rst:541
 msgid "All of the objects presented above were created using one of three base object classes: :class:`~objects_curve.BaseLineObject` , :class:`~objects_sketch.BaseSketchObject` , and :class:`~objects_part.BasePartObject` .  Users can use these base object classes to easily create custom objects that have all the functionality of the core objects."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:542
+#: ../../build123d/docs/objects.rst:549
 msgid "Here is an example of a custom sketch object specially created as part of the design of this playing card storage box (:download:`see the playing_cards.py example <../examples/playing_cards.py>`):"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:550
+#: ../../build123d/docs/objects.rst:557
 msgid "Here the new custom object class is called ``Club`` and it's a sub-class of :class:`~objects_sketch.BaseSketchObject` .  The ``__init__`` method contains all of the parameters used to instantiate the custom object, specially a ``height``, ``rotation``, ``align``, and ``mode`` - your objects may contain a sub or super set of these parameters but should always contain a ``mode`` parameter such that it can be combined with a builder's object."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:557
+#: ../../build123d/docs/objects.rst:564
 msgid "Next is the creation of the object itself, in this case a sketch of the club suit."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:559
+#: ../../build123d/docs/objects.rst:566
 msgid "The final line calls the ``__init__`` method of the super class - i.e. :class:`~objects_sketch.BaseSketchObject` with its parameters."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:562
+#: ../../build123d/docs/objects.rst:569
 msgid "That's it, now the ``Club`` object can be used anywhere a :class:`~objects_sketch.Circle` would be used - with either the Algebra or Builder API."
 msgstr ""

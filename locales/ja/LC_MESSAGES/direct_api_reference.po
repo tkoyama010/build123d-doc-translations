@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 00:28+0000\n"
+"POT-Creation-Date: 2026-02-24 00:23+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -479,6 +479,22 @@ msgstr ""
 
 #: ../docstring of geometry.BoundBox.measure:5
 msgid "For 3D objects: volume"
+msgstr ""
+
+#: ../docstring of geometry.BoundBox.overlaps:1
+msgid "Check if this bounding box overlaps with another."
+msgstr ""
+
+#: ../docstring of geometry.BoundBox.overlaps:3
+msgid "BoundBox to check overlap with"
+msgstr ""
+
+#: ../docstring of geometry.BoundBox.overlaps:4
+msgid "Distance tolerance for overlap detection"
+msgstr ""
+
+#: ../docstring of geometry.BoundBox.overlaps:6
+msgid "True if bounding boxes overlap (share any volume), False otherwise"
 msgstr ""
 
 #: ../docstring of geometry.BoundBox.to_align_offset:1
@@ -1602,43 +1618,6 @@ msgid "Extracted objects"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.pydocstring of
-#: topology.composite.Compound.intersect:1
-msgid "Intersect Compound with Shape or geometry object"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/composite.pydocstring of
-#: topology.composite.Compound.intersect:3
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.intersect:3
-#: ../../build123d/src/build123d/topology/three_d.pydocstring of
-#: topology.three_d.Mixin3D.intersect:3
-#: ../../build123d/src/build123d/topology/two_d.pydocstring of
-#: topology.two_d.Mixin2D.intersect:3
-msgid "objects to intersect"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/composite.pydocstring of
-#: topology.composite.Compound.intersect:6
-#: ../../build123d/src/build123d/topology/three_d.pydocstring of
-#: topology.three_d.Mixin3D.intersect:6
-msgid "ShapeList of vertices, edges,     faces, and/or solids."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/composite.pydocstring of
-#: topology.composite.Compound.intersect:8
-#: ../../build123d/src/build123d/topology/three_d.pydocstring of
-#: topology.three_d.Mixin3D.intersect:8
-msgid "ShapeList of vertices, edges,"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/composite.pydocstring of
-#: topology.composite.Compound.intersect:9
-#: ../../build123d/src/build123d/topology/three_d.pydocstring of
-#: topology.three_d.Mixin3D.intersect:9
-msgid "faces, and/or solids."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/composite.pydocstring of
 #: topology.composite.Compound.make_text:1
 msgid "Text that optionally follows a path."
 msgstr ""
@@ -1791,6 +1770,43 @@ msgid "visible & hidden Edges"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.touch:1
+msgid "Distribute touch over compound elements."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.touch:3
+msgid ""
+"Iterates over elements and collects touch results. Only Solid and Face "
+"elements produce boundary contacts; other shapes return empty."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.touch:6
+#: ../../build123d/src/build123d/topology/three_d.pydocstring of
+#: topology.three_d.Solid.touch:10
+msgid "Shape to check boundary contacts with"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.touch:7
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.touch:7
+#: ../../build123d/src/build123d/topology/three_d.pydocstring of
+#: topology.three_d.Solid.touch:11
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.touch:11
+msgid "tolerance for contact detection"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.touch:9
+#: ../../build123d/src/build123d/topology/three_d.pydocstring of
+#: topology.three_d.Solid.touch:14
+msgid "ShapeList of boundary contact geometry (empty if no contact)"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
 #: topology.composite.Compound.unwrap:1
 msgid "Strip unnecessary Compound wrappers"
 msgstr ""
@@ -1928,6 +1944,48 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Edge.geom_adaptor:1
 msgid "Return the Geom Curve from this Edge"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.geom_equal:1
+msgid "Compare two edges for geometric equality within tolerance."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.geom_equal:3
+msgid ""
+"This compares the geometric properties of two edges, not their topological "
+"identity. Two independently created edges with the same geometry will return"
+" True."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.geom_equal:7
+msgid "Edge to compare with"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.geom_equal:8
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Wire.geom_equal:8
+msgid "Tolerance for numeric comparisons. Defaults to 1e-6."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.geom_equal:9
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Wire.geom_equal:9
+msgid "Number of points to sample for unknown curve types. Defaults to 5."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.geom_equal:12
+msgid "True if edges are geometrically equal within tolerance"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.Edge.is_infinite:1
+msgid "Check if edge is infinite (LINE with length > 1e100)."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
@@ -2635,6 +2693,33 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Edge.trim:11
 msgid "_description_"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.trim_infinite:1
+msgid "Trim an infinite line edge to a finite length."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.trim_infinite:3
+msgid ""
+"OCCT's boolean operations struggle with very long edges (length > 1e100). "
+"This method trims such edges to a reasonable size centered at edge.center()."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.trim_infinite:6
+msgid "For non-infinite edges, returns self unchanged."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.trim_infinite:8
+msgid "Half-length of the resulting edge"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.trim_infinite:10
+msgid "Trimmed edge if infinite, otherwise self"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
@@ -3927,16 +4012,6 @@ msgid "Unused - only here because Mixin1D is a subclass of Shape"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.intersect:1
-msgid "Intersect Edge with Shape or geometry object"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.intersect:6
-msgid "ShapeList of vertices and/or edges"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.Mixin1D.is_closed:1
 msgid "Are the start and end points equal?"
 msgstr ""
@@ -4371,26 +4446,6 @@ msgid "Point and normal of intersection"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
-#: topology.two_d.Mixin2D.intersect:1
-msgid "Intersect Face with Shape or geometry object"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/two_d.pydocstring of
-#: topology.two_d.Mixin2D.intersect:6
-msgid "ShapeList of vertices, edges, and/or     faces."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/two_d.pydocstring of
-#: topology.two_d.Mixin2D.intersect:8
-msgid "ShapeList of vertices, edges, and/or"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/two_d.pydocstring of
-#: topology.two_d.Mixin2D.intersect:9
-msgid "faces."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.two_d.Mixin2D.location_at:1
 msgid "A location from a face or shell"
 msgstr ""
@@ -4398,6 +4453,48 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.two_d.Mixin2D.offset:1
 msgid "Return a copy of self moved along the normal by amount"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.touch:1
+msgid "Find boundary contacts between this 2D shape and another shape."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.touch:3
+msgid ""
+"Returns the highest-dimensional contact at each location, filtered to avoid "
+"returning lower-dimensional boundaries of higher-dimensional contacts."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.touch:6
+msgid ""
+"For Face/Shell: - Face + Face → Vertex (shared corner or crossing point "
+"without edge/face overlap) - Face + Edge/Vertex → no touch (intersect "
+"already returns dim 0)"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.touch:6
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.touch:10
+msgid "Shape to find contacts with"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.touch:12
+msgid "pre-found faces to filter against (from Mixin3D.touch)"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.touch:13
+msgid "pre-found edges to filter against (from Mixin3D.touch)"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.touch:15
+msgid "ShapeList of contact shapes (Vertex only for 2D+2D)"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/three_d.pydocstring of
@@ -4557,11 +4654,6 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/three_d.pydocstring of
 #: topology.three_d.Mixin3D.hollow:18
 msgid "A hollow solid."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/three_d.pydocstring of
-#: topology.three_d.Mixin3D.intersect:1
-msgid "Intersect Solid with Shape or geometry object"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/three_d.pydocstring of
@@ -5099,27 +5191,54 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.intersect:1
-msgid "Intersection of the arguments and this shape"
+msgid "Find where bodies/interiors meet (overlap or crossing geometry)."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.intersect:3
-msgid "Shape(s) to intersect with"
+msgid ""
+"This is the main entry point for intersection operations. Handles geometry "
+"conversion and delegates to subclass _intersect() implementations."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.intersect:6
+msgid "Semantics:"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.intersect:7
-msgid "Resulting ShapeList may contain different class     than self"
+msgid ""
+"Multiple arguments use AND (chaining): c.intersect(s1, s2) = c ∩ s1 ∩ s2"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.intersect:9
-msgid "Resulting ShapeList may contain different class"
+#: topology.shape_core.Shape.intersect:8
+msgid ""
+"Compound arguments use OR (distribution): c.intersect(Compound([s1, s2])) = "
+"(c ∩ s1) ∪ (c ∩ s2)"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.intersect:10
-msgid "than self"
+#: topology.shape_core.Shape.intersect:11
+msgid "Shape(s) or geometry objects to intersect with"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.intersect:12
+msgid "tolerance for intersection detection"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.intersect:13
+msgid ""
+"if True, include boundary contacts without interior overlap (only relevant "
+"when Solids are involved)"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.intersect:16
+msgid "ShapeList of intersection results, or None if no intersection"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -5712,6 +5831,23 @@ msgid "Approximated shape"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.touch:1
+msgid "Find boundary contacts between this shape and another."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.touch:3
+msgid ""
+"Base implementation returns empty ShapeList. Subclasses (Mixin2D, Mixin3D, "
+"Compound) override this to provide actual touch detection."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.touch:9
+msgid "ShapeList of contact shapes (empty for base implementation)"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.transform_geometry:1
 msgid "Apply affine transform"
 msgstr ""
@@ -5878,6 +6014,18 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.ShapeList.edges:1
 msgid "edges - all the edges in this ShapeList"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.expand:1
+msgid "Expand by dissolving compounds, wires, and shells, filtering nulls."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.expand:3
+msgid ""
+"ShapeList with compounds dissolved to children, wires to edges, shells to "
+"faces, and nulls filtered out"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -6715,6 +6863,26 @@ msgid "The resulting Solid object"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/three_d.pydocstring of
+#: topology.three_d.Solid.touch:1
+msgid "Find where this Solid's boundary contacts another shape."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/three_d.pydocstring of
+#: topology.three_d.Solid.touch:3
+msgid ""
+"Returns geometry where boundaries contact without interior overlap: - Solid "
+"+ Solid → Face + Edge + Vertex (all boundary contacts) - Solid + Face/Shell "
+"→ Face + Edge + Vertex (boundary contacts) - Solid + Edge/Wire → Vertex "
+"(edge endpoints on solid boundary) - Solid + Vertex → Vertex if on boundary "
+"- Solid + Compound → distributes over compound elements"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/three_d.pydocstring of
+#: topology.three_d.Solid.touch:12
+msgid "pre-found intersection solids to filter against"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/three_d.pydocstring of
 #: topology.Solid.volume:1
 msgid "volume - the volume of this Solid"
 msgstr ""
@@ -6817,6 +6985,29 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Wire.geom_adaptor:1
 msgid "Return the Geom Comp Curve for this Wire"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Wire.geom_equal:1
+msgid "Compare two wires for geometric equality within tolerance."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Wire.geom_equal:3
+msgid ""
+"This compares the geometric properties of two wires by comparing their "
+"constituent edges pairwise. Two independently created wires with the same "
+"geometry will return True."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Wire.geom_equal:7
+msgid "Wire to compare with"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Wire.geom_equal:12
+msgid "True if wires are geometrically equal within tolerance"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
@@ -7117,21 +7308,6 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/zero_d.pydocstring of
 #: topology.zero_d.Vertex.extrude:1
 msgid "extrude - invalid operation for Vertex"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/zero_d.pydocstring of
-#: topology.zero_d.Vertex.intersect:1
-msgid "Intersection of vertex and geometric objects or shapes."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/zero_d.pydocstring of
-#: topology.zero_d.Vertex.intersect:3
-msgid "Objects(s) to intersect with"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/zero_d.pydocstring of
-#: topology.zero_d.Vertex.intersect:6
-msgid "Vertex intersection in a ShapeList or None"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/zero_d.pydocstring of

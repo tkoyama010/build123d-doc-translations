@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 00:23+0000\n"
+"POT-Creation-Date: 2026-03-02 18:54+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -85,8 +85,6 @@ msgstr ""
 #: topology.shape_core.Shape.move:0
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.scale:0
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.translate:0
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.two_d.Face.fillet_2d:0
 #: ../../build123d/src/build123d/topology/zero_d.pydocstring of
@@ -406,8 +404,6 @@ msgstr ""
 #: topology.shape_core.Shape.move:5
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.scale:5
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.translate:5
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.two_d.Face.fillet_2d:6 ../docstring of geometry.BoundBox.add:14
 #: ../docstring of geometry.BoundBox.find_outside_box_2d:13 ../docstring of
@@ -2491,6 +2487,37 @@ msgid "a circular arc through the three points"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.param_at:1
+msgid "Map a normalized arc-length position to the underlying OCCT parameter."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.param_at:3
+msgid ""
+"Returns the native OCCT curve parameter corresponding to the given "
+"normalized `position` (0.0 → start, 1.0 → end). For closed/periodic edges, "
+"OCCT may return a value **outside** the edge's nominal parameter range "
+"`[param_min, param_max]` (e.g., by adding/subtracting multiples of the "
+"period). If you require a value folded into the edge's range, apply a modulo"
+" with the parameter span."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.param_at:10
+msgid ""
+"Normalized arc-length position along the shape, where `0.0` is the start and"
+" `1.0` is the end. Values outside `[0.0, 1.0]` are not validated and yield "
+"OCCT-dependent results."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Edge.param_at:15
+msgid ""
+"OCCT parameter (for edges) **or** composite “edgeIndex + fraction” parameter"
+" (for wires), as described above."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Edge.param_at_point:1
 msgid ""
 "Return the normalized parameter (∈ [0.0, 1.0]) of the location on this edge "
@@ -3036,8 +3063,6 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Mixin1D.project:4
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.translate:3
 #: ../../build123d/src/build123d/topology/three_d.pydocstring of
 #: topology.three_d.Mixin3D.is_inside:6
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
@@ -4073,41 +4098,27 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Mixin1D.location_at:16
-msgid "planar mode. Defaults to None."
-msgstr ""
-
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.location_at:18
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.locations:15
+#: topology.one_d.Mixin1D.locations:13
 msgid ""
 "override the x_dir to help with plane creation along a 1D shape. Must be "
-"perpendicalar to shapes tangent. Defaults to None."
+"perpendicular to shapes tangent. Defaults to None."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.location_at:23
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.locations:20
-msgid ""
-"`planar` parameter is deprecated and will be removed in a future release. "
-"Use `x_dir` to specify orientation instead."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.location_at:27
+#: topology.one_d.Mixin1D.location_at:21
 msgid ""
 "A Location object representing local coordinate system     at the specified "
 "distance."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.location_at:29
+#: topology.one_d.Mixin1D.location_at:23
 msgid "A Location object representing local coordinate system"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.location_at:30
+#: topology.one_d.Mixin1D.location_at:24
 msgid "at the specified distance."
 msgstr ""
 
@@ -4127,24 +4138,19 @@ msgid "moving frame calculation method. Defaults to FrameMethod.FRENET."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.locations:13
-msgid "planar mode. Defaults to False."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.locations:24
+#: topology.one_d.Mixin1D.locations:18
 msgid ""
 "A list of Location objects representing local coordinate     systems at the "
 "specified distances."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.locations:26
+#: topology.one_d.Mixin1D.locations:20
 msgid "A list of Location objects representing local coordinate"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.locations:27
+#: topology.one_d.Mixin1D.locations:21
 msgid "systems at the specified distances."
 msgstr ""
 
@@ -4208,51 +4214,6 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Mixin1D.offset_2d:18
 msgid "offset wire"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.param_at:1
-msgid "Map a normalized arc-length position to the underlying OCCT parameter."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.param_at:3
-msgid "The meaning of the returned parameter depends on the type of self:"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.param_at:5
-msgid ""
-"**Edge**: Returns the native OCCT curve parameter corresponding to the given"
-" normalized `position` (0.0 → start, 1.0 → end). For closed/periodic edges, "
-"OCCT may return a value **outside** the edge's nominal parameter range "
-"`[param_min, param_max]` (e.g., by adding/subtracting multiples of the "
-"period). If you require a value folded into the edge's range, apply a modulo"
-" with the parameter span."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.param_at:12
-msgid ""
-"**Wire**: Returns a *composite* parameter encoding both the edge index and "
-"the position within that edge: the **integer part** is the zero-based count "
-"of fully traversed edges, and the **fractional part** is the normalized "
-"position in `[0.0, 1.0]` along the current edge."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.param_at:17
-msgid ""
-"Normalized arc-length position along the shape, where `0.0` is the start and"
-" `1.0` is the end. Values outside `[0.0, 1.0]` are not validated and yield "
-"OCCT-dependent results."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Mixin1D.param_at:22
-msgid ""
-"OCCT parameter (for edges) **or** composite “edgeIndex + fraction” parameter"
-" (for wires), as described above."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
@@ -5571,7 +5532,14 @@ msgid "angle to rotate, in degrees"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.rotate:10
+#: topology.shape_core.Shape.rotate:9
+msgid ""
+"regenerate the shape instead of just changing its location. Defaults to "
+"False."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.rotate:13
 msgid "a copy of the shape, rotated"
 msgstr ""
 
@@ -5925,6 +5893,23 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.translate:1
 msgid "Translates this shape through a transformation."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.translate:3
+msgid "relative movement vector"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.translate:5
+msgid ""
+"regenerate the shape instead of just changing its location Defaults to "
+"False."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.translate:9
+msgid "object with a relative move applied"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -7115,6 +7100,14 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Wire.order_edges:1
 msgid "Return the edges in self ordered by wire direction and orientation"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.one_d.Wire.param_at:1
+msgid ""
+"Return the OCCT comp-curve parameter corresponding to the given wire "
+"position. This is *not* the edge composite parameter; it is the parameter of"
+" the wire’s BRepAdaptor_CompCurve."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-03-03 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,7 +134,7 @@ msgid "Transformation a.k.a. Translation and Rotation"
 msgstr ""
 
 #: ../../build123d/docs/moving_objects.rst:116
-msgid "These methods don't work in the same way as the previous methods in that they don't just change the object's internal :class:`~geometry.Location` but transform the base object itself which is quite slow and potentially problematic."
+msgid "These methods have an optional ``transform`` parameter which allows the user to transform the base object itself which is quite slow and potentially problematic as opposed to just changing the object's internal :class:`~geometry.Location`."
 msgstr ""
 
 #: ../../build123d/docs/moving_objects.rst:120

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 00:24+0000\n"
+"POT-Creation-Date: 2026-03-04 00:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,152 +157,160 @@ msgid "Elliptical arc defined by center,  radii & angles"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:137
-msgid "ParabolicCenterArc"
+msgid "EllipticalStartArc"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:142
-msgid "Parabolic arc defined by vertex, focal length & angles"
+msgid "Elliptical arc defined by start, tangent, radii & angles"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:144
-msgid "HyperbolicCenterArc"
+msgid "ParabolicCenterArc"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:149
-msgid "Hyperbolic arc defined by center, radii & angles"
+msgid "Parabolic arc defined by vertex, focal length & angles"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:151
-msgid "FilletPolyline"
+msgid "HyperbolicCenterArc"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:156
-msgid "Polyline with filleted corners defined by pts and radius"
+msgid "Hyperbolic arc defined by center, radii & angles"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:158
-msgid "Helix"
+msgid "FilletPolyline"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:163
-msgid "Helix defined pitch, radius and height"
+msgid "Polyline with filleted corners defined by pts and radius"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:165
-msgid "IntersectingLine"
+msgid "Helix"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:170
-msgid "Intersecting line defined by start, direction & other line"
+msgid "Helix defined pitch, radius and height"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:172
-msgid "JernArc"
+msgid "IntersectingLine"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:177
-msgid "Arc define by start point, tangent, radius and angle"
+msgid "Intersecting line defined by start, direction & other line"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:179
-msgid "Line"
+msgid "JernArc"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:184
-msgid "Line defined by end points"
+msgid "Arc define by start point, tangent, radius and angle"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:186
-msgid "PolarLine"
+msgid "Line"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:191
-msgid "Line defined by start, angle and length"
+msgid "Line defined by end points"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:193
-msgid "Polyline"
+msgid "PolarLine"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:198
-msgid "Multiple line segments defined by points"
+msgid "Line defined by start, angle and length"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:200
-msgid "RadiusArc"
+msgid "Polyline"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:205
-msgid "Arc defined by two points and a radius"
+msgid "Multiple line segments defined by points"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:207
-msgid "SagittaArc"
+msgid "RadiusArc"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:212
-msgid "Arc defined by two points and a sagitta"
+msgid "Arc defined by two points and a radius"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:214
-msgid "Spline"
+msgid "SagittaArc"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:219
-msgid "Curve define by points"
+msgid "Arc defined by two points and a sagitta"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:221
-msgid "TangentArc"
+msgid "Spline"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:226
-msgid "Arc defined by two points and a tangent"
+msgid "Curve define by points"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:228
-msgid "ThreePointArc"
+msgid "TangentArc"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:233
-msgid "Arc defined by three points"
+msgid "Arc defined by two points and a tangent"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:235
-msgid "ArcArcTangentLine"
+msgid "ThreePointArc"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:240
-msgid "Line tangent defined by two arcs"
+msgid "Arc defined by three points"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:242
-msgid "ArcArcTangentArc"
+msgid "ArcArcTangentLine"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:247
-msgid "Arc tangent defined by two arcs"
+msgid "Line tangent defined by two arcs"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:249
-msgid "PointArcTangentLine"
+msgid "ArcArcTangentArc"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:254
-msgid "Line tangent defined by a point and arc"
+msgid "Arc tangent defined by two arcs"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:256
-msgid "PointArcTangentArc"
+msgid "PointArcTangentLine"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:261
+msgid "Line tangent defined by a point and arc"
+msgstr ""
+
+#: ../../build123d/docs/objects.rst:263
+msgid "PointArcTangentArc"
+msgstr ""
+
+#: ../../build123d/docs/objects.rst:268
 msgid "Arc tangent defined by a point, direction, and arc"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:264
-#: ../../build123d/docs/objects.rst:434
-#: ../../build123d/docs/objects.rst:534
+#: ../../build123d/docs/objects.rst:271
+#: ../../build123d/docs/objects.rst:442
+#: ../../build123d/docs/objects.rst:542
 msgid "Reference"
 msgstr ""
 
@@ -326,7 +334,8 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.Bezier:11
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.CenterArc:13
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.DoubleTangentArc:18
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:24
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:22
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:19
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.FilletPolyline:13
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.Helix:24
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:22
@@ -558,6 +567,7 @@ msgid "Contains a solver."
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.DoubleTangentArc:9
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:5
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.IntersectingLine:5
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:5
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:16
@@ -568,6 +578,7 @@ msgid "start point"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.DoubleTangentArc:11
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:7
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:7
 msgid "tangent at start point"
 msgstr ""
@@ -597,12 +608,14 @@ msgid "ellipse center"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:7
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:9
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:7
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Ellipse:5
 msgid "x radius of the ellipse (along the x-axis of plane)"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:9
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:11
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:9
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Ellipse:7
 msgid "y radius of the ellipse (along the y-axis of plane)"
@@ -630,8 +643,30 @@ msgstr ""
 msgid "arc direction. Defaults to AngularDirection.COUNTER_CLOCKWISE"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:22
-msgid "base plane. Defaults to Plane.XY"
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:1
+msgid "Line Object: EllipticalStartArc"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:3
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:3
+msgid "Create a circular arc defined by a start point/tangent pair, radius and arc size."
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:13
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:11
+msgid "angular size of arc (negative to change direction)"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:15
+msgid "angular position of the start point"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:17
+msgid "direction of ellipse x-axis"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:22
+msgid "One of start_angle or major_axis_dir must be provided."
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:1
@@ -755,14 +790,6 @@ msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:1
 msgid "Line Object: Jern Arc"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:3
-msgid "Create a circular arc defined by a start point/tangent pair, radius and arc size."
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:11
-msgid "angular size of arc (negative to change direction)"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:0
@@ -981,7 +1008,7 @@ msgstr ""
 msgid "which tangent arc to keep, INSIDE or OUTSIDE. Defaults to (Keep.INSIDE, Keep.INSIDE)"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:292
+#: ../../build123d/docs/objects.rst:300
 msgid "ArcArcTangentArc keep table"
 msgstr ""
 
@@ -1033,152 +1060,152 @@ msgstr ""
 msgid "No tangent arc found"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:300
+#: ../../build123d/docs/objects.rst:308
 msgid "2D Objects"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:304
+#: ../../build123d/docs/objects.rst:312
 msgid "Arrow"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:309
+#: ../../build123d/docs/objects.rst:317
 msgid "Arrow with head and path for shaft"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:311
+#: ../../build123d/docs/objects.rst:319
 msgid "ArrowHead"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:316
+#: ../../build123d/docs/objects.rst:324
 msgid "Arrow head with multiple types"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:319
+#: ../../build123d/docs/objects.rst:327
 msgid "Circle"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:324
+#: ../../build123d/docs/objects.rst:332
 msgid "Circle defined by radius"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:326
+#: ../../build123d/docs/objects.rst:334
 msgid "DimensionLine"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:331
+#: ../../build123d/docs/objects.rst:339
 msgid "Dimension line"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:334
+#: ../../build123d/docs/objects.rst:342
 msgid "Ellipse"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:339
+#: ../../build123d/docs/objects.rst:347
 msgid "Ellipse defined by major and minor radius"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:341
+#: ../../build123d/docs/objects.rst:349
 msgid "ExtensionLine"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:346
+#: ../../build123d/docs/objects.rst:354
 msgid "Extension lines for distance or angles"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:348
+#: ../../build123d/docs/objects.rst:356
 msgid "Polygon"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:353
+#: ../../build123d/docs/objects.rst:361
 msgid "Polygon defined by points"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:355
+#: ../../build123d/docs/objects.rst:363
 msgid "Rectangle"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:360
+#: ../../build123d/docs/objects.rst:368
 msgid "Rectangle defined by width and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:362
+#: ../../build123d/docs/objects.rst:370
 msgid "RectangleRounded"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:367
+#: ../../build123d/docs/objects.rst:375
 msgid "Rectangle with rounded corners defined by width, height, and radius"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:369
+#: ../../build123d/docs/objects.rst:377
 msgid "RegularPolygon"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:374
+#: ../../build123d/docs/objects.rst:382
 msgid "RegularPolygon defined by radius and number of sides"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:376
+#: ../../build123d/docs/objects.rst:384
 msgid "SlotArc"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:381
+#: ../../build123d/docs/objects.rst:389
 msgid "SlotArc defined by arc and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:383
+#: ../../build123d/docs/objects.rst:391
 msgid "SlotCenterPoint"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:388
+#: ../../build123d/docs/objects.rst:396
 msgid "SlotCenterPoint defined by two points and a height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:390
+#: ../../build123d/docs/objects.rst:398
 msgid "SlotCenterToCenter"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:395
+#: ../../build123d/docs/objects.rst:403
 msgid "SlotCenterToCenter defined by center separation and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:397
+#: ../../build123d/docs/objects.rst:405
 msgid "SlotOverall"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:402
+#: ../../build123d/docs/objects.rst:410
 msgid "SlotOverall defined by end-to-end length and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:404
+#: ../../build123d/docs/objects.rst:412
 msgid "TechnicalDrawing"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:409
+#: ../../build123d/docs/objects.rst:417
 msgid "A technical drawing with descriptions"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:411
-#: ../../build123d/docs/objects.rst:551
+#: ../../build123d/docs/objects.rst:419
+#: ../../build123d/docs/objects.rst:559
 msgid "Text"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:416
+#: ../../build123d/docs/objects.rst:424
 msgid "Text defined by string and font parameters"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:418
+#: ../../build123d/docs/objects.rst:426
 msgid "Trapezoid"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:423
+#: ../../build123d/docs/objects.rst:431
 msgid "Trapezoid defined by width, height and interior angles"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:425
+#: ../../build123d/docs/objects.rst:433
 msgid "Triangle"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:430
+#: ../../build123d/docs/objects.rst:438
 msgid "Triangle defined by one side & two other sides or interior angles"
 msgstr ""
 
@@ -1733,87 +1760,87 @@ msgstr ""
 msgid "vertex 'C'"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:458
+#: ../../build123d/docs/objects.rst:466
 msgid "3D Objects"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:462
+#: ../../build123d/docs/objects.rst:470
 msgid "Box"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:467
+#: ../../build123d/docs/objects.rst:475
 msgid "Box defined by length, width, height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:469
+#: ../../build123d/docs/objects.rst:477
 msgid "Cone"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:474
+#: ../../build123d/docs/objects.rst:482
 msgid "Cone defined by radii and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:476
+#: ../../build123d/docs/objects.rst:484
 msgid "ConvexPolyhedron"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:481
+#: ../../build123d/docs/objects.rst:489
 msgid "Convex Polyhedron defined by points"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:483
+#: ../../build123d/docs/objects.rst:491
 msgid "CounterBoreHole"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:488
+#: ../../build123d/docs/objects.rst:496
 msgid "Counter bore hole defined by radii and depths"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:490
+#: ../../build123d/docs/objects.rst:498
 msgid "CounterSinkHole"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:495
+#: ../../build123d/docs/objects.rst:503
 msgid "Counter sink hole defined by radii and depth and angle"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:497
+#: ../../build123d/docs/objects.rst:505
 msgid "Cylinder"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:502
+#: ../../build123d/docs/objects.rst:510
 msgid "Cylinder defined by radius and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:504
+#: ../../build123d/docs/objects.rst:512
 msgid "Hole"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:509
+#: ../../build123d/docs/objects.rst:517
 msgid "Hole defined by radius and depth"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:511
+#: ../../build123d/docs/objects.rst:519
 msgid "Sphere"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:516
+#: ../../build123d/docs/objects.rst:524
 msgid "Sphere defined by radius and arc angles"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:518
+#: ../../build123d/docs/objects.rst:526
 msgid "Torus"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:523
+#: ../../build123d/docs/objects.rst:531
 msgid "Torus defined major and minor radii"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:525
+#: ../../build123d/docs/objects.rst:533
 msgid "Wedge"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:530
+#: ../../build123d/docs/objects.rst:538
 msgid "Wedge defined by lengths along multiple Axes"
 msgstr ""
 
@@ -2186,30 +2213,30 @@ msgstr ""
 msgid "Ensure relative ``font_path`` specifications are relative to the *current working directory*."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:557
+#: ../../build123d/docs/objects.rst:565
 msgid "Custom Objects"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:559
+#: ../../build123d/docs/objects.rst:567
 msgid "All of the objects presented above were created using one of three base object classes: :class:`~objects_curve.BaseLineObject` , :class:`~objects_sketch.BaseSketchObject` , and :class:`~objects_part.BasePartObject` .  Users can use these base object classes to easily create custom objects that have all the functionality of the core objects."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:567
+#: ../../build123d/docs/objects.rst:575
 msgid "Here is an example of a custom sketch object specially created as part of the design of this playing card storage box (:download:`see the playing_cards.py example <../examples/playing_cards.py>`):"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:575
+#: ../../build123d/docs/objects.rst:583
 msgid "Here the new custom object class is called ``Club`` and it's a sub-class of :class:`~objects_sketch.BaseSketchObject` .  The ``__init__`` method contains all of the parameters used to instantiate the custom object, specially a ``height``, ``rotation``, ``align``, and ``mode`` - your objects may contain a sub or super set of these parameters but should always contain a ``mode`` parameter such that it can be combined with a builder's object."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:582
+#: ../../build123d/docs/objects.rst:590
 msgid "Next is the creation of the object itself, in this case a sketch of the club suit."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:584
+#: ../../build123d/docs/objects.rst:592
 msgid "The final line calls the ``__init__`` method of the super class - i.e. :class:`~objects_sketch.BaseSketchObject` with its parameters."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:587
+#: ../../build123d/docs/objects.rst:595
 msgid "That's it, now the ``Club`` object can be used anywhere a :class:`~objects_sketch.Circle` would be used - with either the Algebra or Builder API."
 msgstr ""

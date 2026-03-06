@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-03-06 00:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -169,7 +169,7 @@ msgid "See `partcad.org <https://partcad.org/repository>`_ for all the models pa
 msgstr ""
 
 #: ../../build123d/docs/external.rst:113
-msgid "gggears generator"
+msgid "py_gearworks generator"
 msgstr ""
 
 #: ../../build123d/docs/external.rst:114
@@ -177,7 +177,7 @@ msgid "A gear generation framework that allows easy creation of a wide range of 
 msgstr ""
 
 #: ../../build123d/docs/external.rst:116
-msgid "See `gggears <https://github.com/GarryBGoode/gggears>`_"
+msgid "See `py_gearworks <https://github.com/GarryBGoode/py_gearworks>`_"
 msgstr ""
 
 #: ../../build123d/docs/external.rst:119

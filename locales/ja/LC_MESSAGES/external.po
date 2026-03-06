@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-03-06 00:28+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -224,7 +224,7 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/docs/external.rst:113
-msgid "gggears generator"
+msgid "py_gearworks generator"
 msgstr ""
 
 #: ../../build123d/docs/external.rst:114
@@ -234,7 +234,7 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/docs/external.rst:116
-msgid "See `gggears <https://github.com/GarryBGoode/gggears>`_"
+msgid "See `py_gearworks <https://github.com/GarryBGoode/py_gearworks>`_"
 msgstr ""
 
 #: ../../build123d/docs/external.rst:119

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 00:24+0000\n"
+"POT-Creation-Date: 2026-03-09 00:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2408,7 +2408,7 @@ msgid "indicating whether or not point is within Face"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.Face.is_planar:1
-msgid "Is the face planar even though its geom_type may not be PLANE"
+msgid "Is the face planar even though its geom_type may not be PLANE - if so return Plane"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.Face.length:1

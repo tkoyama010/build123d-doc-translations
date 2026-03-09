@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 18:54+0000\n"
+"POT-Creation-Date: 2026-03-09 00:23+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -3084,7 +3084,9 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.Face.is_planar:1
-msgid "Is the face planar even though its geom_type may not be PLANE"
+msgid ""
+"Is the face planar even though its geom_type may not be PLANE - if so return"
+" Plane"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09 00:23+0000\n"
+"POT-Creation-Date: 2026-03-10 00:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -829,54 +829,67 @@ msgid "an optional vector representing the X Direction. Defaults to None."
 msgstr ""
 
 #: ../docstring of geometry.Plane:36
+msgid "optional Y direction. Mutually exclusive with z_dir. Requires x_dir."
+msgstr ""
+
+#: ../docstring of geometry.Plane:39
 msgid "the normal direction for the plane. Defaults to (0, 0, 1)."
 msgstr ""
 
-#: ../docstring of geometry.Plane:40
+#: ../docstring of geometry.Plane:43
 msgid "global position of local (0,0,0) point"
 msgstr ""
 
-#: ../docstring of geometry.Plane:42
+#: ../docstring of geometry.Plane:45
 msgid "x direction"
 msgstr ""
 
-#: ../docstring of geometry.Plane:44
+#: ../docstring of geometry.Plane:47
 msgid "y direction"
 msgstr ""
 
-#: ../docstring of geometry.Plane:46
+#: ../docstring of geometry.Plane:49
 msgid "z direction"
 msgstr ""
 
-#: ../docstring of geometry.Plane:48
+#: ../docstring of geometry.Plane:51
 msgid "OCP coordinate system"
 msgstr ""
 
-#: ../docstring of geometry.Plane:50
+#: ../docstring of geometry.Plane:53
 msgid "forward location transformation matrix"
 msgstr ""
 
-#: ../docstring of geometry.Plane:52
+#: ../docstring of geometry.Plane:55
 msgid "reverse location transformation matrix"
 msgstr ""
 
-#: ../docstring of geometry.Plane:54
+#: ../docstring of geometry.Plane:57
 msgid "the OCP plane object"
 msgstr ""
 
-#: ../docstring of geometry.Plane:58
+#: ../docstring of geometry.Plane:61
 msgid "z_dir must be non null"
 msgstr ""
 
-#: ../docstring of geometry.Plane:59
+#: ../docstring of geometry.Plane:62
+msgid "y_dir must be non null"
+msgstr ""
+
+#: ../docstring of geometry.Plane:63
 msgid "x_dir must be non null"
 msgstr ""
 
-#: ../docstring of geometry.Plane:60
+#: ../docstring of geometry.Plane:64
+#: ../docstring of geometry.Plane:66
 msgid "the specified x_dir is not orthogonal to the provided normal"
 msgstr ""
 
-#: ../docstring of geometry.Plane:62
+#: ../docstring of geometry.Plane:65
+msgid "x_dir and y_dir must not be parallel"
+msgstr ""
+
+#: ../docstring of geometry.Plane:68
 msgid "A plane"
 msgstr ""
 

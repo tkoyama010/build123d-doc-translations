@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-10 00:20+0000\n"
+"POT-Creation-Date: 2026-03-11 00:21+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -7515,7 +7515,12 @@ msgid "svg file name"
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.pydocstring of
-#: importers.import_svg_as_buildline_code:8
+#: importers.import_svg_as_buildline_code:7
+msgid "# digits to round values to. Defaults to # digits in TOLERANCE"
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg_as_buildline_code:10
 msgid "code, builder instance name"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 00:23+0000\n"
+"POT-Creation-Date: 2026-03-11 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -334,7 +334,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.Bezier:11
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.CenterArc:13
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.DoubleTangentArc:18
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:22
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:26
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:19
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.FilletPolyline:13
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.Helix:24
@@ -627,20 +627,16 @@ msgid "arc start angle from x-axis. Defaults to 0.0"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:14
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:14
-msgid "arc end angle from x-axis. Defaults to 90.0"
+msgid "arc end angle from x-axis. Defaults to None"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:17
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:17
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:15
-msgid "angle to rotate arc. Defaults to 0.0"
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:18
+msgid ":param : :param arc_size: angular size of arc (negative to change direction) :type arc_size: float :param rotation: angle to rotate arc. Defaults to 0.0 :type rotation: float, optional :param angular_direction: arc direction."
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:19
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:19
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:17
-msgid "arc direction. Defaults to AngularDirection.COUNTER_CLOCKWISE"
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.TechnicalDrawing:17
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:24
+msgid "Defaults to None."
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:1
@@ -693,6 +689,16 @@ msgstr ""
 msgid "arc end angle. Defaults to 90.0"
 msgstr ""
 
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:17
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:15
+msgid "angle to rotate arc. Defaults to 0.0"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:19
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:17
+msgid "arc direction. Defaults to AngularDirection.COUNTER_CLOCKWISE"
+msgstr ""
+
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:1
 msgid "Line Object: Hyperbolic Center Arc"
 msgstr ""
@@ -703,6 +709,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:5
 msgid "hyperbola center"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:14
+msgid "arc end angle from x-axis. Defaults to 90.0"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.FilletPolyline:1
@@ -1566,10 +1576,6 @@ msgstr ""
 
 #: ../../build123d/src/build123d/drafting.py:docstring of drafting.TechnicalDrawing:15
 msgid "Defaults to \"B3D-1\"."
-msgstr ""
-
-#: ../../build123d/src/build123d/drafting.py:docstring of drafting.TechnicalDrawing:17
-msgid "Defaults to None."
 msgstr ""
 
 #: ../../build123d/src/build123d/drafting.py:docstring of drafting.TechnicalDrawing:19

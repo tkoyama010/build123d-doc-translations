@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-11 00:21+0000\n"
+"POT-Creation-Date: 2026-03-12 00:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2213,6 +2213,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim_to_length:11
 msgid "trimmed edge"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim_to_other:1
+msgid "Return the shortest Edge of self trimmed by other or None if they don't intersect"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face:1

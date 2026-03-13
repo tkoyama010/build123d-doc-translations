@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-11 00:21+0000\n"
+"POT-Creation-Date: 2026-03-13 00:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -345,7 +345,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:20
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentArc:14
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentLine:12
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:18
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:27
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.Polyline:9
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.RadiusArc:14
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.SagittaArc:11
@@ -354,7 +354,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ThreePointArc:7
 #: ../../build123d/src/build123d/objects_part.py:docstring of objects_part.BasePartObject:10
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.BaseSketchObject:10
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Circle:10
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Circle:12
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Ellipse:14
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Polygon:17
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Rectangle:14
@@ -484,6 +484,7 @@ msgid "If specified `end_points` are not coincident with the start     or end of
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.BlendCurve:39
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:12
 msgid "Example"
 msgstr ""
 
@@ -571,7 +572,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.IntersectingLine:5
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:5
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:16
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:7
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:15
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.RadiusArc:5
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.SagittaArc:5
 msgid "start point"
@@ -839,24 +840,36 @@ msgstr ""
 msgid "Create a straight line defined by a start point, length, and angle. The length can specify the DIAGONAL, HORIZONTAL, or VERTICAL component of the triangle defined by the angle."
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:9
-msgid "line length"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:11
-msgid "angle from the local x-axis"
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:7
+msgid "Alternatively, the length parameter can contain a limit to the length of the line in the form of another object. If the PolarLine doesn't contact the limit an error will be generated."
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:13
+msgid "p = PolarLine(start=(2, 0), length=Axis.Y, angle=135)"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:17
+msgid "line length (float) or limit limit"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:20
+msgid "angle from the local x-axis"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:22
 msgid "vector direction to determine angle"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:15
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:24
 msgid "how length defines the line. Defaults to LengthMode.DIAGONAL"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:21
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:30
 msgid "Either angle or direction must be provided"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:31
+msgid "Polar line doesn't intersect length limit"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.Polyline:1
@@ -1311,6 +1324,10 @@ msgid "circle radius"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Circle:7
+msgid "angular size of sector. Defaults to 360."
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Circle:9
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Ellipse:11
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Rectangle:11
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.RectangleRounded:13

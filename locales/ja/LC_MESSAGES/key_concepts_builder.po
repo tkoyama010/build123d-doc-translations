@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-03-16 00:27+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -186,10 +186,82 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/docs/key_concepts_builder.rst:108
-msgid "Builders"
+msgid "**Why modifying objects directly doesn't work in Builder mode**"
 msgstr ""
 
 #: ../../build123d/docs/key_concepts_builder.rst:110
+msgid ""
+"A common mistake in Builder mode is attempting to modify an object after it "
+"is created:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:117
+msgid ""
+"Builder mode works by having objects add themselves to the active builder "
+"immediately when they are created. In the example above:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:120
+msgid "``Cylinder(1, 2)`` creates the cylinder."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:122
+msgid "The cylinder immediately adds itself to the ``BuildPart`` builder."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:124
+msgid ""
+"``.moved(...)`` is then applied to the temporary Python object returned by "
+"``Cylinder``."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:126
+msgid ""
+"Because the cylinder was already added to the builder, the move operation "
+"has no effect on the model being built."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:129
+msgid ""
+"Placement must therefore be specified before the object is created, which is"
+" why Builder mode provides the ``Locations`` context (see below):"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:138
+msgid ""
+"Here the builder knows the location before the cylinder is created, so the "
+"part is placed correctly."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:141
+msgid "A similar situation in normal Python"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:148
+msgid ""
+"``f.write(\"text\")`` writes \"text\" to the file and returns 4. "
+"``.to_bytes(1, \"big\")`` is then called on that integer, producing "
+"b\"\\x04\"."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:151
+msgid ""
+"The file still contains only \"text\" because the additional operation "
+"happens after the write and its result is discarded."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:154
+msgid ""
+"Builder mode behaves similarly: once an object has been added to the "
+"builder, modifying the returned Python object does not change what was "
+"already added."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:158
+msgid "Builders"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_builder.rst:160
 msgid ""
 "The three builders, ``BuildLine``, ``BuildSketch``, and ``BuildPart`` are "
 "tools to create new objects - not the objects themselves. Each of the "
@@ -200,40 +272,40 @@ msgid ""
 " processing."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:117
+#: ../../build123d/docs/key_concepts_builder.rst:167
 msgid ""
 "One can access the objects created by these builders by referencing the "
 "appropriate instance variable. For example:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:142
+#: ../../build123d/docs/key_concepts_builder.rst:192
 msgid "Implicit Builder Instance Variables"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:144
+#: ../../build123d/docs/key_concepts_builder.rst:194
 msgid ""
 "One might expect to have to reference a builder's instance variable when "
 "using objects or operations that impact that builder like this:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:152
+#: ../../build123d/docs/key_concepts_builder.rst:202
 msgid ""
 "Instead, build123d determines from the scope of the object or operation "
 "which builder it applies to thus eliminating the need for the user to "
 "provide this information - as follows:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:163
+#: ../../build123d/docs/key_concepts_builder.rst:213
 msgid ""
 "In this example, ``Box`` is in the scope of ``part_builder`` while "
 "``Circle`` is in the scope of ``sketch_builder``."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:167
+#: ../../build123d/docs/key_concepts_builder.rst:217
 msgid "Workplanes"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:169
+#: ../../build123d/docs/key_concepts_builder.rst:219
 msgid ""
 "As build123d is a 3D CAD package one must be able to position objects "
 "anywhere. As one frequently will work in the same plane for a sequence of "
@@ -245,7 +317,7 @@ msgid ""
 "working and then work in local 2D coordinate space."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:189
+#: ../../build123d/docs/key_concepts_builder.rst:239
 msgid ""
 "When ``BuildPart`` is invoked it creates the workplane provided as a "
 "parameter (which has a default of the ``Plane.XY``). The ``bottom`` sketch "
@@ -256,29 +328,29 @@ msgid ""
 " user only has to work with local coordinates."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:195
+#: ../../build123d/docs/key_concepts_builder.rst:245
 msgid ""
 "As shown above, workplanes can be created from faces as well. The ``top`` "
 "sketch is positioned on top of ``example`` by selecting its faces and "
 "finding the one with the greatest z value."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:198
+#: ../../build123d/docs/key_concepts_builder.rst:248
 msgid ""
 "One is not limited to a single workplane at a time. In the following example"
 " all six faces of the first box are used to define workplanes which are then"
 " used to position rotated boxes."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:212
+#: ../../build123d/docs/key_concepts_builder.rst:262
 msgid "This is the result:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:220
+#: ../../build123d/docs/key_concepts_builder.rst:270
 msgid "Locations Context"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:222
+#: ../../build123d/docs/key_concepts_builder.rst:272
 msgid ""
 "When positioning objects or operations within a builder Location Contexts "
 "are used.  These function in a very similar was to the builders in that they"
@@ -286,7 +358,7 @@ msgid ""
 "For example:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:235
+#: ../../build123d/docs/key_concepts_builder.rst:285
 msgid ""
 "In this example ``Locations`` creates two positions on the current workplane"
 " at (0,10) and (0,-10). Since ``Box`` is within the scope of ``Locations``, "
@@ -296,7 +368,7 @@ msgid ""
 "two cylinders are created."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:240
+#: ../../build123d/docs/key_concepts_builder.rst:290
 msgid ""
 "Note that these contexts are creating Location objects not just simple "
 "points. The difference isn't obvious until the ``PolarLocations`` context is"
@@ -304,54 +376,54 @@ msgid ""
 "minute indicator on an analogue clock."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:244
+#: ../../build123d/docs/key_concepts_builder.rst:294
 msgid ""
 "Also note that the locations are local to the current location(s) - i.e. "
 "``Locations`` can be nested. It's easy for a user to retrieve the global "
 "locations:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:267
+#: ../../build123d/docs/key_concepts_builder.rst:317
 msgid "Operation Inputs"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:269
+#: ../../build123d/docs/key_concepts_builder.rst:319
 msgid ""
 "When one is operating on an existing object, e.g. adding a fillet to a part,"
 " an iterable of objects is often required (often a ShapeList)."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:272
+#: ../../build123d/docs/key_concepts_builder.rst:322
 msgid ""
 "Here is the definition of :meth:`~operations_generic.fillet` to help "
 "illustrate:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:281
+#: ../../build123d/docs/key_concepts_builder.rst:331
 msgid ""
 "To use this fillet operation, an edge or vertex or iterable of edges or "
 "vertices must be provided followed by a fillet radius with or without the "
 "keyword as follows:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:291
+#: ../../build123d/docs/key_concepts_builder.rst:341
 msgid ""
 "Here the fillet accepts the iterable ShapeList of edges from the last "
 "operation of the ``pipes`` builder and a radius is provided as a keyword "
 "argument."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:295
+#: ../../build123d/docs/key_concepts_builder.rst:345
 msgid "Combination Modes"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:297
+#: ../../build123d/docs/key_concepts_builder.rst:347
 msgid ""
 "Almost all objects or operations have a ``mode`` parameter which is defined "
 "by the ``Mode`` Enum class as follows:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:309
+#: ../../build123d/docs/key_concepts_builder.rst:359
 msgid ""
 "The ``mode`` parameter describes how the user would like the object or "
 "operation to interact with the object within the builder. For example, "
@@ -364,7 +436,7 @@ msgid ""
 "this object should not be combined with the builder's object in any way."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:318
+#: ../../build123d/docs/key_concepts_builder.rst:368
 msgid ""
 "Most commonly, the default ``mode`` is ``Mode.ADD`` but this isn't always "
 "true. For example, the ``Hole`` classes use a default ``Mode.SUBTRACT`` as "
@@ -373,29 +445,29 @@ msgid ""
 "``Mode.INTERSECT`` to help in inspection or debugging."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:326
+#: ../../build123d/docs/key_concepts_builder.rst:376
 msgid "Using Locations & Rotating Objects"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:328
+#: ../../build123d/docs/key_concepts_builder.rst:378
 msgid ""
 "build123d stores points (to be specific ``Location`` (s)) internally to be "
 "used as positions for the placement of new objects.  By default, a single "
 "location will be created at the origin of the given workplane such that:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:337
+#: ../../build123d/docs/key_concepts_builder.rst:387
 msgid ""
 "will create a single 10x10x10 box centered at (0,0,0) - by default objects "
 "are centered. One can create multiple objects by pushing points prior to "
 "creating objects as follows:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:347
+#: ../../build123d/docs/key_concepts_builder.rst:397
 msgid "which will create two boxes."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:349
+#: ../../build123d/docs/key_concepts_builder.rst:399
 msgid ""
 "To orient a part, a ``rotation`` parameter is available on ``BuildSketch``` "
 "and ``BuildPart`` APIs. When working in a sketch, the rotation is a single "
@@ -407,11 +479,11 @@ msgid ""
 " Rotation(0, 90, 0)`` to generate any desired rotation."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:359
+#: ../../build123d/docs/key_concepts_builder.rst:409
 msgid "Experts Only"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:361
+#: ../../build123d/docs/key_concepts_builder.rst:411
 msgid ""
 "``Locations`` will accept ``Location`` objects for input which allows one to"
 " specify both the position and orientation.  However, the orientation is "
@@ -420,17 +492,17 @@ msgid ""
 "position component."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:368
+#: ../../build123d/docs/key_concepts_builder.rst:418
 msgid "Builder's Pending Objects"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:370
+#: ../../build123d/docs/key_concepts_builder.rst:420
 msgid ""
 "When a builder exits, it will push the object created back to its parent if "
 "there was one.  Here is an example:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:383
+#: ../../build123d/docs/key_concepts_builder.rst:433
 msgid ""
 "``BuildSketch`` exits after the ``fillet`` operation and when doing so it "
 "transfers the sketch to the ``pillow_block`` instance of ``BuildPart`` as "
@@ -440,7 +512,7 @@ msgid ""
 "``pending_faces`` and attempt to create a single ``Solid`` object from them."
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_builder.rst:389
+#: ../../build123d/docs/key_concepts_builder.rst:439
 msgid ""
 "Normally the user will not need to interact directly with pending objects; "
 "however, one can see pending Edges and Faces with "

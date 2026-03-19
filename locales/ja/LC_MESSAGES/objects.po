@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-13 00:23+0000\n"
+"POT-Creation-Date: 2026-03-19 00:26+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -380,7 +380,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.IntersectingLine:11
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.JernArc:13
+#: objects_curve.JernArc:20
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.Line:7
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
@@ -736,7 +736,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.JernArc:5
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.JernArc:16
+#: objects_curve.JernArc:23
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.PolarLine:15
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
@@ -842,8 +842,6 @@ msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.EllipticalStartArc:3
-#: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.JernArc:3
 msgid ""
 "Create a circular arc defined by a start point/tangent pair, radius and arc "
 "size."
@@ -851,8 +849,6 @@ msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.EllipticalStartArc:13
-#: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.JernArc:11
 msgid "angular size of arc (negative to change direction)"
 msgstr ""
 
@@ -1063,17 +1059,50 @@ msgstr ""
 msgid "Line Object: Jern Arc"
 msgstr ""
 
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.JernArc:3
+msgid ""
+"Create a circular arc defined by a start point/tangent pair, radius and arc "
+"size or arc limit."
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.JernArc:11
+msgid ""
+"angular size of arc (negative to change direction) or an arc limit.  When a "
+"limit object is provided instead of a numeric angular size, JernArc "
+"constructs the valid tangent arc(s) from the given start point and tangent, "
+"trims them at their first intersection with the limit, and returns the one "
+"requiring the shortest travel from the start. If neither valid arc "
+"intersects the limit, a ValueError is raised."
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.JernArc:11
+msgid "angular size of arc (negative to change direction) or an arc limit."
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.JernArc:14
+msgid ""
+"When a limit object is provided instead of a numeric angular size, JernArc "
+"constructs the valid tangent arc(s) from the given start point and tangent, "
+"trims them at their first intersection with the limit, and returns the one "
+"requiring the shortest travel from the start. If neither valid arc "
+"intersects the limit, a ValueError is raised."
+msgstr ""
+
 #: ../../build123d/docs/objects.rst:0
 msgid "Variables"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.JernArc:18
+#: objects_curve.JernArc:25
 msgid "end point of arc"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.JernArc:20
+#: objects_curve.JernArc:27
 msgid "center of arc"
 msgstr ""
 

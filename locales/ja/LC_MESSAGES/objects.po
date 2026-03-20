@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-19 00:26+0000\n"
+"POT-Creation-Date: 2026-03-20 00:24+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -364,11 +364,11 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.Bezier:11
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.CenterArc:13
+#: objects_curve.CenterArc:20
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.DoubleTangentArc:18
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.EllipticalCenterArc:26
+#: objects_curve.EllipticalCenterArc:32
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.EllipticalStartArc:19
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
@@ -642,7 +642,29 @@ msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.CenterArc:11
-msgid "angular size of arc"
+msgid ""
+"angular size of arc or an arc limit.  When a limit object is provided "
+"instead of a numeric angular size, CenterArc constructs the valid arc(s) "
+"from the given start point, trims them at their first intersection with the "
+"limit, and returns the one requiring the shortest travel from the start. "
+"Therefore, one can only generate arcs < 180° using a limit. If neither valid"
+" arc intersects the limit, a ValueError is raised."
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.CenterArc:11
+msgid "angular size of arc or an arc limit."
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.CenterArc:14
+msgid ""
+"When a limit object is provided instead of a numeric angular size, CenterArc"
+" constructs the valid arc(s) from the given start point, trims them at their"
+" first intersection with the limit, and returns the one requiring the "
+"shortest travel from the start. Therefore, one can only generate arcs < 180°"
+" using a limit. If neither valid arc intersects the limit, a ValueError is "
+"raised."
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
@@ -821,18 +843,47 @@ msgid "arc end angle from x-axis. Defaults to None"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.EllipticalCenterArc:18
+#: objects_curve.EllipticalCenterArc:17
 msgid ""
-":param : :param arc_size: angular size of arc (negative to change direction)"
-" :type arc_size: float :param rotation: angle to rotate arc. Defaults to 0.0"
-" :type rotation: float, optional :param angular_direction: arc direction."
+"angular size of arc (negative to change direction) or an arc limit.  When a "
+"limit object is provided instead of a numeric angular size, "
+"EllipticalCenterArc constructs the valid arc(s) from the given start point, "
+"trims them at their first intersection with the limit, and returns the one "
+"requiring the shortest travel from the start. Therefore, one can only "
+"generate arcs < 180° using a limit. If neither valid arc intersects the "
+"limit, a ValueError is raised."
 msgstr ""
 
-#: ../../build123d/src/build123d/drafting.pydocstring of
-#: drafting.TechnicalDrawing:17
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.EllipticalCenterArc:24
-msgid "Defaults to None."
+#: objects_curve.EllipticalCenterArc:17
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.JernArc:11
+msgid "angular size of arc (negative to change direction) or an arc limit."
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.EllipticalCenterArc:20
+msgid ""
+"When a limit object is provided instead of a numeric angular size, "
+"EllipticalCenterArc constructs the valid arc(s) from the given start point, "
+"trims them at their first intersection with the limit, and returns the one "
+"requiring the shortest travel from the start. Therefore, one can only "
+"generate arcs < 180° using a limit. If neither valid arc intersects the "
+"limit, a ValueError is raised."
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.EllipticalCenterArc:27
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.HyperbolicCenterArc:17
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.ParabolicCenterArc:15
+msgid "angle to rotate arc. Defaults to 0.0"
+msgstr ""
+
+#: ../../build123d/src/build123d/objects_curve.pydocstring of
+#: objects_curve.EllipticalCenterArc:29
+msgid "arc direction. Defaults to None."
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
@@ -899,13 +950,6 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.ParabolicCenterArc:12
 msgid "arc end angle. Defaults to 90.0"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.HyperbolicCenterArc:17
-#: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.ParabolicCenterArc:15
-msgid "angle to rotate arc. Defaults to 0.0"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
@@ -1075,11 +1119,6 @@ msgid ""
 "trims them at their first intersection with the limit, and returns the one "
 "requiring the shortest travel from the start. If neither valid arc "
 "intersects the limit, a ValueError is raised."
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.JernArc:11
-msgid "angular size of arc (negative to change direction) or an arc limit."
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
@@ -2131,6 +2170,11 @@ msgstr ""
 #: ../../build123d/src/build123d/drafting.pydocstring of
 #: drafting.TechnicalDrawing:15
 msgid "Defaults to \"B3D-1\"."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.pydocstring of
+#: drafting.TechnicalDrawing:17
+msgid "Defaults to None."
 msgstr ""
 
 #: ../../build123d/src/build123d/drafting.pydocstring of

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-12 00:20+0000\n"
+"POT-Creation-Date: 2026-04-17 00:32+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -4974,23 +4974,7 @@ msgstr ""
 #: topology.shape_core.Shape.cut:5
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.fuse:10
-msgid ""
-"Resulting object may be of a different class than self     or a ShapeList if"
-" multiple non-Compound object created"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.cut:7
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.fuse:12
 msgid "Resulting object may be of a different class than self"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.cut:8
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.fuse:13
-msgid "or a ShapeList if multiple non-Compound object created"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -5304,6 +5288,11 @@ msgid "Get this Shape's Location"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.make_composite:1
+msgid "Build the registered composite for a dimension."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.Shape.matrix_of_inertia:1
 msgid "Compute the inertia matrix (moment of inertia tensor) of the shape."
 msgstr ""
@@ -5525,6 +5514,11 @@ msgstr ""
 #: topology.shape_core.Shape.radius_of_gyration:26
 msgid ""
 "It is useful for evaluating structural stability and rotational behavior."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.register_composite_factory:1
+msgid "Register a composite constructor without importing it here."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of

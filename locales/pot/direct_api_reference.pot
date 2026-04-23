@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 00:32+0000\n"
+"POT-Creation-Date: 2026-04-23 00:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -951,10 +951,19 @@ msgid "Change the position & orientation of self by applying a relative location
 msgstr ""
 
 #: ../docstring of geometry.Plane.move:3
+#: ../docstring of geometry.Plane.moved:3
 msgid "relative change"
 msgstr ""
 
 #: ../docstring of geometry.Plane.move:6
+msgid "relocated self"
+msgstr ""
+
+#: ../docstring of geometry.Plane.moved:1
+msgid "Change the position & orientation of a copy of self by applying a relative location"
+msgstr ""
+
+#: ../docstring of geometry.Plane.moved:6
 msgid "relocated plane"
 msgstr ""
 
@@ -3420,7 +3429,7 @@ msgid "identifies the side where length is measured. The edge(s) must be part of
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Mixin3D.chamfer:17
-msgid "Chamfered solid"
+msgid "Chamfered solid or 3D composite"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Mixin3D.dprism:1
@@ -3473,7 +3482,7 @@ msgid "float > 0, the radius of the fillet"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Mixin3D.fillet:10
-msgid "Filleted solid"
+msgid "Filleted solid or 3D composite"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Mixin3D.hollow:1

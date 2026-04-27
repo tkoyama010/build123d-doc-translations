@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 00:27+0000\n"
+"POT-Creation-Date: 2026-04-27 00:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,7 +249,7 @@ msgid "Locations Context"
 msgstr ""
 
 #: ../../build123d/docs/key_concepts_builder.rst:272
-msgid "When positioning objects or operations within a builder Location Contexts are used.  These function in a very similar was to the builders in that they create a context where one or more locations are active within a scope.  For example:"
+msgid "When positioning objects or operations within a builder, Location Contexts are used.  These function in a very similar way to the builders in that they create a context where one or more locations are active within a scope.  For example:"
 msgstr ""
 
 #: ../../build123d/docs/key_concepts_builder.rst:285

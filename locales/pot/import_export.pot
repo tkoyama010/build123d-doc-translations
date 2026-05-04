@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-11 00:21+0000\n"
+"POT-Creation-Date: 2026-05-04 00:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: ../../build123d/docs/import_export.rst:7
 #: ../../build123d/docs/import_export.rst:223
-#: ../../build123d/docs/import_export.rst:277
+#: ../../build123d/docs/import_export.rst:288
 msgid "For example:"
 msgstr ""
 
@@ -731,9 +731,53 @@ msgid "STL model"
 msgstr ""
 
 #: ../../build123d/docs/import_export.rst:273
-msgid "3D Mesh Import"
+msgid "STL Reconstruction"
 msgstr ""
 
 #: ../../build123d/docs/import_export.rst:275
+msgid "The :func:`~build123d.detect_primitives` helper can be used during STL reconstruction to detect analytic planes, cylinders, and spheres in a mesh-like shape and generate algebra-mode code fragments to aid manual redesign."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:279
+msgid "See :ref:`stl_reconstruction_tutorial` for the full workflow and limitations."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/build123d/brep_from_stl.py:docstring of build123d.brep_from_stl.detect_primitives:1
+msgid "Detect analytic primitives in a mesh and return faces, leftovers, and code."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/build123d/brep_from_stl.py:docstring of build123d.brep_from_stl.detect_primitives:3
+msgid "This is the user-facing entry point for STL-to-BREP reconstruction. The mesh is indexed first so face geometry and adjacency can be reused throughout the pipeline."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/build123d/brep_from_stl.py:docstring of build123d.brep_from_stl.detect_primitives:7
+msgid "Detection proceeds in stages:"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/build123d/brep_from_stl.py:docstring of build123d.brep_from_stl.detect_primitives:9
+msgid "High-confidence planes are found first from cleaned proxy faces."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/build123d/brep_from_stl.py:docstring of build123d.brep_from_stl.detect_primitives:10
+msgid "Spheres are found next from broad radius-signature classification, connected or sewn regions, local sphere fitting, and region growth."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/build123d/brep_from_stl.py:docstring of build123d.brep_from_stl.detect_primitives:12
+msgid "Cylinders are detected from area-grouped sewn regions and local cylinder seeds, then grown, refit, and validated."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/build123d/brep_from_stl.py:docstring of build123d.brep_from_stl.detect_primitives:14
+msgid "Remaining coplanar connected components are detected as fallback planes."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/build123d/brep_from_stl.py:docstring of build123d.brep_from_stl.detect_primitives:17
+msgid "Each accepted patch is converted into a build123d Face, unmatched mesh faces are returned as leftovers, and the generated code strings are sorted in the same order as the returned primitives."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:284
+msgid "3D Mesh Import"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:286
 msgid "Both 3MF and STL import (and export) are provided with the :class:`~mesher.Mesher` class."
 msgstr ""

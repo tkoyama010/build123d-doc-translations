@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 00:24+0000\n"
+"POT-Creation-Date: 2026-05-04 00:37+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -372,11 +372,11 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.EllipticalStartArc:19
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.FilletPolyline:13
+#: objects_curve.FilletPolyline:14
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.Helix:24
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.HyperbolicCenterArc:22
+#: objects_curve.HyperbolicCenterArc:23
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.IntersectingLine:11
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
@@ -384,7 +384,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.Line:7
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.ParabolicCenterArc:20
+#: objects_curve.ParabolicCenterArc:22
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.PointArcTangentArc:14
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
@@ -813,7 +813,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.EllipticalStartArc:9
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.HyperbolicCenterArc:7
+#: objects_curve.HyperbolicCenterArc:8
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
 #: objects_sketch.Ellipse:5
 msgid "x radius of the ellipse (along the x-axis of plane)"
@@ -824,7 +824,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.EllipticalStartArc:11
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.HyperbolicCenterArc:9
+#: objects_curve.HyperbolicCenterArc:10
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
 #: objects_sketch.Ellipse:7
 msgid "y radius of the ellipse (along the y-axis of plane)"
@@ -833,7 +833,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.EllipticalCenterArc:11
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.HyperbolicCenterArc:11
+#: objects_curve.HyperbolicCenterArc:12
 msgid "arc start angle from x-axis. Defaults to 0.0"
 msgstr ""
 
@@ -875,9 +875,9 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.EllipticalCenterArc:27
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.HyperbolicCenterArc:17
+#: objects_curve.HyperbolicCenterArc:18
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.ParabolicCenterArc:15
+#: objects_curve.ParabolicCenterArc:17
 msgid "angle to rotate arc. Defaults to 0.0"
 msgstr ""
 
@@ -931,31 +931,31 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.ParabolicCenterArc:5
+#: objects_curve.ParabolicCenterArc:6
 msgid "parabola vertex"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.ParabolicCenterArc:7
+#: objects_curve.ParabolicCenterArc:8
 msgid ""
 "focal length the parabola (distance from the vertex to focus along the "
 "x-axis of plane)"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.ParabolicCenterArc:9
+#: objects_curve.ParabolicCenterArc:11
 msgid "arc start angle. Defaults to 0.0"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.ParabolicCenterArc:12
+#: objects_curve.ParabolicCenterArc:14
 msgid "arc end angle. Defaults to 90.0"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.HyperbolicCenterArc:19
+#: objects_curve.HyperbolicCenterArc:20
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.ParabolicCenterArc:17
+#: objects_curve.ParabolicCenterArc:19
 msgid "arc direction. Defaults to AngularDirection.COUNTER_CLOCKWISE"
 msgstr ""
 
@@ -972,12 +972,12 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.HyperbolicCenterArc:5
+#: objects_curve.HyperbolicCenterArc:6
 msgid "hyperbola center"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.HyperbolicCenterArc:14
+#: objects_curve.HyperbolicCenterArc:15
 msgid "arc end angle from x-axis. Defaults to 90.0"
 msgstr ""
 
@@ -1005,19 +1005,19 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.FilletPolyline:10
+#: objects_curve.FilletPolyline:11
 msgid "close end points with extra Edge and corner fillets. Defaults to False"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.FilletPolyline:16
+#: objects_curve.FilletPolyline:17
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
 #: objects_curve.Polyline:12
 msgid "Two or more points not provided"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.pydocstring of
-#: objects_curve.FilletPolyline:17
+#: objects_curve.FilletPolyline:18
 msgid "radius must be non-negative"
 msgstr ""
 

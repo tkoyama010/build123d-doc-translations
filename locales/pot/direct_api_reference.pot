@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 00:34+0000\n"
+"POT-Creation-Date: 2026-05-04 00:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -837,6 +837,7 @@ msgid "the normal direction for the plane. Defaults to (0, 0, 1)."
 msgstr ""
 
 #: ../docstring of geometry.Plane:43
+#: ../docstring of geometry.Plane.origin:1
 msgid "global position of local (0,0,0) point"
 msgstr ""
 
@@ -853,43 +854,41 @@ msgid "z direction"
 msgstr ""
 
 #: ../docstring of geometry.Plane:51
-msgid "OCP coordinate system"
-msgstr ""
-
-#: ../docstring of geometry.Plane:53
+#: ../docstring of geometry.Plane.forward_transform:1
 msgid "forward location transformation matrix"
 msgstr ""
 
-#: ../docstring of geometry.Plane:55
+#: ../docstring of geometry.Plane:53
+#: ../docstring of geometry.Plane.reverse_transform:1
 msgid "reverse location transformation matrix"
 msgstr ""
 
-#: ../docstring of geometry.Plane:57
+#: ../docstring of geometry.Plane:55
 msgid "the OCP plane object"
 msgstr ""
 
-#: ../docstring of geometry.Plane:61
+#: ../docstring of geometry.Plane:59
 msgid "z_dir must be non null"
 msgstr ""
 
-#: ../docstring of geometry.Plane:62
+#: ../docstring of geometry.Plane:60
 msgid "y_dir must be non null"
 msgstr ""
 
-#: ../docstring of geometry.Plane:63
+#: ../docstring of geometry.Plane:61
 msgid "x_dir must be non null"
 msgstr ""
 
+#: ../docstring of geometry.Plane:62
 #: ../docstring of geometry.Plane:64
-#: ../docstring of geometry.Plane:66
 msgid "the specified x_dir is not orthogonal to the provided normal"
 msgstr ""
 
-#: ../docstring of geometry.Plane:65
+#: ../docstring of geometry.Plane:63
 msgid "x_dir and y_dir must not be parallel"
 msgstr ""
 
-#: ../docstring of geometry.Plane:68
+#: ../docstring of geometry.Plane:66
 msgid "A plane"
 msgstr ""
 
@@ -971,10 +970,6 @@ msgstr ""
 msgid "Move the Plane by amount in the direction of z_dir"
 msgstr ""
 
-#: ../docstring of geometry.Plane.origin:1
-msgid "Get the Plane origin"
-msgstr ""
-
 #: ../docstring of geometry.Plane.reverse:1
 msgid "Reverse z direction of plane"
 msgstr ""
@@ -1033,6 +1028,10 @@ msgstr ""
 
 #: ../docstring of geometry.Plane.to_gp_ax2:1
 msgid "Return gp_Ax2 version of the plane"
+msgstr ""
+
+#: ../docstring of geometry.Plane.to_gp_ax3:1
+msgid "Return gp_Ax3 version of the plane"
 msgstr ""
 
 #: ../docstring of geometry.Plane.to_local_coords:1
@@ -1728,7 +1727,7 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_circle:7
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_ellipse:9
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_hyperbola:9
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_parabola:7
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_parabola:8
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Wire.make_ellipse:9
 #: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Solid.make_box:11
 #: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Solid.make_cone:11
@@ -1751,7 +1750,7 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_circle:13
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_ellipse:15
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_hyperbola:15
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_parabola:13
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_parabola:14
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Wire.make_ellipse:15
 msgid "arc direction. Defaults to AngularDirection.COUNTER_CLOCKWISE."
 msgstr ""
@@ -1912,15 +1911,15 @@ msgstr ""
 msgid "focal length the parabola (distance from the vertex to focus along the x-axis of plane)"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_parabola:9
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_parabola:10
 msgid "Defaults to 0.0."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_parabola:11
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_parabola:12
 msgid "Defaults to 90.0."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_parabola:17
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_parabola:18
 msgid "full or partial parabola"
 msgstr ""
 
@@ -2173,15 +2172,30 @@ msgid "Edge as Wire"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim:1
-msgid "_summary_"
+msgid "Create a new edge by keeping only the section between start and end."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim:3
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim_to_length:4
+msgid "0.0 <= start < 1.0 or point on edge"
+msgstr ""
+
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim:5
+msgid "0.0 < end <= 1.0 or point on edge"
+msgstr ""
+
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim:8
+msgid "invalid input, must be float or VectorLike"
+msgstr ""
+
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim:9
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim_to_length:9
+msgid "can't trim empty edge"
+msgstr ""
+
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim:11
-msgid "_description_"
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim_to_length:11
+msgid "trimmed edge"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim_infinite:1
@@ -2208,20 +2222,8 @@ msgstr ""
 msgid "Create a new edge starting at the given normalized parameter of a given length."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim_to_length:4
-msgid "0.0 <= start < 1.0 or point on edge"
-msgstr ""
-
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim_to_length:6
 msgid "target length"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim_to_length:9
-msgid "can't trim empty edge"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim_to_length:11
-msgid "trimmed edge"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim_to_other:1
@@ -4437,6 +4439,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.wires:1
 msgid "wires - all the wires in this Shape"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.wrapped:1
+msgid "OCP TopoDS object"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.ShapeList:1

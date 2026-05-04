@@ -1,0 +1,535 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-04 00:37+0000\n"
+"PO-Revision-Date: 2026-05-04 00:37+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:5
+msgid "Tutorial: Reconstructing a Design from an STL"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:7
+msgid ""
+"This tutorial describes a practical workflow for using "
+":func:`~build123d.detect_primitives` to help reconstruct a parametric "
+"build123d model from an STL mesh."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:11
+msgid ""
+"This is not a push-button STL-to-CAD converter. It is a mesh-guided redesign"
+" process. The goal is to extract enough analytic structure from a "
+"triangulated model to make manual reconstruction faster and more reliable."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:17
+msgid ""
+"Rebuilding a design from STL is usually slow, approximate, and manual. STL "
+"files contain triangles, not modeling intent. Even when "
+":func:`~build123d.detect_primitives` finds useful planes, cylinders, and "
+"spheres, the final build123d model still needs to be designed deliberately."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:22
+msgid ""
+"Before working through this tutorial, review Steps 1-3 of "
+":ref:`design_tutorial`. The same ideas apply here:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:25
+msgid "identify planes of symmetry"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:26
+msgid "identify likely axes of rotation"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:27
+msgid "choose a convenient origin before doing any serious work"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:29
+msgid ""
+"These preparation steps often reduce the amount of mesh that needs to be "
+"reconstructed to one half, one quarter, or even less."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:33
+msgid "Overview"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:35
+msgid "The workflow described here is:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:37
+msgid "Import the STL with :class:`~mesher.Mesher`."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:38
+msgid "Split the mesh by symmetry planes and isolate the region to redesign."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:39
+msgid "Save that reduced mesh section as a BREP file."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:40
+msgid "Reload the BREP section while iterating on reconstruction."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:41
+msgid "Run :func:`~build123d.detect_primitives`."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:42
+msgid "Inspect the returned primitives, leftovers, and generated code."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:43
+msgid "Rebuild the design intentionally from those clues."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:45
+msgid "The key output of ``detect_primitives`` is guidance:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:47
+msgid "``primitives`` shows what was recognized analytically"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:48
+msgid "``leftovers`` shows what was not covered"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:49
+msgid ""
+"``code_lines`` provides algebra-mode fragments that often reveal common "
+"planes and likely sketch structure"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:53
+msgid "Why Cache a Working Section as BREP?"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:55
+msgid ""
+"Importing STL with :class:`~mesher.Mesher` is convenient, but large meshes "
+"can be slow to load and process. Once a useful section of the part has been "
+"isolated, save it as a BREP file and use that for repeated experimentation."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:59
+msgid ""
+"BREP files reload much more efficiently in build123d and are better suited "
+"to an iterative reconstruction script."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:63
+msgid "Preparing the Mesh"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:65
+msgid ""
+"Start with the STL import and isolate the smallest useful section of the "
+"part."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:80
+msgid ""
+"The exact planes depend on the part. The point is not to begin running "
+"``detect_primitives`` on the full mesh if symmetry can remove most of the "
+"work."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:84
+msgid "Reconstruction Script"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:86
+msgid ""
+"Once the mesh section has been cached as BREP, iterate on a separate script "
+"or enable a reconstruction section of the same script with a Boolean switch."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:99
+msgid "This call returns three complementary outputs:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:101
+msgid "``primitives``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:102
+msgid ""
+"A :class:`~topology.ShapeList` of analytic faces that were recognized from "
+"the mesh. These are typically planes, cylinders, and spheres. Planar "
+"primitives are returned as rectangles sized to the planar region's bounding "
+"box, not as the original tessellated mesh patch."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:107
+msgid "``leftovers``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:108
+msgid ""
+"Mesh faces that were not matched by the primitive detectors. These indicate "
+"freeform regions, noisy regions, or places where manual work is still "
+"required."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:112
+msgid "``code_lines``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:113
+msgid ""
+"Generated algebra-mode code corresponding to the recognized primitives."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:116
+msgid "Inspecting the Results"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:118
+msgid "The inspection step is the heart of this workflow."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:121
+msgid "1. Examine the primitives visually"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:123
+msgid ""
+"Look at the returned ``primitives`` and decide what the detector found well."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:125
+msgid "Useful questions include:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:127
+msgid "Are the expected planar faces present?"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:128
+msgid "Do fillets appear as cylinders?"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:129
+msgid "Do rounded corners appear as spheres?"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:130
+msgid "Are repeated features recognized consistently?"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:132
+msgid ""
+"In a simple mechanical part, good output often consists of a small number of"
+" common planes, repeated cylinders with similar radii, and only a few "
+"leftovers."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:136
+msgid "2. Examine the leftovers"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:138
+msgid "``leftovers`` show what still needs manual interpretation."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:140
+msgid "Large leftover regions often indicate one of three things:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:142
+msgid ""
+"the part contains geometry that is not well approximated by planes, "
+"cylinders, or spheres"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:144
+msgid "the mesh is noisy or irregular"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:145
+msgid "the working section is still too large to interpret comfortably"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:147
+msgid ""
+"If too much of the mesh appears in ``leftovers``, it may be better to refine"
+" the working section, identify more symmetry, or redesign that area manually"
+" instead of trying to automate it further."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:152
+msgid "3. Examine the generated code"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:154
+msgid ""
+"The generated ``code_lines`` are intentionally written in Algebra mode and "
+"use ``Plane * Pos`` structure to make repeated placement patterns easier to "
+"spot."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:157
+msgid "This often helps answer questions such as:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:159
+msgid "which faces lie on the same construction plane?"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:160
+msgid "which circles belong to the same sketch?"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:161
+msgid ""
+"which cylindrical or spherical regions are repeated instances of one "
+"feature?"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:163
+msgid ""
+"Treat this code as an annotated report, not necessarily as the final model."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:165
+msgid ""
+"For planar parts in particular, the generated lines are often naturally "
+"grouped by plane. A sequence such as ``Plane.XY.offset(...)`` with a few "
+"repeated offset values usually indicates related structure that may belong "
+"to one sketch or one construction stage."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:171
+msgid "Worked Example: Filleted Box"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:173
+msgid "As a controlled example, consider a filleted box:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:179
+msgid "Running ``detect_primitives`` on this geometry produces output like:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:210
+msgid "This output is informative in several ways:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:212
+msgid "the six box faces appear as rectangles on three principal planes"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:213
+msgid "the edge fillets appear as cylinders grouped around those same planes"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:214
+msgid "the corner blends appear as spheres near the eight cube corners"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:216
+msgid "The generated code is also structured by plane:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:218
+msgid "``Plane.XY.offset(...)`` appears with three distinct offsets"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:219
+msgid "``Plane.YZ.offset(...)`` appears with three distinct offsets"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:220
+msgid "``Plane.ZX.offset(...)`` appears with three distinct offsets"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:222
+msgid ""
+"That organization is often more useful than any one primitive by itself "
+"because it suggests how the model could be regrouped into sketches and "
+"construction steps."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:226
+msgid ""
+"Although this output is correct and useful, it still does not represent the "
+"best final build123d model. The original design intent is much simpler:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:233
+msgid ""
+"That is a good example of the main lesson of this tutorial: the generated "
+"code helps reveal structure, but the final model should usually be rewritten"
+" in a cleaner, higher-level form."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:238
+msgid "Turning Primitive Hints into Sketches"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:240
+msgid ""
+"Once repeated planes become obvious in ``code_lines``, start grouping "
+"related features into sketches and features of your own."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:243
+msgid "For example:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:245
+msgid ""
+"several rectangles on ``Plane.XY`` may indicate one base sketch and one or "
+"more extrusions"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:247
+msgid "repeated circles on one plane may indicate hole or boss locations"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:248
+msgid ""
+"a collection of cylinders with the same radius may indicate that a fillet or"
+" round was part of the original design intent"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:251
+msgid "The generated code is often most useful when treated as:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:253
+msgid "a list of candidate construction planes"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:254
+msgid "a list of likely sketch elements"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:255
+msgid "a list of repeated primitive sizes and placements"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:258
+msgid "Signs of Good Output"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:260
+msgid "``detect_primitives`` is most helpful when:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:262
+msgid "the mesh is reasonably clean"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:263
+msgid "the part is mostly mechanical"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:264
+msgid "many surfaces are planar, cylindrical, or spherical"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:265
+msgid "there are clear planes of symmetry or repeated features"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:267
+msgid ""
+"In these cases, primitives and generated code often cluster into obvious "
+"reconstruction steps."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:271
+msgid "Signs of Poor Output"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:273
+msgid "Expect more manual work when:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:275
+msgid "the mesh contains freeform surfaces"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:276
+msgid "the STL is noisy or heavily tessellated"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:277
+msgid "the part has no obvious symmetry"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:278
+msgid "many important regions remain in ``leftovers``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:279
+msgid "the generated code contains many tiny or redundant fragments"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:281
+msgid ""
+"When this happens, it may be faster to use the mesh only as a visual "
+"reference and rebuild the part manually from dimensions and intent."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:285
+msgid "Summary"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:287
+msgid "The STL reconstruction workflow in build123d is:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:289
+msgid "analyze the part as a designer, not as a mesh processor"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:290
+msgid "isolate the smallest useful region with symmetry and splitting"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:291
+msgid "cache that region as BREP"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:292
+msgid "run :func:`~build123d.detect_primitives`"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:293
+msgid "inspect primitives, leftovers, and code"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:294
+msgid "rebuild the part intentionally in build123d"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_stl_reconstruction.rst:296
+msgid ""
+"The most useful mindset is to treat ``detect_primitives`` as a design "
+"assistant. It can show where the planes, cylinders, and spheres probably "
+"are, but the final parametric model still comes from careful human "
+"interpretation."
+msgstr ""

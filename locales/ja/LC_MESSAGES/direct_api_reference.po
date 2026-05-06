@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-04 00:37+0000\n"
+"POT-Creation-Date: 2026-05-06 00:35+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -5112,9 +5112,12 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.get_single_shape:1
-msgid ""
-"Helper to extract a single entity of a specific type from a shape, with a "
-"warning if count != 1."
+msgid "Return the single entity of the requested type."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.get_single_shape:3
+msgid "if the number of matching entities is not exactly one."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of

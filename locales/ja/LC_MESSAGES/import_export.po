@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-04 00:37+0000\n"
+"POT-Creation-Date: 2026-05-08 00:37+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../build123d/docs/import_export.rst:7
 #: ../../build123d/docs/import_export.rst:223
-#: ../../build123d/docs/import_export.rst:288
+#: ../../build123d/docs/import_export.rst:291
 msgid "For example:"
 msgstr ""
 
@@ -922,6 +922,27 @@ msgstr ""
 msgid "2D Importers"
 msgstr ""
 
+#: ../../build123d/src/build123d/import_dxf.pydocstring of
+#: import_dxf.import_dxf:1
+msgid "Import shapes from a DXF file"
+msgstr ""
+
+#: ../../build123d/src/build123d/import_dxf.pydocstring of
+#: import_dxf.import_dxf:3
+msgid "dxf file path or readable stream"
+msgstr ""
+
+#: ../../build123d/src/build123d/import_dxf.pydocstring of
+#: import_dxf.import_dxf:6 ../../build123d/src/build123d/importers.pydocstring
+#: of importers.import_brep:6
+msgid "file not found"
+msgstr ""
+
+#: ../../build123d/src/build123d/import_dxf.pydocstring of
+#: import_dxf.import_dxf:8
+msgid "build123d objects"
+msgstr ""
+
 #: ../../build123d/src/build123d/importers.pydocstring of
 #: importers.import_svg:1
 msgid "svg file"
@@ -989,7 +1010,7 @@ msgstr ""
 msgid "code, builder instance name"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:266
+#: ../../build123d/docs/import_export.rst:269
 msgid "3D Importers"
 msgstr ""
 
@@ -1001,11 +1022,6 @@ msgstr ""
 #: ../../build123d/src/build123d/importers.pydocstring of
 #: importers.import_brep:3
 msgid "brep file"
-msgstr ""
-
-#: ../../build123d/src/build123d/importers.pydocstring of
-#: importers.import_brep:6
-msgid "file not found"
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.pydocstring of
@@ -1069,18 +1085,18 @@ msgstr ""
 msgid "STL model"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:273
+#: ../../build123d/docs/import_export.rst:276
 msgid "STL Reconstruction"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:275
+#: ../../build123d/docs/import_export.rst:278
 msgid ""
 "The :func:`~build123d.detect_primitives` helper can be used during STL "
 "reconstruction to detect analytic planes, cylinders, and spheres in a mesh-"
 "like shape and generate algebra-mode code fragments to aid manual redesign."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:279
+#: ../../build123d/docs/import_export.rst:282
 msgid ""
 "See :ref:`stl_reconstruction_tutorial` for the full workflow and "
 "limitations."
@@ -1138,11 +1154,11 @@ msgid ""
 " same order as the returned primitives."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:284
+#: ../../build123d/docs/import_export.rst:287
 msgid "3D Mesh Import"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:286
+#: ../../build123d/docs/import_export.rst:289
 msgid ""
 "Both 3MF and STL import (and export) are provided with the "
 ":class:`~mesher.Mesher` class."

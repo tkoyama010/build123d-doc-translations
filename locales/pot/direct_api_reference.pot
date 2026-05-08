@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-06 00:35+0000\n"
+"POT-Creation-Date: 2026-05-08 00:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1709,6 +1709,38 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_bezier:14
 msgid "bezier curve"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_bspline:1
+msgid "Create an exact B-spline edge from control points and knot data."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_bspline:3
+msgid "Control points (poles) defining the spline shape."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_bspline:6
+msgid "Knot sequence for the spline. Repeated knot values are converted to unique knot values plus multiplicities."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_bspline:9
+msgid "Polynomial degree of the spline."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_bspline:11
+msgid "Optional per-control-point weights for rational B-splines. Defaults to ``None``."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_bspline:14
+msgid "Whether to create a periodic spline. Defaults to ``False``."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_bspline:18
+msgid "B-spline requires at least one knot."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_bspline:20
+msgid "the B-spline edge"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_circle:1

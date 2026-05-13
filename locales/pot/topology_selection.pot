@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-05-13 00:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -286,7 +286,7 @@ msgid "``ShapePredicate``, eg: ``lambda e: e.is_interior == 1``, ``lambda f: lf.
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:251
-msgid "Callable eg: ``Vertex().distance``"
+msgid "Callable eg: ``Vertex().distance``, |topo_distance_to|"
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:254
@@ -302,8 +302,8 @@ msgid "Here we want to capture some vertices from the object furthest along ``X`
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:276
-#: ../../build123d/docs/topology_selection.rst:333
-#: ../../build123d/docs/topology_selection.rst:381
+#: ../../build123d/docs/topology_selection.rst:399
+#: ../../build123d/docs/topology_selection.rst:447
 msgid "Examples"
 msgstr ""
 
@@ -339,59 +339,79 @@ msgstr ""
 msgid "If we want only the edges from the smallest faces by area we can get the faces, then group by ``SortBy.AREA``. The ``ShapeList`` of smallest faces is available from the first list index. Finally, a ``ShapeList`` has access to selectors, so calling |edges| will return a new list of all edges in the previous list."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:344
+#: ../../build123d/docs/topology_selection.rst:333
+msgid "Topological Distance"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:335
+msgid "|topo_distance_to| creates a callable key that measures graph distance through topology rather than geometric distance through space. It is useful when selecting features by adjacency, for example faces connected to a reference face, or the next ring of faces after that."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:340
+msgid "Distances are measured within the shared ``topo_parent`` of the reference shape. The reference shape has distance ``0``, directly adjacent shapes have distance ``1``, and unreachable shapes have distance ``inf``."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:356
+msgid "Multiple reference shapes can be provided. This is useful for selecting all features within a topological distance from any reference. In this example, a sphere is converted to a triangular mesh, faces near the middle of the mesh are used as references, and all mesh faces are grouped into topological rings expanding away from that starting band."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:388
+msgid "The same approach can be used with edges or vertices. For example, a single edge on the mesh can be used as the starting point for edge-distance rings."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:410
 #: ../../build123d/docs/topology_selection/group_examples.rst:8
 msgid "Axis and Length"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:349
+#: ../../build123d/docs/topology_selection.rst:415
 #: ../../build123d/docs/topology_selection/group_examples.rst:40
 msgid "Hole Area"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:354
+#: ../../build123d/docs/topology_selection.rst:420
 #: ../../build123d/docs/topology_selection/group_examples.rst:64
 msgid "Properties with Keys"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:360
+#: ../../build123d/docs/topology_selection.rst:426
 msgid "Filter"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:362
+#: ../../build123d/docs/topology_selection.rst:428
 msgid "A ``ShapeList`` can be filtered with the |filter_by| and |filter_by_position| methods based on a filtering criteria. Filters are flexible way to isolate (or exclude) features based on known criteria."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:366
+#: ../../build123d/docs/topology_selection.rst:432
 msgid "Lets say we need all the faces with a normal in the ``+Z`` direction. One way to do this might be with a list comprehension, however |filter_by| has the capability to take a lambda function as a filter condition on the entire list. In this case, the normal of each face can be checked against a vector direction and filtered accordingly."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:392
+#: ../../build123d/docs/topology_selection.rst:458
 #: ../../build123d/docs/topology_selection/filter_examples.rst:8
 msgid "GeomType"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:397
+#: ../../build123d/docs/topology_selection.rst:463
 #: ../../build123d/docs/topology_selection/filter_examples.rst:45
 msgid "All Edges Circle"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:402
+#: ../../build123d/docs/topology_selection.rst:468
 #: ../../build123d/docs/topology_selection/filter_examples.rst:70
 msgid "Axis and Plane"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:407
+#: ../../build123d/docs/topology_selection.rst:473
 #: ../../build123d/docs/topology_selection/filter_examples.rst:112
 msgid "Inner Wire Count"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:412
+#: ../../build123d/docs/topology_selection.rst:478
 #: ../../build123d/docs/topology_selection/filter_examples.rst:154
 msgid "Nested Filters"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:417
+#: ../../build123d/docs/topology_selection.rst:483
 #: ../../build123d/docs/topology_selection/filter_examples.rst:181
 msgid "Shape Properties"
 msgstr ""

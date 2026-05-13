@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-08 00:37+0000\n"
+"POT-Creation-Date: 2026-05-13 00:41+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -83,8 +83,6 @@ msgstr ""
 #: topology.shape_core.Shape.mesh:0
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.move:0
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.scale:0
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.two_d.Face.fillet_2d:0
 #: ../../build123d/src/build123d/topology/zero_d.pydocstring of
@@ -402,8 +400,6 @@ msgstr ""
 #: topology.shape_core.Shape.mesh:6
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.move:5
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.scale:5
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.two_d.Face.fillet_2d:6 ../docstring of geometry.BoundBox.add:14
 #: ../docstring of geometry.BoundBox.find_outside_box_2d:13 ../docstring of
@@ -3056,8 +3052,6 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.mesh:3
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.scale:3
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.two_d.Face.fillet_2d:3
 msgid "float:"
@@ -3670,6 +3664,11 @@ msgid "resulting face"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.Face.seams:1
+msgid "Return the seams contained within this Face"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.Face.semi_angle:1
 msgid "Return the semi angle of a cone, otherwise None"
 msgstr ""
@@ -3758,6 +3757,30 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.two_d.Face.to_arcs:10
 msgid "approximated face"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.Face.uv_face:1
+msgid "Create a planar face from a face's parametric-space boundary."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.Face.uv_face:3
+msgid ""
+"Each boundary edge's pcurve on ``self`` is converted to a normal build123d "
+"``Edge`` on the XY plane, where X is the surface U parameter and Y is the "
+"surface V parameter. The original outer/inner wire structure is kept so the "
+"result can be displayed with normal build123d/ocp-vscode tooling."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.Face.uv_face:8
+msgid "Planar or non-planar face to inspect."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.Face.uv_face:10
+msgid "A planar ``Face`` in UV parameter space."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
@@ -5619,7 +5642,30 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.scale:1
-msgid "Scales this shape through a transformation."
+msgid "Scale this shape about a point."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.scale:3
+msgid ""
+"Non-uniform scaling may change the underlying geometry type to splines. When"
+" ``about`` isn't provided, the shape is scaled about its location."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.scale:6
+msgid ""
+"uniform scale factor or three scale factors for the X, Y and Z directions."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.scale:9
+msgid "point to scale about. Defaults to the shape's location position."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.scale:13
+msgid "a copy of the scaled shape."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of

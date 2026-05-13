@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-05-13 00:41+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -804,7 +804,7 @@ msgstr ""
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
 #: operations_generic.offset:26
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.scale:13
+#: operations_generic.scale:16
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
 #: operations_generic.split:14
 #: ../../build123d/src/build123d/operations_sketch.pydocstring of
@@ -979,7 +979,7 @@ msgstr ""
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
 #: operations_generic.offset:29
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.scale:16
+#: operations_generic.scale:19
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
 #: operations_generic.split:17
 msgid "missing objects"
@@ -1207,6 +1207,11 @@ msgstr ""
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
 #: operations_generic.scale:11
 msgid "scale factor"
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_generic.pydocstring of
+#: operations_generic.scale:13
+msgid "point to scale about. Defaults to each object's location position."
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_part.pydocstring of

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-13 00:41+0000\n"
+"POT-Creation-Date: 2026-05-14 00:42+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -293,7 +293,7 @@ msgid "|filter_by|"
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:238
-msgid "``Axis``, ``Plane``, ``GeomType``, ``ShapePredicate``, property"
+msgid "``Axis``, ``Plane``, ``GeomType``, callable, property"
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:238
@@ -337,12 +337,8 @@ msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:250
 msgid ""
-"``ShapePredicate``, eg: ``lambda e: e.is_interior == 1``, ``lambda f: "
-"lf.edges() >= 3``"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:251
-msgid "Callable eg: ``Vertex().distance``, |topo_distance_to|"
+"Callable, eg: ``lambda e: e.is_interior == 1``, ``lambda f: len(f.edges()) "
+">= 3``, ``Vertex().distance``, |topo_distance_to|"
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:254

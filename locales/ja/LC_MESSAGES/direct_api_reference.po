@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-13 00:41+0000\n"
+"POT-Creation-Date: 2026-05-14 00:42+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -6145,7 +6145,7 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.ShapeList.filter_by:1
-msgid "filter by Axis, Plane, or GeomType"
+msgid "filter by"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -6160,8 +6160,8 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.ShapeList.filter_by:9
 msgid ""
-"axis, plane, or geom type to filter and possibly sort by. Filtering by a "
-"plane returns faces/edges parallel to that plane."
+"function, axis, plane, or geom type to filter and possibly sort by. "
+"Filtering by a plane returns faces/edges parallel to that plane."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -6241,26 +6241,27 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.ShapeList.group_by:6
-msgid "group and sort criteria. Defaults to Axis.Z."
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.group_by:7
+msgid "optional): group and sort criteria. Defaults to Axis.Z."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.ShapeList.group_by:8
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.sort_by:9
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.sort_by_distance:7
-msgid "flip order of sort. Defaults to False."
+msgid ""
+":param : optional): group and sort criteria. Defaults to Axis.Z. :param "
+"reverse: flip order of sort. Defaults to False. :type reverse: bool, "
+"optional :param tol_digits: Tolerance for building the group keys by"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.group_by:10
-msgid "Tolerance for building the group keys by round(key, tol_digits)"
+#: topology.shape_core.ShapeList.group_by:12
+msgid "round(key, tol_digits)"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.group_by:14
-msgid "sorted list of ShapeLists"
+#: topology.shape_core.ShapeList.group_by:15
+msgid "sorted groups of ShapeLists"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -6292,7 +6293,16 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.ShapeList.sort_by:6
-msgid "sort criteria. Defaults to Axis.Z."
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.sort_by:7
+msgid "optional): sort criteria. Defaults to Axis.Z."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.sort_by:8
+msgid ""
+":param : optional): sort criteria. Defaults to Axis.Z. :param reverse: flip "
+"order of sort. Defaults to False. :type reverse: bool, optional"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -6328,6 +6338,11 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.ShapeList.sort_by_distance:5
 msgid "reference object"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.sort_by_distance:7
+msgid "flip order of sort. Defaults to False."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of

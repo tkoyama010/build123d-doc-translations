@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-13 00:41+0000\n"
+"POT-Creation-Date: 2026-05-14 00:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -242,7 +242,7 @@ msgid "|filter_by|"
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:238
-msgid "``Axis``, ``Plane``, ``GeomType``, ``ShapePredicate``, property"
+msgid "``Axis``, ``Plane``, ``GeomType``, callable, property"
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:238
@@ -282,11 +282,7 @@ msgid "Properties, eg: ``Face.area``, ``Edge.length``"
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:250
-msgid "``ShapePredicate``, eg: ``lambda e: e.is_interior == 1``, ``lambda f: lf.edges() >= 3``"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:251
-msgid "Callable eg: ``Vertex().distance``, |topo_distance_to|"
+msgid "Callable, eg: ``lambda e: e.is_interior == 1``, ``lambda f: len(f.edges()) >= 3``, ``Vertex().distance``, |topo_distance_to|"
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:254

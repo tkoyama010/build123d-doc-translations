@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-14 00:42+0000\n"
+"POT-Creation-Date: 2026-05-16 00:37+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -774,7 +774,7 @@ msgid "Matrix multiplication"
 msgstr ""
 
 #: ../docstring of geometry.Matrix.rotate:1
-msgid "General rotate about axis"
+msgid "General rotate about axis by angle in degrees"
 msgstr ""
 
 #: ../docstring of geometry.Matrix.transposed_list:1

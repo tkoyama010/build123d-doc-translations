@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-14 00:42+0000\n"
+"POT-Creation-Date: 2026-05-16 00:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -661,7 +661,7 @@ msgid "Matrix multiplication"
 msgstr ""
 
 #: ../docstring of geometry.Matrix.rotate:1
-msgid "General rotate about axis"
+msgid "General rotate about axis by angle in degrees"
 msgstr ""
 
 #: ../docstring of geometry.Matrix.transposed_list:1

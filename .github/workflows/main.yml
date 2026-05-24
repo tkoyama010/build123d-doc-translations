@@ -30,7 +30,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: true
-          token: ${{ secrets.PERSONAL_ACCESSTOKEN }}
       - name: Setup SSH
         uses: MrSquaare/ssh-setup-action@v3
         with:

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-11 00:21+0000\n"
+"POT-Creation-Date: 2026-05-26 00:42+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -391,4 +391,42 @@ msgstr ""
 
 #: ../../build123d/docs/external.rst:209
 msgid "See: `OCP.wasm <https://github.com/yeicor/OCP.wasm>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:212
+msgid "partomatic"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:214
+msgid ""
+"Partomatic provides a standardized system for building parametric models in "
+"build123d. The open nature of build123d is its strength, but it makes it "
+"difficult to build standardized tooling to interface with your projects. It "
+"makes it easy to:"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:218
+msgid "import and export configuration files"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:219
+msgid ""
+"easily export models for projects that provide large numbers of "
+"intersectional options"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:220
+msgid ""
+"share the built-in web interface allowing end-users to change properties and"
+" see the results quickly"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:221
+msgid ""
+"generate logs for compilation and web interface events that can be consumed "
+"by an OpenTelemetry platform"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:223
+msgid "See: `Partomatic <https://github.com/x0pherl/partomatic>`_"
 msgstr ""

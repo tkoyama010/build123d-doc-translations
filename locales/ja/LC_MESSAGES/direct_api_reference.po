@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-16 00:37+0000\n"
+"POT-Creation-Date: 2026-06-04 00:54+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -57,7 +57,7 @@ msgid ""
 msgstr ""
 
 #: ../docstring of geometry.Axis:1
-msgid "Axis defined by point and direction"
+msgid "Axis defined by point and direction or by two points"
 msgstr ""
 
 #: ../../build123d/docs/direct_api_reference.rst:0
@@ -108,10 +108,14 @@ msgid "direction"
 msgstr ""
 
 #: ../docstring of geometry.Axis:7
-msgid "origin & direction defined by start of edge"
+msgid "point used with origin to define direction"
 msgstr ""
 
 #: ../docstring of geometry.Axis:9
+msgid "origin & direction defined by start of edge"
+msgstr ""
+
+#: ../docstring of geometry.Axis:11
 msgid "location to convert to axis"
 msgstr ""
 
@@ -119,15 +123,15 @@ msgstr ""
 msgid "Variables"
 msgstr ""
 
-#: ../docstring of geometry.Axis:12
+#: ../docstring of geometry.Axis:14
 msgid "the global position of the axis origin"
 msgstr ""
 
-#: ../docstring of geometry.Axis:14
+#: ../docstring of geometry.Axis:16
 msgid "the normalized direction vector"
 msgstr ""
 
-#: ../docstring of geometry.Axis:16
+#: ../docstring of geometry.Axis:18
 msgid "the OCP axis object"
 msgstr ""
 
@@ -4516,6 +4520,107 @@ msgstr ""
 msgid "Return a copy of self moved along the normal by amount"
 msgstr ""
 
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:1
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:1
+msgid "split_by_perimeter"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:3
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:3
+msgid ""
+"Divide the faces of this object into those within the perimeter and those "
+"outside the perimeter."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:6
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:6
+msgid "Note: this method may fail if the perimeter intersects shape edges."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:8
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:8
+msgid "closed perimeter"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:10
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:10
+msgid "which object(s) to return. Defaults to Keep.INSIDE."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:13
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:13
+msgid "perimeter must be closed"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:14
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:14
+msgid "keep must be one of Keep.INSIDE|OUTSIDE|BOTH"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:16
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:16
+msgid ""
+"Union[Face | Shell | ShapeList[Face] | None, Tuple[Face | Shell | "
+"ShapeList[Face] | None]: The result of the split operation.  - "
+"**Keep.INSIDE**: Returns the inside part as a `Shell` or `Face`, or `None`"
+"   if no inside part is found. - **Keep.OUTSIDE**: Returns the outside part "
+"as a `Shell` or `Face`, or `None`   if no outside part is found. - "
+"**Keep.BOTH**: Returns a tuple `(inside, outside)` where each element is   "
+"either a `Shell`, `Face`, or `None` if no corresponding part is found."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:16
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:16
+msgid ""
+"Union[Face | Shell | ShapeList[Face] | None, Tuple[Face | Shell | "
+"ShapeList[Face] | None]: The result of the split operation."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:19
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:19
+msgid ""
+"**Keep.INSIDE**: Returns the inside part as a `Shell` or `Face`, or `None` "
+"if no inside part is found."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:21
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:21
+msgid ""
+"**Keep.OUTSIDE**: Returns the outside part as a `Shell` or `Face`, or `None`"
+" if no outside part is found."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.split_by_perimeter:23
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.two_d.Mixin2D.split_by_perimeter:23
+msgid ""
+"**Keep.BOTH**: Returns a tuple `(inside, outside)` where each element is "
+"either a `Shell`, `Face`, or `None` if no corresponding part is found."
+msgstr ""
+
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.two_d.Mixin2D.touch:1
 msgid "Find boundary contacts between this 2D shape and another shape."
@@ -5789,83 +5894,6 @@ msgid ""
 "**Keep.BOTH**: Returns a tuple `(inside, outside)` where each element is "
 "either a `Self` or `list[Self]`, or `None` if no corresponding part is "
 "found."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:1
-msgid "split_by_perimeter"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:3
-msgid ""
-"Divide the faces of this object into those within the perimeter and those "
-"outside the perimeter."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:6
-msgid "Note: this method may fail if the perimeter intersects shape edges."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:8
-msgid "closed perimeter"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:10
-msgid "which object(s) to return. Defaults to Keep.INSIDE."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:13
-msgid "perimeter must be closed"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:14
-msgid "keep must be one of Keep.INSIDE|OUTSIDE|BOTH"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:16
-msgid ""
-"Union[Face | Shell | ShapeList[Face] | None, Tuple[Face | Shell | "
-"ShapeList[Face] | None]: The result of the split operation.  - "
-"**Keep.INSIDE**: Returns the inside part as a `Shell` or `Face`, or `None`"
-"   if no inside part is found. - **Keep.OUTSIDE**: Returns the outside part "
-"as a `Shell` or `Face`, or `None`   if no outside part is found. - "
-"**Keep.BOTH**: Returns a tuple `(inside, outside)` where each element is   "
-"either a `Shell`, `Face`, or `None` if no corresponding part is found."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:16
-msgid ""
-"Union[Face | Shell | ShapeList[Face] | None, Tuple[Face | Shell | "
-"ShapeList[Face] | None]: The result of the split operation."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:19
-msgid ""
-"**Keep.INSIDE**: Returns the inside part as a `Shell` or `Face`, or `None` "
-"if no inside part is found."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:21
-msgid ""
-"**Keep.OUTSIDE**: Returns the outside part as a `Shell` or `Face`, or `None`"
-" if no outside part is found."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.split_by_perimeter:23
-msgid ""
-"**Keep.BOTH**: Returns a tuple `(inside, outside)` where each element is "
-"either a `Shell`, `Face`, or `None` if no corresponding part is found."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of

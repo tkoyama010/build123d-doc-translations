@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-13 00:41+0000\n"
+"POT-Creation-Date: 2026-06-23 00:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -779,7 +779,7 @@ msgid "Create a face from the given perimeter edges."
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.make_face:5
-msgid "sequence of perimeter edges. Defaults to all sketch pending edges."
+msgid "perimeter edges that must combine into a single closed wire. Defaults to all sketch pending edges."
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_sketch.py:docstring of operations_sketch.make_hull:1

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-13 00:41+0000\n"
+"POT-Creation-Date: 2026-06-23 00:45+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -925,7 +925,9 @@ msgstr ""
 
 #: ../../build123d/src/build123d/operations_sketch.pydocstring of
 #: operations_sketch.make_face:5
-msgid "sequence of perimeter edges. Defaults to all sketch pending edges."
+msgid ""
+"perimeter edges that must combine into a single closed wire. Defaults to all"
+" sketch pending edges."
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_sketch.pydocstring of

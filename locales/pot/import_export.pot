@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-08 00:37+0000\n"
+"POT-Creation-Date: 2026-06-23 00:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -262,6 +262,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/exporters.py:docstring of exporters.ExportDXF.write:3
 msgid "The file name (including path) where the DXF data will be written."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters.py:docstring of exporters.ExportDXF.write:6
+msgid "Export the file as ASCII (True) or binary (False) DXF format. Defaults to True."
 msgstr ""
 
 #: ../../build123d/docs/import_export.rst:194

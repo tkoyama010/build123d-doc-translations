@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 00:45+0000\n"
+"POT-Creation-Date: 2026-06-24 00:40+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -952,28 +952,33 @@ msgstr ""
 
 #: ../../build123d/src/build123d/importers.pydocstring of
 #: importers.import_svg:1
-msgid "svg file"
+msgid "import_svg"
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.pydocstring of
 #: importers.import_svg:3
-msgid "flip objects to compensate for svg orientation. Defaults to True."
+msgid "svg file"
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.pydocstring of
 #: importers.import_svg:5
+msgid "flip objects to compensate for svg orientation. Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.pydocstring of
+#: importers.import_svg:7
 msgid ""
 "alignment of the SVG's viewbox, if None, the viewbox's origin will be at "
 "`(0,0,0)`. Defaults to Align.MIN."
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.pydocstring of
-#: importers.import_svg:8
+#: importers.import_svg:10
 msgid "Defaults to False."
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.pydocstring of
-#: importers.import_svg:10
+#: importers.import_svg:12
 msgid ""
 "XML attribute to use for imported shapes' `label` property. Defaults to "
 "\"id\". Use `inkscape:label` to read labels set from Inkscape's \"Layers and"
@@ -981,12 +986,12 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.pydocstring of
-#: importers.import_svg:15
+#: importers.import_svg:17
 msgid "unexpected shape type"
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.pydocstring of
-#: importers.import_svg:17
+#: importers.import_svg:19
 msgid "objects contained in svg"
 msgstr ""
 

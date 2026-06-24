@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-04 00:54+0000\n"
+"POT-Creation-Date: 2026-06-24 00:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1864,7 +1864,7 @@ msgstr ""
 msgid "conical angle. Defaults to 0.0."
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:8
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:10
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_helix:17
 msgid "Defaults to False."
 msgstr ""
@@ -5624,26 +5624,30 @@ msgid "STL model"
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:1
-msgid "svg file"
+msgid "import_svg"
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:3
-msgid "flip objects to compensate for svg orientation. Defaults to True."
+msgid "svg file"
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:5
+msgid "flip objects to compensate for svg orientation. Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:7
 msgid "alignment of the SVG's viewbox, if None, the viewbox's origin will be at `(0,0,0)`. Defaults to Align.MIN."
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:10
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:12
 msgid "XML attribute to use for imported shapes' `label` property. Defaults to \"id\". Use `inkscape:label` to read labels set from Inkscape's \"Layers and Objects\" panel."
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:15
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:17
 msgid "unexpected shape type"
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:17
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:19
 msgid "objects contained in svg"
 msgstr ""
 

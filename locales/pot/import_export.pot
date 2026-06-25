@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-24 00:40+0000\n"
+"POT-Creation-Date: 2026-06-25 00:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -603,6 +603,7 @@ msgstr ""
 
 #: ../../build123d/src/build123d/mesher.py:docstring of mesher.Mesher.read:5
 #: ../../build123d/src/build123d/mesher.py:docstring of mesher.Mesher.write:5
+#: ../../build123d/src/build123d/mesher.py:docstring of mesher.Mesher.write_stream:5
 msgid "Unknown file format - must be 3mf or stl"
 msgstr ""
 
@@ -616,6 +617,14 @@ msgstr ""
 
 #: ../../build123d/src/build123d/mesher.py:docstring of mesher.Mesher.vertex_counts:1
 msgid "Number of vertices in each of the models's meshes"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.py:docstring of mesher.Mesher.write_stream:1
+msgid "byte stream"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.py:docstring of mesher.Mesher.write_stream:3
+msgid "output mesh format, either \"3mf\" or \"stl\""
 msgstr ""
 
 #: ../../build123d/docs/import_export.rst:255

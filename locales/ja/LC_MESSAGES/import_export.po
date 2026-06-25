@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-24 00:40+0000\n"
+"POT-Creation-Date: 2026-06-25 00:45+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -900,6 +900,8 @@ msgstr ""
 
 #: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher.read:5
 #: ../../build123d/src/build123d/mesher.pydocstring of mesher.Mesher.write:5
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.write_stream:5
 msgid "Unknown file format - must be 3mf or stl"
 msgstr ""
 
@@ -915,6 +917,16 @@ msgstr ""
 #: ../../build123d/src/build123d/mesher.pydocstring of
 #: mesher.Mesher.vertex_counts:1
 msgid "Number of vertices in each of the models's meshes"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.write_stream:1
+msgid "byte stream"
+msgstr ""
+
+#: ../../build123d/src/build123d/mesher.pydocstring of
+#: mesher.Mesher.write_stream:3
+msgid "output mesh format, either \"3mf\" or \"stl\""
 msgstr ""
 
 #: ../../build123d/docs/import_export.rst:255

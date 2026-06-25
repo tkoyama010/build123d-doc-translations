@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-24 00:40+0000\n"
+"POT-Creation-Date: 2026-06-25 00:45+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -344,6 +344,11 @@ msgstr ""
 
 #: ../docstring of geometry.Axis.to_plane:1
 msgid "Return self as Plane"
+msgstr ""
+
+#: ../docstring of geometry.Axis.wrapped:1 ../docstring of
+#: geometry.Location.wrapped:1
+msgid "OCP object"
 msgstr ""
 
 #: ../docstring of geometry.BoundBox:1
@@ -1157,6 +1162,22 @@ msgstr ""
 
 #: ../docstring of geometry.Plane.to_local_coords:6
 msgid "an object of the same type, but repositioned to local coordinates"
+msgstr ""
+
+#: ../docstring of geometry.Plane.wrapped:1
+msgid "The OCP object"
+msgstr ""
+
+#: ../docstring of geometry.Plane.x_dir:1
+msgid "Local X direction of the plane."
+msgstr ""
+
+#: ../docstring of geometry.Plane.y_dir:1
+msgid "Local Y direction of the plane."
+msgstr ""
+
+#: ../docstring of geometry.Plane.z_dir:1
+msgid "Local Z direction normal to the plane."
 msgstr ""
 
 #: ../docstring of geometry.Rotation:1

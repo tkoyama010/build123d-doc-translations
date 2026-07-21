@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-08 00:37+0000\n"
+"POT-Creation-Date: 2026-07-21 00:32+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -42,21 +42,13 @@ msgid "Objects"
 msgstr ""
 
 #: ../../build123d/docs/cheat_sheet.rst:16
-#: ../../build123d/docs/cheat_sheet.rst:84
-#: ../../build123d/docs/cheat_sheet.rst:132
+#: ../../build123d/docs/cheat_sheet.rst:80
+#: ../../build123d/docs/cheat_sheet.rst:128
 msgid "1D - BuildLine"
 msgstr ""
 
 #: ../../build123d/docs/cheat_sheet.rst:0
 msgid ":class:`~objects_curve.Airfoil`"
-msgstr ""
-
-#: ../../build123d/docs/cheat_sheet.rst:0
-msgid ":class:`~objects_curve.ArcArcTangentArc`"
-msgstr ""
-
-#: ../../build123d/docs/cheat_sheet.rst:0
-msgid ":class:`~objects_curve.ArcArcTangentLine`"
 msgstr ""
 
 #: ../../build123d/docs/cheat_sheet.rst:0
@@ -120,14 +112,6 @@ msgid ":class:`~objects_curve.Line`"
 msgstr ""
 
 #: ../../build123d/docs/cheat_sheet.rst:0
-msgid ":class:`~objects_curve.PointArcTangentArc`"
-msgstr ""
-
-#: ../../build123d/docs/cheat_sheet.rst:0
-msgid ":class:`~objects_curve.PointArcTangentLine`"
-msgstr ""
-
-#: ../../build123d/docs/cheat_sheet.rst:0
 msgid ":class:`~objects_curve.PolarLine`"
 msgstr ""
 
@@ -155,9 +139,9 @@ msgstr ""
 msgid ":class:`~objects_curve.ThreePointArc`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:46
-#: ../../build123d/docs/cheat_sheet.rst:94
-#: ../../build123d/docs/cheat_sheet.rst:138
+#: ../../build123d/docs/cheat_sheet.rst:42
+#: ../../build123d/docs/cheat_sheet.rst:90
+#: ../../build123d/docs/cheat_sheet.rst:134
 msgid "2D - BuildSketch"
 msgstr ""
 
@@ -233,9 +217,9 @@ msgstr ""
 msgid ":class:`~objects_sketch.Triangle`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:67
-#: ../../build123d/docs/cheat_sheet.rst:110
-#: ../../build123d/docs/cheat_sheet.rst:145
+#: ../../build123d/docs/cheat_sheet.rst:63
+#: ../../build123d/docs/cheat_sheet.rst:106
+#: ../../build123d/docs/cheat_sheet.rst:141
 msgid "3D - BuildPart"
 msgstr ""
 
@@ -279,7 +263,7 @@ msgstr ""
 msgid ":class:`~objects_part.Wedge`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:80
+#: ../../build123d/docs/cheat_sheet.rst:76
 msgid "Operations"
 msgstr ""
 
@@ -363,7 +347,7 @@ msgstr ""
 msgid ":func:`~operations_part.section`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:128
+#: ../../build123d/docs/cheat_sheet.rst:124
 msgid "Selectors"
 msgstr ""
 
@@ -387,561 +371,561 @@ msgstr ""
 msgid ":meth:`~build_common.Builder.solids`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:153
+#: ../../build123d/docs/cheat_sheet.rst:149
 msgid "Selector Operators"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:156
-#: ../../build123d/docs/cheat_sheet.rst:176
-#: ../../build123d/docs/cheat_sheet.rst:188
-#: ../../build123d/docs/cheat_sheet.rst:202
-#: ../../build123d/docs/cheat_sheet.rst:216
-#: ../../build123d/docs/cheat_sheet.rst:232
-#: ../../build123d/docs/cheat_sheet.rst:246
+#: ../../build123d/docs/cheat_sheet.rst:152
+#: ../../build123d/docs/cheat_sheet.rst:172
+#: ../../build123d/docs/cheat_sheet.rst:184
+#: ../../build123d/docs/cheat_sheet.rst:198
+#: ../../build123d/docs/cheat_sheet.rst:212
+#: ../../build123d/docs/cheat_sheet.rst:228
+#: ../../build123d/docs/cheat_sheet.rst:242
 msgid "Operator"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:156
-#: ../../build123d/docs/cheat_sheet.rst:176
-#: ../../build123d/docs/cheat_sheet.rst:188
-#: ../../build123d/docs/cheat_sheet.rst:202
-#: ../../build123d/docs/cheat_sheet.rst:216
-#: ../../build123d/docs/cheat_sheet.rst:232
-#: ../../build123d/docs/cheat_sheet.rst:246
+#: ../../build123d/docs/cheat_sheet.rst:152
+#: ../../build123d/docs/cheat_sheet.rst:172
+#: ../../build123d/docs/cheat_sheet.rst:184
+#: ../../build123d/docs/cheat_sheet.rst:198
+#: ../../build123d/docs/cheat_sheet.rst:212
+#: ../../build123d/docs/cheat_sheet.rst:228
+#: ../../build123d/docs/cheat_sheet.rst:242
 msgid "Operand"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:156
-#: ../../build123d/docs/cheat_sheet.rst:176
-#: ../../build123d/docs/cheat_sheet.rst:188
-#: ../../build123d/docs/cheat_sheet.rst:232
-#: ../../build123d/docs/cheat_sheet.rst:246
+#: ../../build123d/docs/cheat_sheet.rst:152
+#: ../../build123d/docs/cheat_sheet.rst:172
+#: ../../build123d/docs/cheat_sheet.rst:184
+#: ../../build123d/docs/cheat_sheet.rst:228
+#: ../../build123d/docs/cheat_sheet.rst:242
 msgid "Method"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:158
+#: ../../build123d/docs/cheat_sheet.rst:154
 msgid ">"
 msgstr ""
 
+#: ../../build123d/docs/cheat_sheet.rst:154
+#: ../../build123d/docs/cheat_sheet.rst:156
 #: ../../build123d/docs/cheat_sheet.rst:158
 #: ../../build123d/docs/cheat_sheet.rst:160
-#: ../../build123d/docs/cheat_sheet.rst:162
-#: ../../build123d/docs/cheat_sheet.rst:164
 msgid ""
 ":class:`~geometry.Axis`, :class:`~topology.Edge`, :class:`~topology.Wire`, "
 ":class:`~build_enums.SortBy`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:158
-#: ../../build123d/docs/cheat_sheet.rst:160
+#: ../../build123d/docs/cheat_sheet.rst:154
+#: ../../build123d/docs/cheat_sheet.rst:156
 msgid ":meth:`~topology.ShapeList.sort_by`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:160
+#: ../../build123d/docs/cheat_sheet.rst:156
 msgid "<"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:162
+#: ../../build123d/docs/cheat_sheet.rst:158
 msgid ">>"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:162
+#: ../../build123d/docs/cheat_sheet.rst:158
 msgid ":meth:`~topology.ShapeList.group_by`\\[-1\\]"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:164
+#: ../../build123d/docs/cheat_sheet.rst:160
 msgid "<<"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:164
+#: ../../build123d/docs/cheat_sheet.rst:160
 msgid ":meth:`~topology.ShapeList.group_by`\\[0\\]"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:166
+#: ../../build123d/docs/cheat_sheet.rst:162
 msgid "\\|"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:166
+#: ../../build123d/docs/cheat_sheet.rst:162
 msgid ""
 ":class:`~geometry.Axis`, :class:`~geometry.Plane`, "
 ":class:`~build_enums.GeomType`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:166
+#: ../../build123d/docs/cheat_sheet.rst:162
 msgid ":meth:`~topology.ShapeList.filter_by`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:168
+#: ../../build123d/docs/cheat_sheet.rst:164
 msgid "[]"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:168
+#: ../../build123d/docs/cheat_sheet.rst:164
 msgid "python indexing / slicing"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:170
+#: ../../build123d/docs/cheat_sheet.rst:166
 msgid ":class:`~geometry.Axis`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:170
+#: ../../build123d/docs/cheat_sheet.rst:166
 msgid ":meth:`~topology.ShapeList.filter_by_position`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:173
+#: ../../build123d/docs/cheat_sheet.rst:169
 msgid "Edge and Wire Operators"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:176
-#: ../../build123d/docs/cheat_sheet.rst:188
-#: ../../build123d/docs/cheat_sheet.rst:202
-#: ../../build123d/docs/cheat_sheet.rst:216
-#: ../../build123d/docs/cheat_sheet.rst:232
+#: ../../build123d/docs/cheat_sheet.rst:172
+#: ../../build123d/docs/cheat_sheet.rst:184
+#: ../../build123d/docs/cheat_sheet.rst:198
+#: ../../build123d/docs/cheat_sheet.rst:212
+#: ../../build123d/docs/cheat_sheet.rst:228
 msgid "Description"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:178
+#: ../../build123d/docs/cheat_sheet.rst:174
 msgid "@"
 msgstr ""
 
+#: ../../build123d/docs/cheat_sheet.rst:174
+#: ../../build123d/docs/cheat_sheet.rst:176
 #: ../../build123d/docs/cheat_sheet.rst:178
-#: ../../build123d/docs/cheat_sheet.rst:180
-#: ../../build123d/docs/cheat_sheet.rst:182
 msgid "0.0 <= float <= 1.0"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:178
+#: ../../build123d/docs/cheat_sheet.rst:174
 msgid ":meth:`~topology.Mixin1D.position_at`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:178
+#: ../../build123d/docs/cheat_sheet.rst:174
 msgid "Position as Vector along object"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:180
+#: ../../build123d/docs/cheat_sheet.rst:176
 msgid "%"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:180
+#: ../../build123d/docs/cheat_sheet.rst:176
 msgid ":meth:`~topology.Mixin1D.tangent_at`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:180
+#: ../../build123d/docs/cheat_sheet.rst:176
 msgid "Tangent as Vector along object"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:182
+#: ../../build123d/docs/cheat_sheet.rst:178
 msgid "^"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:182
+#: ../../build123d/docs/cheat_sheet.rst:178
 msgid ":meth:`~topology.Mixin1D.location_at`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:182
+#: ../../build123d/docs/cheat_sheet.rst:178
 msgid "Location along object"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:185
+#: ../../build123d/docs/cheat_sheet.rst:181
 msgid "Shape Operators"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:190
-#: ../../build123d/docs/cheat_sheet.rst:204
-#: ../../build123d/docs/cheat_sheet.rst:218
+#: ../../build123d/docs/cheat_sheet.rst:186
+#: ../../build123d/docs/cheat_sheet.rst:200
+#: ../../build123d/docs/cheat_sheet.rst:214
 msgid "=="
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:190
+#: ../../build123d/docs/cheat_sheet.rst:186
 msgid "Any"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:190
+#: ../../build123d/docs/cheat_sheet.rst:186
 msgid ":meth:`~topology.Shape.is_same`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:190
+#: ../../build123d/docs/cheat_sheet.rst:186
 msgid "Compare CAD objects not including meta data"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:192
-#: ../../build123d/docs/cheat_sheet.rst:234
-#: ../../build123d/docs/cheat_sheet.rst:248
+#: ../../build123d/docs/cheat_sheet.rst:188
+#: ../../build123d/docs/cheat_sheet.rst:230
+#: ../../build123d/docs/cheat_sheet.rst:244
 msgid "\\+"
 msgstr ""
 
+#: ../../build123d/docs/cheat_sheet.rst:188
+#: ../../build123d/docs/cheat_sheet.rst:190
 #: ../../build123d/docs/cheat_sheet.rst:192
-#: ../../build123d/docs/cheat_sheet.rst:194
-#: ../../build123d/docs/cheat_sheet.rst:196
 msgid "Shape \\| Iterable[Shape]"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:192
+#: ../../build123d/docs/cheat_sheet.rst:188
 msgid "Add CAD objects"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:194
-#: ../../build123d/docs/cheat_sheet.rst:208
-#: ../../build123d/docs/cheat_sheet.rst:222
-#: ../../build123d/docs/cheat_sheet.rst:236
-#: ../../build123d/docs/cheat_sheet.rst:250
+#: ../../build123d/docs/cheat_sheet.rst:190
+#: ../../build123d/docs/cheat_sheet.rst:204
+#: ../../build123d/docs/cheat_sheet.rst:218
+#: ../../build123d/docs/cheat_sheet.rst:232
+#: ../../build123d/docs/cheat_sheet.rst:246
 msgid "\\-"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:194
+#: ../../build123d/docs/cheat_sheet.rst:190
 msgid "Subtract CAD objects"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:196
-#: ../../build123d/docs/cheat_sheet.rst:224
+#: ../../build123d/docs/cheat_sheet.rst:192
+#: ../../build123d/docs/cheat_sheet.rst:220
 msgid "\\&"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:196
+#: ../../build123d/docs/cheat_sheet.rst:192
 msgid "Intersect CAD objects"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:199
+#: ../../build123d/docs/cheat_sheet.rst:195
 msgid "Plane Operators"
 msgstr ""
 
+#: ../../build123d/docs/cheat_sheet.rst:200
+#: ../../build123d/docs/cheat_sheet.rst:202
 #: ../../build123d/docs/cheat_sheet.rst:204
-#: ../../build123d/docs/cheat_sheet.rst:206
-#: ../../build123d/docs/cheat_sheet.rst:208
 msgid ":class:`~geometry.Plane`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:204
-#: ../../build123d/docs/cheat_sheet.rst:218
+#: ../../build123d/docs/cheat_sheet.rst:200
+#: ../../build123d/docs/cheat_sheet.rst:214
 msgid "Check for equality"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:206
-#: ../../build123d/docs/cheat_sheet.rst:220
+#: ../../build123d/docs/cheat_sheet.rst:202
+#: ../../build123d/docs/cheat_sheet.rst:216
 msgid "!="
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:206
-#: ../../build123d/docs/cheat_sheet.rst:220
+#: ../../build123d/docs/cheat_sheet.rst:202
+#: ../../build123d/docs/cheat_sheet.rst:216
 msgid "Check for inequality"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:208
-#: ../../build123d/docs/cheat_sheet.rst:222
+#: ../../build123d/docs/cheat_sheet.rst:204
+#: ../../build123d/docs/cheat_sheet.rst:218
 msgid "Reverse direction of normal"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:210
-#: ../../build123d/docs/cheat_sheet.rst:226
-#: ../../build123d/docs/cheat_sheet.rst:238
+#: ../../build123d/docs/cheat_sheet.rst:206
+#: ../../build123d/docs/cheat_sheet.rst:222
+#: ../../build123d/docs/cheat_sheet.rst:234
 msgid "\\*"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:210
+#: ../../build123d/docs/cheat_sheet.rst:206
 msgid ":class:`~geometry.Location` \\| Shape"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:210
-#: ../../build123d/docs/cheat_sheet.rst:226
+#: ../../build123d/docs/cheat_sheet.rst:206
+#: ../../build123d/docs/cheat_sheet.rst:222
 msgid "Relocate"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:213
+#: ../../build123d/docs/cheat_sheet.rst:209
 msgid "Location Operators"
 msgstr ""
 
+#: ../../build123d/docs/cheat_sheet.rst:214
+#: ../../build123d/docs/cheat_sheet.rst:216
 #: ../../build123d/docs/cheat_sheet.rst:218
-#: ../../build123d/docs/cheat_sheet.rst:220
-#: ../../build123d/docs/cheat_sheet.rst:222
 msgid ":class:`~geometry.Location`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:224
+#: ../../build123d/docs/cheat_sheet.rst:220
 msgid ""
 ":class:`~geometry.Axis`  \\| :class:`~geometry.Location` \\| "
 ":class:`~geometry.Plane` \\| ``VectorLike`` \\| :class:`~topology.Shape`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:224
+#: ../../build123d/docs/cheat_sheet.rst:220
 msgid "Intersect"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:226
+#: ../../build123d/docs/cheat_sheet.rst:222
 msgid ""
 ":class:`~geometry.Shape` \\| :class:`~geometry.Location` \\| "
 "Iterable[:class:`~geometry.Location`]"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:229
+#: ../../build123d/docs/cheat_sheet.rst:225
 msgid "Vector Operators"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:234
-#: ../../build123d/docs/cheat_sheet.rst:236
+#: ../../build123d/docs/cheat_sheet.rst:230
+#: ../../build123d/docs/cheat_sheet.rst:232
 msgid ":class:`~geometry.Vector`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:234
+#: ../../build123d/docs/cheat_sheet.rst:230
 msgid ":meth:`~geometry.Vector.add`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:234
+#: ../../build123d/docs/cheat_sheet.rst:230
 msgid "add"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:236
+#: ../../build123d/docs/cheat_sheet.rst:232
 msgid ":meth:`~geometry.Vector.sub`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:236
+#: ../../build123d/docs/cheat_sheet.rst:232
 msgid "subtract"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:238
-#: ../../build123d/docs/cheat_sheet.rst:240
+#: ../../build123d/docs/cheat_sheet.rst:234
+#: ../../build123d/docs/cheat_sheet.rst:236
 msgid "``float``"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:238
-#: ../../build123d/docs/cheat_sheet.rst:240
+#: ../../build123d/docs/cheat_sheet.rst:234
+#: ../../build123d/docs/cheat_sheet.rst:236
 msgid ":meth:`~geometry.Vector.multiply`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:238
+#: ../../build123d/docs/cheat_sheet.rst:234
 msgid "multiply by scalar"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:240
+#: ../../build123d/docs/cheat_sheet.rst:236
 msgid "\\/"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:240
+#: ../../build123d/docs/cheat_sheet.rst:236
 msgid "divide by scalar"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:243
+#: ../../build123d/docs/cheat_sheet.rst:239
 msgid "Vertex Operators"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:248
-#: ../../build123d/docs/cheat_sheet.rst:250
+#: ../../build123d/docs/cheat_sheet.rst:244
+#: ../../build123d/docs/cheat_sheet.rst:246
 msgid ":class:`~topology.Vertex`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:248
+#: ../../build123d/docs/cheat_sheet.rst:244
 msgid ":meth:`~topology.Vertex.add`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:250
+#: ../../build123d/docs/cheat_sheet.rst:246
 msgid ":meth:`~topology.Vertex.sub`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:253
+#: ../../build123d/docs/cheat_sheet.rst:249
 msgid "Enums"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:256
+#: ../../build123d/docs/cheat_sheet.rst:252
 msgid ":class:`~build_enums.Align`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:256
+#: ../../build123d/docs/cheat_sheet.rst:252
 msgid "MIN, CENTER, MAX"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:258
+#: ../../build123d/docs/cheat_sheet.rst:254
 msgid ":class:`~build_enums.ApproxOption`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:258
+#: ../../build123d/docs/cheat_sheet.rst:254
 msgid "ARC, NONE, SPLINE"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:260
+#: ../../build123d/docs/cheat_sheet.rst:256
 msgid ":class:`~build_enums.AngularDirection`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:260
+#: ../../build123d/docs/cheat_sheet.rst:256
 msgid "CLOCKWISE, COUNTER_CLOCKWISE"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:262
+#: ../../build123d/docs/cheat_sheet.rst:258
 msgid ":class:`~build_enums.CenterOf`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:262
+#: ../../build123d/docs/cheat_sheet.rst:258
 msgid "GEOMETRY, MASS, BOUNDING_BOX"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:264
+#: ../../build123d/docs/cheat_sheet.rst:260
 msgid ":class:`~build_enums.Extrinsic`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:264
-#: ../../build123d/docs/cheat_sheet.rst:272
+#: ../../build123d/docs/cheat_sheet.rst:260
+#: ../../build123d/docs/cheat_sheet.rst:268
 msgid "XYZ, XZY, YZX, YXZ, ZXY, ZYX, XYX, XZX, YZY, YXY, ZXZ, ZYZ"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:266
+#: ../../build123d/docs/cheat_sheet.rst:262
 msgid ":class:`~build_enums.FontStyle`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:266
+#: ../../build123d/docs/cheat_sheet.rst:262
 msgid "REGULAR, BOLD, BOLDITALIC, ITALIC"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:268
+#: ../../build123d/docs/cheat_sheet.rst:264
 msgid ":class:`~build_enums.FrameMethod`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:268
+#: ../../build123d/docs/cheat_sheet.rst:264
 msgid "CORRECTED, FRENET"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:270
+#: ../../build123d/docs/cheat_sheet.rst:266
 msgid ":class:`~build_enums.GeomType`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:270
+#: ../../build123d/docs/cheat_sheet.rst:266
 msgid ""
 "BEZIER, BSPLINE, CIRCLE, CONE, CYLINDER, ELLIPSE, EXTRUSION, HYPERBOLA, "
 "LINE, OFFSET, OTHER, PARABOLA, PLANE, REVOLUTION, SPHERE, TORUS"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:272
+#: ../../build123d/docs/cheat_sheet.rst:268
 msgid ":class:`~build_enums.Intrinsic`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:274
+#: ../../build123d/docs/cheat_sheet.rst:270
 msgid ":class:`~build_enums.HeadType`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:274
+#: ../../build123d/docs/cheat_sheet.rst:270
 msgid "CURVED, FILLETED, STRAIGHT"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:276
+#: ../../build123d/docs/cheat_sheet.rst:272
 msgid ":class:`~build_enums.Keep`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:276
+#: ../../build123d/docs/cheat_sheet.rst:272
 msgid "ALL, TOP, BOTTOM, BOTH, INSIDE, OUTSIDE"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:278
+#: ../../build123d/docs/cheat_sheet.rst:274
 msgid ":class:`~build_enums.Kind`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:278
+#: ../../build123d/docs/cheat_sheet.rst:274
 msgid "ARC, INTERSECTION, TANGENT"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:280
+#: ../../build123d/docs/cheat_sheet.rst:276
 msgid ":class:`~build_enums.LengthMode`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:280
+#: ../../build123d/docs/cheat_sheet.rst:276
 msgid "DIAGONAL, HORIZONTAL, VERTICAL"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:282
+#: ../../build123d/docs/cheat_sheet.rst:278
 msgid ":class:`~build_enums.MeshType`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:282
+#: ../../build123d/docs/cheat_sheet.rst:278
 msgid "OTHER, MODEL, SUPPORT, SOLIDSUPPORT"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:284
+#: ../../build123d/docs/cheat_sheet.rst:280
 msgid ":class:`~build_enums.Mode`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:284
+#: ../../build123d/docs/cheat_sheet.rst:280
 msgid "ADD, SUBTRACT, INTERSECT, REPLACE, PRIVATE"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:286
+#: ../../build123d/docs/cheat_sheet.rst:282
 msgid ":class:`~build_enums.NumberDisplay`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:286
+#: ../../build123d/docs/cheat_sheet.rst:282
 msgid "DECIMAL, FRACTION"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:288
+#: ../../build123d/docs/cheat_sheet.rst:284
 msgid ":class:`~build_enums.PageSize`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:288
+#: ../../build123d/docs/cheat_sheet.rst:284
 msgid "A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, LEDGER, LEGAL, LETTER"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:290
+#: ../../build123d/docs/cheat_sheet.rst:286
 msgid ":class:`~build_enums.PositionMode`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:290
+#: ../../build123d/docs/cheat_sheet.rst:286
 msgid "LENGTH, PARAMETER"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:292
+#: ../../build123d/docs/cheat_sheet.rst:288
 msgid ":class:`~build_enums.PrecisionMode`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:292
+#: ../../build123d/docs/cheat_sheet.rst:288
 msgid "LEAST, AVERAGE, GREATEST, SESSION"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:294
+#: ../../build123d/docs/cheat_sheet.rst:290
 msgid ":class:`~build_enums.Select`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:294
+#: ../../build123d/docs/cheat_sheet.rst:290
 msgid "ALL, LAST, NEW"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:296
+#: ../../build123d/docs/cheat_sheet.rst:292
 msgid ":class:`~build_enums.Side`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:296
+#: ../../build123d/docs/cheat_sheet.rst:292
 msgid "BOTH, LEFT, RIGHT"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:298
+#: ../../build123d/docs/cheat_sheet.rst:294
 msgid ":class:`~build_enums.SortBy`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:298
+#: ../../build123d/docs/cheat_sheet.rst:294
 msgid "LENGTH, RADIUS, AREA, VOLUME, DISTANCE"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:300
+#: ../../build123d/docs/cheat_sheet.rst:296
 msgid ":class:`~build_enums.TextAlign`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:300
+#: ../../build123d/docs/cheat_sheet.rst:296
 msgid "BOTTOM, CENTER, LEFT, RIGHT, TOP, TOPFIRSTLINE"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:302
+#: ../../build123d/docs/cheat_sheet.rst:298
 msgid ":class:`~build_enums.Transition`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:302
+#: ../../build123d/docs/cheat_sheet.rst:298
 msgid "RIGHT, ROUND, TRANSFORMED"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:304
+#: ../../build123d/docs/cheat_sheet.rst:300
 msgid ":class:`~build_enums.Unit`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:304
+#: ../../build123d/docs/cheat_sheet.rst:300
 msgid "MC, MM, CM, M, IN, FT"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:306
+#: ../../build123d/docs/cheat_sheet.rst:302
 msgid ":class:`~build_enums.Until`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:306
+#: ../../build123d/docs/cheat_sheet.rst:302
 msgid "FIRST, LAST, NEXT, PREVIOUS"
 msgstr ""

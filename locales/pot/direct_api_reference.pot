@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-25 00:45+0000\n"
+"POT-Creation-Date: 2026-07-21 00:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -289,10 +289,6 @@ msgstr ""
 msgid "Return a copy of self with the direction reversed"
 msgstr ""
 
-#: ../docstring of geometry.Axis.to_plane:1
-msgid "Return self as Plane"
-msgstr ""
-
 #: ../docstring of geometry.Axis.wrapped:1
 #: ../docstring of geometry.Location.wrapped:1
 msgid "OCP object"
@@ -571,14 +567,6 @@ msgstr ""
 msgid "Position part of Location"
 msgstr ""
 
-#: ../docstring of geometry.Location.to_axis:1
-msgid "Convert the location into an Axis"
-msgstr ""
-
-#: ../docstring of geometry.Location.to_tuple:1
-msgid "Convert the location to a translation, rotation tuple."
-msgstr ""
-
 #: ../docstring of geometry.Location.x_axis:1
 msgid "Default X axis when used as a plane"
 msgstr ""
@@ -589,40 +577,6 @@ msgstr ""
 
 #: ../docstring of geometry.Location.z_axis:1
 msgid "Default Z axis when used as a plane"
-msgstr ""
-
-#: ../docstring of geometry.LocationEncoder:1
-msgid "Custom JSON Encoder for Location values"
-msgstr ""
-
-#: ../docstring of geometry.LocationEncoder:3
-msgid "Example:"
-msgstr ""
-
-#: ../docstring of geometry.LocationEncoder.default:1
-msgid "Return a serializable object"
-msgstr ""
-
-#: ../docstring of geometry.LocationEncoder.location_hook:1
-msgid "Convert Locations loaded from json to Location objects"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.curvature_comb:32
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.matrix_of_inertia:21
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.principal_properties:9
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.static_moments:15
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.get_top_level_shapes:13
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.radius_of_gyration:17
-#: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Mixin3D.max_fillet:7
-#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.make_holes:9
-#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.__add__:12
-#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.__sub__:12
-#: ../docstring of geometry.LocationEncoder.location_hook:4
-msgid "Example"
-msgstr ""
-
-#: ../docstring of geometry.LocationEncoder.location_hook:5
-msgid "read_json = json.load(infile, object_hook=LocationEncoder.location_hook)"
 msgstr ""
 
 #: ../docstring of geometry.Pos:1
@@ -1279,10 +1233,6 @@ msgstr ""
 msgid "Convert to OCCT gp_Pnt object"
 msgstr ""
 
-#: ../docstring of geometry.Vector.to_tuple:1
-msgid "Return tuple equivalent"
-msgstr ""
-
 #: ../docstring of geometry.Vector.transform:1
 msgid "Apply affine transformation"
 msgstr ""
@@ -1306,15 +1256,15 @@ msgstr ""
 msgid "OCCT object"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:47
+#: ../../build123d/docs/direct_api_reference.rst:46
 msgid "Topological Objects"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:48
+#: ../../build123d/docs/direct_api_reference.rst:47
 msgid "The topological object classes defined by build123d are defined below."
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:50
+#: ../../build123d/docs/direct_api_reference.rst:49
 msgid "Note that the :class:`~topology.Mixin1D` and :class:`~topology.Mixin3D` classes add supplementary functionality specific to 1D (:class:`~topology.Edge` and :class:`~topology.Wire`) and 3D (:class:`~topology.Compound` and `~topology.Solid`) objects respectively. Note that a :class:`~topology.Compound` may be contain only 1D, 2D (:class:`~topology.Face`)  or 3D objects."
 msgstr ""
 
@@ -1885,7 +1835,7 @@ msgstr ""
 msgid "conical angle. Defaults to 0.0."
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:10
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:8
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_helix:17
 msgid "Defaults to False."
 msgstr ""
@@ -2216,14 +2166,6 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.reversed:7
 msgid "reversed"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.to_axis:1
-msgid "Translate a linear Edge to an Axis"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.to_wire:1
-msgid "Edge as Wire"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.trim:1
@@ -2598,6 +2540,19 @@ msgstr ""
 msgid "Create holes in the Face 'self' from interior_wires which must be entirely interior. Note that making holes in faces is more efficient than using boolean operations with solid object. Also note that OCCT core may fail unless the orientation of the wire is correct - use `Wire(forward_wire.wrapped.Reversed())` to reverse a wire."
 msgstr ""
 
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.curvature_comb:32
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.matrix_of_inertia:21
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.principal_properties:9
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.static_moments:15
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.get_top_level_shapes:13
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.radius_of_gyration:17
+#: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Mixin3D.max_fillet:7
+#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.make_holes:9
+#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.__add__:12
+#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.__sub__:12
+msgid "Example"
+msgstr ""
+
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.make_holes:10
 msgid "For example, make a series of slots on the curved walls of a cylinder."
 msgstr ""
@@ -2620,10 +2575,6 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.make_holes:21
 msgid "resulting face is not valid"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.make_plane:1
-msgid "Create a unlimited size Face aligned with plane"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Wire.make_rect:3
@@ -2896,23 +2847,6 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.sweep:14
 msgid "resulting face, may be non-planar"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.to_arcs:1
-msgid "Approximate planar face with arcs and straight line segments."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.to_arcs:3
-msgid "This is a utility used internally to convert or adapt a face for Boolean operations. Its purpose is not typically for general use, but rather as a helper within the Boolean kernel to ensure input faces are in a compatible and canonical form."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.to_splines:7
-#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.to_arcs:7
-msgid "Approximation tolerance. Defaults to 1e-3."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.to_arcs:10
-msgid "approximated face"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.Face.uv_face:1
@@ -3446,62 +3380,50 @@ msgstr ""
 msgid "Return a copy of self moved along the normal by amount"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:1
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:1
 msgid "split_by_perimeter"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:3
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:3
 msgid "Divide the faces of this object into those within the perimeter and those outside the perimeter."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:6
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:6
 msgid "Note: this method may fail if the perimeter intersects shape edges."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:8
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:8
 msgid "closed perimeter"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:10
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:10
 msgid "which object(s) to return. Defaults to Keep.INSIDE."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:13
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:13
 msgid "perimeter must be closed"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:14
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:14
 msgid "keep must be one of Keep.INSIDE|OUTSIDE|BOTH"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:16
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:16
 msgid "Union[Face | Shell | ShapeList[Face] | None, Tuple[Face | Shell | ShapeList[Face] | None]: The result of the split operation.  - **Keep.INSIDE**: Returns the inside part as a `Shell` or `Face`, or `None`   if no inside part is found. - **Keep.OUTSIDE**: Returns the outside part as a `Shell` or `Face`, or `None`   if no outside part is found. - **Keep.BOTH**: Returns a tuple `(inside, outside)` where each element is   either a `Shell`, `Face`, or `None` if no corresponding part is found."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:16
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:16
 msgid "Union[Face | Shell | ShapeList[Face] | None, Tuple[Face | Shell | ShapeList[Face] | None]: The result of the split operation."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:19
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:19
 msgid "**Keep.INSIDE**: Returns the inside part as a `Shell` or `Face`, or `None` if no inside part is found."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:21
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:21
 msgid "**Keep.OUTSIDE**: Returns the outside part as a `Shell` or `Face`, or `None` if no outside part is found."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split_by_perimeter:23
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.split_by_perimeter:23
 msgid "**Keep.BOTH**: Returns a tuple `(inside, outside)` where each element is either a `Shell`, `Face`, or `None` if no corresponding part is found."
 msgstr ""
@@ -4090,10 +4012,6 @@ msgstr ""
 msgid "Returns true if this shape is null. In other words, it references no underlying shape with the potential to be given a location and an orientation."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.is_planar_face:1
-msgid "Is the shape a planar face even though its geom_type may not be PLANE"
-msgstr ""
-
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.is_same:1
 msgid "Returns True if other and this shape are same, i.e. if they share the same TShape with the same Locations. Orientations may differ. Also see :py:meth:`is_equal`"
 msgstr ""
@@ -4287,14 +4205,6 @@ msgstr ""
 msgid "Register a composite constructor without importing it here."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.relocate:1
-msgid "Change the location of self while keeping it geometrically similar"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.relocate:3
-msgid "new location to set for self"
-msgstr ""
-
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.rotate:1
 msgid "rotate a copy"
 msgstr ""
@@ -4439,6 +4349,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.to_splines:5
 msgid "Maximum degree. Defaults to 3."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.to_splines:7
+msgid "Approximation tolerance. Defaults to 1e-3."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.to_splines:9
@@ -5461,10 +5375,6 @@ msgstr ""
 msgid "stitched wires"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Wire.to_wire:1
-msgid "Return Wire - used as a pair with Edge.to_wire when self is Wire | Edge"
-msgstr ""
-
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Wire.trim:1
 msgid "Trim a wire between [start, end] normalized over total length."
 msgstr ""
@@ -5540,10 +5450,6 @@ msgstr ""
 msgid "split - not implemented"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.to_tuple:1
-msgid "Return vertex as three tuple of floats"
-msgstr ""
-
 #: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.transform_shape:3
 msgid "Transforms a copy of this Vertex by the provided 3D affine transformation matrix. Note that not all transformation are supported - primarily designed for translation and rotation.  See :transform_geometry: for more comprehensive transformations."
 msgstr ""
@@ -5576,11 +5482,11 @@ msgstr ""
 msgid "A Compound containing 2D objects - aka Faces"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:86
+#: ../../build123d/docs/direct_api_reference.rst:85
 msgid "Import/Export"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:87
+#: ../../build123d/docs/direct_api_reference.rst:86
 msgid "Methods and functions specific to exporting and importing build123d objects are defined below."
 msgstr ""
 
@@ -5645,30 +5551,26 @@ msgid "STL model"
 msgstr ""
 
 #: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:1
-msgid "import_svg"
-msgstr ""
-
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:3
 msgid "svg file"
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:5
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:3
 msgid "flip objects to compensate for svg orientation. Defaults to True."
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:7
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:5
 msgid "alignment of the SVG's viewbox, if None, the viewbox's origin will be at `(0,0,0)`. Defaults to Align.MIN."
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:12
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:10
 msgid "XML attribute to use for imported shapes' `label` property. Defaults to \"id\". Use `inkscape:label` to read labels set from Inkscape's \"Layers and Objects\" panel."
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:17
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:15
 msgid "unexpected shape type"
 msgstr ""
 
-#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:19
+#: ../../build123d/src/build123d/importers.py:docstring of importers.import_svg:17
 msgid "objects contained in svg"
 msgstr ""
 
@@ -5692,11 +5594,11 @@ msgstr ""
 msgid "code, builder instance name"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:106
+#: ../../build123d/docs/direct_api_reference.rst:105
 msgid "Joint Object"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:107
+#: ../../build123d/docs/direct_api_reference.rst:106
 msgid "Base Joint class which is used to position Solid and Compound objects relative to each other are defined below. The :ref:`joints` section contains the class description of the derived Joint classes."
 msgstr ""
 

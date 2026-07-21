@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-08 00:37+0000\n"
+"POT-Creation-Date: 2026-07-21 00:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -284,41 +284,9 @@ msgstr ""
 msgid "Arc defined by three points"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:249
-msgid "ArcArcTangentLine"
-msgstr ""
-
-#: ../../build123d/docs/objects.rst:254
-msgid "Line tangent defined by two arcs"
-msgstr ""
-
-#: ../../build123d/docs/objects.rst:256
-msgid "ArcArcTangentArc"
-msgstr ""
-
-#: ../../build123d/docs/objects.rst:261
-msgid "Arc tangent defined by two arcs"
-msgstr ""
-
-#: ../../build123d/docs/objects.rst:263
-msgid "PointArcTangentLine"
-msgstr ""
-
-#: ../../build123d/docs/objects.rst:268
-msgid "Line tangent defined by a point and arc"
-msgstr ""
-
-#: ../../build123d/docs/objects.rst:270
-msgid "PointArcTangentArc"
-msgstr ""
-
-#: ../../build123d/docs/objects.rst:275
-msgid "Arc tangent defined by a point, direction, and arc"
-msgstr ""
-
-#: ../../build123d/docs/objects.rst:278
-#: ../../build123d/docs/objects.rst:450
-#: ../../build123d/docs/objects.rst:550
+#: ../../build123d/docs/objects.rst:250
+#: ../../build123d/docs/objects.rst:413
+#: ../../build123d/docs/objects.rst:513
 msgid "Reference"
 msgstr ""
 
@@ -336,23 +304,19 @@ msgid "wire to create"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.Airfoil:16
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:26
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentLine:15
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.BaseLineObject:5
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.Bezier:11
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.CenterArc:20
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.DoubleTangentArc:18
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:32
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:26
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:19
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.FilletPolyline:14
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.Helix:24
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:32
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:26
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.IntersectingLine:11
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:20
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.Line:7
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:31
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentArc:14
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentLine:12
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:25
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PolarLine:27
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.Polyline:9
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.RadiusArc:14
@@ -684,33 +648,24 @@ msgid "arc start angle from x-axis. Defaults to 0.0"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:14
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:15
-msgid "arc end angle from x-axis. Defaults to None"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:17
 msgid "angular size of arc (negative to change direction) or an arc limit.  When a limit object is provided instead of a numeric angular size, EllipticalCenterArc constructs the valid arc(s) from the given start point, trims them at their first intersection with the limit, and returns the one requiring the shortest travel from the start. Therefore, one can only generate arcs < 180° using a limit. If neither valid arc intersects the limit, a ValueError is raised."
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:17
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:18
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:14
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:15
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.JernArc:11
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:17
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:14
 msgid "angular size of arc (negative to change direction) or an arc limit."
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:20
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:17
 msgid "When a limit object is provided instead of a numeric angular size, EllipticalCenterArc constructs the valid arc(s) from the given start point, trims them at their first intersection with the limit, and returns the one requiring the shortest travel from the start. Therefore, one can only generate arcs < 180° using a limit. If neither valid arc intersects the limit, a ValueError is raised."
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:27
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:27
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:26
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:24
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:24
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:23
 msgid "angle to rotate arc. Defaults to 0.0"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalCenterArc:29
-msgid "arc direction. Defaults to None."
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.EllipticalStartArc:1
@@ -758,20 +713,11 @@ msgid "arc start angle. Defaults to 0.0"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:14
-msgid "arc end angle. Defaults to None"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:17
 msgid "angular size of arc (negative to change direction) or an arc limit.  When a limit object is provided instead of a numeric angular size, ParabolicCenterArc constructs candidate arcs from the given start point, trims them at their first intersection with the limit, and returns the one requiring the shortest travel from the start. If neither valid arc intersects the limit, a ValueError is raised."
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:20
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:17
 msgid "When a limit object is provided instead of a numeric angular size, ParabolicCenterArc constructs candidate arcs from the given start point, trims them at their first intersection with the limit, and returns the one requiring the shortest travel from the start. If neither valid arc intersects the limit, a ValueError is raised."
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:29
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ParabolicCenterArc:28
-msgid "arc direction. Defaults to None"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:1
@@ -786,11 +732,11 @@ msgstr ""
 msgid "hyperbola center"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:18
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:15
 msgid "angular size of arc (negative to change direction) or an arc limit.  When a limit object is provided instead of a numeric angular size, HyperbolicCenterArc constructs candidate arcs from the given start point, trims them at their first intersection with the limit, and returns the one requiring the shortest travel from the start. If neither valid arc intersects the limit, a ValueError is raised."
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:21
+#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.HyperbolicCenterArc:18
 msgid "When a limit object is provided instead of a numeric angular size, HyperbolicCenterArc constructs candidate arcs from the given start point, trims them at their first intersection with the limit, and returns the one requiring the shortest travel from the start. If neither valid arc intersects the limit, a ValueError is raised."
 msgstr ""
 
@@ -987,7 +933,6 @@ msgstr ""
 msgid "end point"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:23
 #: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.RadiusArc:11
 msgid "If True selects the short sagitta (height of arc from chord), else the long sagitta crossing the center. Defaults to True"
 msgstr ""
@@ -1064,261 +1009,152 @@ msgstr ""
 msgid "Three points must be provided"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentLine:1
-msgid "Line Object: Arc Arc Tangent Line"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentLine:3
-msgid "Create a straight line tangent to two arcs."
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:11
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentLine:5
-msgid "starting arc, must be GeomType.CIRCLE"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:13
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentLine:7
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentArc:10
-msgid "ending arc, must be GeomType.CIRCLE"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:17
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentLine:9
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentLine:9
-msgid "side of arcs to place tangent arc center, LEFT or RIGHT. Defaults to Side.LEFT"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentLine:12
-msgid "which tangent arc to keep, INSIDE or OUTSIDE. Defaults to Keep.INSIDE"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:1
-msgid "Line Object: Arc Arc Tangent Arc"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:3
-msgid "Create an arc tangent to two arcs and a radius."
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:5
-msgid "keep specifies tangent arc position with a Keep pair: (placement, type)"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:7
-msgid "placement: start_arc is tangent INSIDE or OUTSIDE the tangent arc. BOTH is a special case for overlapping arcs with type INSIDE"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:9
-msgid "type: tangent arc is INSIDE or OUTSIDE start_arc and end_arc"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:15
-msgid "radius of tangent arc"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.ArcArcTangentArc:20
-msgid "which tangent arc to keep, INSIDE or OUTSIDE. Defaults to (Keep.INSIDE, Keep.INSIDE)"
-msgstr ""
-
-#: ../../build123d/docs/objects.rst:308
-msgid "ArcArcTangentArc keep table"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentLine:1
-msgid "Line Object: Point Arc Tangent Line"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentLine:3
-msgid "Create a straight, tangent line from a point to a circular arc."
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentLine:5
-msgid "intersection point for tangent"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentLine:7
-msgid "circular arc to tangent, must be GeomType.CIRCLE"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentArc:1
-msgid "Line Object: Point Arc Tangent Arc"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentArc:3
-msgid "Create an arc defined by a point/tangent pair and another line which the other end is tangent to."
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentArc:6
-msgid "starting point of tangent arc"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentArc:8
-msgid "direction at starting point of tangent arc"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentArc:12
-msgid "select which arc to keep Defaults to Side.LEFT"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentArc:17
-msgid "Arc must have GeomType.CIRCLE"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentArc:18
-msgid "Point is already tangent to arc"
-msgstr ""
-
-#: ../../build123d/src/build123d/objects_curve.py:docstring of objects_curve.PointArcTangentArc:19
-msgid "No tangent arc found"
-msgstr ""
-
-#: ../../build123d/docs/objects.rst:316
+#: ../../build123d/docs/objects.rst:279
 msgid "2D Objects"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:320
+#: ../../build123d/docs/objects.rst:283
 msgid "Arrow"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:325
+#: ../../build123d/docs/objects.rst:288
 msgid "Arrow with head and path for shaft"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:327
+#: ../../build123d/docs/objects.rst:290
 msgid "ArrowHead"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:332
+#: ../../build123d/docs/objects.rst:295
 msgid "Arrow head with multiple types"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:335
+#: ../../build123d/docs/objects.rst:298
 msgid "Circle"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:340
+#: ../../build123d/docs/objects.rst:303
 msgid "Circle defined by radius"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:342
+#: ../../build123d/docs/objects.rst:305
 msgid "DimensionLine"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:347
+#: ../../build123d/docs/objects.rst:310
 msgid "Dimension line"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:350
+#: ../../build123d/docs/objects.rst:313
 msgid "Ellipse"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:355
+#: ../../build123d/docs/objects.rst:318
 msgid "Ellipse defined by major and minor radius"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:357
+#: ../../build123d/docs/objects.rst:320
 msgid "ExtensionLine"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:362
+#: ../../build123d/docs/objects.rst:325
 msgid "Extension lines for distance or angles"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:364
+#: ../../build123d/docs/objects.rst:327
 msgid "Polygon"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:369
+#: ../../build123d/docs/objects.rst:332
 msgid "Polygon defined by points"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:371
+#: ../../build123d/docs/objects.rst:334
 msgid "Rectangle"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:376
+#: ../../build123d/docs/objects.rst:339
 msgid "Rectangle defined by width and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:378
+#: ../../build123d/docs/objects.rst:341
 msgid "RectangleRounded"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:383
+#: ../../build123d/docs/objects.rst:346
 msgid "Rectangle with rounded corners defined by width, height, and radius"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:385
+#: ../../build123d/docs/objects.rst:348
 msgid "RegularPolygon"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:390
+#: ../../build123d/docs/objects.rst:353
 msgid "RegularPolygon defined by radius and number of sides"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:392
+#: ../../build123d/docs/objects.rst:355
 msgid "SlotArc"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:397
+#: ../../build123d/docs/objects.rst:360
 msgid "SlotArc defined by arc and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:399
+#: ../../build123d/docs/objects.rst:362
 msgid "SlotCenterPoint"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:404
+#: ../../build123d/docs/objects.rst:367
 msgid "SlotCenterPoint defined by two points and a height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:406
+#: ../../build123d/docs/objects.rst:369
 msgid "SlotCenterToCenter"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:411
+#: ../../build123d/docs/objects.rst:374
 msgid "SlotCenterToCenter defined by center separation and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:413
+#: ../../build123d/docs/objects.rst:376
 msgid "SlotOverall"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:418
+#: ../../build123d/docs/objects.rst:381
 msgid "SlotOverall defined by end-to-end length and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:420
+#: ../../build123d/docs/objects.rst:383
 msgid "TechnicalDrawing"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:425
+#: ../../build123d/docs/objects.rst:388
 msgid "A technical drawing with descriptions"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:427
-#: ../../build123d/docs/objects.rst:567
+#: ../../build123d/docs/objects.rst:390
+#: ../../build123d/docs/objects.rst:530
 msgid "Text"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:432
+#: ../../build123d/docs/objects.rst:395
 msgid "Text defined by string and font parameters"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:434
+#: ../../build123d/docs/objects.rst:397
 msgid "Trapezoid"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:439
+#: ../../build123d/docs/objects.rst:402
 msgid "Trapezoid defined by width, height and interior angles"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:441
+#: ../../build123d/docs/objects.rst:404
 msgid "Triangle"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:446
+#: ../../build123d/docs/objects.rst:409
 msgid "Triangle defined by one side & two other sides or interior angles"
 msgstr ""
 
@@ -1877,87 +1713,87 @@ msgstr ""
 msgid "vertex 'C'"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:474
+#: ../../build123d/docs/objects.rst:437
 msgid "3D Objects"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:478
+#: ../../build123d/docs/objects.rst:441
 msgid "Box"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:483
+#: ../../build123d/docs/objects.rst:446
 msgid "Box defined by length, width, height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:485
+#: ../../build123d/docs/objects.rst:448
 msgid "Cone"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:490
+#: ../../build123d/docs/objects.rst:453
 msgid "Cone defined by radii and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:492
+#: ../../build123d/docs/objects.rst:455
 msgid "ConvexPolyhedron"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:497
+#: ../../build123d/docs/objects.rst:460
 msgid "Convex Polyhedron defined by points"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:499
+#: ../../build123d/docs/objects.rst:462
 msgid "CounterBoreHole"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:504
+#: ../../build123d/docs/objects.rst:467
 msgid "Counter bore hole defined by radii and depths"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:506
+#: ../../build123d/docs/objects.rst:469
 msgid "CounterSinkHole"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:511
+#: ../../build123d/docs/objects.rst:474
 msgid "Counter sink hole defined by radii and depth and angle"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:513
+#: ../../build123d/docs/objects.rst:476
 msgid "Cylinder"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:518
+#: ../../build123d/docs/objects.rst:481
 msgid "Cylinder defined by radius and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:520
+#: ../../build123d/docs/objects.rst:483
 msgid "Hole"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:525
+#: ../../build123d/docs/objects.rst:488
 msgid "Hole defined by radius and depth"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:527
+#: ../../build123d/docs/objects.rst:490
 msgid "Sphere"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:532
+#: ../../build123d/docs/objects.rst:495
 msgid "Sphere defined by radius and arc angles"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:534
+#: ../../build123d/docs/objects.rst:497
 msgid "Torus"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:539
+#: ../../build123d/docs/objects.rst:502
 msgid "Torus defined major and minor radii"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:541
+#: ../../build123d/docs/objects.rst:504
 msgid "Wedge"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:546
+#: ../../build123d/docs/objects.rst:509
 msgid "Wedge defined by lengths along multiple Axes"
 msgstr ""
 
@@ -2330,30 +2166,30 @@ msgstr ""
 msgid "Ensure relative ``font_path`` specifications are relative to the *current working directory*."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:573
+#: ../../build123d/docs/objects.rst:536
 msgid "Custom Objects"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:575
+#: ../../build123d/docs/objects.rst:538
 msgid "All of the objects presented above were created using one of three base object classes: :class:`~objects_curve.BaseLineObject` , :class:`~objects_sketch.BaseSketchObject` , and :class:`~objects_part.BasePartObject` .  Users can use these base object classes to easily create custom objects that have all the functionality of the core objects."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:583
+#: ../../build123d/docs/objects.rst:546
 msgid "Here is an example of a custom sketch object specially created as part of the design of this playing card storage box (:download:`see the playing_cards.py example <../examples/playing_cards.py>`):"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:591
+#: ../../build123d/docs/objects.rst:554
 msgid "Here the new custom object class is called ``Club`` and it's a sub-class of :class:`~objects_sketch.BaseSketchObject` .  The ``__init__`` method contains all of the parameters used to instantiate the custom object, specially a ``height``, ``rotation``, ``align``, and ``mode`` - your objects may contain a sub or super set of these parameters but should always contain a ``mode`` parameter such that it can be combined with a builder's object."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:598
+#: ../../build123d/docs/objects.rst:561
 msgid "Next is the creation of the object itself, in this case a sketch of the club suit."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:600
+#: ../../build123d/docs/objects.rst:563
 msgid "The final line calls the ``__init__`` method of the super class - i.e. :class:`~objects_sketch.BaseSketchObject` with its parameters."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:603
+#: ../../build123d/docs/objects.rst:566
 msgid "That's it, now the ``Club`` object can be used anywhere a :class:`~objects_sketch.Circle` would be used - with either the Algebra or Builder API."
 msgstr ""

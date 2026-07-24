@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Gumyr
+# This file is distributed under the same license as the build123d package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: build123d\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-24 00:30+0000\n"
+"PO-Revision-Date: 2026-07-24 00:30+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../build123d/docs/tutorial_materials.rst:5
+msgid "Material Tutorial"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:7
+msgid ""
+"This tutorial enhances the :ref:`Joints tutorial <joint_tutorial>` with "
+"materials for realistic rendering."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:12
+msgid "Step 1: Prerequisites"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:14
+msgid "Assume we have the 5 variables from the joints tutorial:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:16
+msgid "``box``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:17
+msgid "``lid``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:18
+msgid "``hinge_inner``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:19
+msgid "``hinge_outer``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:20
+msgid "``m6_screw``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:22
+msgid "with their labels"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:36
+msgid "Step 2: Apply materials"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:38
+msgid ""
+"The box and lid should be made of walnut wood, the hinges and the screw from"
+" brass. Build123d uses `bd_materials "
+"<https://github.com/bernhard-42/bd_materials>`_ as its source for material "
+"definitions. It provides materials from `different categories "
+"<https://github.com/bernhard-42/bd_materials#2-materials--finishes--"
+"organised-by-manufacturing-process>`_, e.g."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:41
+msgid "metals: Stainless steel, Aluminum, Copper, ..."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:42
+msgid "plastics: Nylon, PLA, ABS, PETG, ..."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:43
+msgid "..."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:45
+msgid ""
+"Brass is available in `bd_materials`, so let's import it and assign it to "
+"the ``hinge_inner``, ``hinge_outer``, and ``m6_screw``:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:58
+msgid ""
+"In a normal manufacturing process the creation of an object is followed by "
+"applying a finish to it. So in order to have brushed or matte brass, use"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:68
+msgid "Step 3: Material properties"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:70
+msgid "Three properties can be access from ``<shape>.material``:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:72
+msgid "The **physical material**"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:98
+msgid ""
+"Note that density is a typical value for the material (to allow mass "
+"calculation in build123d), but all other properties are ranges for the "
+"typical values"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:100
+msgid "These units are used for the properties:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:133
+msgid "The **finish**"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:147
+msgid "The **physical based rendering properties**"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:165
+msgid "This can be use as:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:175
+msgid ""
+"``Range.value_at(r)`` samples the range at the fractional position ``r``: "
+"``value_at(0)`` returns ``min``, ``value_at(1)`` returns ``max``, and values"
+" in between interpolate linearly. ``r`` is not clamped — outside ``[0, 1]`` "
+"the value extrapolates."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:182
+msgid "**Volume and mass calculation**"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:184
+msgid ""
+"``volume`` is a property and returns a bare number — it carries no unit. The"
+" number is the volume in whatever length unit the model was drawn in, cubed."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:191
+msgid ""
+"``mass()`` multiplies the volume by ``<shape>.material.material.density``, "
+"which is always measured in kg/m³. Because ``volume`` is unitless, "
+"``mass(mass_unit, length_unit)`` takes the output mass unit and the length "
+"unit used to interpret the volume. Both are optional and default to *gram* "
+"and *millimeter*, respectively. A shape without a material raises a "
+"``ValueError``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:193
+msgid "Volume read as *mm³*, mass reported in *g* (the defaults):"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:200
+msgid "The same model read as *in³*, mass reported in *lb*:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:207
+msgid ""
+"The volume number is identical in both cases — only its interpretation "
+"changes. One inch is 25.4 mm, so reading the model in inches makes it 25.4³ "
+"≈ 16000 times more massive."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:209
+msgid "The same for ``box``:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:224
+msgid "Step 4: Visualization in OCP CAD Viewer's Studio mode"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:226
+msgid ""
+"bd_materials uses the material and the finish to determine the appropriate "
+"physical based rendering properties that work in OCP CAD Viewer's Studio "
+"(and can be exported to glTF files):"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:232
+msgid "pbr_hinges_brass"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:237
+msgid "Step 5: External viewers (optional)"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:239
+msgid ""
+"``export_gltf`` automatically integrates the PBR properties into the "
+"gltf/glb file on export:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:246
+msgid ""
+"The file ``\"box.glb\"`` can then be visualized in any glTF viewer, e.g. "
+"here the `Khronos glTF viewer <https://github.khronos.org/glTF-Sample-"
+"Viewer-Release>`_:"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:248
+msgid "pbr_external_viewer"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:254
+msgid "Appendix 1: Custom materials"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:274
+msgid ""
+"For ``pbr=PbrProperties.from_gpuopen`` to work, ensure that `materialx "
+"<https://pypi.org/project/MaterialX/>`_  is installed. It is a binary "
+"package that might not be on pypi for a given OS or Python version, and "
+"needs to be compiled then (done automatically at install time). To avoid "
+"this as a hard dependency, ``materialx`` is optional. You can always test "
+"with ``import MaterialX``."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_materials.rst:281
+msgid "pbr_hinges_carbon"
+msgstr ""

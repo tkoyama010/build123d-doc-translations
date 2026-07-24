@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-07-24 00:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../build123d/src/build123d/build_part.py:docstring of build_part.BuildPart:8
-msgid "initial plane to work on. Defaults to Plane.XY."
+msgid "output placement(s). Defaults to Plane.XY."
 msgstr ""
 
 #: ../../build123d/src/build123d/build_part.py:docstring of build_part.BuildPart:10
@@ -109,7 +109,11 @@ msgid "Builder's location"
 msgstr ""
 
 #: ../../build123d/src/build123d/build_part.py:docstring of build_part.BuildPart.part:1
-msgid "Get the current part"
+msgid "Get the placed part."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_part.py:docstring of build_part.BuildPart.part_local:1
+msgid "Get the part in the Builder's local construction coordinates."
 msgstr ""
 
 #: ../../build123d/src/build123d/build_part.py:docstring of build_part.BuildPart.pending_edges_as_wire:1

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-07-24 00:30+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -232,8 +232,7 @@ msgid "locations relative to workplane"
 msgstr ""
 
 #: ../docstring of build_common.GridLocations.local_locations:1 ../docstring
-#: of build_common.HexLocations.local_locations:1 ../docstring of
-#: build_common.Locations.local_locations:1 ../docstring of
+#: of build_common.Locations.local_locations:1 ../docstring of
 #: build_common.PolarLocations.local_locations:1
 msgid "values independent of workplanes"
 msgstr ""
@@ -373,6 +372,10 @@ msgstr ""
 #: ../../build123d/src/build123d/build_common.pydocstring of
 #: build_common.HexLocations:44
 msgid "Spacing and count must be > 0"
+msgstr ""
+
+#: ../docstring of build_common.HexLocations.local_locations:1
+msgid "values in local construction coordinates"
 msgstr ""
 
 #: ../../build123d/src/build123d/build_common.pydocstring of

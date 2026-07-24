@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-07-24 00:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -169,15 +169,15 @@ msgid "Step 11: Adding Pips"
 msgstr ""
 
 #: ../../build123d/docs/tutorial_lego.rst:220
-msgid "The final step is to add the pips to the top of the Lego block. To do this we'll create a new workplane on top of the block where we can position the pips."
+msgid "The final step is to add the pips to the top of the Lego block. To do this we'll create a placement Plane from the top of the block where we can position the pips."
 msgstr ""
 
 #: ../../build123d/docs/tutorial_lego.rst:228
-msgid "In this case, the workplane is created from the top Face of the Lego block by using the ``faces`` method and then sorted vertically and taking the top one ``sort_by(Axis.Z)[-1]``."
+msgid "In this case, the placement Plane is created from the top Face of the Lego block by using the ``faces`` method and then sorted vertically and taking the top one ``sort_by(Axis.Z)[-1]``."
 msgstr ""
 
 #: ../../build123d/docs/tutorial_lego.rst:231
-msgid "On the new workplane, a grid of locations is created and a number of ``Cylinder``'s are positioned at each location."
+msgid "On the new placement, a grid of locations is created and a number of ``Cylinder``'s are positioned at each location."
 msgstr ""
 
 #: ../../build123d/docs/tutorial_lego.rst:237

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-07-24 00:30+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -533,7 +533,7 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:570
-msgid "18. Creating Workplanes on Faces"
+msgid "18. Creating Placements on Faces"
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:572
@@ -551,7 +551,7 @@ msgid "We then use ``-=`` to cut it out from the main body."
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:600
-msgid "19. Locating a workplane on a vertex"
+msgid "19. Locating a placement on a vertex"
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:602
@@ -570,7 +570,7 @@ msgid ""
 ":class:`~build_common.Locations` as center points for two circles that cut "
 "through the main part. Note that if you passed the variable ``vtx`` directly"
 " to :class:`~build_common.Locations` then the part would be offset from the "
-"workplane by the vertex z-position."
+"sketch placement by the vertex z-position."
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:623
@@ -578,11 +578,11 @@ msgid ""
 "Then the X and Y positions of these vertices are selected and used to move "
 "two circles that cut through the main part. Note that if you passed the "
 "variable ``vtx`` directly to :class:`~geometry.Pos` then the part would be "
-"offset from the workplane by the vertex z-position."
+"offset from the sketch placement by the vertex z-position."
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:636
-msgid "20. Offset Sketch Workplane"
+msgid "20. Offset Sketch Placement"
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:638
@@ -593,7 +593,7 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:662
-msgid "21. Create a Workplanes in the center of another shape"
+msgid "21. Create a Plane in the center of another shape"
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:664
@@ -604,18 +604,19 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:688
-msgid "22. Rotated Workplanes"
+msgid "22. Rotated Placements"
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:690
 msgid ""
-"It is also possible to create a rotated workplane, building upon some of the"
-" concepts in an earlier example."
+"It is also possible to create a rotated sketch placement, building upon some"
+" of the concepts in an earlier example."
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:698
 msgid ""
-"Use the :meth:`~geometry.Plane.rotated` method to rotate the workplane."
+"Use the :meth:`~geometry.Plane.rotated` method to rotate the placement "
+"Plane."
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:707
@@ -625,7 +626,7 @@ msgstr ""
 #: ../../build123d/docs/introductory_examples.rst:714
 msgid ""
 ":class:`~build_common.GridLocations` places 4 Circles on 4 points on this "
-"rotated workplane, and then the Circles are extruded in the \"both\" "
+"rotated placement, and then the Circles are extruded in the \"both\" "
 "(positive and negative) normal direction."
 msgstr ""
 
@@ -730,7 +731,8 @@ msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:890
 msgid ""
-"We are able to create multiple workplanes by looping over the list of faces."
+"We are able to create multiple placement Planes by looping over the list of "
+"faces."
 msgstr ""
 
 #: ../../build123d/docs/introductory_examples.rst:896

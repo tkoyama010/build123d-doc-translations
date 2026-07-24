@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-21 00:32+0000\n"
+"POT-Creation-Date: 2026-07-24 00:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,30 +21,18 @@ msgid "Direct API Reference"
 msgstr ""
 
 #: ../../build123d/docs/direct_api_reference.rst:6
-msgid "The Direct API is an interface layer between the primary user interface API (the Builders) and the OpenCascade (OCCT) API. This API is based on the CadQuery Direct API (thank you to all of the CadQuery contributors that made this possible) with the following major changes:"
+msgid "The Direct API is an interface layer between the primary user interface APIs (Algebra and Builders) and the OpenCascade (OCCT) API."
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:11
-msgid "PEP8 compliance"
+#: ../../build123d/docs/direct_api_reference.rst:9
+msgid "The original Direct API work began from CadQuery's Direct API. build123d has since diverged substantially in structure, naming, typing, topology handling, selection tools, object composition, and Builder integration. The build123d project gratefully acknowledges the CadQuery contributors whose work helped make this API possible."
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:12
-msgid "New Axis class"
-msgstr ""
-
-#: ../../build123d/docs/direct_api_reference.rst:13
-msgid "New ShapeList class enabling sorting and filtering of shape objects"
-msgstr ""
-
-#: ../../build123d/docs/direct_api_reference.rst:14
-msgid "Literal strings replaced with Enums"
-msgstr ""
-
-#: ../../build123d/docs/direct_api_reference.rst:18
+#: ../../build123d/docs/direct_api_reference.rst:17
 msgid "Geometric Objects"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:19
+#: ../../build123d/docs/direct_api_reference.rst:18
 msgid "The geometric classes defined by build123d are defined below. This parameters to the CAD objects described in the following section are frequently of these types."
 msgstr ""
 
@@ -56,7 +44,6 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:0
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.curvature_comb:0
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.project:0
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.compute_mass:0
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.distance:0
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.distances:0
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.is_equal:0
@@ -333,7 +320,6 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.normal:7
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.project:7
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.compute_mass:6
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.distance:5
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.distances:5
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.is_equal:7
@@ -1256,15 +1242,15 @@ msgstr ""
 msgid "OCCT object"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:46
+#: ../../build123d/docs/direct_api_reference.rst:45
 msgid "Topological Objects"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:47
+#: ../../build123d/docs/direct_api_reference.rst:46
 msgid "The topological object classes defined by build123d are defined below."
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:49
+#: ../../build123d/docs/direct_api_reference.rst:48
 msgid "Note that the :class:`~topology.Mixin1D` and :class:`~topology.Mixin3D` classes add supplementary functionality specific to 1D (:class:`~topology.Edge` and :class:`~topology.Wire`) and 3D (:class:`~topology.Compound` and `~topology.Solid`) objects respectively. Note that a :class:`~topology.Compound` may be contain only 1D, 2D (:class:`~topology.Face`)  or 3D objects."
 msgstr ""
 
@@ -1450,6 +1436,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_triad:1
 msgid "The coordinate system triad (X, Y, Z axes)"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.mass:1
+msgid "mass - the mass of this Compound"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.project_to_viewport:1
@@ -2131,7 +2121,6 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.project_to_shape:14
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Wire.project_to_shape:14
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.compute_mass:4
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.cut:3
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.distance:3
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.distances:3
@@ -2694,6 +2683,10 @@ msgstr ""
 msgid "Error building non-planar face with provided constraints"
 msgstr ""
 
+#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.mass:1
+msgid "mass - the mass of this Face, which is always zero"
+msgstr ""
+
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.normal_at:1
 msgid "normal_at"
 msgstr ""
@@ -3181,6 +3174,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.locations:21
 msgid "systems at the specified distances."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.mass:1
+msgid "mass - the mass of this Edge or Wire, which is always zero"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.normal:1
@@ -3801,7 +3798,15 @@ msgid "Calculates the 'mass' of an object."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.compute_mass:3
-msgid "Compute the mass of this object"
+msgid "the mass of the shape based on the material density"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.compute_volume:1
+msgid "Calculates the volume of an object."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.compute_volume:3
+msgid "the volume of the shape"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.copy_attributes_to:1
@@ -4047,6 +4052,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.make_composite:1
 msgid "Build the registered composite for a dimension."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.material:1
+msgid "Get the shape's material.  If it's None, get the material of the nearest ancestor, assign it to this Shape and return this value."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.matrix_of_inertia:1
@@ -4736,6 +4745,10 @@ msgstr ""
 msgid "Lofted object"
 msgstr ""
 
+#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Shell.mass:1
+msgid "mass - the mass of this Shell if manifold in g, otherwise zero"
+msgstr ""
+
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Shell.revolve:3
 msgid "Revolve a 1D profile around an axis."
 msgstr ""
@@ -5001,6 +5014,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Solid.make_wedge:20
 msgid "wedge"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Solid.mass:1
+msgid "mass - the mass of this Solid"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Solid.revolve:1
@@ -5446,6 +5463,10 @@ msgstr ""
 msgid "extrude - invalid operation for Vertex"
 msgstr ""
 
+#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.mass:1
+msgid "mass - the mass of this Vertex, which is always zero"
+msgstr ""
+
 #: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.split:1
 msgid "split - not implemented"
 msgstr ""
@@ -5482,11 +5503,11 @@ msgstr ""
 msgid "A Compound containing 2D objects - aka Faces"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:85
+#: ../../build123d/docs/direct_api_reference.rst:84
 msgid "Import/Export"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:86
+#: ../../build123d/docs/direct_api_reference.rst:85
 msgid "Methods and functions specific to exporting and importing build123d objects are defined below."
 msgstr ""
 
@@ -5594,11 +5615,11 @@ msgstr ""
 msgid "code, builder instance name"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:105
+#: ../../build123d/docs/direct_api_reference.rst:104
 msgid "Joint Object"
 msgstr ""
 
-#: ../../build123d/docs/direct_api_reference.rst:106
+#: ../../build123d/docs/direct_api_reference.rst:105
 msgid "Base Joint class which is used to position Solid and Compound objects relative to each other are defined below. The :ref:`joints` section contains the class description of the derived Joint classes."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-07-24 00:30+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -63,29 +63,29 @@ msgid ""
 " stream:"
 msgstr ""
 
-#: ../../build123d/docs/debugging_logging.rst:55
+#: ../../build123d/docs/debugging_logging.rst:51
 msgid "The build123d logger is defined by:"
 msgstr ""
 
-#: ../../build123d/docs/debugging_logging.rst:62
+#: ../../build123d/docs/debugging_logging.rst:58
 msgid "To export logs to a file, the following configuration is recommended:"
 msgstr ""
 
-#: ../../build123d/docs/debugging_logging.rst:73
+#: ../../build123d/docs/debugging_logging.rst:69
 msgid "Logs can be easily placed in your code - here is an example:"
 msgstr ""
 
-#: ../../build123d/docs/debugging_logging.rst:82
+#: ../../build123d/docs/debugging_logging.rst:78
 msgid "Printing"
 msgstr ""
 
-#: ../../build123d/docs/debugging_logging.rst:84
+#: ../../build123d/docs/debugging_logging.rst:80
 msgid ""
 "Sometimes the best debugging aid is just placing a print statement in your "
 "code. Many of the build123d classes are setup to provide useful information "
 "beyond their class and location in memory, as follows:"
 msgstr ""
 
-#: ../../build123d/docs/debugging_logging.rst:97
+#: ../../build123d/docs/debugging_logging.rst:93
 msgid "which shows the origin, x direction, and z direction of the plane."
 msgstr ""

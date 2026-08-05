@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 00:50+0000\n"
+"POT-Creation-Date: 2026-08-05 02:06+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -113,65 +113,85 @@ msgid ""
 "PDM and PLM features are expected to arrive soon."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:58
+#: ../../build123d/docs/external.rst:57
+msgid "ArgilCAD"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:59
+msgid ""
+"A desktop application for macOS and Windows that pairs a code editor with a "
+"live 3D viewer, bundling Python and OCP into a single installer so that no "
+"environment setup is required. Models can be written by hand or generated "
+"from a natural language description, in which case the AI produces build123d"
+" code that stays fully visible and editable rather than opaque geometry. "
+"Sketches and faces can be viewed directly, and models can be exported to "
+"STEP, STL and GLB. The editor, viewer and export are free to use; AI "
+"generation is an optional paid feature."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:68
+msgid "See: `ArgilCAD <https://argildesign.com/products/argilcad/>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:72
 msgid "Part Libraries"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:61
+#: ../../build123d/docs/external.rst:75
 msgid "bd_warehouse"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:63
+#: ../../build123d/docs/external.rst:77
 msgid ""
 "On-demand generation of parametric parts that seamlessly integrate into "
 "build123d projects."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:66
+#: ../../build123d/docs/external.rst:80
 msgid "Parts available include:"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:68
+#: ../../build123d/docs/external.rst:82
 msgid "fastener - Nuts, Screws, Washers and custom holes"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:69
+#: ../../build123d/docs/external.rst:83
 msgid "flange - Standardized parametric flanges"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:70
+#: ../../build123d/docs/external.rst:84
 msgid "pipe - Standardized parametric pipes"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:71
+#: ../../build123d/docs/external.rst:85
 msgid "thread - Parametric helical threads (Iso, Acme, Plastic, etc.)"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:73
+#: ../../build123d/docs/external.rst:87
 msgid ""
 "See: `bd_warehouse <https://bd-"
 "warehouse.readthedocs.io/en/latest/index.html>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:76
+#: ../../build123d/docs/external.rst:90
 msgid "bd_beams_and_bars"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:78
+#: ../../build123d/docs/external.rst:92
 msgid "2D sections and 3D beams generation (UPN, IPN, UPE, flat bars, ...)"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:80
+#: ../../build123d/docs/external.rst:94
 msgid ""
 "See: `bd_beams_and_bars <https://bd-beams-and-"
 "bars.3d.experimentslabs.com/>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:83
+#: ../../build123d/docs/external.rst:97
 msgid "Superellipses & Superellipsoids"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:85
+#: ../../build123d/docs/external.rst:99
 msgid ""
 "Superellipses are a more sophisticated alternative to rounded rectangles, "
 "with smoothly changing curvature. They are flexible shapes that can be "
@@ -180,40 +200,40 @@ msgid ""
 " beyond..."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:91
+#: ../../build123d/docs/external.rst:105
 msgid "Superellipses can be found:"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:93
+#: ../../build123d/docs/external.rst:107
 msgid "in typefaces such as Melior, Eurostyle, and Computer Modern"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:94
+#: ../../build123d/docs/external.rst:108
 msgid "as the shape of airliner windows, tables, plates"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:95
+#: ../../build123d/docs/external.rst:109
 msgid "clipping the outline of iOS app icons"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:97
+#: ../../build123d/docs/external.rst:111
 msgid ""
 "They were named and popularized in the 1950s-1960s by the Danish "
 "mathematician and poet Piet Hein, who used them in the winning design for "
 "the Sergels Torg roundabout in Stockholm."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:101
+#: ../../build123d/docs/external.rst:115
 msgid ""
 "See: `Superellipses & Superellipsoids "
 "<https://github.com/fanf2/kbd/blob/model-b/keybird42/superellipse.py>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:104
+#: ../../build123d/docs/external.rst:118
 msgid "Public PartCAD repository"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:106
+#: ../../build123d/docs/external.rst:120
 msgid ""
 "See `partcad.org <https://partcad.org/repository>`_ for all the models "
 "packaged and published using ``PartCAD`` (see below). This repository "
@@ -223,89 +243,89 @@ msgid ""
 " as an example of an assembly"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:113
+#: ../../build123d/docs/external.rst:127
 msgid "py_gearworks generator"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:114
+#: ../../build123d/docs/external.rst:128
 msgid ""
 "A gear generation framework that allows easy creation of a wide range of "
 "gears and drives."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:116
+#: ../../build123d/docs/external.rst:130
 msgid "See `py_gearworks <https://github.com/GarryBGoode/py_gearworks>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:119
+#: ../../build123d/docs/external.rst:133
 msgid "bd_vslot"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:121
+#: ../../build123d/docs/external.rst:135
 msgid "A library of V-Slot linear rail components, including V-Slot rails."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:123
+#: ../../build123d/docs/external.rst:137
 msgid "See: `bd_vslot <https://bd-vslot.readthedocs.io>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:127
+#: ../../build123d/docs/external.rst:141
 msgid "Tools"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:130
+#: ../../build123d/docs/external.rst:144
 msgid "blendquery"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:132
+#: ../../build123d/docs/external.rst:146
 msgid "CadQuery and build123d integration for Blender."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:134
+#: ../../build123d/docs/external.rst:148
 msgid "See: `blendquery <https://github.com/uki-dev/blendquery>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:137
+#: ../../build123d/docs/external.rst:151
 msgid "nething"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:139
+#: ../../build123d/docs/external.rst:153
 msgid ""
 "3D generative AI for CAD modeling. Now everyone is an engineer. Make your "
 "ideas real."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:141
+#: ../../build123d/docs/external.rst:155
 msgid "See: `nething <https://nething.xyz/>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:143
+#: ../../build123d/docs/external.rst:157
 msgid ""
 "Listen to the following podcast which discusses **nething** in detail: `The "
 "Next Byte Podcast "
 "<https://pod.link/wevolver/episode/74b11c1ff2bfc977adc96e5c7b4cd162>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:147
+#: ../../build123d/docs/external.rst:161
 msgid "ocp-freecad-cam"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:149
+#: ../../build123d/docs/external.rst:163
 msgid ""
 "CAM for CadQuery and Build123d by leveraging FreeCAD library. Visualizes in "
 "CQ-Editor and ocp-cad-viewer. Spiritual successor of `cq-cam "
 "<https://github.com/voneiden/cq-cam>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:152
+#: ../../build123d/docs/external.rst:166
 msgid "See: `ocp-freecad-cam <https://github.com/voneiden/ocp-freecad-cam>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:155
+#: ../../build123d/docs/external.rst:169
 msgid "PartCAD"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:157
+#: ../../build123d/docs/external.rst:171
 msgid ""
 "A package manager for CAD models. Build123d is the most supported Code-CAD "
 "framework, but CadQuery and OpenSCAD are also supported. It can be used by "
@@ -316,11 +336,11 @@ msgid ""
 " to be consumed by others."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:165
+#: ../../build123d/docs/external.rst:179
 msgid "MakerRepo library (mr)"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:167
+#: ../../build123d/docs/external.rst:181
 msgid ""
 "The ``makerrepo`` Python package (imported as ``mr``) is a lightweight "
 "library that provides decorators such as ``@artifact``, ``@customizable``, "
@@ -334,18 +354,18 @@ msgid ""
 " frameworks as well."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:177
+#: ../../build123d/docs/external.rst:191
 msgid ""
 "See `MakerRepo Library Docs <https://docs.makerrepo.com/makerrepo-"
 "library/>`_ for more information and `LaunchPlatform/makerrepo "
 "<https://github.com/LaunchPlatform/makerrepo>`_ for source code."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:182
+#: ../../build123d/docs/external.rst:196
 msgid "makerrepo-cli"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:184
+#: ../../build123d/docs/external.rst:198
 msgid ""
 "Command-line tool (available as ``makerrepo-cli`` or ``mr``) to build "
 "artifacts, run generators, snapshot artifacts, and manage cache locally. It "
@@ -353,18 +373,18 @@ msgid ""
 "MakerRepo library decorators."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:189
+#: ../../build123d/docs/external.rst:203
 msgid ""
 "See `MakerRepo CLI <https://docs.makerrepo.com/makerrepo-cli/>`_ for "
 "documentation and `LaunchPlatform/makerrepo-cli "
 "<https://github.com/LaunchPlatform/makerrepo-cli>`_ for source code."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:194
+#: ../../build123d/docs/external.rst:208
 msgid "dl4to4ocp"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:196
+#: ../../build123d/docs/external.rst:210
 msgid ""
 "Library that helps perform `topology optimization "
 "<https://en.wikipedia.org/wiki/Topology_optimization>`_ on your `OCP "
@@ -374,30 +394,30 @@ msgid ""
 "<https://github.com/dl4to/dl4to>`_ library."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:201
+#: ../../build123d/docs/external.rst:215
 msgid "See: `dl4to4ocp <https://github.com/yeicor-3d/dl4to4ocp/>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:204
+#: ../../build123d/docs/external.rst:218
 msgid "OCP.wasm"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:206
+#: ../../build123d/docs/external.rst:220
 msgid ""
 "This project ports the low-level dependencies required for build123d to run "
 "in a browser. For a fully featured frontend, check out ``Yet Another CAD "
 "Viewer`` (see above)."
 msgstr ""
 
-#: ../../build123d/docs/external.rst:209
+#: ../../build123d/docs/external.rst:223
 msgid "See: `OCP.wasm <https://github.com/yeicor/OCP.wasm>`_"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:212
+#: ../../build123d/docs/external.rst:226
 msgid "partomatic"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:214
+#: ../../build123d/docs/external.rst:228
 msgid ""
 "Partomatic provides a standardized system for building parametric models in "
 "build123d. The open nature of build123d is its strength, but it makes it "
@@ -405,28 +425,28 @@ msgid ""
 "makes it easy to:"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:218
+#: ../../build123d/docs/external.rst:232
 msgid "import and export configuration files"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:219
+#: ../../build123d/docs/external.rst:233
 msgid ""
 "easily export models for projects that provide large numbers of "
 "intersectional options"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:220
+#: ../../build123d/docs/external.rst:234
 msgid ""
 "share the built-in web interface allowing end-users to change properties and"
 " see the results quickly"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:221
+#: ../../build123d/docs/external.rst:235
 msgid ""
 "generate logs for compilation and web interface events that can be consumed "
 "by an OpenTelemetry platform"
 msgstr ""
 
-#: ../../build123d/docs/external.rst:223
+#: ../../build123d/docs/external.rst:237
 msgid "See: `Partomatic <https://github.com/x0pherl/partomatic>`_"
 msgstr ""

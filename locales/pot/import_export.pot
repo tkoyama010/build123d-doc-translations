@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-21 00:32+0000\n"
+"POT-Creation-Date: 2026-08-05 02:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -481,6 +481,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/exporters3d.py:docstring of exporters3d.export_stl:22
 msgid "Success"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.py:docstring of exporters3d.export_stl:25
+msgid "The destination directory does not exist."
 msgstr ""
 
 #: ../../build123d/docs/import_export.rst:217

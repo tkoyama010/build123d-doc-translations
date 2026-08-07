@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-24 00:30+0000\n"
+"POT-Creation-Date: 2026-08-07 01:14+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -47,11 +47,20 @@ msgid ""
 "frequently of these types."
 msgstr ""
 
-#: ../docstring of geometry.Axis:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Axis:1
 msgid "Axis defined by point and direction or by two points"
 msgstr ""
 
 #: ../../build123d/docs/direct_api_reference.rst:0
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.add:0 ../../build123d/src/build123d/geometry.pydocstring
+#: of geometry.BoundBox.find_outside_box_2d:0
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.from_topo_ds:0
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.is_inside:0
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.project_to_plane:0
 #: ../../build123d/src/build123d/topology/composite.pydocstring of
 #: topology.composite.Compound.make_text:0
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
@@ -77,34 +86,31 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/zero_d.pydocstring of
 #: topology.zero_d.Vertex.__add__:0
 #: ../../build123d/src/build123d/topology/zero_d.pydocstring of
-#: topology.zero_d.Vertex.__sub__:0 ../docstring of geometry.BoundBox.add:0
-#: ../docstring of geometry.BoundBox.find_outside_box_2d:0 ../docstring of
-#: geometry.BoundBox.from_topo_ds:0 ../docstring of
-#: geometry.BoundBox.is_inside:0 ../docstring of
-#: geometry.Vector.project_to_plane:0
+#: topology.zero_d.Vertex.__sub__:0
 msgid "Parameters"
 msgstr ""
 
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Axis:3
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Edge.make_tangent_arc:5
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.one_d.Edge.make_three_point_arc:5 ../docstring of geometry.Axis:3
+#: topology.one_d.Edge.make_three_point_arc:5
 msgid "start point"
 msgstr ""
 
-#: ../docstring of geometry.Axis:5
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Axis:5
 msgid "direction"
 msgstr ""
 
-#: ../docstring of geometry.Axis:7
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Axis:7
 msgid "point used with origin to define direction"
 msgstr ""
 
-#: ../docstring of geometry.Axis:9
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Axis:9
 msgid "origin & direction defined by start of edge"
 msgstr ""
 
-#: ../docstring of geometry.Axis:11
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Axis:11
 msgid "location to convert to axis"
 msgstr ""
 
@@ -112,52 +118,74 @@ msgstr ""
 msgid "Variables"
 msgstr ""
 
-#: ../docstring of geometry.Axis:14
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Axis:14
 msgid "the global position of the axis origin"
 msgstr ""
 
-#: ../docstring of geometry.Axis:16
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Axis:16
 msgid "the normalized direction vector"
 msgstr ""
 
-#: ../docstring of geometry.Axis:18
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Axis:18
 msgid "the OCP axis object"
 msgstr ""
 
-#: ../docstring of geometry.Axis.__copy__:1 ../docstring of
-#: geometry.Color.__copy__:1 ../docstring of geometry.Matrix.__copy__:1
-#: ../docstring of geometry.Plane.__copy__:1 ../docstring of
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.__copy__:1 ../../build123d/src/build123d/geometry.pydocstring
+#: of geometry.Color.__copy__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Matrix.__copy__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.__copy__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
 #: geometry.Vector.__copy__:1
 msgid "Return copy of self"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.Shape.__deepcopy__:1 ../docstring of
-#: geometry.Axis.__deepcopy__:1 ../docstring of geometry.Color.__deepcopy__:1
-#: ../docstring of geometry.Matrix.__deepcopy__:1 ../docstring of
-#: geometry.Plane.__deepcopy__:1 ../docstring of
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.__deepcopy__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Color.__deepcopy__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Matrix.__deepcopy__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.__deepcopy__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
 #: geometry.Vector.__deepcopy__:1
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.__deepcopy__:1
 msgid "Return deepcopy of self"
 msgstr ""
 
-#: ../docstring of geometry.Axis.__neg__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.__neg__:1
 msgid "Flip direction operator -"
 msgstr ""
 
-#: ../docstring of geometry.Axis.angle_between:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.angle_between:1
 msgid "calculate angle between axes"
 msgstr ""
 
-#: ../docstring of geometry.Axis.angle_between:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.angle_between:3
 msgid ""
 "Computes the angular value, in degrees, between the direction of self and "
 "other between 0° and 360°."
 msgstr ""
 
-#: ../docstring of geometry.Axis.angle_between:6 ../docstring of
-#: geometry.Axis.is_coaxial:6 ../docstring of geometry.Axis.is_normal:6
-#: ../docstring of geometry.Axis.is_opposite:7 ../docstring of
-#: geometry.Axis.is_parallel:7 ../docstring of geometry.Axis.is_skew:18
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.angle_between:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_coaxial:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_normal:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_opposite:7
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_parallel:7
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_skew:18
 msgid "axis to compare to"
 msgstr ""
 
@@ -179,7 +207,8 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../docstring of geometry.Axis.angle_between:9
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.angle_between:9
 msgid "angle between axes"
 msgstr ""
 
@@ -195,185 +224,235 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../docstring of geometry.Axis.direction:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.direction:1
 msgid "The normalized direction of the Axis"
 msgstr ""
 
-#: ../docstring of geometry.Axis.intersect:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.intersect:1
 msgid "Find intersection of axis and geometric object or shape"
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_coaxial:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_coaxial:1
 msgid "are axes coaxial"
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_coaxial:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_coaxial:3
 msgid ""
 "True if the angle between self and other is lower or equal to "
 "angular_tolerance and the distance between self and other is lower or equal "
 "to linear_tolerance."
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_coaxial:8 ../docstring of
-#: geometry.Axis.is_normal:8 ../docstring of geometry.Axis.is_opposite:9
-#: ../docstring of geometry.Axis.is_parallel:9
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_coaxial:8
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_normal:8
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_opposite:9
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_parallel:9
 msgid "max angular deviation. Defaults to 1e-5."
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_coaxial:10
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_coaxial:10
 msgid "max linear deviation. Defaults to 1e-5."
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_coaxial:13
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_coaxial:13
 msgid "axes are coaxial"
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_normal:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_normal:1
 msgid "are axes normal"
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_normal:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_normal:3
 msgid ""
 "Returns True if the direction of this and another axis are normal to each "
 "other. That is, if the angle between the two axes is equal to 90° within the"
 " angular_tolerance."
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_normal:11
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_normal:11
 msgid "axes are normal"
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_opposite:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_opposite:1
 msgid "are axes opposite"
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_opposite:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_opposite:3
 msgid ""
 "Returns True if the direction of this and another axis are parallel with "
 "opposite orientation. That is, if the angle between the two axes is equal to"
 " 180° within the angular_tolerance."
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_opposite:12
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_opposite:12
 msgid "axes are opposite"
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_parallel:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_parallel:1
 msgid "are axes parallel"
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_parallel:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_parallel:3
 msgid ""
 "Returns True if the direction of this and another axis are parallel with "
 "same orientation or opposite orientation. That is, if the angle between the "
 "two axes is equal to 0° or 180° within the angular_tolerance."
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_parallel:12
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_parallel:12
 msgid "axes are parallel"
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_skew:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_skew:1
 msgid "are axes skew"
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_skew:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_skew:3
 msgid ""
 "Returns True if this axis and another axis are skew, meaning they are "
 "neither parallel nor coplanar. Two axes are skew if they do not lie in the "
 "same plane and never intersect."
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_skew:7
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_skew:7
 msgid "Mathematically, this means:"
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_skew:9
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_skew:9
 msgid ""
 "The axes are **not parallel** (the cross product of their direction vectors "
 "is nonzero)."
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_skew:12
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_skew:12
 msgid ""
 "The axes are **not coplanar** (the vector between their positions is not "
 "aligned with the plane spanned by their directions)."
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_skew:15
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_skew:15
 msgid ""
 "If either condition is false (i.e., the axes are parallel or coplanar), they"
 " are not skew."
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_skew:20
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_skew:20
 msgid "max deviation. Defaults to 1e-5."
 msgstr ""
 
-#: ../docstring of geometry.Axis.is_skew:23
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.is_skew:23
 msgid "axes are skew"
 msgstr ""
 
-#: ../docstring of geometry.Axis.located:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.located:1
 msgid ""
 "relocates self to a new location possibly changing position and direction"
 msgstr ""
 
-#: ../docstring of geometry.Axis.location:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.location:1
 msgid "Return self as Location"
 msgstr ""
 
-#: ../docstring of geometry.Axis.position:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.position:1
 msgid "The position or origin of the Axis"
 msgstr ""
 
-#: ../docstring of geometry.Axis.reverse:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.reverse:1
 msgid "Return a copy of self with the direction reversed"
 msgstr ""
 
-#: ../docstring of geometry.Axis.wrapped:1 ../docstring of
-#: geometry.Location.wrapped:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Axis.wrapped:1 ../../build123d/src/build123d/geometry.pydocstring
+#: of geometry.Location.wrapped:1
 msgid "OCP object"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.BoundBox:1
 msgid "A BoundingBox for a Shape"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.add:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.add:1
 msgid "Returns a modified (expanded) bounding box"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.add:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.add:3
 msgid "obj can be one of several things:"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.add:4
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.add:4
 msgid "a 3-tuple corresponding to x,y, and z amounts to add"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.add:5
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.add:5
 msgid "a vector, containing the x,y,z values to add"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.add:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.add:6
 msgid ""
 "another bounding box, where a new box will be created that encloses both."
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.add:9
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.add:9
 msgid "This bounding box is not changed."
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.add:11
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.add:11
 msgid "tuple[float, float, float] | Vector | BoundBox]:"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.add:12 ../docstring of
-#: geometry.BoundBox.from_topo_ds:4
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.add:12 ../../build123d/src/build123d/geometry.pydocstring
+#: of geometry.BoundBox.from_topo_ds:4
 msgid "float:  (Default value = None)"
 msgstr ""
 
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.add:14 ../../build123d/src/build123d/geometry.pydocstring
+#: of geometry.BoundBox.find_outside_box_2d:13
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.from_topo_ds:7
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.is_inside:5
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.project_to_plane:8
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Mixin1D.normal:7
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
@@ -393,111 +472,142 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.move:5
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
-#: topology.two_d.Face.fillet_2d:6 ../docstring of geometry.BoundBox.add:14
-#: ../docstring of geometry.BoundBox.find_outside_box_2d:13 ../docstring of
-#: geometry.BoundBox.from_topo_ds:7 ../docstring of
-#: geometry.BoundBox.is_inside:5 ../docstring of
-#: geometry.Vector.project_to_plane:8
+#: topology.two_d.Face.fillet_2d:6
 msgid "Returns:"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.center:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.center:1
 msgid "Return center of the bounding box"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.diagonal:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.diagonal:1
 msgid "body diagonal length (i.e. object maximum size)"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.find_outside_box_2d:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.find_outside_box_2d:1
 msgid "Compares bounding boxes"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.find_outside_box_2d:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.find_outside_box_2d:3
 msgid ""
 "Compares bounding boxes. Returns none if neither is inside the other. "
 "Returns the outer one if either is outside the other."
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.find_outside_box_2d:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.find_outside_box_2d:6
 msgid ""
 "BoundBox.is_inside works in 3d, but this is a 2d bounding box, so it doesn't"
 " work correctly plus, there was all kinds of rounding error in the built-in "
 "implementation i do not understand."
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.find_outside_box_2d:10 ../docstring of
-#: geometry.BoundBox.find_outside_box_2d:11 ../docstring of
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.find_outside_box_2d:10
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.find_outside_box_2d:11
+#: ../../build123d/src/build123d/geometry.pydocstring of
 #: geometry.BoundBox.is_inside:3
 msgid "BoundBox:"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.from_topo_ds:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.from_topo_ds:1
 msgid "Constructs a bounding box from a TopoDS_Shape"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.from_topo_ds:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.from_topo_ds:3
 msgid "TopoDS_Shape:"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.from_topo_ds:5
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.from_topo_ds:5
 msgid ""
 "bool:  This algorithm builds precise bounding box (Default value = True)"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.is_inside:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.is_inside:1
 msgid "Is the provided bounding box inside this one?"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.measure:1
+#: ../docstring of geometry.BoundBox.max:1
+msgid "location of maximum corner"
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.measure:1
 msgid "Return the overall Lebesgue measure of the bounding box."
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.measure:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.measure:3
 msgid "For 1D objects: length"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.measure:4
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.measure:4
 msgid "For 2D objects: area"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.measure:5
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.measure:5
 msgid "For 3D objects: volume"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.overlaps:1
+#: ../docstring of geometry.BoundBox.min:1
+msgid "location of minimum corner"
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.overlaps:1
 msgid "Check if this bounding box overlaps with another."
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.overlaps:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.overlaps:3
 msgid "BoundBox to check overlap with"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.overlaps:4
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.overlaps:4
 msgid "Distance tolerance for overlap detection"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.overlaps:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.overlaps:6
 msgid "True if bounding boxes overlap (share any volume), False otherwise"
 msgstr ""
 
-#: ../docstring of geometry.BoundBox.to_align_offset:1
+#: ../docstring of geometry.BoundBox.size:1
+msgid "overall size"
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.BoundBox.to_align_offset:1
 msgid "Amount to move object to achieve the desired alignment"
 msgstr ""
 
-#: ../docstring of geometry.Color:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Color:1
 msgid "Color object based on OCCT Quantity_ColorRGBA."
 msgstr ""
 
-#: ../docstring of geometry.Color:3
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Color:3
 msgid "the OCP color object"
 msgstr ""
 
-#: ../docstring of geometry.Color.categorical_set:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Color.categorical_set:1
 msgid "Generate a palette of evenly spaced colors."
 msgstr ""
 
-#: ../docstring of geometry.Color.categorical_set:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Color.categorical_set:3
 msgid ""
 "Creates a list of visually distinct colors suitable for representing "
 "discrete categories (such as different parts, assemblies, or data series). "
@@ -506,7 +616,8 @@ msgid ""
 "across all hues."
 msgstr ""
 
-#: ../docstring of geometry.Color.categorical_set:9
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Color.categorical_set:9
 msgid ""
 "Produces palettes similar in appearance to the **Tableau 10** and **D3 "
 "Category10** color sets—both widely recognized standards in data "
@@ -515,23 +626,27 @@ msgid ""
 "while avoiding overly vivid or dark colors."
 msgstr ""
 
-#: ../docstring of geometry.Color.categorical_set:15
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Color.categorical_set:15
 msgid "Number of colors to generate."
 msgstr ""
 
-#: ../docstring of geometry.Color.categorical_set:17
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Color.categorical_set:17
 msgid ""
 "Either a Color-like object or a hue value in the range [0.0, 1.0] that "
 "defines the starting color."
 msgstr ""
 
-#: ../docstring of geometry.Color.categorical_set:20
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Color.categorical_set:20
 msgid ""
 "Alpha value(s) for the colors. Can be a single float or an iterable of "
 "length `color_count`."
 msgstr ""
 
-#: ../docstring of geometry.Color.categorical_set:24
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Color.categorical_set:24
 msgid "List of generated colors."
 msgstr ""
 
@@ -545,182 +660,211 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../docstring of geometry.Color.categorical_set:27
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Color.categorical_set:27
 msgid "If starting_hue is out of range or alpha length mismatch."
 msgstr ""
 
-#: ../docstring of geometry.Location:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Location:1
 msgid "Location in 3D space. Depending on usage can be absolute or relative."
 msgstr ""
 
-#: ../docstring of geometry.Location:3
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Location:3
 msgid ""
 "This class wraps the TopLoc_Location class from OCCT. It can be used to move"
 " Shape objects in both relative and absolute manner. It is the preferred "
 "type to locate objects in build123d."
 msgstr ""
 
-#: ../docstring of geometry.Location:7
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Location:7
 msgid "the OCP location object"
 msgstr ""
 
-#: ../docstring of geometry.Location.__copy__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.__copy__:1
 msgid "Lib/copy.py shallow copy"
 msgstr ""
 
-#: ../docstring of geometry.Location.__deepcopy__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.__deepcopy__:1
 msgid "Lib/copy.py deep copy"
 msgstr ""
 
-#: ../docstring of geometry.Location.__eq__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.__eq__:1
 msgid "Compare Locations"
 msgstr ""
 
-#: ../docstring of geometry.Location.__mul__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.__mul__:1
 msgid "Combine locations"
 msgstr ""
 
-#: ../docstring of geometry.Location.__neg__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.__neg__:1
 msgid "Flip the orientation without changing the position operator -"
 msgstr ""
 
-#: ../docstring of geometry.Location.center:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.center:1
 msgid "Return center of the location - useful for sorting"
 msgstr ""
 
-#: ../docstring of geometry.Location.intersect:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.intersect:1
 msgid "Find intersection of location and geometric object or shape"
 msgstr ""
 
-#: ../docstring of geometry.Location.inverse:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.inverse:1
 msgid "Inverted location"
 msgstr ""
 
-#: ../docstring of geometry.Location.mirror:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.mirror:1
 msgid "Return a new Location mirrored across the given plane."
 msgstr ""
 
-#: ../docstring of geometry.Location.mirror:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.mirror:3
 msgid ""
 "This method reflects both the position and orientation of the current "
 "Location across the specified mirror_plane using affine vector mathematics."
 msgstr ""
 
-#: ../docstring of geometry.Location.mirror:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.mirror:6
 msgid "Due to the mathematical properties of reflection:"
 msgstr ""
 
-#: ../docstring of geometry.Location.mirror:7
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.mirror:7
 msgid ""
 "The true mirror of a right-handed coordinate system is a *left-handed* one."
 msgstr ""
 
-#: ../docstring of geometry.Location.mirror:9
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.mirror:9
 msgid ""
 "However, `build123d` requires all coordinate systems to be right-handed. "
 "Therefore, this implementation: - Reflects the X and Z directions across the"
 " mirror plane - Recomputes the Y direction as: `Y = X × Z`"
 msgstr ""
 
-#: ../docstring of geometry.Location.mirror:14
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.mirror:14
 msgid ""
 "This ensures the resulting Location maintains a valid right-handed frame, "
 "while remaining as close as possible to the geometric mirror."
 msgstr ""
 
-#: ../docstring of geometry.Location.mirror:17
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.mirror:17
 msgid "The plane to mirror across."
 msgstr ""
 
-#: ../docstring of geometry.Location.mirror:20
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.mirror:20
 msgid "A new mirrored Location that preserves right-handedness."
 msgstr ""
 
-#: ../docstring of geometry.Location.orientation:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.orientation:1
 msgid "Extract orientation/rotation component of self"
 msgstr ""
 
-#: ../docstring of geometry.Location.orientation:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.orientation:3
 msgid "orientation part of Location"
 msgstr ""
 
-#: ../docstring of geometry.Location.position:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.position:1
 msgid "Extract Position component of self"
 msgstr ""
 
-#: ../docstring of geometry.Location.position:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.position:3
 msgid "Position part of Location"
 msgstr ""
 
-#: ../docstring of geometry.Location.x_axis:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.x_axis:1
 msgid "Default X axis when used as a plane"
 msgstr ""
 
-#: ../docstring of geometry.Location.y_axis:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.y_axis:1
 msgid "Default Y axis when used as a plane"
 msgstr ""
 
-#: ../docstring of geometry.Location.z_axis:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Location.z_axis:1
 msgid "Default Z axis when used as a plane"
 msgstr ""
 
-#: ../docstring of geometry.Pos:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Pos:1
 msgid "A position only sub-class of Location"
 msgstr ""
 
-#: ../docstring of geometry.Matrix:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Matrix:1
 msgid "A 3d , 4x4 transformation matrix."
 msgstr ""
 
-#: ../docstring of geometry.Matrix:3
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Matrix:3
 msgid "Used to move geometry in space."
 msgstr ""
 
-#: ../docstring of geometry.Matrix:5
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Matrix:5
 msgid ""
 "The provided \"matrix\" parameter may be None, a gp_GTrsf, or a nested list "
 "of values."
 msgstr ""
 
-#: ../docstring of geometry.Matrix:8
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Matrix:8
 msgid "If given a nested list, it is expected to be of the form:"
 msgstr ""
 
-#: ../docstring of geometry.Matrix:10
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Matrix:10
 msgid "[[m11, m12, m13, m14],"
 msgstr ""
 
-#: ../docstring of geometry.Matrix:11
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Matrix:11
 msgid "[m21, m22, m23, m24], [m31, m32, m33, m34]]"
 msgstr ""
 
-#: ../docstring of geometry.Matrix:14
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Matrix:14
 msgid ""
 "A fourth row may be given, but it is expected to be: [0.0, 0.0, 0.0, 1.0] "
 "since this is a transform matrix."
 msgstr ""
 
-#: ../docstring of geometry.Matrix:17
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Matrix:17
+#: ../docstring of geometry.Matrix.wrapped:1
 msgid "the OCP transformation function"
 msgstr ""
 
-#: ../docstring of geometry.Matrix.inverse:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Matrix.inverse:1
 msgid "Invert Matrix"
 msgstr ""
 
-#: ../docstring of geometry.Matrix.multiply:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Matrix.multiply:1
 msgid "Matrix multiplication"
 msgstr ""
 
-#: ../docstring of geometry.Matrix.rotate:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Matrix.rotate:1
 msgid "General rotate about axis by angle in degrees"
 msgstr ""
 
-#: ../docstring of geometry.Matrix.transposed_list:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Matrix.transposed_list:1
 msgid "Needed by the cqparts gltf exporter"
 msgstr ""
 
-#: ../docstring of geometry.Plane:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:1
 msgid ""
 "A plane is positioned in space with a coordinate system such that the plane "
 "is defined by the origin, x_dir (X direction), y_dir (Y direction), and "
@@ -729,637 +873,741 @@ msgid ""
 " The coordinate system is right-handed."
 msgstr ""
 
-#: ../docstring of geometry.Plane:6
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:6
 msgid ""
 "A plane allows the use of local 2D coordinates, which are later converted to"
 " global, 3d coordinates when the operations are complete."
 msgstr ""
 
-#: ../docstring of geometry.Plane:9
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:9
 msgid ""
 "Planes can be created from faces as workplanes for feature creation on "
 "objects."
 msgstr ""
 
-#: ../docstring of geometry.Plane:12
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:12
 msgid "Name"
 msgstr ""
 
-#: ../docstring of geometry.Plane:12
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:12
 msgid "x_dir"
 msgstr ""
 
-#: ../docstring of geometry.Plane:12
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:12
 msgid "y_dir"
 msgstr ""
 
-#: ../docstring of geometry.Plane:12
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:12
 msgid "z_dir"
 msgstr ""
 
-#: ../docstring of geometry.Plane:14
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:14
 msgid "XY"
 msgstr ""
 
-#: ../docstring of geometry.Plane:14 ../docstring of geometry.Plane:15
-#: ../docstring of geometry.Plane:16 ../docstring of geometry.Plane:17
-#: ../docstring of geometry.Plane:18 ../docstring of geometry.Plane:20
-#: ../docstring of geometry.Plane:23 ../docstring of geometry.Plane:24
-#: ../docstring of geometry.Plane:25
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:14
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:15
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:16
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:17
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:18
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:20
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:23
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:24
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:25
 msgid "+x"
 msgstr ""
 
-#: ../docstring of geometry.Plane:14 ../docstring of geometry.Plane:15
-#: ../docstring of geometry.Plane:16 ../docstring of geometry.Plane:18
-#: ../docstring of geometry.Plane:19 ../docstring of geometry.Plane:21
-#: ../docstring of geometry.Plane:23 ../docstring of geometry.Plane:24
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:14
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:15
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:16
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:18
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:19
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:21
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:23
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:24
 msgid "+y"
 msgstr ""
 
-#: ../docstring of geometry.Plane:14 ../docstring of geometry.Plane:15
-#: ../docstring of geometry.Plane:16 ../docstring of geometry.Plane:17
-#: ../docstring of geometry.Plane:19 ../docstring of geometry.Plane:20
-#: ../docstring of geometry.Plane:21 ../docstring of geometry.Plane:22
-#: ../docstring of geometry.Plane:23 ../docstring of geometry.Plane:24
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:14
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:15
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:16
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:17
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:19
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:20
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:21
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:22
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:23
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:24
 msgid "+z"
 msgstr ""
 
-#: ../docstring of geometry.Plane:15
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:15
 msgid "YZ"
 msgstr ""
 
-#: ../docstring of geometry.Plane:16
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:16
 msgid "ZX"
 msgstr ""
 
-#: ../docstring of geometry.Plane:17
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:17
 msgid "XZ"
 msgstr ""
 
-#: ../docstring of geometry.Plane:17 ../docstring of geometry.Plane:20
-#: ../docstring of geometry.Plane:22 ../docstring of geometry.Plane:25
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:17
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:20
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:22
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:25
 msgid "-y"
 msgstr ""
 
-#: ../docstring of geometry.Plane:18
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:18
 msgid "YX"
 msgstr ""
 
-#: ../docstring of geometry.Plane:18 ../docstring of geometry.Plane:25
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:18
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:25
 msgid "-z"
 msgstr ""
 
-#: ../docstring of geometry.Plane:19
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:19
 msgid "ZY"
 msgstr ""
 
-#: ../docstring of geometry.Plane:19 ../docstring of geometry.Plane:21
-#: ../docstring of geometry.Plane:22
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:19
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:21
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:22
 msgid "-x"
 msgstr ""
 
-#: ../docstring of geometry.Plane:20
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:20
 msgid "front"
 msgstr ""
 
-#: ../docstring of geometry.Plane:21
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:21
 msgid "back"
 msgstr ""
 
-#: ../docstring of geometry.Plane:22
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:22
 msgid "left"
 msgstr ""
 
-#: ../docstring of geometry.Plane:23
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:23
 msgid "right"
 msgstr ""
 
-#: ../docstring of geometry.Plane:24
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:24
 msgid "top"
 msgstr ""
 
-#: ../docstring of geometry.Plane:25
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:25
 msgid "bottom"
 msgstr ""
 
-#: ../docstring of geometry.Plane:26
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:26
 msgid "isometric"
 msgstr ""
 
-#: ../docstring of geometry.Plane:26
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:26
 msgid "+x+y"
 msgstr ""
 
-#: ../docstring of geometry.Plane:26
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:26
 msgid "-x+y+z"
 msgstr ""
 
-#: ../docstring of geometry.Plane:26
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:26
 msgid "+x+y-z"
 msgstr ""
 
-#: ../docstring of geometry.Plane:29
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:29
 msgid "an OCCT plane object"
 msgstr ""
 
-#: ../docstring of geometry.Plane:31
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:31
 msgid "the origin in global coordinates"
 msgstr ""
 
-#: ../docstring of geometry.Plane:33
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:33
 msgid "an optional vector representing the X Direction. Defaults to None."
 msgstr ""
 
-#: ../docstring of geometry.Plane:36
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:36
 msgid "optional Y direction. Mutually exclusive with z_dir. Requires x_dir."
 msgstr ""
 
-#: ../docstring of geometry.Plane:39
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:39
 msgid "the normal direction for the plane. Defaults to (0, 0, 1)."
 msgstr ""
 
-#: ../docstring of geometry.Plane:43 ../docstring of geometry.Plane.origin:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:43
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.origin:1
 msgid "global position of local (0,0,0) point"
 msgstr ""
 
-#: ../docstring of geometry.Plane:45
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:45
 msgid "x direction"
 msgstr ""
 
-#: ../docstring of geometry.Plane:47
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:47
 msgid "y direction"
 msgstr ""
 
-#: ../docstring of geometry.Plane:49
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:49
 msgid "z direction"
 msgstr ""
 
-#: ../docstring of geometry.Plane:51 ../docstring of
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:51
+#: ../../build123d/src/build123d/geometry.pydocstring of
 #: geometry.Plane.forward_transform:1
 msgid "forward location transformation matrix"
 msgstr ""
 
-#: ../docstring of geometry.Plane:53 ../docstring of
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:53
+#: ../../build123d/src/build123d/geometry.pydocstring of
 #: geometry.Plane.reverse_transform:1
 msgid "reverse location transformation matrix"
 msgstr ""
 
-#: ../docstring of geometry.Plane:55
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:55
 msgid "the OCP plane object"
 msgstr ""
 
-#: ../docstring of geometry.Plane:59
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:59
 msgid "z_dir must be non null"
 msgstr ""
 
-#: ../docstring of geometry.Plane:60
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:60
 msgid "y_dir must be non null"
 msgstr ""
 
-#: ../docstring of geometry.Plane:61
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:61
 msgid "x_dir must be non null"
 msgstr ""
 
-#: ../docstring of geometry.Plane:62 ../docstring of geometry.Plane:64
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:62
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:64
 msgid "the specified x_dir is not orthogonal to the provided normal"
 msgstr ""
 
-#: ../docstring of geometry.Plane:63
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:63
 msgid "x_dir and y_dir must not be parallel"
 msgstr ""
 
-#: ../docstring of geometry.Plane:66
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane:66
 msgid "A plane"
 msgstr ""
 
-#: ../docstring of geometry.Plane.__eq__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.__eq__:1
 msgid "Are planes equal operator =="
 msgstr ""
 
-#: ../docstring of geometry.Plane.__neg__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.__neg__:1
 msgid "Reverse z direction of plane operator -"
 msgstr ""
 
-#: ../docstring of geometry.Plane.contains:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.contains:1
 msgid "Is this point or Axis fully contained in this plane?"
 msgstr ""
 
-#: ../docstring of geometry.Plane.contains:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.contains:3
 msgid "point or Axis to  evaluate"
 msgstr ""
 
-#: ../docstring of geometry.Plane.contains:5
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.contains:5
 msgid "comparison tolerance. Defaults to TOLERANCE."
 msgstr ""
 
-#: ../docstring of geometry.Plane.contains:8
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.contains:8
 msgid "self contains point or Axis"
 msgstr ""
 
-#: ../docstring of geometry.Plane.from_local_coords:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.from_local_coords:1
 msgid "Reposition the object relative from this plane"
 msgstr ""
 
-#: ../docstring of geometry.Plane.from_local_coords:3 ../docstring of
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.from_local_coords:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
 #: geometry.Plane.to_local_coords:3
 msgid "VectorLike |  Shape |  BoundBox an object to reposition. Note that"
 msgstr ""
 
-#: ../docstring of geometry.Plane.from_local_coords:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.from_local_coords:6
 msgid "an object of the same type, but repositioned to world coordinates"
 msgstr ""
 
-#: ../docstring of geometry.Plane.get_topods_face_normal:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.get_topods_face_normal:1
 msgid "Find the normal at the center of a TopoDS_Face"
 msgstr ""
 
-#: ../docstring of geometry.Plane.intersect:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.intersect:1
 msgid "Find intersection of plane and geometric object or shape"
 msgstr ""
 
-#: ../docstring of geometry.Plane.location:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.location:1
 msgid "Return Location representing the origin and z direction"
 msgstr ""
 
-#: ../docstring of geometry.Plane.location_between:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.location_between:1
 msgid "Return a location representing the translation from self to other"
 msgstr ""
 
-#: ../docstring of geometry.Plane.move:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane.move:1
 msgid ""
 "Change the position & orientation of self by applying a relative location"
 msgstr ""
 
-#: ../docstring of geometry.Plane.move:3 ../docstring of
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane.move:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
 #: geometry.Plane.moved:3
 msgid "relative change"
 msgstr ""
 
-#: ../docstring of geometry.Plane.move:6
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Plane.move:6
 msgid "relocated self"
 msgstr ""
 
-#: ../docstring of geometry.Plane.moved:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.moved:1
 msgid ""
 "Change the position & orientation of a copy of self by applying a relative "
 "location"
 msgstr ""
 
-#: ../docstring of geometry.Plane.moved:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.moved:6
 msgid "relocated plane"
 msgstr ""
 
-#: ../docstring of geometry.Plane.offset:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.offset:1
 msgid "Move the Plane by amount in the direction of z_dir"
 msgstr ""
 
-#: ../docstring of geometry.Plane.reverse:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.reverse:1
 msgid "Reverse z direction of plane"
 msgstr ""
 
-#: ../docstring of geometry.Plane.rotated:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.rotated:1
 msgid "Returns a copy of this plane, rotated about the specified axes"
 msgstr ""
 
-#: ../docstring of geometry.Plane.rotated:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.rotated:3
 msgid "The origin of the workplane is unaffected by the rotation."
 msgstr ""
 
-#: ../docstring of geometry.Plane.rotated:5
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.rotated:5
 msgid ""
 "Rotations are done in order x, y, z. If you need a different order, specify "
 "ordering. e.g. Intrinsic.ZYX changes rotation to (z angle, y angle, x angle)"
 " and rotates in that order."
 msgstr ""
 
-#: ../docstring of geometry.Plane.rotated:9
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.rotated:9
 msgid "(x angle, y angle, z angle). Defaults to (0, 0, 0)"
 msgstr ""
 
-#: ../docstring of geometry.Plane.rotated:12
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.rotated:12
 msgid ""
 "order of rotations in Intrinsic or Extrinsic rotation mode. Defaults to "
 "Intrinsic.XYZ"
 msgstr ""
 
-#: ../docstring of geometry.Plane.rotated:16
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.rotated:16
 msgid "a copy of this plane rotated as requested."
 msgstr ""
 
-#: ../docstring of geometry.Plane.shift_origin:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.shift_origin:1
 msgid "shift plane origin"
 msgstr ""
 
-#: ../docstring of geometry.Plane.shift_origin:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.shift_origin:3
 msgid ""
 "Creates a new plane with the origin moved within the plane to the point of "
 "intersection of the axis or at the given Vertex. The plane's x_dir and z_dir"
 " are unchanged."
 msgstr ""
 
-#: ../docstring of geometry.Plane.shift_origin:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.shift_origin:6
 msgid ""
 "Either Axis that intersects the new plane origin or Vertex within Plane."
 msgstr ""
 
-#: ../docstring of geometry.Plane.shift_origin:10
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.shift_origin:10
 msgid "Vertex isn't within plane"
 msgstr ""
 
-#: ../docstring of geometry.Plane.shift_origin:11
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.shift_origin:11
 msgid "Point isn't within plane"
 msgstr ""
 
-#: ../docstring of geometry.Plane.shift_origin:12
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.shift_origin:12
 msgid "Axis doesn't intersect plane"
 msgstr ""
 
-#: ../docstring of geometry.Plane.shift_origin:14
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.shift_origin:14
 msgid "plane with new origin"
 msgstr ""
 
-#: ../docstring of geometry.Plane.to_gp_ax2:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.to_gp_ax2:1
 msgid "Return gp_Ax2 version of the plane"
 msgstr ""
 
-#: ../docstring of geometry.Plane.to_gp_ax3:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.to_gp_ax3:1
 msgid "Return gp_Ax3 version of the plane"
 msgstr ""
 
-#: ../docstring of geometry.Plane.to_local_coords:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.to_local_coords:1
 msgid "Reposition the object relative to this plane"
 msgstr ""
 
-#: ../docstring of geometry.Plane.to_local_coords:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.to_local_coords:6
 msgid "an object of the same type, but repositioned to local coordinates"
 msgstr ""
 
-#: ../docstring of geometry.Plane.wrapped:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.wrapped:1
 msgid "The OCP object"
 msgstr ""
 
-#: ../docstring of geometry.Plane.x_dir:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.x_dir:1
 msgid "Local X direction of the plane."
 msgstr ""
 
-#: ../docstring of geometry.Plane.y_dir:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.y_dir:1
 msgid "Local Y direction of the plane."
 msgstr ""
 
-#: ../docstring of geometry.Plane.z_dir:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Plane.z_dir:1
 msgid "Local Z direction normal to the plane."
 msgstr ""
 
-#: ../docstring of geometry.Rotation:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Rotation:1
 msgid "Subclass of Location used only for object rotation"
 msgstr ""
 
-#: ../docstring of geometry.Rotation:3
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Rotation:3
 msgid "rotation in degrees about X axis"
 msgstr ""
 
-#: ../docstring of geometry.Rotation:5
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Rotation:5
 msgid "rotation in degrees about Y axis"
 msgstr ""
 
-#: ../docstring of geometry.Rotation:7
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Rotation:7
 msgid "rotation in degrees about Z axis"
 msgstr ""
 
-#: ../docstring of geometry.Rotation:9
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Rotation:9
 msgid "defaults to Intrinsic.XYZ"
 msgstr ""
 
-#: ../docstring of geometry.Vector:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector:1
 msgid "Create a 3-dimensional vector"
 msgstr ""
 
-#: ../docstring of geometry.Vector:3
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector:3
 msgid "x component"
 msgstr ""
 
-#: ../docstring of geometry.Vector:5
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector:5
 msgid "y component"
 msgstr ""
 
-#: ../docstring of geometry.Vector:7
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector:7
 msgid "z component"
 msgstr ""
 
-#: ../docstring of geometry.Vector:9
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector:9
 msgid "vector representations"
 msgstr ""
 
-#: ../docstring of geometry.Vector:13
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector:13
 msgid ""
 "Note that if no z value is provided it's assumed to be zero. If no values "
 "are provided the returned Vector has the value of 0, 0, 0."
 msgstr ""
 
-#: ../docstring of geometry.Vector:16
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector:16
 msgid "the OCP vector object"
 msgstr ""
 
-#: ../docstring of geometry.Vector.X:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector.X:1
 msgid "Get x value"
 msgstr ""
 
-#: ../docstring of geometry.Vector.Y:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector.Y:1
 msgid "Get y value"
 msgstr ""
 
-#: ../docstring of geometry.Vector.Z:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector.Z:1
 msgid "Get z value"
 msgstr ""
 
-#: ../docstring of geometry.Vector.__abs__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.__abs__:1
 msgid "Vector length operator abs()"
 msgstr ""
 
-#: ../docstring of geometry.Vector.__add__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.__add__:1
 msgid "Mathematical addition operator +"
 msgstr ""
 
-#: ../docstring of geometry.Vector.__eq__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.__eq__:1
 msgid "Vectors equal operator =="
 msgstr ""
 
-#: ../docstring of geometry.Vector.__mul__:1 ../docstring of
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.__mul__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
 #: geometry.Vector.__rmul__:1
 msgid "Mathematical multiply operator *"
 msgstr ""
 
-#: ../docstring of geometry.Vector.__neg__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.__neg__:1
 msgid "Flip direction of vector operator -"
 msgstr ""
 
-#: ../docstring of geometry.Vector.__sub__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.__sub__:1
 msgid "Mathematical subtraction operator -"
 msgstr ""
 
-#: ../docstring of geometry.Vector.__truediv__:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.__truediv__:1
 msgid "Mathematical division operator /"
 msgstr ""
 
-#: ../docstring of geometry.Vector.add:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector.add:1
 msgid "Mathematical addition function"
 msgstr ""
 
-#: ../docstring of geometry.Vector.center:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.center:1
 msgid ""
 "The center of myself is myself. Provided so that vectors, vertices, and "
 "other shapes all support a common interface, when center() is requested for "
 "all objects on the stack."
 msgstr ""
 
-#: ../docstring of geometry.Vector.cross:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.cross:1
 msgid "Mathematical cross function"
 msgstr ""
 
-#: ../docstring of geometry.Vector.distance_to_plane:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.distance_to_plane:1
 msgid "Minimum unsigned distance between vector and plane"
 msgstr ""
 
-#: ../docstring of geometry.Vector.dot:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector.dot:1
 msgid "Mathematical dot function"
 msgstr ""
 
-#: ../docstring of geometry.Vector.get_angle:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.get_angle:1
 msgid "Unsigned angle between vectors"
 msgstr ""
 
-#: ../docstring of geometry.Vector.get_signed_angle:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.get_signed_angle:1
 msgid "Signed Angle Between Vectors"
 msgstr ""
 
-#: ../docstring of geometry.Vector.get_signed_angle:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.get_signed_angle:3
 msgid ""
 "Return the signed angle in degrees between two vectors with the given normal"
 " based on this math: angle = atan2((Va × Vb) ⋅ Vn, Va ⋅ Vb)"
 msgstr ""
 
-#: ../docstring of geometry.Vector.get_signed_angle:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.get_signed_angle:6
 msgid "Second Vector"
 msgstr ""
 
-#: ../docstring of geometry.Vector.get_signed_angle:8
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.get_signed_angle:8
 msgid "normal direction. Defaults to None."
 msgstr ""
 
-#: ../docstring of geometry.Vector.get_signed_angle:11
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.get_signed_angle:11
 msgid "Angle between vectors"
 msgstr ""
 
-#: ../docstring of geometry.Vector.intersect:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.intersect:1
 msgid "Find intersection of vector and geometric object or shape"
 msgstr ""
 
-#: ../docstring of geometry.Vector.length:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.length:1
 msgid "Vector length"
 msgstr ""
 
-#: ../docstring of geometry.Vector.multiply:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.multiply:1
 msgid "Mathematical multiply function"
 msgstr ""
 
-#: ../docstring of geometry.Vector.normalized:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.normalized:1
 msgid "Scale to length of 1"
 msgstr ""
 
-#: ../docstring of geometry.Vector.project_to_line:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.project_to_line:1
 msgid ""
 "Returns a new vector equal to the projection of this Vector onto the line "
 "represented by Vector <line>"
 msgstr ""
 
-#: ../docstring of geometry.Vector.project_to_line:4
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.project_to_line:4
 msgid "project to this line"
 msgstr ""
 
-#: ../docstring of geometry.Vector.project_to_line:7 ../docstring of
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.project_to_line:7
+#: ../../build123d/src/build123d/geometry.pydocstring of
 #: geometry.Vector.project_to_plane:5
 msgid "Returns the projected vector."
 msgstr ""
 
-#: ../docstring of geometry.Vector.project_to_plane:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.project_to_plane:1
 msgid "Vector is projected onto the plane provided as input."
 msgstr ""
 
-#: ../docstring of geometry.Vector.project_to_plane:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.project_to_plane:3
 msgid "Plane object"
 msgstr ""
 
-#: ../docstring of geometry.Vector.project_to_plane:6
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.project_to_plane:6
 msgid "plane: Plane:"
 msgstr ""
 
-#: ../docstring of geometry.Vector.reverse:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.reverse:1
 msgid ""
 "Return a vector with the same magnitude but pointing in the opposite "
 "direction"
 msgstr ""
 
-#: ../docstring of geometry.Vector.rotate:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.rotate:1
 msgid "Rotate about axis"
 msgstr ""
 
-#: ../docstring of geometry.Vector.rotate:3
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.rotate:3
 msgid "Rotate about the given Axis by an angle in degrees"
 msgstr ""
 
-#: ../docstring of geometry.Vector.rotate:5
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.rotate:5
 msgid "Axis of rotation"
 msgstr ""
 
-#: ../docstring of geometry.Vector.rotate:7
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.rotate:7
 msgid "angle in degrees"
 msgstr ""
 
-#: ../docstring of geometry.Vector.rotate:10
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.rotate:10
 msgid "rotated vector"
 msgstr ""
 
-#: ../docstring of geometry.Vector.signed_distance_from_plane:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.signed_distance_from_plane:1
 msgid "Signed distance from plane to point vector."
 msgstr ""
 
-#: ../docstring of geometry.Vector.sub:1
+#: ../../build123d/src/build123d/geometry.pydocstring of geometry.Vector.sub:1
 msgid "Mathematical subtraction function"
 msgstr ""
 
-#: ../docstring of geometry.Vector.to_dir:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.to_dir:1
 msgid "Convert to OCCT gp_Dir object"
 msgstr ""
 
-#: ../docstring of geometry.Vector.to_pnt:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.to_pnt:1
 msgid "Convert to OCCT gp_Pnt object"
 msgstr ""
 
-#: ../docstring of geometry.Vector.transform:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.transform:1
 msgid "Apply affine transformation"
 msgstr ""
 
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.transform:3
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.transform_geometry:11
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.transform_shape:7
 #: ../../build123d/src/build123d/topology/zero_d.pydocstring of
-#: topology.zero_d.Vertex.transform_shape:7 ../docstring of
-#: geometry.Vector.transform:3
+#: topology.zero_d.Vertex.transform_shape:7
 msgid "affine transformation matrix"
 msgstr ""
 
-#: ../docstring of geometry.Vector.transform:5
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.transform:5
 msgid ""
 "Should self be transformed as a vector or direction? Defaults to False "
 "(vector)"
 msgstr ""
 
-#: ../docstring of geometry.Vector.transform:9
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.transform:9
 msgid "transformed vector"
 msgstr ""
 
-#: ../docstring of geometry.Vector.wrapped:1
+#: ../../build123d/src/build123d/geometry.pydocstring of
+#: geometry.Vector.wrapped:1
 msgid "OCCT object"
 msgstr ""
 

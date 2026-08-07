@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-24 00:30+0000\n"
+"POT-Creation-Date: 2026-08-07 01:14+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1686,7 +1686,7 @@ msgstr ""
 #: ../../build123d/src/build123d/drafting.pydocstring of
 #: drafting.DimensionLine:37
 #: ../../build123d/src/build123d/drafting.pydocstring of
-#: drafting.ExtensionLine:36
+#: drafting.ExtensionLine:44
 #: ../../build123d/src/build123d/drafting.pydocstring of
 #: drafting.TechnicalDrawing:25
 msgid "combination mode. Defaults to Mode.ADD."
@@ -1763,7 +1763,7 @@ msgstr ""
 #: ../../build123d/src/build123d/drafting.pydocstring of
 #: drafting.DimensionLine:16
 #: ../../build123d/src/build123d/drafting.pydocstring of
-#: drafting.ExtensionLine:13
+#: drafting.ExtensionLine:21
 msgid "instance of Draft dataclass"
 msgstr ""
 
@@ -1777,7 +1777,7 @@ msgstr ""
 #: ../../build123d/src/build123d/drafting.pydocstring of
 #: drafting.DimensionLine:21
 #: ../../build123d/src/build123d/drafting.pydocstring of
-#: drafting.ExtensionLine:15
+#: drafting.ExtensionLine:23
 msgid ""
 "a text string which will replace the length (or arc length) that would "
 "otherwise be extracted from the provided path. Providing a label is useful "
@@ -1788,7 +1788,7 @@ msgstr ""
 #: ../../build123d/src/build123d/drafting.pydocstring of
 #: drafting.DimensionLine:26
 #: ../../build123d/src/build123d/drafting.pydocstring of
-#: drafting.ExtensionLine:20
+#: drafting.ExtensionLine:28
 msgid ""
 "a pair of boolean values controlling the placement of the start and end "
 "arrows. Defaults to (True, True)."
@@ -1797,7 +1797,7 @@ msgstr ""
 #: ../../build123d/src/build123d/drafting.pydocstring of
 #: drafting.DimensionLine:29
 #: ../../build123d/src/build123d/drafting.pydocstring of
-#: drafting.ExtensionLine:23
+#: drafting.ExtensionLine:31
 msgid ""
 "an optional tolerance value to add to the extracted length value. If a "
 "single tolerance value is provided it is shown as ± the provided value while"
@@ -1859,11 +1859,20 @@ msgstr ""
 
 #: ../../build123d/src/build123d/drafting.pydocstring of
 #: drafting.ExtensionLine:11
-msgid "a distance to displace the dimension line from the edge of the object"
+msgid ""
+"displacement of the dimension line from the edge of the object. A ``float`` "
+"is a signed perpendicular distance (the legacy behaviour, where the sign "
+"selects the side). A ``VectorLike`` is an explicit displacement in the "
+"drawing (XY) plane: its magnitude is the distance, its direction selects the"
+" side, removing the sign-convention guesswork. The vector must be "
+"perpendicular to the dimension line (a small tolerance is allowed); if "
+"``measurement_direction`` is also given the two must be perpendicular, "
+"otherwise the dimension line direction is inferred perpendicular to the "
+"offset."
 msgstr ""
 
 #: ../../build123d/src/build123d/drafting.pydocstring of
-#: drafting.ExtensionLine:28
+#: drafting.ExtensionLine:36
 msgid ""
 "a flag indicating that instead of an extracted length value, the size of the"
 " circular arc extracted from the path should be displayed in degrees. "
@@ -1871,7 +1880,7 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/src/build123d/drafting.pydocstring of
-#: drafting.ExtensionLine:32
+#: drafting.ExtensionLine:40
 msgid ""
 "Vector line which to project the dimension against. Offset start point is "
 "the position of the start of border. Defaults to None."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-05 02:06+0000\n"
+"POT-Creation-Date: 2026-08-09 00:16+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -28,8 +28,8 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/docs/import_export.rst:7
-#: ../../build123d/docs/import_export.rst:223
-#: ../../build123d/docs/import_export.rst:291
+#: ../../build123d/docs/import_export.rst:249
+#: ../../build123d/docs/import_export.rst:317
 msgid "For example:"
 msgstr ""
 
@@ -110,10 +110,39 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/docs/import_export.rst:71
-msgid "STL"
+msgid "OBJ"
 msgstr ""
 
 #: ../../build123d/docs/import_export.rst:73
+msgid ""
+"Wavefront OBJ is a widely supported text-based mesh format. The "
+":func:`~exporters3d.export_obj` function exports triangulated geometry, "
+"including vertex positions, normals, and UV texture coordinates. UV "
+"coordinates map each mesh face to a two-dimensional texture, allowing an "
+"external application to paint or bake textures onto the model."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:79
+msgid ""
+"By default, the exporter packs the UV islands for all faces into one "
+"normalized texture atlas. Set ``atlas_gutter`` to reserve empty space around"
+" every island and avoid texture bleeding when the atlas is sampled with "
+"interpolation:"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:88
+msgid ""
+"The OBJ exporter writes geometry and UV data only. It does not create a "
+"material library (``.mtl``) file or embed, reference, or assign texture "
+"image files. Use the exported UV atlas with a separate texture-painting, "
+"baking, or material-authoring workflow."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:94
+msgid "STL"
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:96
 msgid ""
 "The STL (STereoLithography) file format is a widely used file format in 3D "
 "printing and computer-aided design (CAD) applications. It represents 3D "
@@ -126,11 +155,11 @@ msgid ""
 " models with a minimal file size."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:83
+#: ../../build123d/docs/import_export.rst:106
 msgid "STEP"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:85
+#: ../../build123d/docs/import_export.rst:108
 msgid ""
 "The STEP (Standard for the Exchange of Product model data) file format is a "
 "widely used standard for representing 3D product and manufacturing data in "
@@ -144,11 +173,11 @@ msgid ""
 "development and manufacturing process."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:96
+#: ../../build123d/docs/import_export.rst:119
 msgid "SVG"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:98
+#: ../../build123d/docs/import_export.rst:121
 msgid ""
 "The SVG (Scalable Vector Graphics) file format is an XML-based standard used"
 " for describing 2D vector graphics. It is widely supported and can be "
@@ -162,17 +191,17 @@ msgid ""
 "graphic representation."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:110
+#: ../../build123d/docs/import_export.rst:133
 msgid "2D Exporters"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:112
+#: ../../build123d/docs/import_export.rst:135
 msgid ""
 "Exports to DXF (Drawing Exchange Format) and SVG (Scalable Vector Graphics) "
 "are provided by the 2D Exporters: ExportDXF and ExportSVG classes."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:115
+#: ../../build123d/docs/import_export.rst:138
 msgid ""
 "DXF is a widely used file format for exchanging CAD (Computer-Aided Design) "
 "data between different software applications. SVG is a widely used vector "
@@ -180,7 +209,7 @@ msgid ""
 "editors."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:119
+#: ../../build123d/docs/import_export.rst:142
 msgid ""
 "The core concept to these classes is the creation of a DXF/SVG document with"
 " specific properties followed by the addition of layers and shapes to the "
@@ -188,21 +217,21 @@ msgid ""
 "can be written to a file."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:125
+#: ../../build123d/docs/import_export.rst:148
 msgid "3D to 2D Projection"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:127
+#: ../../build123d/docs/import_export.rst:150
 msgid "There are a couple ways to generate a 2D drawing of a 3D part:"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:129
+#: ../../build123d/docs/import_export.rst:152
 msgid ""
 "Generate a section: The  :func:`~operations_part.section` operation can be "
 "used to create a 2D cross section of a 3D part at a given plane."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:131
+#: ../../build123d/docs/import_export.rst:154
 msgid ""
 "Generate a projection: The :meth:`~topology.Shape.project_to_viewport` "
 "method can be used to create a 2D projection of a 3D scene. Similar to a "
@@ -214,7 +243,7 @@ msgid ""
 "the second the hidden edges."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:139
+#: ../../build123d/docs/import_export.rst:162
 msgid ""
 "Each of these Edges and Faces can be assigned different line color/types and"
 " fill colors as described below (as ``project_to_viewport`` only generates "
@@ -223,40 +252,40 @@ msgid ""
 "either a DXF or SVG file as shown in this example:"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:158
+#: ../../build123d/docs/import_export.rst:181
 msgid "LineType"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:160
+#: ../../build123d/docs/import_export.rst:183
 msgid ""
 "ANSI (American National Standards Institute) and ISO (International "
 "Organization for Standardization) standards both define line types in "
 "drawings used in DXF and SVG exported drawings:"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:164
+#: ../../build123d/docs/import_export.rst:187
 msgid "ANSI Standards:"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:165
+#: ../../build123d/docs/import_export.rst:188
 msgid ""
 "ANSI/ASME Y14.2 - \"Line Conventions and Lettering\" is the standard that "
 "defines line types, line weights, and line usage in engineering drawings in "
 "the United States."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:168
+#: ../../build123d/docs/import_export.rst:191
 msgid "ISO Standards:"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:169
+#: ../../build123d/docs/import_export.rst:192
 msgid ""
 "ISO 128 - \"Technical drawings -- General principles of presentation\" is "
 "the ISO standard that covers the general principles of technical drawing "
 "presentation, including line types and line conventions."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:172
+#: ../../build123d/docs/import_export.rst:195
 msgid ""
 "ISO 13567 - \"Technical product documentation (TPD) -- Organization and "
 "naming of layers for CAD\" provides guidelines for the organization and "
@@ -264,20 +293,20 @@ msgid ""
 "line type information."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:176
+#: ../../build123d/docs/import_export.rst:199
 msgid ""
 "These standards help ensure consistency and clarity in technical drawings, "
 "making it easier for engineers, designers, and manufacturers to communicate "
 "and interpret the information presented in the drawings."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:180
+#: ../../build123d/docs/import_export.rst:203
 msgid ""
 "The line types used by the 2D Exporters are defined by the "
 ":class:`~exporters.LineType` Enum and are shown in the following diagram:"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:188
+#: ../../build123d/docs/import_export.rst:211
 msgid "ExportDXF"
 msgstr ""
 
@@ -429,7 +458,7 @@ msgid ""
 "True."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:194
+#: ../../build123d/docs/import_export.rst:217
 msgid "ExportSVG"
 msgstr ""
 
@@ -603,7 +632,7 @@ msgstr ""
 msgid "The file path where the SVG data will be written."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:200
+#: ../../build123d/docs/import_export.rst:223
 msgid "3D Exporters"
 msgstr ""
 
@@ -615,7 +644,9 @@ msgstr ""
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
 #: exporters3d.export_brep:3
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
-#: exporters3d.export_gltf:7
+#: exporters3d.export_gltf:12
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_obj:11
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
 #: exporters3d.export_step:5
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
@@ -631,7 +662,7 @@ msgstr ""
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
 #: exporters3d.export_brep:7
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
-#: exporters3d.export_gltf:28
+#: exporters3d.export_gltf:33
 msgid "write status"
 msgstr ""
 
@@ -647,24 +678,33 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
-#: exporters3d.export_gltf:9
+#: exporters3d.export_gltf:7
+msgid ""
+"UV texture coordinates from the underlying surface parameterization are "
+"included in the glTF output as ``TEXCOORD_0`` accessors. These UVs support "
+"texture mapping, UV baking, and displacement-map workflows such as `BumpMesh"
+" <https://bumpmesh.com/>`_."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_gltf:14
 msgid "glTF file path"
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
-#: exporters3d.export_gltf:11
+#: exporters3d.export_gltf:16
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
 #: exporters3d.export_step:9
 msgid "shape units. Defaults to Unit.MM."
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
-#: exporters3d.export_gltf:13
+#: exporters3d.export_gltf:18
 msgid "output format. Defaults to False."
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
-#: exporters3d.export_gltf:15
+#: exporters3d.export_gltf:20
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
 #: exporters3d.export_stl:9
 msgid ""
@@ -676,7 +716,7 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
-#: exporters3d.export_gltf:22
+#: exporters3d.export_gltf:27
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
 #: exporters3d.export_stl:15
 msgid ""
@@ -685,8 +725,68 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
-#: exporters3d.export_gltf:26
+#: exporters3d.export_gltf:31
 msgid "Failed to write glTF file"
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_obj:1
+msgid ""
+"Exports a shape to Wavefront OBJ format.  When *include_uvs* is True "
+"(default), per-vertex UV texture coordinates are extracted from "
+"OpenCASCADE's surface parameterization and written as ``vt`` records. These "
+"UVs enable texture mapping, UV baking, and displacement-map workflows such "
+"as `BumpMesh <https://bumpmesh.com/>`_ which can add displacement heightmap "
+"tessellations to 3D-printable meshes."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_obj:8
+msgid ""
+"When *atlas_packing* is True (default), all face UVs are packed into a "
+"single texture atlas preserving each face's physical aspect ratio."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_obj:13
+msgid ""
+"OBJ file path or writable binary stream (for pyodide/WASM environments)."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_obj:16
+msgid "Tessellation linear deflection. Defaults to 1e-3."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_obj:19
+msgid "Tessellation angular deflection. Defaults to 0.1."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_obj:22
+msgid "Include UV texture coordinates. Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_obj:25
+msgid ""
+"Pack per-face UVs into a single atlas. Only used when *include_uvs* is True."
+" Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_obj:28
+msgid ""
+"Normalized empty margin around each UV island in a packed atlas. Only used "
+"when *atlas_packing* is True. Defaults to 0.0."
+msgstr ""
+
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_obj:33
+#: ../../build123d/src/build123d/exporters3d.pydocstring of
+#: exporters3d.export_step:20
+msgid "success"
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
@@ -715,11 +815,6 @@ msgstr ""
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
 #: exporters3d.export_step:18
 msgid "Unknown Compound type"
-msgstr ""
-
-#: ../../build123d/src/build123d/exporters3d.pydocstring of
-#: exporters3d.export_step:20
-msgid "success"
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters3d.pydocstring of
@@ -754,11 +849,11 @@ msgstr ""
 msgid "The destination directory does not exist."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:217
+#: ../../build123d/docs/import_export.rst:243
 msgid "3D Mesh Export"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:219
+#: ../../build123d/docs/import_export.rst:245
 msgid ""
 "Both 3MF and STL export (and import) are provided with the "
 ":class:`~mesher.Mesher` class. As mentioned above, the 3MF format it "
@@ -934,7 +1029,7 @@ msgstr ""
 msgid "output mesh format, either \"3mf\" or \"stl\""
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:255
+#: ../../build123d/docs/import_export.rst:281
 msgid ""
 "If you need to align multiple components for 3D printing, you can use the  "
 ":ref:`pack() <pack>` function to arrange the objects side by side and align "
@@ -942,7 +1037,7 @@ msgid ""
 " and ready for the printing process."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:259
+#: ../../build123d/docs/import_export.rst:285
 msgid "2D Importers"
 msgstr ""
 
@@ -1034,7 +1129,7 @@ msgstr ""
 msgid "code, builder instance name"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:269
+#: ../../build123d/docs/import_export.rst:295
 msgid "3D Importers"
 msgstr ""
 
@@ -1109,18 +1204,18 @@ msgstr ""
 msgid "STL model"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:276
+#: ../../build123d/docs/import_export.rst:302
 msgid "STL Reconstruction"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:278
+#: ../../build123d/docs/import_export.rst:304
 msgid ""
 "The :func:`~build123d.detect_primitives` helper can be used during STL "
 "reconstruction to detect analytic planes, cylinders, and spheres in a mesh-"
 "like shape and generate algebra-mode code fragments to aid manual redesign."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:282
+#: ../../build123d/docs/import_export.rst:308
 msgid ""
 "See :ref:`stl_reconstruction_tutorial` for the full workflow and "
 "limitations."
@@ -1178,11 +1273,11 @@ msgid ""
 " same order as the returned primitives."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:287
+#: ../../build123d/docs/import_export.rst:313
 msgid "3D Mesh Import"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:289
+#: ../../build123d/docs/import_export.rst:315
 msgid ""
 "Both 3MF and STL import (and export) are provided with the "
 ":class:`~mesher.Mesher` class."

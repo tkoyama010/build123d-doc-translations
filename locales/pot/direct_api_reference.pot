@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-07 01:14+0000\n"
+"POT-Creation-Date: 2026-08-09 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4363,6 +4363,54 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate:1
 msgid "General triangulated approximation"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:1
+msgid "Triangulated approximation with per-vertex normals and UV coordinates."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:3
+msgid "Extracts UV coordinates from OpenCASCADE's surface parameterization for each face, normalizes them to [0, 1], and optionally packs all faces into a single UV atlas so textures can span the entire model."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:7
+msgid "The UV mapping approach is ported from CascadeStudio's ShapeToMesh: arc-lengths of isoparametric curves are used to determine each face's physical aspect ratio, and a shelf-based bin packing algorithm arranges all faces into a single [0, 1] texture atlas."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:12
+msgid "linear deflection for tessellation."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:13
+msgid "angular deflection for tessellation. Default 0.1."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:14
+msgid "if True (default), pack per-face UVs into a single texture atlas.  If False, each face's UVs are independently normalized to [0, 1]."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:17
+msgid "fraction of the atlas (in normalized [0, 1] units) to reserve as an empty margin around every packed face. A non-zero value prevents neighbouring islands from bleeding into one another when the atlas is sampled with interpolation (useful for texture baking). Only used when ``atlas_packing`` is True. Defaults to 0.0."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:24
+msgid "- vertices: list of Vector positions - triangles: list of (i0, i1, i2) index triples - normals: list of Vector per-vertex normals - uvs: list of (u, v) texture coordinates per vertex"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:26
+msgid "vertices: list of Vector positions"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:27
+msgid "triangles: list of (i0, i1, i2) index triples"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:28
+msgid "normals: list of Vector per-vertex normals"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.tessellate_with_uvs:29
+msgid "uvs: list of (u, v) texture coordinates per vertex"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.to_splines:1

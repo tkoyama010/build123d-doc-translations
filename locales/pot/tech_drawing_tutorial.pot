@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-08-11 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,81 +61,89 @@ msgid "The script uses the `project_to_viewport` method to project the 3D part g
 msgstr ""
 
 #: ../../build123d/docs/tech_drawing_tutorial.rst:31
-msgid "The steps involved are:"
-msgstr ""
-
-#: ../../build123d/docs/tech_drawing_tutorial.rst:33
-msgid "Load or construct a 3D part (in this case, a stepper motor)."
-msgstr ""
-
-#: ../../build123d/docs/tech_drawing_tutorial.rst:34
-msgid "Define a `TechnicalDrawing` border and title block using A4 page size."
-msgstr ""
-
-#: ../../build123d/docs/tech_drawing_tutorial.rst:35
-msgid "Generate each of the standard views and apply transformations to place them."
+msgid "The :class:`~drafting.Draft` dataclass collects the shared appearance and number-formatting options for annotations. In this example, one ``Draft`` instance sets the font size, decimal precision, and unit display for every :class:`~drafting.ExtensionLine`, keeping the dimensions consistent across all views."
 msgstr ""
 
 #: ../../build123d/docs/tech_drawing_tutorial.rst:36
-msgid "Add dimensions using `ExtensionLine` and labels using `Text`."
+msgid "The steps involved are:"
 msgstr ""
 
-#: ../../build123d/docs/tech_drawing_tutorial.rst:37
-msgid "Export the drawing using `ExportSVG`, separating visible and hidden edges by layer and style."
+#: ../../build123d/docs/tech_drawing_tutorial.rst:38
+msgid "Load or construct a 3D part (in this case, a stepper motor)."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:39
+msgid "Define a `TechnicalDrawing` border and title block using A4 page size."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:40
+msgid "Create a `Draft` configuration for the drawing annotations."
 msgstr ""
 
 #: ../../build123d/docs/tech_drawing_tutorial.rst:41
-msgid "Result"
+msgid "Generate each of the standard views and apply transformations to place them."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:42
+msgid "Add dimensions using `ExtensionLine` and labels using `Text`."
 msgstr ""
 
 #: ../../build123d/docs/tech_drawing_tutorial.rst:43
-msgid "Stepper motor technical drawing"
+msgid "Export the drawing using `ExportSVG`, separating visible and hidden edges by layer and style."
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:47
+msgid "Result"
 msgstr ""
 
 #: ../../build123d/docs/tech_drawing_tutorial.rst:49
-msgid "Try It Yourself"
-msgstr ""
-
-#: ../../build123d/docs/tech_drawing_tutorial.rst:51
-msgid "You can modify the script to:"
-msgstr ""
-
-#: ../../build123d/docs/tech_drawing_tutorial.rst:53
-msgid "Replace the part with your own `Part` model"
-msgstr ""
-
-#: ../../build123d/docs/tech_drawing_tutorial.rst:54
-msgid "Adjust camera angles and scale"
+msgid "Stepper motor technical drawing"
 msgstr ""
 
 #: ../../build123d/docs/tech_drawing_tutorial.rst:55
-msgid "Add other views (bottom, rear)"
+msgid "Try It Yourself"
 msgstr ""
 
-#: ../../build123d/docs/tech_drawing_tutorial.rst:56
-msgid "Enhance with more labels and dimensions"
+#: ../../build123d/docs/tech_drawing_tutorial.rst:57
+msgid "You can modify the script to:"
 msgstr ""
 
 #: ../../build123d/docs/tech_drawing_tutorial.rst:59
+msgid "Replace the part with your own `Part` model"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:60
+msgid "Adjust camera angles and scale"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:61
+msgid "Add other views (bottom, rear)"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:62
+msgid "Enhance with more labels and dimensions"
+msgstr ""
+
+#: ../../build123d/docs/tech_drawing_tutorial.rst:65
 msgid "Code"
 msgstr ""
 
-#: ../../build123d/docs/tech_drawing_tutorial.rst:67
+#: ../../build123d/docs/tech_drawing_tutorial.rst:73
 msgid "Dependencies"
 msgstr ""
 
-#: ../../build123d/docs/tech_drawing_tutorial.rst:69
+#: ../../build123d/docs/tech_drawing_tutorial.rst:75
 msgid "This example depends on the following packages:"
 msgstr ""
 
-#: ../../build123d/docs/tech_drawing_tutorial.rst:71
+#: ../../build123d/docs/tech_drawing_tutorial.rst:77
 msgid "`build123d`"
 msgstr ""
 
-#: ../../build123d/docs/tech_drawing_tutorial.rst:72
+#: ../../build123d/docs/tech_drawing_tutorial.rst:78
 msgid "`bd_warehouse` (for the `StepperMotor` part)"
 msgstr ""
 
-#: ../../build123d/docs/tech_drawing_tutorial.rst:73
+#: ../../build123d/docs/tech_drawing_tutorial.rst:79
 msgid "`ocp_vscode` (for local preview)"
 msgstr ""

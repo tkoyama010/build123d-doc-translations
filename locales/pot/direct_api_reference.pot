@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-09 00:16+0000\n"
+"POT-Creation-Date: 2026-08-11 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,6 @@ msgstr ""
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.add:0
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.find_outside_box_2d:0
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.from_topo_ds:0
-#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.is_inside:0
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.Vector.project_to_plane:0
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:0
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.curvature_comb:0
@@ -282,7 +281,15 @@ msgid "OCP object"
 msgstr ""
 
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox:1
-msgid "A BoundingBox for a Shape"
+msgid "An axis-aligned bounding box for a shape."
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox:3
+msgid "In addition to its extents, a :class:`BoundBox` provides spatial predicates. :meth:`covers` and :meth:`covered_by` test inclusive enclosure; :meth:`contains` and :meth:`within` require enclosure with relevant-dimensional interior; and :meth:`contains_properly` additionally excludes boundary contact. :meth:`intersects` and :meth:`disjoint` test whether the distance between boxes is within the given tolerance. :meth:`touches` identifies contact without shared interior, while :meth:`overlaps` identifies shared interior where neither box contains the other."
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox:13
+msgid "Predicate comparisons account for degenerate bounding boxes. An axis that is degenerate and coincident in both boxes is excluded from interior comparisons, so coplanar bounding rectangles compare in two dimensions and collinear bounding lines compare in one. Degenerate axes at different coordinates remain distinct: for example, rectangles on parallel planes do not have a shared interior. This behavior concerns bounding-box extents only; it does not infer the topological dimension of the underlying shape."
 msgstr ""
 
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.add:1
@@ -319,9 +326,8 @@ msgid "float:  (Default value = None)"
 msgstr ""
 
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.add:14
-#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.find_outside_box_2d:13
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.find_outside_box_2d:12
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.from_topo_ds:7
-#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.is_inside:5
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.Vector.project_to_plane:8
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.normal:7
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.project:7
@@ -340,8 +346,36 @@ msgstr ""
 msgid "Return center of the bounding box"
 msgstr ""
 
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.contains:1
+msgid "Return whether this bounding box contains *other*."
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.contains:3
+msgid "Boundary contact is permitted, but *other* must have an interior point in this bounding box. Use :meth:`covers` for degenerate bounding boxes."
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.contains_properly:1
+msgid "Return whether *other* is contained without touching this box's boundary."
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.covered_by:1
+msgid "Return whether every point of this bounding box is in *other*."
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.covers:1
+msgid "Return whether this bounding box includes every point of *other*."
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.covers:3
+msgid "Boundary contact is included, so this predicate also applies to degenerate bounding boxes such as those of vertices, edges, and faces."
+msgstr ""
+
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.diagonal:1
 msgid "body diagonal length (i.e. object maximum size)"
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.disjoint:1
+msgid "Return whether these bounding boxes do not intersect."
 msgstr ""
 
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.find_outside_box_2d:1
@@ -353,12 +387,11 @@ msgid "Compares bounding boxes. Returns none if neither is inside the other. Ret
 msgstr ""
 
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.find_outside_box_2d:6
-msgid "BoundBox.is_inside works in 3d, but this is a 2d bounding box, so it doesn't work correctly plus, there was all kinds of rounding error in the built-in implementation i do not understand."
+msgid ":meth:`contains` to identify the enclosing bounding box."
 msgstr ""
 
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.find_outside_box_2d:9
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.find_outside_box_2d:10
-#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.find_outside_box_2d:11
-#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.is_inside:3
 msgid "BoundBox:"
 msgstr ""
 
@@ -374,8 +407,16 @@ msgstr ""
 msgid "bool:  This algorithm builds precise bounding box (Default value = True)"
 msgstr ""
 
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.intersects:1
+msgid "Return whether the distance between bounding boxes is within *tolerance*."
+msgstr ""
+
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.is_inside:1
-msgid "Is the provided bounding box inside this one?"
+msgid "Return whether this bounding box is inside *other*."
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.is_inside:3
+msgid ":meth:`within` instead."
 msgstr ""
 
 #: ../docstring of geometry.BoundBox.max:1
@@ -403,19 +444,7 @@ msgid "location of minimum corner"
 msgstr ""
 
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.overlaps:1
-msgid "Check if this bounding box overlaps with another."
-msgstr ""
-
-#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.overlaps:3
-msgid "BoundBox to check overlap with"
-msgstr ""
-
-#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.overlaps:4
-msgid "Distance tolerance for overlap detection"
-msgstr ""
-
-#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.overlaps:6
-msgid "True if bounding boxes overlap (share any volume), False otherwise"
+msgid "Return whether these boxes overlap without either one containing the other."
 msgstr ""
 
 #: ../docstring of geometry.BoundBox.size:1
@@ -424,6 +453,14 @@ msgstr ""
 
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.to_align_offset:1
 msgid "Amount to move object to achieve the desired alignment"
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.touches:1
+msgid "Return whether these bounding boxes meet without sharing positive volume."
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.BoundBox.within:1
+msgid "Return whether this bounding box is contained in *other*."
 msgstr ""
 
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.Color:1
@@ -498,7 +535,11 @@ msgid "Compare Locations"
 msgstr ""
 
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.Location.__mul__:1
-msgid "Combine locations"
+msgid "Apply this location to a location, movable object, or iterable."
+msgstr ""
+
+#: ../../build123d/src/build123d/geometry.py:docstring of geometry.Location.__mul__:3
+msgid "Locations are composed with other locations. Objects that provide a ``moved`` method, such as Shapes and Planes, are moved as a whole. Other iterables are converted to a list once and processed element by element, either as locations or as movable objects. Unsupported operands return ``NotImplemented`` so Python can try reflected operator dispatch."
 msgstr ""
 
 #: ../../build123d/src/build123d/geometry.py:docstring of geometry.Location.__neg__:1

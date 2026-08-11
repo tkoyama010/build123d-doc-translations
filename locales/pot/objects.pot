@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-07 01:14+0000\n"
+"POT-Creation-Date: 2026-08-11 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -286,7 +286,7 @@ msgstr ""
 
 #: ../../build123d/docs/objects.rst:250
 #: ../../build123d/docs/objects.rst:415
-#: ../../build123d/docs/objects.rst:515
+#: ../../build123d/docs/objects.rst:516
 msgid "Reference"
 msgstr ""
 
@@ -1149,7 +1149,7 @@ msgid "A technical drawing with descriptions"
 msgstr ""
 
 #: ../../build123d/docs/objects.rst:392
-#: ../../build123d/docs/objects.rst:532
+#: ../../build123d/docs/objects.rst:533
 msgid "Text"
 msgstr ""
 
@@ -1226,6 +1226,7 @@ msgstr ""
 
 #: ../../build123d/src/build123d/drafting.py:docstring of drafting.Arrow:11
 #: ../../build123d/src/build123d/drafting.py:docstring of drafting.ArrowHead:5
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:9
 msgid "arrow head shape. Defaults to HeadType.CURVED."
 msgstr ""
 
@@ -1333,6 +1334,62 @@ msgstr ""
 #: ../docstring of drafting.DimensionLine.dimension:1
 #: ../docstring of drafting.ExtensionLine.dimension:1
 msgid "length of the dimension"
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:1
+msgid "Documenting build123d designs with dimension and extension lines as well as callouts."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:4
+msgid "size of the text in dimension lines and callouts. Defaults to 5.0."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:6
+msgid "font to use for text. Defaults to \"Arial\"."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:8
+msgid "text style. Defaults to FontStyle.REGULAR."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:11
+msgid "arrow head length. Defaults to 3.0."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:13
+msgid "thickness of all lines. Defaults to 0.5."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:15
+msgid "amount of padding around text. Defaults to 2.0."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:17
+msgid "measurement unit. Defaults to Unit.MM."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:19
+msgid "numbers as decimal or fractions. Default to NumberDisplay.DECIMAL."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:22
+msgid "control the display of units with numbers. Defaults to True."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:24
+msgid "number of decimal places when displaying numbers. Defaults to 2."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:26
+msgid "maximum fraction denominator - must be a factor of 2. Defaults to 64."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft:29
+msgid "gap between the point and start of extension line in extension_line. Defaults to 2.0."
+msgstr ""
+
+#: ../../build123d/src/build123d/drafting.py:docstring of drafting.Draft.is_metric:1
+msgid "Are metric units being used"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Ellipse:1
@@ -1728,87 +1785,87 @@ msgstr ""
 msgid "vertex 'C'"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:439
+#: ../../build123d/docs/objects.rst:440
 msgid "3D Objects"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:443
+#: ../../build123d/docs/objects.rst:444
 msgid "Box"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:448
+#: ../../build123d/docs/objects.rst:449
 msgid "Box defined by length, width, height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:450
+#: ../../build123d/docs/objects.rst:451
 msgid "Cone"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:455
+#: ../../build123d/docs/objects.rst:456
 msgid "Cone defined by radii and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:457
+#: ../../build123d/docs/objects.rst:458
 msgid "ConvexPolyhedron"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:462
+#: ../../build123d/docs/objects.rst:463
 msgid "Convex Polyhedron defined by points"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:464
+#: ../../build123d/docs/objects.rst:465
 msgid "CounterBoreHole"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:469
+#: ../../build123d/docs/objects.rst:470
 msgid "Counter bore hole defined by radii and depths"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:471
+#: ../../build123d/docs/objects.rst:472
 msgid "CounterSinkHole"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:476
+#: ../../build123d/docs/objects.rst:477
 msgid "Counter sink hole defined by radii and depth and angle"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:478
+#: ../../build123d/docs/objects.rst:479
 msgid "Cylinder"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:483
+#: ../../build123d/docs/objects.rst:484
 msgid "Cylinder defined by radius and height"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:485
+#: ../../build123d/docs/objects.rst:486
 msgid "Hole"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:490
+#: ../../build123d/docs/objects.rst:491
 msgid "Hole defined by radius and depth"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:492
+#: ../../build123d/docs/objects.rst:493
 msgid "Sphere"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:497
+#: ../../build123d/docs/objects.rst:498
 msgid "Sphere defined by radius and arc angles"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:499
+#: ../../build123d/docs/objects.rst:500
 msgid "Torus"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:504
+#: ../../build123d/docs/objects.rst:505
 msgid "Torus defined major and minor radii"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:506
+#: ../../build123d/docs/objects.rst:507
 msgid "Wedge"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:511
+#: ../../build123d/docs/objects.rst:512
 msgid "Wedge defined by lengths along multiple Axes"
 msgstr ""
 
@@ -2181,124 +2238,124 @@ msgstr ""
 msgid "Ensure relative ``font_path`` specifications are relative to the *current working directory*."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:538
+#: ../../build123d/docs/objects.rst:539
 msgid "Custom Objects"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:540
+#: ../../build123d/docs/objects.rst:541
 msgid "All of the objects presented above are normal Python classes built on the ``Base*Object`` classes. Users can use these same base classes to create their own reusable objects that work like the core build123d objects in both Algebra and Builder mode."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:545
+#: ../../build123d/docs/objects.rst:546
 msgid "The base class is chosen from the dimensionality of the object being created:"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:550
+#: ../../build123d/docs/objects.rst:551
 msgid "Object being created"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:551
+#: ../../build123d/docs/objects.rst:552
 msgid "Base class"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:552
+#: ../../build123d/docs/objects.rst:553
 msgid "Builder"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:553
+#: ../../build123d/docs/objects.rst:554
 msgid "3D solid or part"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:554
+#: ../../build123d/docs/objects.rst:555
 msgid ":class:`~objects_part.BasePartObject`"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:555
+#: ../../build123d/docs/objects.rst:556
 msgid ":class:`~build_part.BuildPart`"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:556
+#: ../../build123d/docs/objects.rst:557
 msgid "2D face or sketch"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:557
+#: ../../build123d/docs/objects.rst:558
 msgid ":class:`~objects_sketch.BaseSketchObject`"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:558
+#: ../../build123d/docs/objects.rst:559
 msgid ":class:`~build_sketch.BuildSketch`"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:559
+#: ../../build123d/docs/objects.rst:560
 msgid "Single 1D edge"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:560
+#: ../../build123d/docs/objects.rst:561
 msgid ":class:`~objects_curve.BaseEdgeObject`"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:561
-#: ../../build123d/docs/objects.rst:564
-#: ../../build123d/docs/objects.rst:567
+#: ../../build123d/docs/objects.rst:562
+#: ../../build123d/docs/objects.rst:565
+#: ../../build123d/docs/objects.rst:568
 msgid ":class:`~build_line.BuildLine`"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:562
+#: ../../build123d/docs/objects.rst:563
 msgid "Connected 1D wire"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:563
+#: ../../build123d/docs/objects.rst:564
 msgid ":class:`~objects_curve.BaseLineObject`"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:565
+#: ../../build123d/docs/objects.rst:566
 msgid "General 1D curve"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:566
+#: ../../build123d/docs/objects.rst:567
 msgid ":class:`~objects_curve.BaseCurveObject`"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:569
+#: ../../build123d/docs/objects.rst:570
 msgid "A custom object usually follows the same pattern:"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:571
+#: ../../build123d/docs/objects.rst:572
 msgid "Create a class that inherits from the appropriate ``Base*Object``."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:572
+#: ../../build123d/docs/objects.rst:573
 msgid "Put the input parameters in the class ``__init__`` method."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:573
+#: ../../build123d/docs/objects.rst:574
 msgid "Build the shape using normal build123d tools."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:574
+#: ../../build123d/docs/objects.rst:575
 msgid "Pass the completed object to ``super().__init__(..., mode=mode)``."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:576
+#: ../../build123d/docs/objects.rst:577
 msgid "The ``Base*Object`` class handles the Builder integration. Intermediate objects created inside the custom object are isolated from the caller's Builder context, so a helper ``Box``, ``Circle``, or ``Line`` used during construction doesn't leak into the user's model. When the custom object is complete, it is published once to the active Builder using the provided ``mode``. Any active :class:`~build_common.Locations` context and any Builder ``placements`` are applied at publication time, just as they are for the built-in objects."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:584
+#: ../../build123d/docs/objects.rst:585
 msgid "Each built-in base class also declares which Builder it applies to. For example, ``BasePartObject`` applies to ``BuildPart`` and ``BaseSketchObject`` applies to ``BuildSketch``. If a custom object inherits from one of these base classes and is used in the wrong Builder, build123d raises an error before the custom object is constructed. This validation is provided by the inherited ``_applies_to`` attribute; most custom objects don't need to set it themselves unless they are creating a new base class or intentionally changing the Builder compatibility."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:595
+#: ../../build123d/docs/objects.rst:596
 msgid "Here is an example of a custom sketch object specially created as part of the design of this playing card storage box (:download:`see the playing_cards.py example <../examples/playing_cards.py>`):"
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:603
+#: ../../build123d/docs/objects.rst:604
 msgid "Here the new custom object class is called ``Club`` and it's a subclass of :class:`~objects_sketch.BaseSketchObject` because it creates a 2D sketch object. The ``__init__`` method contains the parameters used to instantiate the custom object: ``height``, ``rotation``, ``align``, and ``mode``. Your objects may have different parameters, but should usually include ``mode`` so they can be added to, subtracted from, intersected with, or kept private in a Builder."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:610
+#: ../../build123d/docs/objects.rst:611
 msgid "The middle of the method creates the object itself, in this case a sketch of the club suit. The final line calls ``super().__init__`` with the completed sketch and passes through the ``rotation``, ``align``, and ``mode`` parameters handled by :class:`~objects_sketch.BaseSketchObject`."
 msgstr ""
 
-#: ../../build123d/docs/objects.rst:615
+#: ../../build123d/docs/objects.rst:616
 msgid "That's it. The ``Club`` object can now be used anywhere a :class:`~objects_sketch.Circle` would be used, with either the Algebra or Builder API."
 msgstr ""

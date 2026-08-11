@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 00:45+0000\n"
+"POT-Creation-Date: 2026-08-11 00:17+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -510,7 +510,7 @@ msgstr ""
 #: ../../build123d/src/build123d/operations_part.pydocstring of
 #: operations_part.extrude:19
 #: ../../build123d/src/build123d/operations_part.pydocstring of
-#: operations_part.loft:11
+#: operations_part.loft:20
 #: ../../build123d/src/build123d/operations_part.pydocstring of
 #: operations_part.revolve:13
 #: ../../build123d/src/build123d/operations_part.pydocstring of
@@ -549,7 +549,7 @@ msgstr ""
 #: ../../build123d/src/build123d/operations_part.pydocstring of
 #: operations_part.extrude:21
 #: ../../build123d/src/build123d/operations_part.pydocstring of
-#: operations_part.loft:13
+#: operations_part.loft:22
 #: ../../build123d/src/build123d/operations_part.pydocstring of
 #: operations_part.make_brake_formed:22
 #: ../../build123d/src/build123d/operations_part.pydocstring of
@@ -835,13 +835,26 @@ msgstr ""
 #: ../../build123d/src/build123d/operations_part.pydocstring of
 #: operations_part.loft:5
 msgid ""
+"Faces may contain inner wires, which are lofted as holes and subtracted from"
+" the outer loft. When a face has more than one inner wire, the wires in each"
+" subsequent section are matched to the preceding section by choosing the "
+"assignment with the smallest total distance between wire centers. This makes"
+" the result independent of the order in which inner wires are returned, but "
+"it is only a geometric heuristic: holes that are close together, cross "
+"paths, or change position significantly may be matched incorrectly. All "
+"sections must contain the same number of inner wires."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.pydocstring of
+#: operations_part.loft:14
+msgid ""
 "slices to loft into object. If not provided, pending_faces will be used. If "
 "vertices are to be used, a vertex can be the first, last, or first and last "
 "elements."
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_part.pydocstring of
-#: operations_part.loft:9
+#: operations_part.loft:18
 msgid "discontiguous layer tangents. Defaults to False."
 msgstr ""
 

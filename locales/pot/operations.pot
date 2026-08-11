@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 00:45+0000\n"
+"POT-Creation-Date: 2026-08-11 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -475,7 +475,7 @@ msgstr ""
 #: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.add:18
 #: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.sweep:21
 #: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:19
-#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:11
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:20
 #: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.revolve:13
 #: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.section:12
 #: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:16
@@ -502,7 +502,7 @@ msgstr ""
 #: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.mirror:11
 #: ../../build123d/src/build123d/operations_generic.py:docstring of operations_generic.project:19
 #: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.extrude:21
-#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:13
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:22
 #: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.make_brake_formed:22
 #: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.revolve:15
 #: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.thicken:18
@@ -715,10 +715,14 @@ msgid "Loft the pending sketches/faces, across all workplanes, into a solid."
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:5
+msgid "Faces may contain inner wires, which are lofted as holes and subtracted from the outer loft. When a face has more than one inner wire, the wires in each subsequent section are matched to the preceding section by choosing the assignment with the smallest total distance between wire centers. This makes the result independent of the order in which inner wires are returned, but it is only a geometric heuristic: holes that are close together, cross paths, or change position significantly may be matched incorrectly. All sections must contain the same number of inner wires."
+msgstr ""
+
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:14
 msgid "slices to loft into object. If not provided, pending_faces will be used. If vertices are to be used, a vertex can be the first, last, or first and last elements."
 msgstr ""
 
-#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:9
+#: ../../build123d/src/build123d/operations_part.py:docstring of operations_part.loft:18
 msgid "discontiguous layer tangents. Defaults to False."
 msgstr ""
 

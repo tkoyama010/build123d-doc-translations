@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-11 00:17+0000\n"
+"POT-Creation-Date: 2026-08-12 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5512,6 +5512,18 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex:1
 msgid "A Vertex in build123d represents a zero-dimensional point in the topological data structure. It marks the endpoints of edges within a 3D model, defining precise locations in space. Vertices play a crucial role in defining the geometry of objects and the connectivity between edges, facilitating accurate representation and manipulation of 3D shapes. They hold coordinate information and are essential for constructing complex structures like wires, faces, and solids."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.Vertex.X:1
+msgid "The X coordinate of this Vertex, including its current Location."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.Vertex.Y:1
+msgid "The Y coordinate of this Vertex, including its current Location."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.Vertex.Z:1
+msgid "The Z coordinate of this Vertex, including its current Location."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.__add__:1

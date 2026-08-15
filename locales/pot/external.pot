@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-05 02:06+0000\n"
+"POT-Creation-Date: 2026-08-15 00:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -330,4 +330,32 @@ msgstr ""
 
 #: ../../build123d/docs/external.rst:237
 msgid "See: `Partomatic <https://github.com/x0pherl/partomatic>`_"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:240
+msgid "ExportToPython"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:242
+msgid "ExportToPython is a Fusion 360 add-in script that converts parametric Fusion designs into editable Python code for build123d. It recreates the design timeline using native build123d operations while preserving user parameters and dimensional expressions where possible. Unsupported or partially supported features are clearly identified with inline `TODO` comments and export notes."
+msgstr ""
+
+#: ../../build123d/docs/external.rst:246
+msgid "parametric output — preserves Fusion user parameters and expressions as Python variables and expressions"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:247
+msgid "Fusion feature support — exports sketches, extrudes, revolves, sweeps, lofts, patterns, fillets, chamfers, shells, holes, primitives, transforms, and more"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:248
+msgid "transparent conversion — unsupported or imperfectly translated features are flagged with `TODO` comments and plain-English export notes"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:249
+msgid "editable output — generated scripts can be used directly or further developed into fully parametric CAD generators"
+msgstr ""
+
+#: ../../build123d/docs/external.rst:251
+msgid "See: `ExportToPython <https://github.com/Visionware-Solutions/ExportToPython>`_"
 msgstr ""

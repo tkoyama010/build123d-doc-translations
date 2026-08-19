@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-11 00:17+0000\n"
+"POT-Creation-Date: 2026-08-19 00:11+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -131,6 +131,7 @@ msgstr ""
 #: ../../build123d/docs/introductory_examples.rst:1076
 #: ../../build123d/docs/introductory_examples.rst:1111
 #: ../../build123d/docs/introductory_examples.rst:1140
+#: ../../build123d/docs/introductory_examples.rst:1161
 msgid "**Builder mode**"
 msgstr ""
 
@@ -170,6 +171,7 @@ msgstr ""
 #: ../../build123d/docs/introductory_examples.rst:1056
 #: ../../build123d/docs/introductory_examples.rst:1087
 #: ../../build123d/docs/introductory_examples.rst:1118
+#: ../../build123d/docs/introductory_examples.rst:1175
 msgid "**Algebra mode**"
 msgstr ""
 
@@ -874,4 +876,34 @@ msgid ""
 "sketch. Here :meth:`~geometry.Plane.shift_origin` places the circle at the "
 "lower-left vertex of the rectangle, while a second plane places the ellipse "
 "from explicit coordinates."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1151
+msgid "38. Applying Rotations"
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1153
+msgid ""
+"Rotation can be applied through a location context, when an object is "
+"created, to an existing shape around an explicit :class:`~geometry.Axis`, "
+"and now as a placement parameter to the Builders. This example uses "
+"progressively larger angles so their effects are easy to compare."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1163
+msgid ""
+"The first box applies a :class:`~geometry.Rot` through a "
+":class:`~build_common.Locations` context. The second uses the object's "
+"``rotation`` parameter. The third is created privately, rotated with "
+":meth:`~topology.Shape.rotate` around :attr:`~geometry.Axis.Z`, and then "
+"added at its location. The final box passes a rotated "
+":class:`~geometry.Location` directly to :class:`~build_part.BuildPart`."
+msgstr ""
+
+#: ../../build123d/docs/introductory_examples.rst:1177
+msgid ""
+"Algebra mode first rotates a box around an offset :class:`~geometry.Axis`, "
+"then shows constructor rotation and a composed :class:`~geometry.Pos` and "
+":class:`~geometry.Rot`. The resulting shapes are combined into a "
+":class:`~topology.Part`."
 msgstr ""

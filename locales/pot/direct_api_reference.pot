@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-12 00:22+0000\n"
+"POT-Creation-Date: 2026-08-19 00:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1809,19 +1809,23 @@ msgid "full or partial circle"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_constrained_lines:1
-msgid "Create planar line(s) on XY subject to tangency/contact constraints."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_constrained_lines:4
-msgid "Supported cases"
+msgid "Create planar line(s) on XY subject to tangency, point-incidence, or orientation constraints."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_constrained_lines:5
-msgid "Tangent to two curves"
+msgid "Supported cases"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_constrained_lines:6
+msgid "Tangent to two curves"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_constrained_lines:7
 msgid "Tangent to one curve and passing through a given point"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_constrained_lines:8
+msgid "Tangent to one curve with a fixed orientation"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_ellipse:1

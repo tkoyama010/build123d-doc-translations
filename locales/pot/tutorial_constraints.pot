@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-05 00:36+0000\n"
+"POT-Creation-Date: 2026-08-19 00:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -387,330 +387,330 @@ msgid "Both :class:`~objects_curve.ConstrainedArcs` and :class:`~objects_curve.C
 msgstr ""
 
 #: ../../build123d/docs/tutorial_constraints.rst:413
-msgid "These constructors solve tangent/contact problems from mixed numeric and geometric inputs. Because tangency is often ambiguous, multiple valid branches are expected."
+msgid "These constructors combine curve-tangency constraints with point-incidence, center-locus, and orientation constraints. Because tangency is often ambiguous, multiple valid branches are expected."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:418
+#: ../../build123d/docs/tutorial_constraints.rst:419
 msgid "Multiple solutions"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:420
+#: ../../build123d/docs/tutorial_constraints.rst:421
 msgid "Constraint systems often yield multiple valid results. The ``selector`` callback is the main tool for choosing the subset to keep."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:434
+#: ../../build123d/docs/tutorial_constraints.rst:435
 msgid "In Builder mode, omitting ``selector`` can add all solutions to context, which is often not what you want for production sketches."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:438
+#: ../../build123d/docs/tutorial_constraints.rst:439
 msgid "Tangency qualifiers"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:440
+#: ../../build123d/docs/tutorial_constraints.rst:441
 msgid "Tangency qualifiers come from OCCT and are exposed as ``Tangency``:"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:442
+#: ../../build123d/docs/tutorial_constraints.rst:443
 msgid "``Tangency.UNQUALIFIED``: no side preference (OCCT ``Unqualified``)."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:444
+#: ../../build123d/docs/tutorial_constraints.rst:445
 msgid "``Tangency.OUTSIDE``: tangent on the exterior side of the target (OCCT ``Outside``)."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:446
+#: ../../build123d/docs/tutorial_constraints.rst:447
 msgid "``Tangency.ENCLOSING``: solution encloses/includes the target (OCCT ``Enclosing``)."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:448
+#: ../../build123d/docs/tutorial_constraints.rst:449
 msgid "``Tangency.ENCLOSED``: solution is enclosed/included by the target (OCCT ``Enclosed``)."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:451
+#: ../../build123d/docs/tutorial_constraints.rst:452
 msgid "These semantics are most visible for curve-vs-curve constraints (for example circle to circle, line to circle). In many practical cases, ``UNQUALIFIED`` is a good default followed by filtering via ``selector``."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:476
+#: ../../build123d/docs/tutorial_constraints.rst:477
 msgid "In the \"egg-plant\" example, ``Tangency.OUTSIDE`` and ``Tangency.ENCLOSING`` reduce the candidate branches to the intended outer profile. The selector on ``l2`` then resolves the remaining ambiguity deterministically by choosing the highest branch in ``Y``."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:480
+#: ../../build123d/docs/tutorial_constraints.rst:481
 msgid "OCCT defines exterior/interior using orientation:"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:482
+#: ../../build123d/docs/tutorial_constraints.rst:483
 msgid "Circle: exterior is on the right side when traversing by its orientation (interior/material is on the left side)."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:484
+#: ../../build123d/docs/tutorial_constraints.rst:485
 msgid "Line/open curve: interior is the left side with respect to traversal direction, exterior is the opposite side."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:487
+#: ../../build123d/docs/tutorial_constraints.rst:488
 msgid "Because of this, changing an input edge direction can change which branches satisfy ``OUTSIDE``/``ENCLOSING``/``ENCLOSED``."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:490
+#: ../../build123d/docs/tutorial_constraints.rst:491
 msgid "If qualifier behavior appears inverted, inspect input edge orientation first."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:493
+#: ../../build123d/docs/tutorial_constraints.rst:494
 msgid "ConstrainedArcs"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:496
-#: ../../build123d/docs/tutorial_constraints.rst:617
+#: ../../build123d/docs/tutorial_constraints.rst:497
+#: ../../build123d/docs/tutorial_constraints.rst:621
 msgid "Overview"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:498
+#: ../../build123d/docs/tutorial_constraints.rst:499
 msgid ":class:`~objects_curve.ConstrainedArcs` supports several signature families for planar circular arcs:"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:500
-msgid "Two tangency/contact objects + fixed radius"
-msgstr ""
-
 #: ../../build123d/docs/tutorial_constraints.rst:501
-msgid "Two tangency/contact objects + center constrained on a locus"
+msgid "Two curve-tangency or point-incidence targets + fixed radius"
 msgstr ""
 
 #: ../../build123d/docs/tutorial_constraints.rst:502
-msgid "Three tangency/contact objects"
+msgid "Two curve-tangency or point-incidence targets + center constrained on a locus"
 msgstr ""
 
 #: ../../build123d/docs/tutorial_constraints.rst:503
-msgid "One tangency/contact object + fixed center"
+msgid "Three curve-tangency targets"
 msgstr ""
 
 #: ../../build123d/docs/tutorial_constraints.rst:504
-msgid "One tangency/contact object + fixed radius + center constrained on a locus"
+msgid "One curve-tangency or point-incidence target + fixed center"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:506
-msgid "``sagitta`` selects short/long/both arc branches:"
+#: ../../build123d/docs/tutorial_constraints.rst:505
+msgid "One curve-tangency or point-incidence target + fixed radius + center constrained on a locus"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:508
-msgid "``Sagitta.SHORT``"
-msgstr ""
-
-#: ../../build123d/docs/tutorial_constraints.rst:509
-msgid "``Sagitta.LONG``"
+#: ../../build123d/docs/tutorial_constraints.rst:507
+msgid "Point inputs are supported by signatures 1, 2, 4, and 5. The three-target signature requires curve inputs."
 msgstr ""
 
 #: ../../build123d/docs/tutorial_constraints.rst:510
-msgid "``Sagitta.BOTH``"
+msgid "``sagitta`` selects short/long/both arc branches:"
 msgstr ""
 
 #: ../../build123d/docs/tutorial_constraints.rst:512
-msgid "In practice, use qualifiers and ``sagitta`` to reduce branch count, then finalize with ``selector`` for deterministic output."
+msgid "``Sagitta.SHORT``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_constraints.rst:513
+msgid "``Sagitta.LONG``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_constraints.rst:514
+msgid "``Sagitta.BOTH``"
 msgstr ""
 
 #: ../../build123d/docs/tutorial_constraints.rst:516
+msgid "In practice, use qualifiers and ``sagitta`` to reduce branch count, then finalize with ``selector`` for deterministic output."
+msgstr ""
+
+#: ../../build123d/docs/tutorial_constraints.rst:520
 msgid "Signature A: Two constraints + ``radius``"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:531
-msgid "Use when radius is known and arc must satisfy two contact/tangency conditions."
+#: ../../build123d/docs/tutorial_constraints.rst:535
+msgid "Use when radius is known and the arc must be tangent to each curve input or pass through each point input."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:534
+#: ../../build123d/docs/tutorial_constraints.rst:539
 msgid "Signature B: Two constraints + ``center_on``"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:549
+#: ../../build123d/docs/tutorial_constraints.rst:554
 msgid "Use when center must lie on a specific line/curve rather than radius being fixed."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:552
+#: ../../build123d/docs/tutorial_constraints.rst:557
 msgid "Signature C: Three constraints"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:567
-msgid "Use for \"arc tangent/contact to three entities\". This can produce several branches; always consider using ``selector``."
+#: ../../build123d/docs/tutorial_constraints.rst:572
+msgid "Use for an arc tangent to three curve targets. This can produce several branches; always consider using ``selector``."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:571
+#: ../../build123d/docs/tutorial_constraints.rst:576
 msgid "Signature D: One constraint + fixed ``center``"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:584
+#: ../../build123d/docs/tutorial_constraints.rst:589
 msgid "Useful for \"center-known\" constructions."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:587
+#: ../../build123d/docs/tutorial_constraints.rst:592
 msgid "Signature E: One constraint + radius + ``center_on``"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:601
+#: ../../build123d/docs/tutorial_constraints.rst:606
 msgid "Useful for guided-center constructions with fixed radius."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:604
+#: ../../build123d/docs/tutorial_constraints.rst:609
 msgid "Allowed constraint objects"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:606
+#: ../../build123d/docs/tutorial_constraints.rst:611
 msgid "For arc constraints, accepted objects include:"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:608
-msgid ":class:`~topology.Edge`"
-msgstr ""
-
-#: ../../build123d/docs/tutorial_constraints.rst:609
-msgid ":class:`~geometry.Axis`"
-msgstr ""
-
-#: ../../build123d/docs/tutorial_constraints.rst:610
-msgid ":class:`~geometry.Vertex` / :class:`~geometry.VectorLike` point"
-msgstr ""
-
-#: ../../build123d/docs/tutorial_constraints.rst:611
-msgid "optional qualifier wrapper: ``(object, Tangency.XXX)``"
+#: ../../build123d/docs/tutorial_constraints.rst:613
+msgid ":class:`~topology.Edge` and :class:`~geometry.Axis` as curve-tangency targets"
 msgstr ""
 
 #: ../../build123d/docs/tutorial_constraints.rst:614
+msgid ":class:`~geometry.Vertex` / :class:`~geometry.VectorLike` as point-incidence targets"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_constraints.rst:615
+msgid "optional qualifier wrapper: ``(object, Tangency.XXX)``"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_constraints.rst:618
 msgid "ConstrainedLines"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:619
+#: ../../build123d/docs/tutorial_constraints.rst:623
 msgid ":class:`~objects_curve.ConstrainedLines` supports these signature families:"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:621
-msgid "Tangent/contact to two objects"
-msgstr ""
-
-#: ../../build123d/docs/tutorial_constraints.rst:622
-msgid "Tangent/contact to one object and passing through a fixed point"
-msgstr ""
-
-#: ../../build123d/docs/tutorial_constraints.rst:623
-msgid "Tangent/contact to one object with fixed orientation (``angle`` or ``direction``)"
+#: ../../build123d/docs/tutorial_constraints.rst:625
+msgid "Tangent to two curves"
 msgstr ""
 
 #: ../../build123d/docs/tutorial_constraints.rst:626
+msgid "Tangent to one curve and passing through a fixed point"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_constraints.rst:627
+msgid "Tangent to one curve with fixed orientation (``angle`` or ``direction``)"
+msgstr ""
+
+#: ../../build123d/docs/tutorial_constraints.rst:630
 msgid "Signature A: Two constraints"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:641
+#: ../../build123d/docs/tutorial_constraints.rst:645
 msgid "Signature B: One constraint + through point"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:655
+#: ../../build123d/docs/tutorial_constraints.rst:659
 msgid "Signature C: One constraint + fixed orientation"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:669
+#: ../../build123d/docs/tutorial_constraints.rst:673
 msgid "Exactly one of ``angle`` or ``direction`` should be provided."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:671
-msgid "For all signatures, qualifiers can be attached to tangency inputs when side selection must be controlled."
+#: ../../build123d/docs/tutorial_constraints.rst:675
+msgid "For all signatures, qualifiers can be attached to curve-tangency inputs when side selection must be controlled."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:675
+#: ../../build123d/docs/tutorial_constraints.rst:679
 msgid "Builder vs Algebra mode"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:678
+#: ../../build123d/docs/tutorial_constraints.rst:682
 msgid "Algebra mode"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:680
+#: ../../build123d/docs/tutorial_constraints.rst:684
 msgid "Use direct assignment and post-selection:"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:688
+#: ../../build123d/docs/tutorial_constraints.rst:692
 msgid "Builder mode"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:690
+#: ../../build123d/docs/tutorial_constraints.rst:694
 msgid "Prefer selecting inside the call to avoid adding unwanted candidates to context:"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:702
+#: ../../build123d/docs/tutorial_constraints.rst:706
 msgid "Selection recipes"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:718
+#: ../../build123d/docs/tutorial_constraints.rst:722
 msgid "Prefer geometric selection criteria (distance, axis ordering, length) over positional indexing when upstream geometry may change."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:723
+#: ../../build123d/docs/tutorial_constraints.rst:727
 msgid "Complex Drawing Example"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:725
+#: ../../build123d/docs/tutorial_constraints.rst:729
 msgid "This example pulls many of the techniques described above into a single example where the following full constrained, complex sketch is converted into build123d code."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:731
+#: ../../build123d/docs/tutorial_constraints.rst:735
 msgid "When working with a drawing such as this one, the ``ImageFace`` functionality of the `ocp-vscode <https://github.com/bernhard-42/vscode-ocp-cad-viewer>`_ viewer is very handy as it allows the image to be used as a visual guide when creating the sketch."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:735
+#: ../../build123d/docs/tutorial_constraints.rst:739
 msgid "Within the following code the following conventions are used:"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:737
+#: ../../build123d/docs/tutorial_constraints.rst:741
 msgid "construction geometry is labeled with a ``c_...``"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:738
+#: ../../build123d/docs/tutorial_constraints.rst:742
 msgid "arcs are labeled with a ``a<radius>``"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:739
+#: ../../build123d/docs/tutorial_constraints.rst:743
 msgid "lines and polylines are labeled with a ``l...``"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:741
+#: ../../build123d/docs/tutorial_constraints.rst:745
 msgid "The code starts immediately above the origin (arbitrarily set to the origin of the circle) where a straight line 10° off the x-axis originates. The code then walks around the diagram clockwise creating the perimeter of the object."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:783
+#: ../../build123d/docs/tutorial_constraints.rst:787
 msgid "Implementation notes:"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:785
+#: ../../build123d/docs/tutorial_constraints.rst:789
 msgid "Build in traversal order around the perimeter. This keeps references local and makes later edits easier because each segment depends on nearby geometry."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:787
+#: ../../build123d/docs/tutorial_constraints.rst:791
 msgid "Keep helper entities private (``mode=Mode.PRIVATE``) so only final profile edges contribute to the resulting face."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:789
+#: ../../build123d/docs/tutorial_constraints.rst:793
 msgid "Use named construction geometry (``c_...``) for intersections and arc centers; this improves readability and debugability."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:791
+#: ../../build123d/docs/tutorial_constraints.rst:795
 msgid "Use constrained constructors only where they add value (for example :class:`~objects_curve.ConstrainedArcs`), and use direct primitives elsewhere."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:793
+#: ../../build123d/docs/tutorial_constraints.rst:797
 msgid "Create a :class:`~topology.Face` (``make_face`` then center-hole subtraction) only after the perimeter is fully defined."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:797
+#: ../../build123d/docs/tutorial_constraints.rst:801
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:799
+#: ../../build123d/docs/tutorial_constraints.rst:803
 msgid "Too many results: add qualifiers and a stricter ``selector``."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:801
+#: ../../build123d/docs/tutorial_constraints.rst:805
 msgid "No results: relax qualifier (start with ``UNQUALIFIED``) and verify geometry is coplanar."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:803
+#: ../../build123d/docs/tutorial_constraints.rst:807
 msgid "Unstable branch selection: avoid index-only selection when topology changes; prefer geometric sorting."
 msgstr ""
 
-#: ../../build123d/docs/tutorial_constraints.rst:805
+#: ../../build123d/docs/tutorial_constraints.rst:809
 msgid "Builder mode unexpectedly adds many edges: provide ``selector`` explicitly in the constructor call."
 msgstr ""

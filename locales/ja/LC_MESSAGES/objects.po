@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-13 00:22+0000\n"
+"POT-Creation-Date: 2026-08-20 00:12+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -405,7 +405,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
 #: objects_sketch.Superellipse:20
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
-#: objects_sketch.Text:50
+#: objects_sketch.Text:52
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
 #: objects_sketch.Trapezoid:19
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
@@ -1634,7 +1634,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
 #: objects_sketch.Superellipse:15
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
-#: objects_sketch.Text:48
+#: objects_sketch.Text:50
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
 #: objects_sketch.Trapezoid:14
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
@@ -1647,7 +1647,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
 #: objects_sketch.BaseSketchObject:7
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
-#: objects_sketch.Text:37
+#: objects_sketch.Text:39
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
 #: objects_sketch.Triangle:22
 msgid "align MIN, CENTER, or MAX of object. Defaults to None"
@@ -2303,23 +2303,27 @@ msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
 #: objects_sketch.Text:26
-msgid "font name. Defaults to \"Arial\""
+msgid ""
+"requested font name. After construction, this attribute contains the "
+"resolved font name. Defaults to \"Arial\""
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
-#: objects_sketch.Text:28
-msgid "system path to font file. Defaults to None"
+#: objects_sketch.Text:29
+msgid ""
+"system path to font file. After construction, this attribute contains the "
+"resolved font path. Defaults to None"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
-#: objects_sketch.Text:30
+#: objects_sketch.Text:32
 msgid ""
 "font style, REGULAR, BOLD, BOLDITALIC, or ITALIC. Defaults to "
 "Font_Style.REGULAR"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
-#: objects_sketch.Text:33
+#: objects_sketch.Text:35
 msgid ""
 "horizontal text align LEFT, CENTER, or RIGHT. Vertical text align BOTTOM, "
 "CENTER, TOP, or TOPFIRSTLINE. Defaults to (TextAlign.CENTER, "
@@ -2327,19 +2331,19 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
-#: objects_sketch.Text:40
+#: objects_sketch.Text:42
 msgid "path for text to follow. Defaults to None"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
-#: objects_sketch.Text:42
+#: objects_sketch.Text:44
 msgid ""
 "the relative location on path to position the text, values must be between "
 "0.0 and 1.0. Defaults to 0.0"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.pydocstring of
-#: objects_sketch.Text:45
+#: objects_sketch.Text:47
 msgid "width of outlined single line font. Defaults to 4% of font_size"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-19 00:11+0000\n"
+"POT-Creation-Date: 2026-08-20 00:12+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1933,6 +1933,8 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.pydocstring of
 #: topology.composite.Compound.make_text:14
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.resolve_font:5
 msgid "system path to font file. Defaults to None"
 msgstr ""
 
@@ -2056,6 +2058,37 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.two_d.Mixin2D.project_to_viewport:15
 msgid "visible & hidden Edges"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.resolve_font:1
+msgid "Resolve a requested font to its name, path, and system font."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.resolve_font:3
+msgid "requested font name. Defaults to \"Arial\""
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.resolve_font:8
+msgid "requested font style. Defaults to FontStyle.REGULAR"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.resolve_font:12
+msgid ""
+"resolved font name, resolved font     path, and OpenCascade system font"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.resolve_font:14
+msgid "resolved font name, resolved font"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.resolve_font:15
+msgid "path, and OpenCascade system font"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.pydocstring of

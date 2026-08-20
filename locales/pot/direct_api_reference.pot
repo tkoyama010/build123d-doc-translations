@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-19 00:11+0000\n"
+"POT-Creation-Date: 2026-08-20 00:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1457,6 +1457,7 @@ msgid "font name. Defaults to \"Arial\""
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.make_text:14
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.resolve_font:5
 msgid "system path to font file. Defaults to None"
 msgstr ""
 
@@ -1536,6 +1537,30 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Mixin3D.project_to_viewport:15
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.project_to_viewport:15
 msgid "visible & hidden Edges"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.resolve_font:1
+msgid "Resolve a requested font to its name, path, and system font."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.resolve_font:3
+msgid "requested font name. Defaults to \"Arial\""
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.resolve_font:8
+msgid "requested font style. Defaults to FontStyle.REGULAR"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.resolve_font:12
+msgid "resolved font name, resolved font     path, and OpenCascade system font"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.resolve_font:14
+msgid "resolved font name, resolved font"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.resolve_font:15
+msgid "path, and OpenCascade system font"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.touch:1

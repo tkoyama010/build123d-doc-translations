@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-13 00:22+0000\n"
+"POT-Creation-Date: 2026-08-20 00:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -340,7 +340,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.SlotCenterToCenter:11
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.SlotOverall:14
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Superellipse:20
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:50
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:52
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Trapezoid:19
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Triangle:25
 msgid "combination mode. Defaults to Mode.ADD"
@@ -1201,7 +1201,7 @@ msgstr ""
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.SlotCenterToCenter:9
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.SlotOverall:9
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Superellipse:15
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:48
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:50
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Trapezoid:14
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Triangle:20
 msgid "angle to rotate object. Defaults to 0"
@@ -1209,7 +1209,7 @@ msgstr ""
 
 #: ../../build123d/src/build123d/objects_part.py:docstring of objects_part.BasePartObject:7
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.BaseSketchObject:7
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:37
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:39
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Triangle:22
 msgid "align MIN, CENTER, or MAX of object. Defaults to None"
 msgstr ""
@@ -1681,30 +1681,30 @@ msgid "size of the font in model units"
 msgstr ""
 
 #: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:26
-msgid "font name. Defaults to \"Arial\""
+msgid "requested font name. After construction, this attribute contains the resolved font name. Defaults to \"Arial\""
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:28
-msgid "system path to font file. Defaults to None"
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:29
+msgid "system path to font file. After construction, this attribute contains the resolved font path. Defaults to None"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:30
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:32
 msgid "font style, REGULAR, BOLD, BOLDITALIC, or ITALIC. Defaults to Font_Style.REGULAR"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:33
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:35
 msgid "horizontal text align LEFT, CENTER, or RIGHT. Vertical text align BOTTOM, CENTER, TOP, or TOPFIRSTLINE. Defaults to (TextAlign.CENTER, TextAlign.CENTER)"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:40
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:42
 msgid "path for text to follow. Defaults to None"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:42
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:44
 msgid "the relative location on path to position the text, values must be between 0.0 and 1.0. Defaults to 0.0"
 msgstr ""
 
-#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:45
+#: ../../build123d/src/build123d/objects_sketch.py:docstring of objects_sketch.Text:47
 msgid "width of outlined single line font. Defaults to 4% of font_size"
 msgstr ""
 

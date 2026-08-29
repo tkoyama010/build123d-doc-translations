@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-08-29 00:22+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -86,16 +86,27 @@ msgid "and now the screw is part of the assembly."
 msgstr ""
 
 #: ../../build123d/docs/assemblies.rst:84
-msgid "Shallow vs. Deep Copies of Shapes"
+msgid "Local and Global Locations"
 msgstr ""
 
 #: ../../build123d/docs/assemblies.rst:86
+msgid ""
+"Each shape's :attr:`~topology.Shape.location` is relative to its parent in "
+"the assembly tree. To find the accumulated placement in the global "
+"coordinate system, use :attr:`~topology.Shape.global_location`. For example:"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:104
+msgid "Shallow vs. Deep Copies of Shapes"
+msgstr ""
+
+#: ../../build123d/docs/assemblies.rst:106
 msgid ""
 "Build123d supports the standard python ``copy`` module which provides two "
 "different types of copy operations ``copy.copy()`` and ``copy.deepcopy()``."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:89
+#: ../../build123d/docs/assemblies.rst:109
 msgid ""
 "Build123d's implementation of ``deepcopy()`` for the "
 ":class:`~topology.Shape` class (e.g. ``Solid``, ``Face``, etc.) does just "
@@ -104,7 +115,7 @@ msgid ""
 "subsequently modified to become its own unique item."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:94
+#: ../../build123d/docs/assemblies.rst:114
 msgid ""
 "However, when building an assembly a common use case is to include many "
 "instances of an object, each one identical but in a different location. This"
@@ -115,35 +126,35 @@ msgid ""
 "shallow copies."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:100
+#: ../../build123d/docs/assemblies.rst:120
 msgid "Consider this example where 100 screws are added to an assembly:"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:114
+#: ../../build123d/docs/assemblies.rst:134
 msgid ""
 "which takes about 5 seconds to run (on an older computer) and produces a "
 "file of size 51938 KB. However, if a shallow copy is used instead:"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:126
+#: ../../build123d/docs/assemblies.rst:146
 msgid ""
 "this takes about ¼ second and produces a file of size 550 KB - just over 1% "
 "of the size of the ``deepcopy()`` version and only 12% larger than the "
 "screw's step file."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:130
+#: ../../build123d/docs/assemblies.rst:150
 msgid ""
 "Using ``copy.copy()`` to create references to the original CAD object for "
 "assemblies can substantially reduce the time and resources used to create "
 "and store that assembly."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:136
+#: ../../build123d/docs/assemblies.rst:156
 msgid "Shapes are Anytree Nodes"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:138
+#: ../../build123d/docs/assemblies.rst:158
 msgid ""
 "The build123d assembly constructs are built using the python `anytree "
 "<https://anytree.readthedocs.io/en/latest/>`_ package by making the "
@@ -152,65 +163,65 @@ msgid ""
 ":class:`~topology.Shape`:"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:143
+#: ../../build123d/docs/assemblies.rst:163
 msgid ""
 "``parent`` - Parent Node. On set, the node is detached from any previous "
 "parent node and attached to the new node."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:144
+#: ../../build123d/docs/assemblies.rst:164
 msgid "``children`` - Tuple of all child nodes."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:145
+#: ../../build123d/docs/assemblies.rst:165
 msgid "``path`` - Path of this ``Node``."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:146
+#: ../../build123d/docs/assemblies.rst:166
 msgid "``iter_path_reverse`` - Iterate up the tree from the current node."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:147
+#: ../../build123d/docs/assemblies.rst:167
 msgid "``ancestors`` - All parent nodes and their parent nodes."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:148
+#: ../../build123d/docs/assemblies.rst:168
 msgid "``descendants`` - All child nodes and all their child nodes."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:149
+#: ../../build123d/docs/assemblies.rst:169
 msgid "``root`` - Tree Root Node."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:150
+#: ../../build123d/docs/assemblies.rst:170
 msgid "``siblings`` - Tuple of nodes with the same parent."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:151
+#: ../../build123d/docs/assemblies.rst:171
 msgid "``leaves`` - Tuple of all leaf nodes."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:152
+#: ../../build123d/docs/assemblies.rst:172
 msgid "``is_leaf`` - ``Node`` has no children (External Node)."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:153
+#: ../../build123d/docs/assemblies.rst:173
 msgid "``is_root`` - ``Node`` is tree root."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:154
+#: ../../build123d/docs/assemblies.rst:174
 msgid "``height`` - Number of edges on the longest path to a leaf ``Node``."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:155
+#: ../../build123d/docs/assemblies.rst:175
 msgid "``depth`` - Number of edges to the root ``Node``."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:159
+#: ../../build123d/docs/assemblies.rst:179
 msgid "Changing the ``children`` attribute"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:161
+#: ../../build123d/docs/assemblies.rst:181
 msgid ""
 "Any iterator can be assigned to the ``children`` attribute but subsequently "
 "the children are stored as immutable ``tuple`` objects.  To add a child to "
@@ -218,11 +229,11 @@ msgid ""
 "will have to be reassigned."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:169
+#: ../../build123d/docs/assemblies.rst:189
 msgid "Iterating Over Compounds"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:171
+#: ../../build123d/docs/assemblies.rst:191
 msgid ""
 "As Compounds are containers for shapes, build123d can iterate over these as "
 "required. Complex nested assemblies (compounds within compounds) do not need"
@@ -232,11 +243,11 @@ msgid ""
 "of the top level part."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:191
+#: ../../build123d/docs/assemblies.rst:211
 msgid "pack"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:193
+#: ../../build123d/docs/assemblies.rst:213
 msgid ""
 "The  :meth:`pack.pack` function arranges objects in a compact, non-"
 "overlapping layout within a square(ish) 2D area. It is designed to minimize "
@@ -275,11 +286,11 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:203
+#: ../../build123d/docs/assemblies.rst:223
 msgid "Detailed Description"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:205
+#: ../../build123d/docs/assemblies.rst:225
 msgid ""
 "The ``pack`` function uses a bin-packing algorithm to efficiently place "
 "objects within a 2D plane, ensuring that there is no overlap and that the "
@@ -288,7 +299,7 @@ msgid ""
 "arrangement in constrained spaces."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:207
+#: ../../build123d/docs/assemblies.rst:227
 msgid ""
 "The function begins by calculating the bounding boxes for each object, "
 "including the specified padding. It then uses a helper function ``_pack2d`` "
@@ -297,11 +308,11 @@ msgid ""
 "they are arranged without overlapping."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:210
+#: ../../build123d/docs/assemblies.rst:230
 msgid "Usage Note"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:212
+#: ../../build123d/docs/assemblies.rst:232
 msgid ""
 "The ``align_z`` parameter is especially useful when creating print-plates "
 "for 3D printing. By aligning the bottoms of the shapes to the same XY plane,"
@@ -310,15 +321,15 @@ msgid ""
 "streamline the process and improve the accuracy of the print setup."
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:215
+#: ../../build123d/docs/assemblies.rst:235
 msgid "Example Usage"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:266
+#: ../../build123d/docs/assemblies.rst:286
 msgid "Tip"
 msgstr ""
 
-#: ../../build123d/docs/assemblies.rst:268
+#: ../../build123d/docs/assemblies.rst:288
 msgid ""
 "If you place the arranged objects into a ``Compound``, you can easily "
 "determine their bounding box and check whether the objects fit on your print"

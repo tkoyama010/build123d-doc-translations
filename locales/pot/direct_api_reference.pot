@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-20 00:12+0000\n"
+"POT-Creation-Date: 2026-08-29 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3157,7 +3157,7 @@ msgid "position must be a float or a point"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.derivative_at:15
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.position_at:11
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.position_at:18
 msgid "position on the underlying curve"
 msgstr ""
 
@@ -3211,7 +3211,7 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.location_at:5
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.position_at:5
-msgid "distance or parameter value"
+msgid "normalized parameter or length value"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.location_at:10
@@ -3223,15 +3223,20 @@ msgstr ""
 msgid "override the x_dir to help with plane creation along a 1D shape. Must be perpendicular to shapes tangent. Defaults to None."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.location_at:21
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.location_at:23
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.position_at:13
+msgid "Numeric values are normally within the shape: ``[0.0, 1.0]`` in parameter mode or ``[0.0, length]`` in length mode. Values outside that range extrapolate or wrap on an Edge where its underlying curve supports it, while a Wire clamps them to its first or last point."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.location_at:28
 msgid "A Location object representing local coordinate system     at the specified distance."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.location_at:23
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.location_at:30
 msgid "A Location object representing local coordinate system"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.location_at:24
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.location_at:31
 msgid "at the specified distance."
 msgstr ""
 
@@ -3301,14 +3306,18 @@ msgid "if Side!=BOTH, close the LEFT or RIGHT offset. Defaults to True."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.offset_2d:15
-msgid "Multiple Wires generated"
+msgid "2D offset calculation failed"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.offset_2d:16
+msgid "Multiple Wires generated"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.offset_2d:17
 msgid "Unexpected result type"
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.offset_2d:18
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.offset_2d:19
 msgid "offset wire"
 msgstr ""
 
@@ -3337,7 +3346,7 @@ msgid "Position At"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.position_at:3
-msgid "Generate a position along the underlying Wire."
+msgid "Generate a position along the underlying 1D shape."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.positions:1
@@ -3420,7 +3429,11 @@ msgstr ""
 msgid "distance, parameter value, or point on shape. Defaults to 0.5."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.tangent_at:11
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.tangent_at:13
+msgid "Numeric positions are normally within the shape: ``[0.0, 1.0]`` in parameter mode or ``[0.0, length]`` in length mode. Values outside that range evaluate the tangent of an extrapolated or periodic Edge where supported, while a Wire uses its first or last tangent."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.tangent_at:18
 msgid "tangent value"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 04:25+0000\n"
+"POT-Creation-Date: 2026-08-29 00:22+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -104,32 +104,36 @@ msgid "Playing Cards Builder"
 msgstr ""
 
 #: ../../build123d/docs/examples_1.rst:107
-msgid "Stud Wall Algebra"
+msgid "Spring Algebra"
 msgstr ""
 
 #: ../../build123d/docs/examples_1.rst:112
-msgid "Tea Cup Builder Algebra"
+msgid "Stud Wall Algebra"
 msgstr ""
 
 #: ../../build123d/docs/examples_1.rst:117
-msgid "Toy Truck Builder"
+msgid "Tea Cup Builder Algebra"
 msgstr ""
 
 #: ../../build123d/docs/examples_1.rst:122
+msgid "Toy Truck Builder"
+msgstr ""
+
+#: ../../build123d/docs/examples_1.rst:127
 msgid "Vase Builder Algebra"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:142
+#: ../../build123d/docs/examples_1.rst:147
 msgid "Benchy"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:147
+#: ../../build123d/docs/examples_1.rst:152
 msgid ""
 "The Benchy examples shows how to import a STL model as a `Solid` object with"
 " the class `Mesher` and modify it by replacing chimney with a BREP version."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:150
+#: ../../build123d/docs/examples_1.rst:155
 msgid ""
 "Benchy STL model: :download:`low_poly_benchy.stl "
 "<../examples/low_poly_benchy.stl>`"
@@ -143,68 +147,68 @@ msgstr ""
 msgid "|Builder| Reference Implementation (Builder Mode)"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:181
+#: ../../build123d/docs/examples_1.rst:186
 msgid "Bicycle Tire"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:185
+#: ../../build123d/docs/examples_1.rst:190
 msgid ""
 "This example demonstrates how to model a realistic bicycle tire with a "
 "patterned tread using build123d. The key concept showcased here is the use "
 "of wrap_faces to project 2D planar geometry onto a curved 3D surface."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:201
+#: ../../build123d/docs/examples_1.rst:206
 msgid "Bracelet"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:205
+#: ../../build123d/docs/examples_1.rst:210
 msgid "Doubly-curved bracelet with an embossed label"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:207
+#: ../../build123d/docs/examples_1.rst:212
 msgid ""
 "This model is a good “stress test” for OCCT because most of the final "
 "boundary surfaces are *freeform* (not analytic planes/cylinders/spheres). "
 "The geometry is assembled from:"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:211
+#: ../../build123d/docs/examples_1.rst:216
 msgid ""
 "a swept center section (using a curved solid end-face as the sweep profile)"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:212
+#: ../../build123d/docs/examples_1.rst:217
 msgid "two freeform “tip caps” built as Gordon surfaces (network of curves)"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:213
+#: ../../build123d/docs/examples_1.rst:218
 msgid "an optional embossed text label projected onto a curved solid"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:214
+#: ../../build123d/docs/examples_1.rst:219
 msgid "alignment holes for splitting/printing/assembly"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:216
+#: ../../build123d/docs/examples_1.rst:221
 msgid "Key techniques demonstrated:"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:218
+#: ../../build123d/docs/examples_1.rst:223
 msgid ""
 "using location_at/position_at/tangent (%) to extract local frames & tangents"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:219
+#: ../../build123d/docs/examples_1.rst:224
 msgid ""
 "projecting curves onto a non-planar surface to create “true” 3D guide curves"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:220
+#: ../../build123d/docs/examples_1.rst:225
 msgid "Gordon surfaces to build high-quality doubly-curved skins"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:221
+#: ../../build123d/docs/examples_1.rst:226
 msgid "projecting faces (text) onto a complex solid and thickening them"
 msgstr ""
 
@@ -212,44 +216,44 @@ msgstr ""
 msgid "|Algebra| Reference Implementation (Algebra Mode)"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:233
+#: ../../build123d/docs/examples_1.rst:238
 msgid "Former build123d Logo"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:238
+#: ../../build123d/docs/examples_1.rst:243
 msgid ""
 "This example creates the former build123d logo (new logo was created in the "
 "end of 2023)."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:240
+#: ../../build123d/docs/examples_1.rst:245
 msgid ""
 "Using text and lines to create the first build123d logo. The builder mode "
 "example also generates the SVG file `logo.svg`."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:262
+#: ../../build123d/docs/examples_1.rst:267
 msgid "Cast Bearing Unit"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:266
+#: ../../build123d/docs/examples_1.rst:271
 msgid ""
 "This example demonstrates the creation of a castable flanged bearing housing"
 " using the `draft` operation to add appropriate draft angles for mold "
 "release."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:280
+#: ../../build123d/docs/examples_1.rst:285
 msgid "Canadian Flag Blowing in The Wind"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:286
+#: ../../build123d/docs/examples_1.rst:291
 msgid ""
 "A Canadian Flag blowing in the wind created by projecting planar faces onto "
 "a non-planar face (the_wind)."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:288
+#: ../../build123d/docs/examples_1.rst:293
 msgid ""
 "This example also demonstrates building complex lines that snap to existing "
 "features."
@@ -259,27 +263,27 @@ msgstr ""
 msgid "More Images"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:319
+#: ../../build123d/docs/examples_1.rst:324
 msgid "Circuit Board With Holes"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:325
+#: ../../build123d/docs/examples_1.rst:330
 msgid "This example demonstrates placing holes around a part."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:327
+#: ../../build123d/docs/examples_1.rst:332
 msgid "Builder mode uses `Locations` context to place the positions."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:328
+#: ../../build123d/docs/examples_1.rst:333
 msgid "Algebra mode uses `product` and `range` to calculate the positions."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:356
+#: ../../build123d/docs/examples_1.rst:361
 msgid "Clock Face"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:374
+#: ../../build123d/docs/examples_1.rst:379
 msgid ""
 "The Python code utilizes the build123d library to create a 3D model of a "
 "clock face. It defines a minute indicator with arcs and lines, applying "
@@ -289,23 +293,23 @@ msgid ""
 "design."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:380
+#: ../../build123d/docs/examples_1.rst:385
 msgid ""
 ":class:`~build_common.PolarLocations` are used to position features on the "
 "clock face."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:385
+#: ../../build123d/docs/examples_1.rst:390
 msgid "Fast Grid Holes"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:396
+#: ../../build123d/docs/examples_1.rst:401
 msgid ""
 "This example demonstrates an efficient approach to creating a large number "
 "of holes (625 in this case) in a planar part using build123d."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:399
+#: ../../build123d/docs/examples_1.rst:404
 msgid ""
 "Instead of modeling and subtracting 3D solids for each hole—which is "
 "computationally expensive—this method constructs a 2D Face from an outer "
@@ -314,7 +318,7 @@ msgid ""
 " reduces modeling time and complexity."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:404
+#: ../../build123d/docs/examples_1.rst:409
 msgid ""
 "The hexagonal hole pattern is generated using HexLocations, and each "
 "location is populated with a hexagonal wire. These wires are passed directly"
@@ -323,19 +327,19 @@ msgid ""
 "runtimes for boolean subtraction of individual holes in 3D."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:413
+#: ../../build123d/docs/examples_1.rst:418
 msgid "Handle"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:431
+#: ../../build123d/docs/examples_1.rst:436
 msgid "This example demonstrates multisection sweep creating a drawer handle."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:436
+#: ../../build123d/docs/examples_1.rst:441
 msgid "Heat Exchanger"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:454
+#: ../../build123d/docs/examples_1.rst:459
 msgid ""
 "This example creates a model of a parametric heat exchanger core. The "
 "positions of the tubes are defined with :class:`~build_common.HexLocations` "
@@ -343,53 +347,53 @@ msgid ""
 "tubes are filleted to the end plates to simulate welding."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:462
+#: ../../build123d/docs/examples_1.rst:467
 msgid "Key Cap"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:480
+#: ../../build123d/docs/examples_1.rst:485
 msgid ""
 "This example demonstrates the design of a Cherry MX key cap by using extrude"
 " with a taper and extrude until next."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:486
+#: ../../build123d/docs/examples_1.rst:491
 msgid "Maker Coin"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:490
+#: ../../build123d/docs/examples_1.rst:495
 msgid ""
 "This example creates the maker coin as defined by Angus on the Maker's Muse "
 "YouTube channel. There are two key features:"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:493
+#: ../../build123d/docs/examples_1.rst:498
 msgid ""
 "the use of :class:`~objects_curve.DoubleTangentArc` to create a smooth "
 "transition from the central dish to the outside arc, and"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:496
+#: ../../build123d/docs/examples_1.rst:501
 msgid ""
 "embossing the text into the top of the coin not just as a simple extrude but"
 " from a projection which results in text with even depth."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:511
+#: ../../build123d/docs/examples_1.rst:516
 msgid "Multi-Sketch Loft"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:516
+#: ../../build123d/docs/examples_1.rst:521
 msgid ""
 "This example demonstrates lofting a set of sketches, selecting the top and "
 "bottom by type, and shelling."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:537
+#: ../../build123d/docs/examples_1.rst:542
 msgid "Peg Board Hook"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:541
+#: ../../build123d/docs/examples_1.rst:546
 msgid ""
 "This script creates a a J-shaped pegboard hook. These hooks are commonly "
 "used for organizing tools in garages, workshops, or other spaces where tools"
@@ -398,15 +402,15 @@ msgid ""
 "sides of the hook are flattened to aid 3D printing."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:566
+#: ../../build123d/docs/examples_1.rst:571
 msgid "Platonic Solids"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:570
+#: ../../build123d/docs/examples_1.rst:575
 msgid "This example creates a custom Part object PlatonicSolid."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:572
+#: ../../build123d/docs/examples_1.rst:577
 msgid ""
 "Platonic solids are five three-dimensional shapes that are highly "
 "symmetrical, known since antiquity and named after the ancient Greek "
@@ -419,11 +423,11 @@ msgid ""
 "to form a convex polyhedron, embodying ideals of symmetry and balance."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:592
+#: ../../build123d/docs/examples_1.rst:597
 msgid "Playing Cards"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:596
+#: ../../build123d/docs/examples_1.rst:601
 msgid ""
 "This example creates a customs Sketch objects: Club, Spade, Heart, Diamond, "
 "and PlayingCard in addition to a two part playing card box which has suit "
@@ -431,11 +435,22 @@ msgid ""
 "imported as code from an SVG file and modified to the code found here."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:611
+#: ../../build123d/docs/examples_1.rst:616
+msgid "Spring"
+msgstr ""
+
+#: ../../build123d/docs/examples_1.rst:620
+msgid ""
+"This example creates a compression spring by sweeping a circular profile "
+"along a helical path. The path's initial location orients the profile normal"
+" to the helix before the sweep."
+msgstr ""
+
+#: ../../build123d/docs/examples_1.rst:634
 msgid "Stud Wall"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:615
+#: ../../build123d/docs/examples_1.rst:638
 msgid ""
 "This example demonstrates creating custom `Part` objects and putting them "
 "into assemblies. The custom object is a `Stud` used in the building industry"
@@ -444,52 +459,52 @@ msgid ""
 "define snap points which are used to position all of objects."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:631
+#: ../../build123d/docs/examples_1.rst:654
 msgid "Tea Cup"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:649
+#: ../../build123d/docs/examples_1.rst:672
 msgid ""
 "This example demonstrates the creation a tea cup, which serves as an example"
 " of constructing complex, non-flat geometrical shapes programmatically."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:652
+#: ../../build123d/docs/examples_1.rst:675
 msgid "The tea cup model involves several CAD techniques, such as:"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:654
+#: ../../build123d/docs/examples_1.rst:677
 msgid ""
 "Revolve Operations: There is 1 occurrence of a revolve operation. This is "
 "used to create the main body of the tea cup by revolving a profile around an"
 " axis, a common technique for generating symmetrical objects like cups."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:657
+#: ../../build123d/docs/examples_1.rst:680
 msgid ""
 "Sweep Operations: There are 2 occurrences of sweep operations. The handle "
 "are created by sweeping a profile along a path to generate non-planar "
 "surfaces."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:659
+#: ../../build123d/docs/examples_1.rst:682
 msgid ""
 "Offset/Shell Operations: the bowl of the cup is hollowed out with the offset"
 " operation leaving the top open."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:661
+#: ../../build123d/docs/examples_1.rst:684
 msgid ""
 "Fillet Operations: There is 1 occurrence of a fillet operation which is used"
 " to round the edges for aesthetic improvement and to mimic real-world "
 "objects more closely."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:669
+#: ../../build123d/docs/examples_1.rst:692
 msgid "Toy Truck"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:683
+#: ../../build123d/docs/examples_1.rst:706
 msgid ""
 "This example demonstrates how to design a toy truck using BuildPart and "
 "BuildSketch in Builder mode. The model includes a detailed body, cab, grill,"
@@ -499,11 +514,11 @@ msgid ""
 "build123d."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:693
+#: ../../build123d/docs/examples_1.rst:716
 msgid "Vase"
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:711
+#: ../../build123d/docs/examples_1.rst:734
 msgid ""
 "This example demonstrates the build123d techniques involving the creation of"
 " a vase. Specifically, it showcases the processes of revolving a sketch, "
@@ -512,25 +527,25 @@ msgid ""
 "fillets (rounding off the edges)."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:717
+#: ../../build123d/docs/examples_1.rst:740
 msgid ""
 "Sketching: Drawing a 2D profile or outline that represents the side view of "
 "the vase."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:719
+#: ../../build123d/docs/examples_1.rst:742
 msgid ""
 "Revolving: Rotating the sketch around an axis to create a 3D object. This "
 "step transforms the 2D profile into a 3D vase shape."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:721
+#: ../../build123d/docs/examples_1.rst:744
 msgid ""
 "Offset/Shelling: Removing material from the interior of the solid vase to "
 "create a hollow space, making it resemble a real vase more closely."
 msgstr ""
 
-#: ../../build123d/docs/examples_1.rst:723
+#: ../../build123d/docs/examples_1.rst:746
 msgid ""
 "Edge Filleting: Selecting specific edges of the vase for filleting, which "
 "involves rounding those edges. The edges are selected based on their "

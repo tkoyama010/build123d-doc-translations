@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-29 00:22+0000\n"
+"POT-Creation-Date: 2026-08-31 00:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -271,7 +271,7 @@ msgid "Operations"
 msgstr ""
 
 #: ../../build123d/docs/cheat_sheet.rst:0
-msgid ":func:`~operations_generic.add`"
+msgid ":func:`~operations_generic.insert`"
 msgstr ""
 
 #: ../../build123d/docs/cheat_sheet.rst:0

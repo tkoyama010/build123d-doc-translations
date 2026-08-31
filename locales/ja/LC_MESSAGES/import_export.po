@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-21 00:13+0000\n"
+"POT-Creation-Date: 2026-08-31 00:27+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -28,8 +28,8 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/docs/import_export.rst:7
-#: ../../build123d/docs/import_export.rst:249
-#: ../../build123d/docs/import_export.rst:317
+#: ../../build123d/docs/import_export.rst:259
+#: ../../build123d/docs/import_export.rst:327
 msgid "For example:"
 msgstr ""
 
@@ -252,40 +252,58 @@ msgid ""
 "either a DXF or SVG file as shown in this example:"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:181
+#: ../../build123d/docs/import_export.rst:180
+msgid ""
+"``ExportSVG`` accepts the standard :class:`~geometry.ColorLike` interface "
+"for layer fill and line colors. When a layer color is omitted, a Face color "
+"is used for its SVG fill and an Edge or Wire color is used for its SVG "
+"stroke. An explicit layer color, including ``None``, overrides the shape "
+"color."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:185
+msgid ""
+"The older ``ColorIndex``, ``ezdxf.colors.RGB``, and 0–255 RGB tuple inputs "
+"are deprecated for SVG export and will be removed at or before version "
+"1.0.0. They are converted with a ``DeprecationWarning`` during the "
+"transition. Use color names, hexadecimal values, or normalized RGB(A) tuples"
+" instead."
+msgstr ""
+
+#: ../../build123d/docs/import_export.rst:191
 msgid "LineType"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:183
+#: ../../build123d/docs/import_export.rst:193
 msgid ""
 "ANSI (American National Standards Institute) and ISO (International "
 "Organization for Standardization) standards both define line types in "
 "drawings used in DXF and SVG exported drawings:"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:187
+#: ../../build123d/docs/import_export.rst:197
 msgid "ANSI Standards:"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:188
+#: ../../build123d/docs/import_export.rst:198
 msgid ""
 "ANSI/ASME Y14.2 - \"Line Conventions and Lettering\" is the standard that "
 "defines line types, line weights, and line usage in engineering drawings in "
 "the United States."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:191
+#: ../../build123d/docs/import_export.rst:201
 msgid "ISO Standards:"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:192
+#: ../../build123d/docs/import_export.rst:202
 msgid ""
 "ISO 128 - \"Technical drawings -- General principles of presentation\" is "
 "the ISO standard that covers the general principles of technical drawing "
 "presentation, including line types and line conventions."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:195
+#: ../../build123d/docs/import_export.rst:205
 msgid ""
 "ISO 13567 - \"Technical product documentation (TPD) -- Organization and "
 "naming of layers for CAD\" provides guidelines for the organization and "
@@ -293,20 +311,20 @@ msgid ""
 "line type information."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:199
+#: ../../build123d/docs/import_export.rst:209
 msgid ""
 "These standards help ensure consistency and clarity in technical drawings, "
 "making it easier for engineers, designers, and manufacturers to communicate "
 "and interpret the information presented in the drawings."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:203
+#: ../../build123d/docs/import_export.rst:213
 msgid ""
 "The line types used by the 2D Exporters are defined by the "
 ":class:`~exporters.LineType` Enum and are shown in the following diagram:"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:211
+#: ../../build123d/docs/import_export.rst:221
 msgid "ExportDXF"
 msgstr ""
 
@@ -458,7 +476,7 @@ msgid ""
 "True."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:217
+#: ../../build123d/docs/import_export.rst:227
 msgid "ExportSVG"
 msgstr ""
 
@@ -509,15 +527,15 @@ msgstr ""
 #: ../../build123d/src/build123d/exporters.pydocstring of
 #: exporters.ExportSVG:23
 msgid ""
-"The default fill color for shapes. It can be specified as a ColorIndex, an "
-"RGB tuple, or None. Defaults to None."
+"The fill color for shapes. When omitted, Face colors are used, falling back "
+"to no fill. Defaults to INHERIT_COLOR."
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters.pydocstring of
 #: exporters.ExportSVG:27
 msgid ""
-"The default line color for shapes. It can be specified as a ColorIndex or an"
-" RGB tuple, or None. Defaults to Export2D.DEFAULT_COLOR_INDEX."
+"The line color for shapes. When omitted, Edge and Wire colors are used, "
+"falling back to black. Defaults to INHERIT_COLOR."
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters.pydocstring of
@@ -559,16 +577,15 @@ msgstr ""
 #: ../../build123d/src/build123d/exporters.pydocstring of
 #: exporters.ExportSVG.add_layer:5
 msgid ""
-"The fill color for shapes on this layer. It can be specified as a "
-"ColorIndex, an RGB tuple, a Color, or None.  Defaults to None."
+"The fill color for shapes on this layer. When omitted, Face colors are used,"
+" falling back to no fill. Defaults to INHERIT_COLOR."
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters.pydocstring of
 #: exporters.ExportSVG.add_layer:9
 msgid ""
-"The line color for shapes on this layer. It can be specified as a ColorIndex"
-" or an RGB tuple, a Color, or None.  Defaults to "
-"Export2D.DEFAULT_COLOR_INDEX."
+"The line color for shapes on this layer. When omitted, Edge and Wire colors "
+"are used, falling back to black. Defaults to INHERIT_COLOR."
 msgstr ""
 
 #: ../../build123d/src/build123d/exporters.pydocstring of
@@ -632,7 +649,7 @@ msgstr ""
 msgid "The file path where the SVG data will be written."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:223
+#: ../../build123d/docs/import_export.rst:233
 msgid "3D Exporters"
 msgstr ""
 
@@ -849,11 +866,11 @@ msgstr ""
 msgid "The destination directory does not exist."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:243
+#: ../../build123d/docs/import_export.rst:253
 msgid "3D Mesh Export"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:245
+#: ../../build123d/docs/import_export.rst:255
 msgid ""
 "Both 3MF and STL export (and import) are provided with the "
 ":class:`~mesher.Mesher` class. As mentioned above, the 3MF format it "
@@ -1029,7 +1046,7 @@ msgstr ""
 msgid "output mesh format, either \"3mf\" or \"stl\""
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:281
+#: ../../build123d/docs/import_export.rst:291
 msgid ""
 "If you need to align multiple components for 3D printing, you can use the  "
 ":ref:`pack() <pack>` function to arrange the objects side by side and align "
@@ -1037,7 +1054,7 @@ msgid ""
 " and ready for the printing process."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:285
+#: ../../build123d/docs/import_export.rst:295
 msgid "2D Importers"
 msgstr ""
 
@@ -1129,7 +1146,7 @@ msgstr ""
 msgid "code, builder instance name"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:295
+#: ../../build123d/docs/import_export.rst:305
 msgid "3D Importers"
 msgstr ""
 
@@ -1204,18 +1221,18 @@ msgstr ""
 msgid "STL model"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:302
+#: ../../build123d/docs/import_export.rst:312
 msgid "STL Reconstruction"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:304
+#: ../../build123d/docs/import_export.rst:314
 msgid ""
 "The :func:`~build123d.detect_primitives` helper can be used during STL "
 "reconstruction to detect analytic planes, cylinders, and spheres in a mesh-"
 "like shape and generate algebra-mode code fragments to aid manual redesign."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:308
+#: ../../build123d/docs/import_export.rst:318
 msgid ""
 "See :ref:`stl_reconstruction_tutorial` for the full workflow and "
 "limitations."
@@ -1273,11 +1290,11 @@ msgid ""
 " same order as the returned primitives."
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:313
+#: ../../build123d/docs/import_export.rst:323
 msgid "3D Mesh Import"
 msgstr ""
 
-#: ../../build123d/docs/import_export.rst:315
+#: ../../build123d/docs/import_export.rst:325
 msgid ""
 "Both 3MF and STL import (and export) are provided with the "
 ":class:`~mesher.Mesher` class."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-11 00:17+0000\n"
+"POT-Creation-Date: 2026-08-31 00:27+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -74,11 +74,11 @@ msgid "Example"
 msgstr ""
 
 #: ../../build123d/docs/operations.rst:27
-msgid ":func:`~operations_generic.add`"
+msgid ":func:`~operations_generic.insert`"
 msgstr ""
 
 #: ../../build123d/docs/operations.rst:27
-msgid "Add object to builder"
+msgid "Insert object into builder"
 msgstr ""
 
 #: ../../build123d/docs/operations.rst:27
@@ -444,46 +444,46 @@ msgid "Reference"
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.add:1
-msgid "Generic Object: Add Object to Part or Sketch"
+#: operations_generic.insert:1
+msgid "Generic Object: Insert Object into Part, Sketch, or Line"
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.add:3
-msgid "Add an object to a builder."
+#: operations_generic.insert:3
+msgid "Insert an object into a builder."
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.add:5
+#: operations_generic.insert:5
 msgid "BuildPart:"
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.add:6
+#: operations_generic.insert:6
 msgid ""
 "Edges and Wires are added to pending_edges. Compounds of Face are added to "
 "pending_faces. Solids or Compounds of Solid are combined into the part."
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.add:8
+#: operations_generic.insert:8
 msgid "BuildSketch:"
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.add:9
+#: operations_generic.insert:9
 msgid ""
 "Edges and Wires are added to pending_edges. Compounds of Face are added to "
 "sketch."
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.add:10
+#: operations_generic.insert:10
 msgid "BuildLine:"
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.add:11
+#: operations_generic.insert:11
 msgid "Edges and Wires are added to line."
 msgstr ""
 
@@ -492,19 +492,19 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.add:13
-msgid "objects to add"
+#: operations_generic.insert:13
+msgid "objects to insert"
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.add:15
+#: operations_generic.insert:15
 msgid ""
 "rotation angle for sketch, rotation about each axis for part. Defaults to "
 "None."
 msgstr ""
 
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
-#: operations_generic.add:18
+#: operations_generic.insert:18
 #: ../../build123d/src/build123d/operations_generic.pydocstring of
 #: operations_generic.sweep:21
 #: ../../build123d/src/build123d/operations_part.pydocstring of

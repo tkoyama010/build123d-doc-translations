@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-24 00:30+0000\n"
+"POT-Creation-Date: 2026-08-31 00:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,7 @@ msgid "The ``repeated.sketch_local`` property contains one rectangle on local ``
 msgstr ""
 
 #: ../../build123d/docs/build_sketch.rst:120
-msgid "When using the :func:`~operations_generic.add` operation to add an external Face to a sketch the face will automatically be reoriented to ``Plane.XY`` before being combined with the sketch.  As Faces don't provide an x-direction it's possible that the new Face may not be oriented as expected. To reorient the Face manually to ``Plane.XY`` one can use the :meth:`~geometry.to_local_coords` method as follows:"
+msgid "When using the :func:`~operations_generic.insert` operation to insert an external Face to a sketch the face will automatically be reoriented to ``Plane.XY`` before being combined with the sketch.  As Faces don't provide an x-direction it's possible that the new Face may not be oriented as expected. To reorient the Face manually to ``Plane.XY`` one can use the :meth:`~geometry.to_local_coords` method as follows:"
 msgstr ""
 
 #: ../../build123d/docs/build_sketch.rst:131

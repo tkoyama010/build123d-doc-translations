@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-29 00:22+0000\n"
+"POT-Creation-Date: 2026-09-06 00:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1312,15 +1312,6 @@ msgstr ""
 msgid "A Compound in build123d is a topological entity representing a collection of geometric shapes grouped together within a single structure. It serves as a container for organizing diverse shapes like edges, faces, or solids. This hierarchical arrangement facilitates the construction of complex models by combining simpler shapes. Compound plays a pivotal role in managing the composition and structure of intricate 3D models in computer-aided design (CAD) applications, allowing engineers and designers to work with assemblies of shapes as unified entities for efficient modeling and analysis."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.cast:1
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Mixin1D.cast:1
-#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.cast:1
-#: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Mixin3D.cast:1
-#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Mixin2D.cast:1
-#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.cast:1
-msgid "Returns the right type of wrapper, given a OCCT object"
-msgstr ""
-
 #: ../../build123d/src/build123d/topology/composite.py:docstring of topology.composite.Compound.center:1
 #: ../../build123d/src/build123d/topology/three_d.py:docstring of topology.three_d.Mixin3D.center:1
 msgid "Return center of object"
@@ -2068,15 +2059,15 @@ msgid "minimum spline degree. Enforced only when smoothing is None. Defaults to 
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_spline_approx:13
-msgid "maximum spline degree. Defaults to 6."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_spline_approx:16
-#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.make_surface_from_array_of_points:21
-msgid "B-spline approximation failed"
+msgid "maximum spline degree. Defaults to 6. Raised to 5 when smoothing is used, the lowest degree that can meet the C2 continuity the smoothing algorithm requires."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_spline_approx:18
+#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.make_surface_from_array_of_points:23
+msgid "B-spline approximation failed"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Edge.make_spline_approx:20
 msgid "spline"
 msgstr ""
 
@@ -2723,10 +2714,10 @@ msgid "tolerance of the algorithm. Defaults to 1e-2."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.make_surface_from_array_of_points:18
-msgid "maximum spline degree. Defaults to 3."
+msgid "maximum spline degree. Defaults to 3. Raised to 5 when smoothing is used, the lowest degree that can meet the C2 continuity the smoothing algorithm requires."
 msgstr ""
 
-#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.make_surface_from_array_of_points:23
+#: ../../build123d/src/build123d/topology/two_d.py:docstring of topology.two_d.Face.make_surface_from_array_of_points:25
 msgid "a potentially non-planar face defined by points"
 msgstr ""
 
@@ -3841,12 +3832,28 @@ msgstr ""
 msgid "area -the surface area of all faces in this Shape"
 msgstr ""
 
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.as_shape:1
+msgid "Return the Shape equivalent of a geometry object."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.as_shape:3
+msgid "Vector and Location become a Vertex, Axis an Edge and Plane a Face. A Shape is returned unchanged. Subclasses are honoured, so Pos and Rotation convert like the Location they derive from."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.as_shape:7
+msgid "The return type is what makes this usable in place of an isinstance chain: the chain narrowed the operand to a Shape for type checkers, and this has to do the same."
+msgstr ""
+
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.bounding_box:1
 msgid "Create a bounding box for this Shape."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.bounding_box:6
 msgid "A box sized to contain this Shape"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.cast:1
+msgid "Returns the right type of wrapper, given a OCCT object"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.clean:1
@@ -4308,6 +4315,22 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.register_composite_factory:1
 msgid "Register a composite constructor without importing it here."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.register_geometry_constructor:1
+msgid "Register how a geometry class becomes a Shape, without importing it."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.register_geometry_constructor:3
+msgid "Registered by whichever topology module defines the target class, since the lower modules cannot import the higher ones."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.register_shape_constructor:1
+msgid "Register a wrapper class for a TopAbs type without importing it here."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.register_shape_constructor:3
+msgid "Each topology module registers the classes it defines as it is imported, so that :meth:`cast` can build any shape without shape_core needing to import classes that in turn import it."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.rotate:1

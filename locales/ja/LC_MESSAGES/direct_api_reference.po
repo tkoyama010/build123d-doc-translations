@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-06 00:27+0000\n"
+"POT-Creation-Date: 2026-09-07 00:26+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1975,6 +1975,16 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/composite.pydocstring of
 #: topology.composite.Compound.mass:1
 msgid "mass - the mass of this Compound"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/composite.pydocstring of
+#: topology.composite.Compound.mass:3
+msgid ""
+"An assembly is summed over its children so each one contributes its own "
+"material; Shape.material walks up the tree for children that don't declare "
+"one. A Compound with no children is summed over its topology instead, where "
+"the sub-shapes are not build123d objects and can only take this Compound's "
+"material."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/composite.pydocstring of

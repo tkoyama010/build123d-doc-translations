@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 00:26+0000\n"
+"POT-Creation-Date: 2026-09-09 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3189,6 +3189,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.Mixin1D.is_interior:6
 msgid "True if the edge is an interior edge, False otherwise."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.Mixin1D.is_interior:9
+msgid "the edge has no ``topo_parent``, or is not shared by     exactly two faces of it"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.Mixin1D.length:1

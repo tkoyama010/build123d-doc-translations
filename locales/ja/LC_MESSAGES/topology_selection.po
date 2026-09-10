@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-14 00:42+0000\n"
+"POT-Creation-Date: 2026-09-10 00:23+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -328,24 +328,26 @@ msgid "Topological objects: ``Edge``, ``Wire``"
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:248
-msgid "Enums: :class:`~build_enums.SortBy`, :class:`~build_enums.GeomType`"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:249
-msgid "Properties, eg: ``Face.area``, ``Edge.length``"
+msgid ""
+"Enums: :class:`~build_enums.SortBy`, :class:`~build_enums.GeomType`, "
+":class:`~build_enums.Convexity`"
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:250
+msgid "Properties, eg: ``Face.area``, ``Edge.length``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:251
 msgid ""
 "Callable, eg: ``lambda e: e.is_interior == 1``, ``lambda f: len(f.edges()) "
 ">= 3``, ``Vertex().distance``, |topo_distance_to|"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:254
+#: ../../build123d/docs/topology_selection.rst:255
 msgid "Sort"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:256
+#: ../../build123d/docs/topology_selection.rst:257
 msgid ""
 "A ``ShapeList`` can be sorted with the |sort_by| and |sort_by_distance| "
 "methods based on a sorting criteria. Sorting is a critical step when "
@@ -353,7 +355,7 @@ msgid ""
 "typically unordered."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:260
+#: ../../build123d/docs/topology_selection.rst:261
 msgid ""
 "Here we want to capture some vertices from the object furthest along ``X``: "
 "All the vertices are first captured with the |vertices| selector, then sort "
@@ -363,37 +365,37 @@ msgid ""
 "slice can be used."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:276
-#: ../../build123d/docs/topology_selection.rst:399
-#: ../../build123d/docs/topology_selection.rst:447
+#: ../../build123d/docs/topology_selection.rst:277
+#: ../../build123d/docs/topology_selection.rst:471
+#: ../../build123d/docs/topology_selection.rst:519
 msgid "Examples"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:287
+#: ../../build123d/docs/topology_selection.rst:288
 #: ../../build123d/docs/topology_selection/sort_examples.rst:8
 msgid "SortBy"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:292
+#: ../../build123d/docs/topology_selection.rst:293
 #: ../../build123d/docs/topology_selection/sort_examples.rst:50
 msgid "Along Wire"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:297
+#: ../../build123d/docs/topology_selection.rst:298
 #: ../../build123d/docs/topology_selection/sort_examples.rst:87
 msgid "Axis"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:302
+#: ../../build123d/docs/topology_selection.rst:303
 #: ../../build123d/docs/topology_selection/sort_examples.rst:112
 msgid "Distance From"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:308
+#: ../../build123d/docs/topology_selection.rst:309
 msgid "Group"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:310
+#: ../../build123d/docs/topology_selection.rst:311
 msgid ""
 "A ShapeList can be grouped and sorted with the |group_by| method based on a "
 "grouping criteria. Grouping can be a great way to organize features without "
@@ -405,7 +407,7 @@ msgid ""
 " unknown they can be discovered with ``key_to_group_index``."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:318
+#: ../../build123d/docs/topology_selection.rst:319
 msgid ""
 "If we want only the edges from the smallest faces by area we can get the "
 "faces, then group by ``SortBy.AREA``. The ``ShapeList`` of smallest faces is"
@@ -414,11 +416,102 @@ msgid ""
 "previous list."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:333
+#: ../../build123d/docs/topology_selection.rst:334
+msgid "Selection Provenance"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:336
+msgid ""
+"A shape pulled out of another remembers where it came from. Every selector "
+"step is recorded on the result as ``topo_path``, a tuple running from the "
+"outermost shape to the one it was taken directly out of:"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:349
+msgid ""
+"``topo_parent`` is the first step and ``topo_owner`` the last, so on a "
+"single selection they are the same shape. The distinction matters when a "
+"selector narrows twice: an edge belongs to two faces of a solid, and only "
+"the route it was selected by says which one was meant. Selecting the edge "
+"straight off the solid records no face, so an operation that needs one has "
+"to say so rather than guess."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:356
+msgid ""
+"Provenance is metadata rather than geometry. It is carried by reference "
+"through copies, since it names shapes outside the copy, and it is not part "
+"of shape equality."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:361
+msgid "Convexity"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:363
+msgid ""
+"A vertex, edge or face can be classified by how the material of the shape it"
+" was selected from sits around it, with :class:`~build_enums.Convexity`:"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:366
+msgid ""
+"``CONVEX`` - the material closes around the element by less than half a "
+"turn: the outer edge of a box, the corner of a plate, a boss"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:368
+msgid ""
+"``CONCAVE`` - by more than half a turn: the inner corner of a pocket, a hole"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:369
+msgid ""
+"``SMOOTH`` - the boundary passes through without bending: a fillet seam, a "
+"planar face, a vertex where two edges meet in line"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:371
+msgid ""
+"``SADDLE`` - both senses are present: an edge whose dihedral angle crosses "
+"half a turn along its length, a vertex where convex and concave edges meet, "
+"a face with principal curvatures of opposite sign"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:375
+msgid ""
+"This is a property of the relationship, not of the element alone. The same "
+"straight edge is convex on a box and concave at the inner corner of an L, "
+"and nothing about the edge itself distinguishes them. Every shape has a "
+"``convexity`` property, |filter_by| takes a member of the enum, and "
+"|group_by| takes the enum itself:"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:391
+msgid ""
+"Because the classification is relative to the shape the element came from, "
+"the selection route decides the question being asked. A vertex taken through"
+" a face, as ``face.vertices()`` does, is a corner of that face and is "
+"classified by the turn of the face's boundary there; the same vertex taken "
+"straight off the solid is classified by the creases meeting at it. The inner"
+" corner of a cross is concave on the top face but a saddle on the solid, "
+"where two convex edges meet a concave one. An edge is classified between the"
+" two faces of the shape it was selected from, so an edge of a lone face, or "
+"of an open shell's rim, has no crease to classify and raises rather than "
+"guessing."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:401
+msgid ""
+"``Edge.is_interior``, ``Face.is_circular_convex`` and "
+"``Face.is_circular_concave`` are shorthand for the concave and convex cases."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:405
 msgid "Topological Distance"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:335
+#: ../../build123d/docs/topology_selection.rst:407
 msgid ""
 "|topo_distance_to| creates a callable key that measures graph distance "
 "through topology rather than geometric distance through space. It is useful "
@@ -426,14 +519,14 @@ msgid ""
 "reference face, or the next ring of faces after that."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:340
+#: ../../build123d/docs/topology_selection.rst:412
 msgid ""
 "Distances are measured within the shared ``topo_parent`` of the reference "
 "shape. The reference shape has distance ``0``, directly adjacent shapes have"
 " distance ``1``, and unreachable shapes have distance ``inf``."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:356
+#: ../../build123d/docs/topology_selection.rst:428
 msgid ""
 "Multiple reference shapes can be provided. This is useful for selecting all "
 "features within a topological distance from any reference. In this example, "
@@ -442,39 +535,39 @@ msgid ""
 " rings expanding away from that starting band."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:388
+#: ../../build123d/docs/topology_selection.rst:460
 msgid ""
 "The same approach can be used with edges or vertices. For example, a single "
 "edge on the mesh can be used as the starting point for edge-distance rings."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:410
+#: ../../build123d/docs/topology_selection.rst:482
 #: ../../build123d/docs/topology_selection/group_examples.rst:8
 msgid "Axis and Length"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:415
+#: ../../build123d/docs/topology_selection.rst:487
 #: ../../build123d/docs/topology_selection/group_examples.rst:40
 msgid "Hole Area"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:420
+#: ../../build123d/docs/topology_selection.rst:492
 #: ../../build123d/docs/topology_selection/group_examples.rst:64
 msgid "Properties with Keys"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:426
+#: ../../build123d/docs/topology_selection.rst:498
 msgid "Filter"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:428
+#: ../../build123d/docs/topology_selection.rst:500
 msgid ""
 "A ``ShapeList`` can be filtered with the |filter_by| and "
 "|filter_by_position| methods based on a filtering criteria. Filters are "
 "flexible way to isolate (or exclude) features based on known criteria."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:432
+#: ../../build123d/docs/topology_selection.rst:504
 msgid ""
 "Lets say we need all the faces with a normal in the ``+Z`` direction. One "
 "way to do this might be with a list comprehension, however |filter_by| has "
@@ -483,32 +576,32 @@ msgid ""
 " direction and filtered accordingly."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:458
+#: ../../build123d/docs/topology_selection.rst:530
 #: ../../build123d/docs/topology_selection/filter_examples.rst:8
 msgid "GeomType"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:463
+#: ../../build123d/docs/topology_selection.rst:535
 #: ../../build123d/docs/topology_selection/filter_examples.rst:45
 msgid "All Edges Circle"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:468
+#: ../../build123d/docs/topology_selection.rst:540
 #: ../../build123d/docs/topology_selection/filter_examples.rst:70
 msgid "Axis and Plane"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:473
+#: ../../build123d/docs/topology_selection.rst:545
 #: ../../build123d/docs/topology_selection/filter_examples.rst:112
 msgid "Inner Wire Count"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:478
+#: ../../build123d/docs/topology_selection.rst:550
 #: ../../build123d/docs/topology_selection/filter_examples.rst:154
 msgid "Nested Filters"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:483
+#: ../../build123d/docs/topology_selection.rst:555
 #: ../../build123d/docs/topology_selection/filter_examples.rst:181
 msgid "Shape Properties"
 msgstr ""

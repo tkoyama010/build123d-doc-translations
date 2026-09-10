@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-01 00:29+0000\n"
+"POT-Creation-Date: 2026-09-10 00:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,6 +140,30 @@ msgstr ""
 msgid "Center Options"
 msgstr ""
 
+#: ../../build123d/src/build123d/build_enums.py:docstring of build_enums.Convexity:1
+msgid "How the material of a shape sits around one of its elements."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.py:docstring of build_enums.Convexity:3
+msgid "Classifies a vertex, edge or face relative to the shape it was selected from - it is a property of that relationship, not of the element alone. A straight edge is convex on a box, concave at the inner corner of an L, and smooth where a fillet meets the face it blends into."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.py:docstring of build_enums.Convexity:8
+msgid "CONVEX: the material closes around the element by less than half a turn - the outer edge of a box, the corner of a plate, a boss"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.py:docstring of build_enums.Convexity:10
+msgid "CONCAVE: by more than half a turn - the inner corner of a pocket, a hole"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.py:docstring of build_enums.Convexity:11
+msgid "SMOOTH: the boundary passes through without bending - a fillet seam, a planar face, a vertex where two edges meet in line"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.py:docstring of build_enums.Convexity:13
+msgid "SADDLE: both senses are present - an edge whose dihedral angle crosses half a turn along its length, a vertex where convex and concave edges meet, a face with principal curvatures of opposite sign"
+msgstr ""
+
 #: ../../build123d/src/build123d/build_enums.py:docstring of build_enums.FontStyle:1
 msgid "Text Font Styles"
 msgstr ""
@@ -176,7 +200,7 @@ msgstr ""
 msgid "Extrude limit"
 msgstr ""
 
-#: ../../build123d/docs/builder_api_reference.rst:45
+#: ../../build123d/docs/builder_api_reference.rst:46
 msgid "Locations"
 msgstr ""
 

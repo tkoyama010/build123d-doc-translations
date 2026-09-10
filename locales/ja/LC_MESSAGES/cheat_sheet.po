@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 00:27+0000\n"
+"POT-Creation-Date: 2026-09-10 00:23+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -779,176 +779,184 @@ msgid "GEOMETRY, MASS, BOUNDING_BOX"
 msgstr ""
 
 #: ../../build123d/docs/cheat_sheet.rst:272
-msgid ":class:`~build_enums.Extrinsic`"
+msgid ":class:`~build_enums.Convexity`"
 msgstr ""
 
 #: ../../build123d/docs/cheat_sheet.rst:272
-#: ../../build123d/docs/cheat_sheet.rst:280
+msgid "CONVEX, CONCAVE, SMOOTH, SADDLE"
+msgstr ""
+
+#: ../../build123d/docs/cheat_sheet.rst:274
+msgid ":class:`~build_enums.Extrinsic`"
+msgstr ""
+
+#: ../../build123d/docs/cheat_sheet.rst:274
+#: ../../build123d/docs/cheat_sheet.rst:282
 msgid "XYZ, XZY, YZX, YXZ, ZXY, ZYX, XYX, XZX, YZY, YXY, ZXZ, ZYZ"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:274
+#: ../../build123d/docs/cheat_sheet.rst:276
 msgid ":class:`~build_enums.FontStyle`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:274
+#: ../../build123d/docs/cheat_sheet.rst:276
 msgid "REGULAR, BOLD, BOLDITALIC, ITALIC"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:276
+#: ../../build123d/docs/cheat_sheet.rst:278
 msgid ":class:`~build_enums.FrameMethod`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:276
+#: ../../build123d/docs/cheat_sheet.rst:278
 msgid "CORRECTED, FRENET"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:278
+#: ../../build123d/docs/cheat_sheet.rst:280
 msgid ":class:`~build_enums.GeomType`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:278
+#: ../../build123d/docs/cheat_sheet.rst:280
 msgid ""
 "BEZIER, BSPLINE, CIRCLE, CONE, CYLINDER, ELLIPSE, EXTRUSION, HYPERBOLA, "
 "LINE, OFFSET, OTHER, PARABOLA, PLANE, REVOLUTION, SPHERE, TORUS"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:280
+#: ../../build123d/docs/cheat_sheet.rst:282
 msgid ":class:`~build_enums.Intrinsic`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:282
+#: ../../build123d/docs/cheat_sheet.rst:284
 msgid ":class:`~build_enums.HeadType`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:282
+#: ../../build123d/docs/cheat_sheet.rst:284
 msgid "CURVED, FILLETED, STRAIGHT"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:284
+#: ../../build123d/docs/cheat_sheet.rst:286
 msgid ":class:`~build_enums.Keep`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:284
+#: ../../build123d/docs/cheat_sheet.rst:286
 msgid "ALL, TOP, BOTTOM, BOTH, INSIDE, OUTSIDE"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:286
+#: ../../build123d/docs/cheat_sheet.rst:288
 msgid ":class:`~build_enums.Kind`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:286
+#: ../../build123d/docs/cheat_sheet.rst:288
 msgid "ARC, INTERSECTION, TANGENT"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:288
+#: ../../build123d/docs/cheat_sheet.rst:290
 msgid ":class:`~build_enums.LengthMode`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:288
+#: ../../build123d/docs/cheat_sheet.rst:290
 msgid "DIAGONAL, HORIZONTAL, VERTICAL"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:290
+#: ../../build123d/docs/cheat_sheet.rst:292
 msgid ":class:`~build_enums.MeshType`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:290
+#: ../../build123d/docs/cheat_sheet.rst:292
 msgid "OTHER, MODEL, SUPPORT, SOLIDSUPPORT"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:292
+#: ../../build123d/docs/cheat_sheet.rst:294
 msgid ":class:`~build_enums.Mode`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:292
+#: ../../build123d/docs/cheat_sheet.rst:294
 msgid "ADD, SUBTRACT, INTERSECT, REPLACE, PRIVATE"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:294
+#: ../../build123d/docs/cheat_sheet.rst:296
 msgid ":class:`~build_enums.NumberDisplay`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:294
+#: ../../build123d/docs/cheat_sheet.rst:296
 msgid "DECIMAL, FRACTION"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:296
+#: ../../build123d/docs/cheat_sheet.rst:298
 msgid ":class:`~build_enums.PageSize`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:296
+#: ../../build123d/docs/cheat_sheet.rst:298
 msgid "A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, LEDGER, LEGAL, LETTER"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:298
+#: ../../build123d/docs/cheat_sheet.rst:300
 msgid ":class:`~build_enums.PositionMode`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:298
+#: ../../build123d/docs/cheat_sheet.rst:300
 msgid "LENGTH, PARAMETER"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:300
+#: ../../build123d/docs/cheat_sheet.rst:302
 msgid ":class:`~build_enums.PrecisionMode`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:300
+#: ../../build123d/docs/cheat_sheet.rst:302
 msgid "LEAST, AVERAGE, GREATEST, SESSION"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:302
+#: ../../build123d/docs/cheat_sheet.rst:304
 msgid ":class:`~build_enums.Select`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:302
+#: ../../build123d/docs/cheat_sheet.rst:304
 msgid "ALL, LAST, NEW"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:304
+#: ../../build123d/docs/cheat_sheet.rst:306
 msgid ":class:`~build_enums.Side`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:304
+#: ../../build123d/docs/cheat_sheet.rst:306
 msgid "BOTH, LEFT, RIGHT"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:306
+#: ../../build123d/docs/cheat_sheet.rst:308
 msgid ":class:`~build_enums.SortBy`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:306
+#: ../../build123d/docs/cheat_sheet.rst:308
 msgid "LENGTH, RADIUS, AREA, VOLUME, DISTANCE"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:308
+#: ../../build123d/docs/cheat_sheet.rst:310
 msgid ":class:`~build_enums.TextAlign`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:308
+#: ../../build123d/docs/cheat_sheet.rst:310
 msgid "BOTTOM, CENTER, LEFT, RIGHT, TOP, TOPFIRSTLINE"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:310
+#: ../../build123d/docs/cheat_sheet.rst:312
 msgid ":class:`~build_enums.Transition`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:310
+#: ../../build123d/docs/cheat_sheet.rst:312
 msgid "RIGHT, ROUND, TRANSFORMED"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:312
+#: ../../build123d/docs/cheat_sheet.rst:314
 msgid ":class:`~build_enums.Unit`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:312
+#: ../../build123d/docs/cheat_sheet.rst:314
 msgid "MC, MM, CM, M, IN, FT"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:314
+#: ../../build123d/docs/cheat_sheet.rst:316
 msgid ":class:`~build_enums.Until`"
 msgstr ""
 
-#: ../../build123d/docs/cheat_sheet.rst:314
+#: ../../build123d/docs/cheat_sheet.rst:316
 msgid "FIRST, LAST, NEXT, PREVIOUS"
 msgstr ""

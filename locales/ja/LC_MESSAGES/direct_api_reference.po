@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-09 00:25+0000\n"
+"POT-Creation-Date: 2026-09-10 00:23+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -3343,6 +3343,36 @@ msgid "face with a chamfered corner(s)"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.Face.convexity:1
+msgid "How the material behind this face sits against it."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.Face.convexity:3
+msgid ""
+"Read from the surface's principal curvatures against the outward normal, "
+"sampled over the face: ``CONVEX`` where the surface curves away from the "
+"material, as on a boss or the outside of a sphere; ``CONCAVE`` where it "
+"curves into it, as in a hole or a cavity; ``SMOOTH`` where it does not "
+"curve, as on a plane; and ``SADDLE`` where the two principal curvatures "
+"disagree, as on the inner side of a torus, or where different parts of the "
+"face curve different ways."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.Face.convexity:11
+msgid ""
+"Which side is material comes from the face's orientation, so a face taken "
+"from a solid reports against that solid. See "
+":class:`~build_enums.Convexity`."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
+#: topology.Face.convexity:15
+msgid "the surface is degenerate everywhere it was sampled"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.two_d.Face.extrude:1
 msgid "Extrude an Edge into a Face."
 msgstr ""
@@ -3381,26 +3411,26 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.Face.is_circular_concave:1
-msgid ""
-"Determine whether a given face is concave relative to its underlying "
-"geometry for supported geometries: cylinder, sphere, torus."
+msgid "Does this face curve into the material behind it?"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
-#: topology.Face.is_circular_concave:4
-msgid "True if concave; otherwise, False."
+#: topology.Face.is_circular_concave:3
+msgid ""
+"Equivalent to ``face.convexity == Convexity.CONCAVE``, as in a hole or an "
+"inside fillet. See :attr:`convexity`."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
 #: topology.Face.is_circular_convex:1
-msgid ""
-"Determine whether a given face is convex relative to its underlying geometry"
-" for supported geometries: cylinder, sphere, torus."
+msgid "Does this face curve away from the material behind it?"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
-#: topology.Face.is_circular_convex:4
-msgid "True if convex; otherwise, False."
+#: topology.Face.is_circular_convex:3
+msgid ""
+"Equivalent to ``face.convexity == Convexity.CONVEX``, as on a boss or an "
+"outside fillet. See :attr:`convexity`."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/two_d.pydocstring of
@@ -4294,6 +4324,38 @@ msgid "Either the common plane or None"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.Mixin1D.convexity:1
+msgid "How the shape this edge was selected from sits around it."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.Mixin1D.convexity:3
+msgid ""
+"An edge of a solid or shell is a crease between two faces, and the dihedral "
+"angle through the material says which way the crease turns: ``CONVEX`` on "
+"the outer edge of a box, ``CONCAVE`` at the inner corner of a pocket, "
+"``SMOOTH`` where a fillet meets the face it blends into. The angle is "
+"sampled along the edge, so one that turns one way at one end and the other "
+"way at the other is a ``SADDLE``. A seam edge, with the same face on both "
+"sides, is ``SMOOTH``."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.Mixin1D.convexity:11
+msgid ""
+"The faces come from ``topo_parent``, so the edge has to have been selected "
+"from a shape rather than built on its own. See "
+":class:`~build_enums.Convexity`."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
+#: topology.Mixin1D.convexity:15
+msgid ""
+"the edge has no ``topo_parent``; it lies on one face     only, as a boundary"
+" edge of a face or open shell does; or more     than two faces meet at it"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Mixin1D.curvature_comb:1
 msgid "Build a *curvature comb* for a planar (XY) 1D curve."
 msgstr ""
@@ -4450,26 +4512,20 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.Mixin1D.is_interior:1
-msgid "Check if the edge is an interior edge."
+msgid "Is this a concave edge of the shape it was selected from?"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.Mixin1D.is_interior:3
 msgid ""
-"An interior edge lies between surfaces that are part of the body (internal "
-"to the geometry) and does not form part of the exterior boundary."
+"Equivalent to ``edge.convexity == Convexity.CONCAVE``: the material closes "
+"around the edge by more than half a turn, as at the inner corner of a "
+"pocket. See :attr:`convexity`."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.Mixin1D.is_interior:6
-msgid "True if the edge is an interior edge, False otherwise."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/one_d.pydocstring of
-#: topology.Mixin1D.is_interior:9
-msgid ""
-"the edge has no ``topo_parent``, or is not shared by     exactly two faces "
-"of it"
+#: topology.Mixin1D.is_interior:7
+msgid "the edge cannot be classified, see :attr:`convexity`"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
@@ -5281,7 +5337,17 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape:21
-msgid "assembly parent of this object"
+msgid "the shapes this one was extracted through, outermost first"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape:24
+msgid "the outermost of those, where it came from"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape:26
+msgid "the innermost of those, what it was taken out of"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -5469,6 +5535,25 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.compute_volume:3
 msgid "the volume of the shape"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.Shape.convexity:1
+msgid "How the shape this was selected from sits around it."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.Shape.convexity:3
+msgid ""
+"Defined for a ``Vertex``, ``Edge`` or ``Face`` relative to the shape it was "
+"taken out of - see :class:`~build_enums.Convexity`. Other shapes are the "
+"region itself rather than an element of one, so the question does not apply "
+"to them."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.Shape.convexity:8
+msgid "the shape has no convexity"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -6393,6 +6478,31 @@ msgid "Approximated shape"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.Shape.topo_owner:1
+msgid "The shape this one was taken directly out of."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.Shape.topo_owner:3
+msgid ""
+"The innermost step of ``topo_path``. An edge picked off a face knows that "
+"face, which is what says which side of the edge the face is on - something "
+"the edge alone cannot tell."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.Shape.topo_parent:1
+msgid "The shape this one was ultimately taken out of."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.Shape.topo_parent:3
+msgid ""
+"The outermost step of ``topo_path``: selecting an edge from a face of a "
+"shell reports the shell, not the face. Use ``topo_owner`` for the face."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.touch:1
 msgid "Find boundary contacts between this shape and another."
 msgstr ""
@@ -6634,27 +6744,29 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.ShapeList.filter_by:9
 msgid ""
-"function, axis, plane, or geom type to filter and possibly sort by. "
-"Filtering by a plane returns faces/edges parallel to that plane."
+"function, axis, plane, geom type or convexity to filter and possibly sort "
+"by. Filtering by a plane returns faces/edges parallel to that plane. "
+"Filtering by a convexity classifies each object relative to the shape it was"
+" selected from."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.filter_by:13
+#: topology.shape_core.ShapeList.filter_by:14
 msgid "invert the geom type filter. Defaults to False."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.filter_by:15
+#: topology.shape_core.ShapeList.filter_by:16
 msgid "maximum deviation from axis. Defaults to 1e-5."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.filter_by:18
+#: topology.shape_core.ShapeList.filter_by:19
 msgid "Invalid filter_by type"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.filter_by:20
+#: topology.shape_core.ShapeList.filter_by:21
 msgid "filtered list of objects"
 msgstr ""
 
@@ -6710,31 +6822,51 @@ msgstr ""
 #: topology.shape_core.ShapeList.group_by:3
 msgid ""
 "Group objects by provided criteria and then sort the groups according to the"
-" criteria. Note that not all group_by criteria apply to all objects."
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.group_by:6
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.group_by:7
-msgid "optional): group and sort criteria. Defaults to Axis.Z."
+" criteria. Note that not all group_by criteria apply to all objects. "
+"Grouping by ``Convexity`` classifies each object relative to the shape it "
+"was selected from, with the groups in the enum's definition order."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.ShapeList.group_by:8
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.group_by:10
 msgid ""
-":param : optional): group and sort criteria. Defaults to Axis.Z. :param "
-"reverse: flip order of sort. Defaults to False. :type reverse: bool, "
-"optional :param tol_digits: Tolerance for building the group keys by"
+"optional): group and sort criteria, or the ``Convexity`` enum itself. "
+"Defaults to Axis.Z."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.ShapeList.group_by:12
-msgid "round(key, tol_digits)"
+msgid ""
+":param : optional): group and sort criteria, or the ``Convexity`` enum "
+"itself."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.group_by:15
+#: topology.shape_core.ShapeList.group_by-1
+msgid "optional): group and sort criteria, or the"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.group_by:13
+msgid "Defaults to Axis.Z."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.group_by:14
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.sort_by_distance:7
+msgid "flip order of sort. Defaults to False."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.group_by:16
+msgid "Tolerance for building the group keys by round(key, tol_digits)"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.ShapeList.group_by:20
 msgid "sorted groups of ShapeLists"
 msgstr ""
 
@@ -6812,11 +6944,6 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.ShapeList.sort_by_distance:5
 msgid "reference object"
-msgstr ""
-
-#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
-#: topology.shape_core.ShapeList.sort_by_distance:7
-msgid "flip order of sort. Defaults to False."
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -7929,6 +8056,41 @@ msgstr ""
 #: ../../build123d/src/build123d/topology/zero_d.pydocstring of
 #: topology.zero_d.Vertex.center:1
 msgid "The center of a vertex is itself!"
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/zero_d.pydocstring of
+#: topology.Vertex.convexity:1
+msgid "How the shape this vertex was selected from sits around it."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/zero_d.pydocstring of
+#: topology.Vertex.convexity:3
+msgid ""
+"Selected through a face, as ``face.vertices()`` or "
+"``face.edges()[0].vertices()`` does, the vertex is a corner of that face: "
+"``CONVEX`` at the corner of a plate, ``CONCAVE`` at the corner of a slot or "
+"the step in an L, ``SMOOTH`` where two edges meet in line. The corner is "
+"read in the face's own parameters, so a corner on a curved face classifies "
+"the same way as one on a flat face."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/zero_d.pydocstring of
+#: topology.Vertex.convexity:10
+msgid ""
+"Selected straight off a solid or shell, the vertex is classified by the "
+"edges meeting there: ``CONVEX`` where every crease is convex, as at the "
+"corner of a box, ``CONCAVE`` where every crease is concave, as at the bottom"
+" corner of a pocket, and ``SADDLE`` where both kinds meet, as at the inner "
+"corner of a step. Smooth edges do not count. See "
+":class:`~build_enums.Convexity`."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/zero_d.pydocstring of
+#: topology.Vertex.convexity:17
+msgid ""
+"the vertex has no ``topo_parent``, or its face or edges     cannot be "
+"classified - a seam vertex has no single corner in     its face's "
+"parameters, for instance"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/zero_d.pydocstring of

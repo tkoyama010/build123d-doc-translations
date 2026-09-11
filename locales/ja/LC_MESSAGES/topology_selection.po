@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-10 00:23+0000\n"
+"POT-Creation-Date: 2026-09-11 00:25+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -23,411 +23,566 @@ msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:5
 msgid ""
-":ref:`topology` is the structure of build123d geometric features and "
+":ref:`topology` is the structure of build123d geometric features, and "
 "traversing the topology of a part is often required to specify objects for "
-"an operation or to locate a CAD feature. :ref:`selectors` allow selection of"
-" topology objects into a |ShapeList|. :ref:`operators` are powerful methods "
-"further explore and refine a |ShapeList| for subsequent operations."
+"an operation or to locate a CAD feature. In a GUI you would click on a "
+"feature; in code you describe it. That description has three parts:"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:15
+#: ../../build123d/docs/topology_selection.rst:10
+msgid ""
+"a :ref:`selector <selectors>` names the *kind* of feature - vertices, edges,"
+" wires, faces or solids - and returns them all in a |ShapeList|;"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:12
+msgid ""
+":ref:`operators <operators>` sort, group and filter that list, or slice it "
+"like any Python list, until what remains is the feature you meant;"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:14
+msgid ""
+":ref:`criteria <criteria>` are what the operators sort, group and filter "
+"*by*."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:16
+msgid ""
+"Criteria come in three kinds, and keeping them apart makes selectors easier "
+"to write:"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:18
+msgid ""
+"**What a feature is.** Its own geometry: the type of curve or surface, its "
+"length, area, radius or volume, which way it points, where it lies. These "
+"are properties of the feature alone and can be measured with nothing else in"
+" hand."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:21
+msgid ""
+"**How a feature sits in its shape.** Whether an edge is a convex or concave "
+"corner of the solid, which faces are its neighbours, which face a vertex was"
+" picked off. These are relations, not properties: the same straight edge is "
+"convex on a box and concave at the inner corner of an L, and nothing about "
+"the edge itself says which."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:25
+msgid ""
+"**When a feature came to be.** Whether the last operation created it, "
+"brought it in, or only rebuilt it. This is the feature's history, and it is "
+"what makes \"fillet the edges I just made\" possible."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:33
 msgid "Selectors"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:17
+#: ../../build123d/docs/topology_selection.rst:35
 msgid ""
-"Selectors provide methods to extract all or a subset of a feature type in "
-"the referenced object. These methods select Edges, Faces, Solids, Vertices, "
-"or Wires in Builder objects or from Shape objects themselves. All of these "
-"methods return a |ShapeList|, which is a subclass of ``list`` and may be "
-"sorted, grouped, or filtered by :ref:`operators`."
+"Selectors extract all of a feature type from the referenced object, or the "
+"subset the last operation is responsible for. They are available on every "
+"``Shape`` and on every builder, and return a |ShapeList|, a subclass of "
+"``list`` that the :ref:`operators` refine."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:24
-#: ../../build123d/docs/topology_selection.rst:227
-msgid "Overview"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:27
+#: ../../build123d/docs/topology_selection.rst:41
 msgid "Selector"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:27
-#: ../../build123d/docs/topology_selection.rst:230
-msgid "Criteria"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:27
+#: ../../build123d/docs/topology_selection.rst:41
 msgid "Applicability"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:27
-#: ../../build123d/docs/topology_selection.rst:230
+#: ../../build123d/docs/topology_selection.rst:41
+#: ../../build123d/docs/topology_selection.rst:91
 msgid "Description"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:29
+#: ../../build123d/docs/topology_selection.rst:43
 msgid "|vertices|"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:29
-#: ../../build123d/docs/topology_selection.rst:33
-#: ../../build123d/docs/topology_selection.rst:35
-#: ../../build123d/docs/topology_selection.rst:37
-msgid "ALL, LAST"
+#: ../../build123d/docs/topology_selection.rst:43
+#: ../../build123d/docs/topology_selection.rst:46
+#: ../../build123d/docs/topology_selection.rst:49
+msgid "any ``Shape``; ``BuildLine``, ``BuildSketch``, ``BuildPart``"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:29
-#: ../../build123d/docs/topology_selection.rst:31
-#: ../../build123d/docs/topology_selection.rst:33
-msgid "``BuildLine``, ``BuildSketch``, ``BuildPart``"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:29
+#: ../../build123d/docs/topology_selection.rst:43
 msgid "``Vertex`` extraction"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:31
+#: ../../build123d/docs/topology_selection.rst:46
 msgid "|edges|"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:31
-msgid "ALL, LAST, NEW"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:31
+#: ../../build123d/docs/topology_selection.rst:46
 msgid "``Edge`` extraction"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:33
+#: ../../build123d/docs/topology_selection.rst:49
 msgid "|wires|"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:33
+#: ../../build123d/docs/topology_selection.rst:49
 msgid "``Wire`` extraction"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:35
+#: ../../build123d/docs/topology_selection.rst:52
 msgid "|faces|"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:35
-msgid "``BuildSketch``, ``BuildPart``"
+#: ../../build123d/docs/topology_selection.rst:52
+msgid "any ``Shape``; ``BuildSketch``, ``BuildPart``"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:35
+#: ../../build123d/docs/topology_selection.rst:52
 msgid "``Face`` extraction"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:37
+#: ../../build123d/docs/topology_selection.rst:54
 msgid "|solids|"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:37
-msgid "``BuildPart``"
+#: ../../build123d/docs/topology_selection.rst:54
+msgid "any ``Shape``; ``BuildPart``"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:37
+#: ../../build123d/docs/topology_selection.rst:54
 msgid "``Solid`` extraction"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:40
+#: ../../build123d/docs/topology_selection.rst:57
 msgid ""
-"Both shape objects and builder objects have access to selector methods to "
-"select all of a feature as long as they can contain the feature being "
-"selected."
+"Every selector takes a :class:`~build_enums.Select` argument, ``Select.ALL``"
+" by default. ``Select.LAST`` and ``Select.NEW`` narrow the result to what "
+"the last operation did, and are described under :ref:`when a feature came to"
+" be <when>`."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:60
-msgid "Select In Build Context"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:62
+#: ../../build123d/docs/topology_selection.rst:77
 msgid ""
-"Build contexts track the last operation and their selector methods can take "
-":class:`~build_enums.Select` as criteria to specify a subset of features to "
-"extract. By default, a selector will select ``ALL`` of a feature, while "
-"``LAST`` selects features created or altered by the most recent operation. "
-"|edges| can uniquely specify ``NEW`` to only select edges created in the "
-"last operation which neither existed in the referenced object before the "
-"last operation, nor the modifying object."
+"A |ShapeList| has the same selectors, so a selection can be narrowed in "
+"steps: the edges of the smallest faces are "
+"``part.faces().group_by(SortBy.AREA)[0].edges()``."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:71
-msgid ""
-":class:`~build_enums.Select` as selector criteria is only valid for builder "
-"objects!"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:85
-msgid ""
-"Create a simple part to demonstrate selectors. Select using the default "
-"criteria ``Select.ALL``. Specifying ``Select.ALL`` for the selector is not "
-"required."
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:106
-msgid "The default ``Select.ALL`` features"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:108
-msgid ""
-"Select features changed in the last operation with criteria ``Select.LAST``."
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:123
-msgid "``Select.LAST`` features"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:125
-msgid ""
-"Select only new edges from the last operation with ``Select.NEW``. This "
-"option is only available for a ``ShapeList`` of edges!"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:139
-msgid "``Select.NEW`` edges where box and cylinder intersect"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:141
-msgid ""
-"This only returns new edges which are not reused from Box or Cylinder, in "
-"this case where the objects `intersect`. But what happens if the objects "
-"don't intersect and all the edges are reused?"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:156
-msgid "``Select.NEW`` edges when box and cylinder don't intersect"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:158
-msgid ""
-"No edges are selected! Unlike the previous example, the Edge between the Box"
-" and Cylinder objects is an edge reused from the Cylinder. Think of "
-"``Select.NEW`` as a way to select only completely new edges created by the "
-"operation."
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:164
-msgid ""
-"Chamfer and fillet modify the current object, but do not have new edges via "
-"``Select.NEW``."
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:180
-msgid ""
-"Left, ``Select.NEW`` returns no edges after fillet. Right, ``Select.LAST``"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:183
-msgid "Select New Edges In Algebra Mode"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:185
-msgid ""
-"The utility method ``new_edges`` compares one or more shape objects to a "
-"another \"combined\" shape object and returns the edges new to the combined "
-"shape. ``new_edges`` is available both Algebra mode or Builder mode, but is "
-"necessary in Algebra Mode where ``Select.NEW`` is unavailable"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:200
-msgid ""
-"``new_edges`` can also find edges created during a chamfer or fillet "
-"operation by comparing the object before the operation to the \"combined\" "
-"object."
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:219
+#: ../../build123d/docs/topology_selection.rst:84
 msgid "Operators"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:221
+#: ../../build123d/docs/topology_selection.rst:86
 msgid ""
-"Operators provide methods refine a ``ShapeList`` of features isolated by a "
-"*selector* to further specify feature(s). These methods can sort, group, or "
-"filter ``ShapeList`` objects and return a modified ``ShapeList``, or in the "
-"case of |group_by|, ``GroupBy``, a list of ``ShapeList`` objects accessible "
-"by index or key."
+"Operators refine a |ShapeList| of features isolated by a selector. They "
+"sort, group or filter and return a modified |ShapeList|, or in the case of "
+"|group_by| a ``GroupBy``, a list of |ShapeList| objects accessible by index "
+"or key."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:230
+#: ../../build123d/docs/topology_selection.rst:91
 msgid "Method"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:232
+#: ../../build123d/docs/topology_selection.rst:91
+#: ../../build123d/docs/topology_selection.rst:319
+msgid "Criteria"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:93
+#: ../../build123d/docs/topology_selection.rst:110
 msgid "|sort_by|"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:232
-#: ../../build123d/docs/topology_selection.rst:236
+#: ../../build123d/docs/topology_selection.rst:93
 msgid "``Axis``, ``Edge``, ``Wire``, ``SortBy``, callable, property"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:232
+#: ../../build123d/docs/topology_selection.rst:93
 msgid "Sort ``ShapeList`` by criteria"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:234
+#: ../../build123d/docs/topology_selection.rst:95
 msgid "|sort_by_distance|"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:234
+#: ../../build123d/docs/topology_selection.rst:95
 msgid "``Shape``, ``VectorLike``"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:234
+#: ../../build123d/docs/topology_selection.rst:95
 msgid "Sort ``ShapeList`` by distance from criteria"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:236
+#: ../../build123d/docs/topology_selection.rst:97
 msgid "|group_by|"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:236
+#: ../../build123d/docs/topology_selection.rst:97
+msgid ""
+"``Axis``, ``Edge``, ``Wire``, ``SortBy``, ``Convexity``, callable, property"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:97
 msgid "Group ``ShapeList`` by criteria"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:238
+#: ../../build123d/docs/topology_selection.rst:100
+#: ../../build123d/docs/topology_selection.rst:118
 msgid "|filter_by|"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:238
-msgid "``Axis``, ``Plane``, ``GeomType``, callable, property"
+#: ../../build123d/docs/topology_selection.rst:100
+msgid "``Axis``, ``Plane``, ``GeomType``, ``Convexity``, callable, property"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:238
+#: ../../build123d/docs/topology_selection.rst:100
 msgid "Filter ``ShapeList`` by criteria"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:240
+#: ../../build123d/docs/topology_selection.rst:102
 msgid "|filter_by_position|"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:240
+#: ../../build123d/docs/topology_selection.rst:102
 msgid "``Axis``"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:240
-msgid "Filter ``ShapeList`` by ``Axis`` & mix / max values"
+#: ../../build123d/docs/topology_selection.rst:102
+msgid "Filter ``ShapeList`` by ``Axis`` & min / max values"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:243
+#: ../../build123d/docs/topology_selection.rst:105
 msgid ""
-"Operator methods take criteria to refine ``ShapeList``. Broadly speaking, "
-"the criteria fall into the following categories, though not all operators "
-"take all criteria:"
+"The most common operators also have a shorthand, so a selection can read as "
+"a chain:"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:246
-msgid "Geometric objects: ``Axis``, ``Plane``"
+#: ../../build123d/docs/topology_selection.rst:108
+msgid "Operator"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:247
-msgid "Topological objects: ``Edge``, ``Wire``"
+#: ../../build123d/docs/topology_selection.rst:108
+msgid "Operand"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:248
-msgid ""
-"Enums: :class:`~build_enums.SortBy`, :class:`~build_enums.GeomType`, "
-":class:`~build_enums.Convexity`"
+#: ../../build123d/docs/topology_selection.rst:108
+msgid "Meaning"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:250
-msgid "Properties, eg: ``Face.area``, ``Edge.length``"
+#: ../../build123d/docs/topology_selection.rst:108
+msgid "Example"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:251
-msgid ""
-"Callable, eg: ``lambda e: e.is_interior == 1``, ``lambda f: len(f.edges()) "
-">= 3``, ``Vertex().distance``, |topo_distance_to|"
+#: ../../build123d/docs/topology_selection.rst:110
+msgid "``>``"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:255
+#: ../../build123d/docs/topology_selection.rst:110
+#: ../../build123d/docs/topology_selection.rst:112
+#: ../../build123d/docs/topology_selection.rst:114
+#: ../../build123d/docs/topology_selection.rst:116
+msgid "``SortBy``, ``Axis``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:110
+msgid "``part.vertices() > Axis.Z``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:112
+msgid "``<``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:112
+msgid "|sort_by| reversed"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:112
+msgid "``part.faces() < Axis.Z``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:114
+msgid "``>>``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:114
+msgid "|group_by|, last group"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:114
+msgid "``part.solids() >> Axis.X``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:116
+msgid "``<<``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:116
+msgid "|group_by|, first group"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:116
+msgid "``part.faces() << Axis.Y``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:118
+msgid "``|``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:118
+msgid "``Axis``, ``Plane``, ``GeomType``, ``Convexity``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:118
+msgid "``part.faces() | Axis.Z``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:122
+msgid "``[]``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:122
+msgid "Python indexing and slicing"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:122
+msgid "``part.faces()[-2:]``"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:126
 msgid "Sort"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:257
+#: ../../build123d/docs/topology_selection.rst:128
 msgid ""
-"A ``ShapeList`` can be sorted with the |sort_by| and |sort_by_distance| "
-"methods based on a sorting criteria. Sorting is a critical step when "
-"isolating individual features as a ``ShapeList`` from a selector is "
-"typically unordered."
+"A |ShapeList| can be sorted with the |sort_by| and |sort_by_distance| "
+"methods. Sorting is a critical step when isolating individual features, as a"
+" |ShapeList| from a selector is unordered."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:261
+#: ../../build123d/docs/topology_selection.rst:132
 msgid ""
 "Here we want to capture some vertices from the object furthest along ``X``: "
-"All the vertices are first captured with the |vertices| selector, then sort "
-"by ``Axis.X``. Finally, the vertices can be captured with a list slice for "
-"the last 4 list items, as the items are sorted from least to greatest ``X`` "
-"position. Remember, ``ShapeList`` is a subclass of ``list``, so any list "
-"slice can be used."
+"all the vertices are first captured with the |vertices| selector, then "
+"sorted by ``Axis.X``. Finally, the vertices can be captured with a list "
+"slice for the last 4 list items, as the items are sorted from least to "
+"greatest ``X`` position. Remember, |ShapeList| is a subclass of ``list``, so"
+" any list slice can be used."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:277
-#: ../../build123d/docs/topology_selection.rst:471
-#: ../../build123d/docs/topology_selection.rst:519
+#: ../../build123d/docs/topology_selection.rst:148
+#: ../../build123d/docs/topology_selection.rst:205
+#: ../../build123d/docs/topology_selection.rst:274
 msgid "Examples"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:288
+#: ../../build123d/docs/topology_selection.rst:159
 #: ../../build123d/docs/topology_selection/sort_examples.rst:8
 msgid "SortBy"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:293
+#: ../../build123d/docs/topology_selection.rst:164
 #: ../../build123d/docs/topology_selection/sort_examples.rst:50
 msgid "Along Wire"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:298
+#: ../../build123d/docs/topology_selection.rst:169
 #: ../../build123d/docs/topology_selection/sort_examples.rst:87
 msgid "Axis"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:303
+#: ../../build123d/docs/topology_selection.rst:174
 #: ../../build123d/docs/topology_selection/sort_examples.rst:112
 msgid "Distance From"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:309
+#: ../../build123d/docs/topology_selection.rst:180
 msgid "Group"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:311
+#: ../../build123d/docs/topology_selection.rst:182
 msgid ""
-"A ShapeList can be grouped and sorted with the |group_by| method based on a "
-"grouping criteria. Grouping can be a great way to organize features without "
-"knowing the values of specific feature properties. Rather than returning a "
-"``ShapeList``, |group_by| returns a ``GroupBy``, a list of ``ShapeList`` "
-"objects sorted by the grouping criteria. ``GroupBy`` can be printed to view "
-"the members of each group, indexed like a list to retrieve a ``ShapeList``, "
-"and be accessed using a key with the ``group`` method. If the group keys are"
-" unknown they can be discovered with ``key_to_group_index``."
+"A |ShapeList| can be grouped and sorted with the |group_by| method. Grouping"
+" is a great way to organize features without knowing the values of specific "
+"feature properties. Rather than returning a |ShapeList|, |group_by| returns "
+"a ``GroupBy``, a list of |ShapeList| objects sorted by the grouping "
+"criteria. ``GroupBy`` can be printed to view the members of each group, "
+"indexed like a list to retrieve a |ShapeList|, and accessed by key with the "
+"``group`` method. If the group keys are unknown they can be discovered with "
+"``key_to_group_index``."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:319
+#: ../../build123d/docs/topology_selection.rst:190
 msgid ""
 "If we want only the edges from the smallest faces by area we can get the "
-"faces, then group by ``SortBy.AREA``. The ``ShapeList`` of smallest faces is"
-" available from the first list index. Finally, a ``ShapeList`` has access to"
-" selectors, so calling |edges| will return a new list of all edges in the "
+"faces, then group by ``SortBy.AREA``. The |ShapeList| of smallest faces is "
+"available from the first list index. Finally, a |ShapeList| has access to "
+"selectors, so calling |edges| will return a new list of all edges in the "
 "previous list."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:334
-msgid "Selection Provenance"
+#: ../../build123d/docs/topology_selection.rst:216
+#: ../../build123d/docs/topology_selection/group_examples.rst:8
+msgid "Axis and Length"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:221
+#: ../../build123d/docs/topology_selection/group_examples.rst:40
+msgid "Hole Area"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:226
+#: ../../build123d/docs/topology_selection/group_examples.rst:64
+msgid "Properties with Keys"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:232
+msgid "Filter"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:234
+msgid ""
+"A |ShapeList| can be filtered with the |filter_by| and |filter_by_position| "
+"methods. Filters are a flexible way to isolate (or exclude) features based "
+"on known criteria."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:237
+msgid ""
+"Let's say we need all the faces with a normal in the ``+Z`` direction. One "
+"way to do this might be with a list comprehension, however |filter_by| can "
+"take a lambda function as a filter condition on the entire list. In this "
+"case, the normal of each face can be checked against a vector direction and "
+"filtered accordingly."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:251
+msgid ""
+"Because |filter_by| accepts any callable, a filter on any combination of "
+"properties fits into a fluent chain. Here the two faces with inner wires, "
+"that is with holes, are selected regardless of their orientation:"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:262
+msgid ""
+"Standard Python tools work too. ``sorted``, ``filter`` and comprehensions "
+"all accept a |ShapeList|, which is useful when a selection needs several "
+"properties at once:"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:285
+#: ../../build123d/docs/topology_selection/filter_examples.rst:8
+msgid "GeomType"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:290
+#: ../../build123d/docs/topology_selection/filter_examples.rst:45
+msgid "All Edges Circle"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:295
+#: ../../build123d/docs/topology_selection/filter_examples.rst:70
+msgid "Axis and Plane"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:300
+#: ../../build123d/docs/topology_selection/filter_examples.rst:112
+msgid "Inner Wire Count"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:305
+#: ../../build123d/docs/topology_selection/filter_examples.rst:154
+msgid "Nested Filters"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:310
+#: ../../build123d/docs/topology_selection/filter_examples.rst:181
+msgid "Shape Properties"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:321
+msgid ""
+"The operators above take criteria of three kinds. Any operator can take any "
+"kind; the kinds differ in what they need to answer."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:325
+msgid "What a feature is"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:327
+msgid ""
+"The first kind describes the feature alone. Nothing but the feature is "
+"needed to evaluate them, and they are the criteria most selectors start "
+"with."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:330
+msgid ""
+"**Type**: :class:`~build_enums.GeomType` names the curve or surface - "
+"``LINE``, ``CIRCLE``, ``PLANE``, ``CYLINDER`` and so on. "
+"``part.edges().filter_by(GeomType.CIRCLE)`` keeps the circular edges; "
+"``geom_type`` is the property behind it."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:333
+msgid ""
+"**Size**: :class:`~build_enums.SortBy` orders by ``LENGTH``, ``RADIUS``, "
+"``AREA``, ``VOLUME`` or ``DISTANCE``; the properties ``length``, ``radius``,"
+" ``area`` and ``volume`` can be passed to |sort_by|, |group_by| and "
+"|filter_by| directly."
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:336
+msgid ""
+"**Direction**: an ``Axis`` passed to |filter_by| keeps the planar faces "
+"whose normal, or the linear edges whose direction, is parallel to it; a "
+"``Plane`` keeps those parallel to the plane. Passed to |sort_by| or "
+"|group_by|, an ``Axis`` orders by position along it."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:340
+msgid ""
+"**Position**: |filter_by_position| keeps features within a range along an "
+"axis, and |sort_by_distance| orders by distance from a point or another "
+"shape."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:342
+msgid ""
+"**Anything else** the feature can say about itself, through a property or a "
+"callable: ``Face.is_planar``, ``Edge.is_closed``, ``lambda f: "
+"len(f.inner_wires()) == 1``."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:348
+msgid "How a feature sits in its shape"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:350
+msgid ""
+"The second kind describes the feature's relationship to the shape it was "
+"selected from: which face a vertex is a corner of, whether an edge is a "
+"crease that turns inward or outward, which faces neighbour which. None of "
+"these can be read from the feature alone, so all of them depend on the "
+"*route* the feature was selected by."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:356
+msgid "Selection route"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:358
 msgid ""
 "A shape pulled out of another remembers where it came from. Every selector "
 "step is recorded on the result as ``topo_path``, a tuple running from the "
 "outermost shape to the one it was taken directly out of:"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:349
+#: ../../build123d/docs/topology_selection.rst:371
 msgid ""
 "``topo_parent`` is the first step and ``topo_owner`` the last, so on a "
 "single selection they are the same shape. The distinction matters when a "
@@ -437,57 +592,57 @@ msgid ""
 "to say so rather than guess."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:356
+#: ../../build123d/docs/topology_selection.rst:378
 msgid ""
 "Provenance is metadata rather than geometry. It is carried by reference "
 "through copies, since it names shapes outside the copy, and it is not part "
 "of shape equality."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:361
+#: ../../build123d/docs/topology_selection.rst:383
 msgid "Convexity"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:363
+#: ../../build123d/docs/topology_selection.rst:385
 msgid ""
 "A vertex, edge or face can be classified by how the material of the shape it"
 " was selected from sits around it, with :class:`~build_enums.Convexity`:"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:366
+#: ../../build123d/docs/topology_selection.rst:388
 msgid ""
 "``CONVEX`` - the material closes around the element by less than half a "
 "turn: the outer edge of a box, the corner of a plate, a boss"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:368
+#: ../../build123d/docs/topology_selection.rst:390
 msgid ""
 "``CONCAVE`` - by more than half a turn: the inner corner of a pocket, a hole"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:369
+#: ../../build123d/docs/topology_selection.rst:391
 msgid ""
 "``SMOOTH`` - the boundary passes through without bending: a fillet seam, a "
 "planar face, a vertex where two edges meet in line"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:371
+#: ../../build123d/docs/topology_selection.rst:393
 msgid ""
 "``SADDLE`` - both senses are present: an edge whose dihedral angle crosses "
 "half a turn along its length, a vertex where convex and concave edges meet, "
 "a face with principal curvatures of opposite sign"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:375
+#: ../../build123d/docs/topology_selection.rst:397
 msgid ""
-"This is a property of the relationship, not of the element alone. The same "
-"straight edge is convex on a box and concave at the inner corner of an L, "
-"and nothing about the edge itself distinguishes them. Every shape has a "
-"``convexity`` property, |filter_by| takes a member of the enum, and "
-"|group_by| takes the enum itself:"
+"This is a relationship, not a property. The same straight edge is convex on "
+"a box and concave at the inner corner of an L, and nothing about the edge "
+"itself distinguishes them. Every shape has a ``convexity`` property, "
+"|filter_by| takes a member of the enum, and |group_by| takes the enum "
+"itself:"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:391
+#: ../../build123d/docs/topology_selection.rst:413
 msgid ""
 "Because the classification is relative to the shape the element came from, "
 "the selection route decides the question being asked. A vertex taken through"
@@ -501,17 +656,17 @@ msgid ""
 "guessing."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:401
+#: ../../build123d/docs/topology_selection.rst:423
 msgid ""
 "``Edge.is_interior``, ``Face.is_circular_convex`` and "
 "``Face.is_circular_concave`` are shorthand for the concave and convex cases."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:405
-msgid "Topological Distance"
+#: ../../build123d/docs/topology_selection.rst:427
+msgid "Topological distance"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:407
+#: ../../build123d/docs/topology_selection.rst:429
 msgid ""
 "|topo_distance_to| creates a callable key that measures graph distance "
 "through topology rather than geometric distance through space. It is useful "
@@ -519,14 +674,14 @@ msgid ""
 "reference face, or the next ring of faces after that."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:412
+#: ../../build123d/docs/topology_selection.rst:434
 msgid ""
 "Distances are measured within the shared ``topo_parent`` of the reference "
 "shape. The reference shape has distance ``0``, directly adjacent shapes have"
 " distance ``1``, and unreachable shapes have distance ``inf``."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:428
+#: ../../build123d/docs/topology_selection.rst:450
 msgid ""
 "Multiple reference shapes can be provided. This is useful for selecting all "
 "features within a topological distance from any reference. In this example, "
@@ -535,75 +690,112 @@ msgid ""
 " rings expanding away from that starting band."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:460
+#: ../../build123d/docs/topology_selection.rst:482
 msgid ""
 "The same approach can be used with edges or vertices. For example, a single "
 "edge on the mesh can be used as the starting point for edge-distance rings."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:482
-#: ../../build123d/docs/topology_selection/group_examples.rst:8
-msgid "Axis and Length"
+#: ../../build123d/docs/topology_selection.rst:495
+msgid "When a feature came to be"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:487
-#: ../../build123d/docs/topology_selection/group_examples.rst:40
-msgid "Hole Area"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:492
-#: ../../build123d/docs/topology_selection/group_examples.rst:64
-msgid "Properties with Keys"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:498
-msgid "Filter"
-msgstr ""
-
-#: ../../build123d/docs/topology_selection.rst:500
+#: ../../build123d/docs/topology_selection.rst:497
 msgid ""
-"A ``ShapeList`` can be filtered with the |filter_by| and "
-"|filter_by_position| methods based on a filtering criteria. Filters are "
-"flexible way to isolate (or exclude) features based on known criteria."
+"The third kind is history. Every operation - a boolean, a fillet, a chamfer,"
+" a 2D fillet, a join of connected edges - keeps a record of what it did to "
+"the sub-shapes of its inputs: which it left alone, which it rebuilt, which "
+"it created and which it removed. The record travels with the shape the "
+"operation returns, and the selectors read it through "
+":class:`~build_enums.Select`:"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:503
+msgid "``Select.ALL`` - every feature of the kind, the default;"
 msgstr ""
 
 #: ../../build123d/docs/topology_selection.rst:504
 msgid ""
-"Lets say we need all the faces with a normal in the ``+Z`` direction. One "
-"way to do this might be with a list comprehension, however |filter_by| has "
-"the capability to take a lambda function as a filter condition on the entire"
-" list. In this case, the normal of each face can be checked against a vector"
-" direction and filtered accordingly."
+"``Select.LAST`` - the features the last operation brought in or created. A "
+"feature the operation merely rebuilt is not included: when a cylinder is "
+"fused onto a box the box's top face gains a circular edge, but it is still "
+"the box's top face, so ``Select.LAST`` returns the cylinder's faces and not "
+"the top;"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:530
-#: ../../build123d/docs/topology_selection/filter_examples.rst:8
-msgid "GeomType"
+#: ../../build123d/docs/topology_selection.rst:508
+msgid ""
+"``Select.NEW`` - only the features that existed in no input in any form: the"
+" edges where two objects intersect, the faces of a fillet, the solid two "
+"solids merge into."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:535
-#: ../../build123d/docs/topology_selection/filter_examples.rst:45
-msgid "All Edges Circle"
+#: ../../build123d/docs/topology_selection.rst:511
+msgid ""
+"All three are available for every shape type, in builders and on shapes "
+"alike."
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:540
-#: ../../build123d/docs/topology_selection/filter_examples.rst:70
-msgid "Axis and Plane"
+#: ../../build123d/docs/topology_selection.rst:513
+msgid ""
+"In a builder, the operations are the objects and operations run in the "
+"context, and the selectors are the builder's own:"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:545
-#: ../../build123d/docs/topology_selection/filter_examples.rst:112
-msgid "Inner Wire Count"
+#: ../../build123d/docs/topology_selection.rst:529
+msgid "The default ``Select.ALL`` features"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:550
-#: ../../build123d/docs/topology_selection/filter_examples.rst:154
-msgid "Nested Filters"
+#: ../../build123d/docs/topology_selection.rst:534
+msgid "``Select.LAST`` features"
 msgstr ""
 
-#: ../../build123d/docs/topology_selection.rst:555
-#: ../../build123d/docs/topology_selection/filter_examples.rst:181
-msgid "Shape Properties"
+#: ../../build123d/docs/topology_selection.rst:539
+msgid "``Select.NEW`` edges where box and cylinder intersect"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:541
+msgid ""
+"``Select.NEW`` returns nothing when every edge of the result already existed"
+" in an input. Here the cylinder stands on the box rather than passing "
+"through it, so the circle where they meet is the cylinder's own bottom edge,"
+" brought in rather than made:"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:557
+msgid "``Select.NEW`` edges when box and cylinder don't intersect"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:559
+msgid ""
+"Operations that rebuild the object rather than adding to it follow the same "
+"rule. After a fillet, the fillet faces and their seam and arc edges are new "
+"and last, the faces they blend into were rebuilt and are neither, and the "
+"edges that were filleted are gone:"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:573
+msgid ""
+"In Algebra mode the record rides on the result, so the same selectors work "
+"on it. The left operand is what was there before and the right operand is "
+"what was brought in:"
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:586
+msgid ""
+"Two limits follow from where the record comes from. A shape that is not the "
+"result of an operation, such as a freshly made ``Rectangle``, has no record "
+"and raises if asked for ``Select.LAST`` or ``Select.NEW``. And an operation "
+"that keeps no record hands its result on with an empty one, under which "
+"every feature that is not identical to one from before counts as new; the "
+"kernel algorithms behind build123d's operations all report, so this is rare."
+msgstr ""
+
+#: ../../build123d/docs/topology_selection.rst:593
+msgid ""
+"The standalone :func:`~topology.new_edges` function predates the record. It "
+"compares shapes geometrically and still works, but ``edges(Select.NEW)`` "
+"answers the same question from the record, for every shape type."
 msgstr ""
 
 #: ../../build123d/docs/topology_selection/filter_examples.rst:3

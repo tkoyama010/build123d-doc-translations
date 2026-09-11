@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-15 00:12+0000\n"
+"POT-Creation-Date: 2026-09-11 00:25+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -174,14 +174,30 @@ msgid ""
 msgstr ""
 
 #: ../../build123d/docs/key_concepts_algebra.rst:148
-msgid "Combing both concepts"
+msgid "Selecting features of a result"
 msgstr ""
 
 #: ../../build123d/docs/key_concepts_algebra.rst:150
+msgid ""
+"The result of an operation carries a record of what that operation did, so "
+"the selectors that builders offer work on it too. ``Select.LAST`` returns "
+"the features the right operand brought in or the operation created, and "
+"``Select.NEW`` only those that existed in neither operand:"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:161
+msgid "See :ref:`when a feature came to be <when>` for the details."
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:164
+msgid "Combing both concepts"
+msgstr ""
+
+#: ../../build123d/docs/key_concepts_algebra.rst:166
 msgid "**Object arithmetic** and **Placement at locations** can be combined:"
 msgstr ""
 
-#: ../../build123d/docs/key_concepts_algebra.rst:156
+#: ../../build123d/docs/key_concepts_algebra.rst:172
 msgid ""
 "**Note:** In Python ``*`` binds stronger then ``+``, ``-``, ``&``, hence "
 "brackets are not needed."

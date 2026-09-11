@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-10 00:23+0000\n"
+"POT-Creation-Date: 2026-09-11 00:25+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -229,7 +229,31 @@ msgstr ""
 
 #: ../../build123d/src/build123d/build_enums.pydocstring of
 #: build_enums.Select:1
-msgid "Selector scope - all, last operation or new objects"
+msgid "How much of a shape a selector returns."
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.Select:3
+msgid "ALL: every feature of the kind"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.Select:4
+msgid ""
+"LAST: the features the last operation brought in or created; a feature it "
+"merely rebuilt is not included"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.Select:6
+msgid "NEW: only the features that existed in no input of the last operation"
+msgstr ""
+
+#: ../../build123d/src/build123d/build_enums.pydocstring of
+#: build_enums.Select:8
+msgid ""
+"LAST and NEW read the record an operation leaves on its result, so they work"
+" on builders and on the shapes Algebra mode operations return alike."
 msgstr ""
 
 #: ../../build123d/src/build123d/build_enums.pydocstring of

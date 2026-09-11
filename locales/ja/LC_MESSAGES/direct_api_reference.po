@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-10 00:23+0000\n"
+"POT-Creation-Date: 2026-09-11 00:25+0000\n"
 "PO-Revision-Date: 2026-01-17 04:21+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/303517/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -5623,6 +5623,13 @@ msgid "edges - all the edges in this Shape - subclasses may override"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
+#: topology.shape_core.Shape.edges:3
+msgid ""
+"all edges, or those the operation that made this shape brought in or created"
+" (``LAST``) or created outright (``NEW``). Defaults to Select.ALL."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.entities:1
 msgid "Return all of the TopoDS sub entities of the given type"
 msgstr ""
@@ -5644,7 +5651,7 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.faces:1
-msgid "faces - all the faces in this Shape"
+msgid "faces - all the faces in this Shape, or those selected by ``select``"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -6236,7 +6243,7 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.shells:1
-msgid "shells - all the shells in this Shape"
+msgid "shells - all the shells in this Shape, or those selected by ``select``"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -6276,7 +6283,7 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.solids:1
-msgid "solids - all the solids in this Shape"
+msgid "solids - all the solids in this Shape, or those selected by ``select``"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -6627,9 +6634,8 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.vertices:1
-#: ../../build123d/src/build123d/topology/zero_d.pydocstring of
-#: topology.zero_d.Vertex.vertices:1
-msgid "vertices - all the vertices in this Shape"
+msgid ""
+"vertices - all the vertices in this Shape, or those selected by ``select``"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -6641,7 +6647,7 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
 #: topology.shape_core.Shape.wires:1
-msgid "wires - all the wires in this Shape"
+msgid "wires - all the wires in this Shape, or those selected by ``select``"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.pydocstring of
@@ -7670,7 +7676,7 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
 #: topology.one_d.Wire.edges:1
-msgid "edges - all the edges in this Shape"
+msgid "edges - all the edges in this Shape, in connection order"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.pydocstring of
@@ -8115,6 +8121,11 @@ msgid ""
 "matrix. Note that not all transformation are supported - primarily designed "
 "for translation and rotation.  See :transform_geometry: for more "
 "comprehensive transformations."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/zero_d.pydocstring of
+#: topology.zero_d.Vertex.vertices:1
+msgid "vertices - all the vertices in this Shape"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/zero_d.pydocstring of

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: build123d \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-10 00:23+0000\n"
+"POT-Creation-Date: 2026-09-11 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4019,6 +4019,10 @@ msgstr ""
 msgid "edges - all the edges in this Shape - subclasses may override"
 msgstr ""
 
+#: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.edges:3
+msgid "all edges, or those the operation that made this shape brought in or created (``LAST``) or created outright (``NEW``). Defaults to Select.ALL."
+msgstr ""
+
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.entities:1
 msgid "Return all of the TopoDS sub entities of the given type"
 msgstr ""
@@ -4033,7 +4037,7 @@ msgid "Return the Face"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.faces:1
-msgid "faces - all the faces in this Shape"
+msgid "faces - all the faces in this Shape, or those selected by ``select``"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.faces_intersected_by_axis:1
@@ -4439,7 +4443,7 @@ msgid "Return the Shell"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.shells:1
-msgid "shells - all the shells in this Shape"
+msgid "shells - all the shells in this Shape, or those selected by ``select``"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.show_topology:1
@@ -4468,7 +4472,7 @@ msgid "Return the Solid"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.solids:1
-msgid "solids - all the solids in this Shape"
+msgid "solids - all the solids in this Shape, or those selected by ``select``"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.split:1
@@ -4696,8 +4700,7 @@ msgid "Return the Vertex"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.vertices:1
-#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.vertices:1
-msgid "vertices - all the vertices in this Shape"
+msgid "vertices - all the vertices in this Shape, or those selected by ``select``"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.wire:1
@@ -4706,7 +4709,7 @@ msgid "Return the Wire"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.shape_core.Shape.wires:1
-msgid "wires - all the wires in this Shape"
+msgid "wires - all the wires in this Shape, or those selected by ``select``"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/shape_core.py:docstring of topology.Shape.wrapped:1
@@ -5432,7 +5435,7 @@ msgid "Wires"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Wire.edges:1
-msgid "edges - all the edges in this Shape"
+msgid "edges - all the edges in this Shape, in connection order"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/one_d.py:docstring of topology.one_d.Wire.extrude:1
@@ -5749,6 +5752,10 @@ msgstr ""
 
 #: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.transform_shape:3
 msgid "Transforms a copy of this Vertex by the provided 3D affine transformation matrix. Note that not all transformation are supported - primarily designed for translation and rotation.  See :transform_geometry: for more comprehensive transformations."
+msgstr ""
+
+#: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.zero_d.Vertex.vertices:1
+msgid "vertices - all the vertices in this Shape"
 msgstr ""
 
 #: ../../build123d/src/build123d/topology/zero_d.py:docstring of topology.Vertex.volume:1
